@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Tạo Form Đơn Giản Phần 1</title>
+    <style>
+
+
+    </style>
+
+</head>
+<body>
+<form action="abc" method="get" style="width: 500px; background-color: khaki">
+        <h3 style="background-color:darkseagreen;color: blue;">ĐĂNG KÍ HỌC VIÊN</h3>
+        <table>
+            <tr>
+                <td class="blueLabel"><label for="name">Họ và tên</label></td>
+                <td><input type="text" id="name" name="yourname"></td>
+            </tr>
+            <tr>
+                <td class="blueLabel"><label for="dob">Ngày sinh</label></td>
+                <td><input type="text" id=dob name="dob"></td>
+            </tr>
+            <tr>
+                <td class="blueLabel"><label>Giới tính</label></td>
+                <td><input type="radio" name="gender" value="male">Nam
+                    <input type="radio" name="gender" value="female">Nữ</td>
+            </tr>
+            <tr>
+                <td class="blueLabel"><label>Địa chỉ</label></td>
+                <td><textarea></textarea></td>
+            </tr>
+            <tr>
+                <td class="blueLabel"><label>Lớp</label></td>
+                <td><select name="Class">
+                    <option value="classA">Lớp A</option>
+                    <option value="classB">Lớp B</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="blueLabel"><label for="email">Email</label></td>
+                <td><input type="text" id=email name="email"></td>
+            </tr>
+            <tr>
+                <td class="blueLabel"><label for="tel">Điện thoại</label></td>
+                <td><input type="number" id=tel name="phone"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" name="submit" value="Đăng kí">
+                <input type="reset" name="reset" value="Nhập lại"></td>
+            </tr>
+        </table>
+</form>
+</body>
+</html>
