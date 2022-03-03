@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Tạo Form Đơn Giản Phần 1</title>
+    <style>
+
+        label {
+            color: blue;
+        }
+        .blueLabel {
+            text-align: right;
+        }
+        .textHobby {
+            color: coral;
+        }
+    </style>
+
+</head>
+<body style="font-family:'Bodoni MT'">
+<form action="abc" method="get" style="width: 500px">
+    <fieldset>
+        <h3 style="background-color: red;color: white;text-align: center">SỞ THÍCH CỦA BẠN</h3>
+        <table>
+            <tr>
+                <td class="blueLabel"><label for="yourname">Họ và tên</label></td>
+                <td colspan="3"><input type="text" id="yourname" name="yourname" style="width:300px"></td>
+            </tr>
+            <tr>
+                <td class="blueLabel"><label for="email">Email</label></td>
+                <td colspan="3"><input type="text" id=email name="email" style="width:250px"></td>
+            </tr>
+            <tr>
+                <td class="blueLabel"><label name="hoppy">Sở thích</label></td>
+                <td class="textHobby"><input type="checkbox" name="hobby" value="sport">Thể thao</td>
+                <td class="textHobby"><input type="checkbox" name="hobby" value="music">Âm nhạc</td>
+                <td class="textHobby"><input type="checkbox" name="hobby" value="books">Đọc sách</td>
+            </tr>
+           <tr>
+                <td rowspan="3"></td>
+                <td class="textHobby"><input type="checkbox" name="hobby" value="internet">Lướt web</td>
+                <td class="textHobby"><input type="checkbox" name="hobby" value="game">Chơi game</td>
+                <td class="textHobby"><input type="checkbox" name="hobby" value="film">Điện ảnh</td>
+            </tr>
+            <tr>
+                <td class="textHobby"><input type="checkbox" name="hobby" value="travel">Du lịch</td>
+            </tr>
+
+            <tr>
+                <td><input type="submit" name="submit" value="Gửi thông tin"></td>
+                <td><input type="reset" name="reset" value="Nhập lại"></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+</body>
+</html>
