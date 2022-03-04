@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>[Bài Tập] Tạo Giao Diện Form Đăng Ký NGười Dùng</title>
 </head>
 <body>
-$END$
+<form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+    <div>
+        <label for="fname">Họ và tên:</label><br>
+        <input type="text" id="fname" name="name" width="100px">
+    </div><br>
+    <div>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email" width="100px">
+    </div><br>
+    <div>
+        <label for="tel">Số điện thoại:</label><br>
+        <input type="number" id="tel" name="phone" width="100px">
+    </div><br>
+    <div>
+        <label>Giới tính:</label><br>
+        <input type="radio" name="gender" value="male" checked>Nam
+        <input type="radio" name="gender" value="female">Nữ
+    </div><br>
+    <button value="submit">Đăng ký</button>
+</form>
 </body>
 </html>
