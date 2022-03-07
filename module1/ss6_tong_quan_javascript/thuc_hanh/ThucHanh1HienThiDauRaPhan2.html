@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực Hành] Hiển Thị Đầu Ra - HTML</title>
+</head>
+<body>
+<div id="message1"></div>
+<div id="message2"></div>
+<button type="button" onclick="doSomething();">Click here</button>
+<button type="button" onclick="showMessage()">Click here, too</button>
+<script>
+    function doSomething() {
+        document.getElementById("message1").innerHTML = "Xin chào!"
+    }
+
+    function showMessage() {
+        document.getElementById("message2").innerHTML = "Hello!"
+    }
+</script>
+</body>
+</html>
