@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Tạo Bảng Đơn Giản Phần 2</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: normal;
+        }
+
+        table, tr, th, td {
+            border: 1px solid;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <h2 style="color: blue; text-align: center">THỜI KHÓA BIỂU</h2>
+    <div style="display: flex">
+        <p style="float: left; text-align:left;color: blue;width:50%;padding-left: 5px">Lớp: T0908I<br>
+            Giáo viên: KhoaNV<br>
+            Phòng học: Class3/Lab3</p>
+        <p style="float: right; text-align:right;color: blue;width:50%;padding-right: 5px"> Thời gian học: 13h30 - 17h30<br>
+            Ngày học: Thứ 3, 5, 7</p>
+    </div>
+    <table>
+        <tr>
+            <th colspan="5"></th>
+            <th colspan="3" style="background-color: yellow;">Thứ 3</th>
+            <th colspan="3" style="background-color: yellow;">Thứ 5</th>
+            <th colspan="3" style="background-color: yellow;">Thứ 7</th>
+        </tr>
+        <tr style="background-color: orange;font-size: smaller">
+            <th>Tuần</th>
+            <th colspan="2">Ngày bắt đầu</th>
+            <th colspan="2">Ngày kết thúc</th>
+            <th colspan="9">Môn học</th>
+        </tr>
+        <tr>
+            <td style="text-align:center">01</td>
+            <td colspan="2">01/09/2009</td>
+            <td colspan="2">05/09/2009</td>
+            <td colspan="3">CF - T1, L1</td>
+            <td colspan="3">CF - T2, L2</td>
+            <td colspan="3">CF - T3, L3</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">02</td>
+            <td colspan="2">08/09/2009</td>
+            <td colspan="2">12/09/2009</td>
+            <td colspan="3">CF - T4, L4</td>
+            <td colspan="3">CF - Written Test</td>
+            <td colspan="3">CF - T1, L1</td>
+        </tr>
+        <tr>
+            <td style="text-align:center">03</td>
+            <td colspan="2">...</td>
+            <td colspan="2">...</td>
+            <td colspan="3">...</td>
+            <td colspan="3">...</td>
+            <td colspan="3">...</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
