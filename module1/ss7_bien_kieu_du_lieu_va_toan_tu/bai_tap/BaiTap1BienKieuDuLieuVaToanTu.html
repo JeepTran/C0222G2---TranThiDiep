@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Biến, Kiểu Dữ Liệu Và Toán Tử</title>
+</head>
+<body>
+<script>
+   // Bài 1: Tính điểm tổng và điểm trung bình
+    let physics = parseInt(prompt("Nhập điểm Vật Lý: "));
+    let chemistry = parseInt(prompt("Nhập điểm Hóa Học: "));
+    let biology = parseInt(prompt("Nhập điểm Sinh Học: "));
+    let sum = physics + chemistry + biology;
+    let avg = sum/3;
+    document.write("Điểm trung bình 3 môn là: " + avg +"<p></p>");
+    document.write("Tổng điểm 3 môn là: " + sum + "<p></p>");
+
+    // Bài 2: Chuyển đổi nhiệt độ
+    let c=parseFloat(prompt("Nhập độ C: "));
+    let f=9*c/5+32;
+    document.write(c + " độ C tương đương " + f + " độ F" + "<p></p>")
+
+    // Bài 3 & 4: Tính diện tích và chu vi hình tròn
+    let r = parseFloat(prompt("Nhập bán kính hình tròn: "));
+    const PI = 3.14;
+    let s = r*r*PI;
+    let v = 2*r*PI;
+    document.write("Diện tích hình tròn có bán kính " + r + " là: " + s + "<p></p>");
+    document.write("Chu vi hình tròn có bán kính " + r + " là: " + v + "<p></p>");
+
+
+
+</script>
+</body>
+</html>
