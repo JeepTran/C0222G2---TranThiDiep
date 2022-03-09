@@ -33,25 +33,29 @@
     let giamTru = 11000000 + nguoiPhuThuoc * 4400000 + tongThuNhap * 10.5 / 100;
     let thuNhapTinhThue = tongThuNhap - duocMien - giamTru;
     let thueTNCN;
-    if (thuNhapTinhThue >= 0) {
-        if (thuNhapTinhThue <= 5000000) {
-            thueTNCN = thuNhapTinhThue * bac1;
-        } else if (thuNhapTinhThue <= 10000000) {
-            thueTNCN = 5000000 * bac1 + (thuNhapTinhThue - 5000000) * bac2;
-        } else if (thuNhapTinhThue <= 18000000) {
-            thueTNCN = 5000000 * (bac1 + bac2) + (thuNhapTinhThue - 10000000) * bac3;
-        } else if (thuNhapTinhThue <= 32000000) {
-            thueTNCN = 5000000 * (bac1 + bac2) + 8000000 * bac3 + (thuNhapTinhThue - 18000000) * bac4;
-        } else if (thuNhapTinhThue <= 52000000) {
-            thueTNCN = 5000000 * (bac1 + bac2) + 8000000 * bac3 + 14000000 * bac4 + (thuNhapTinhThue - 32000000) * bac5;
-        } else if (thuNhapTinhThue <= 80000000) {
-            thueTNCN = 5000000 * (bac1 + bac2) + 8000000 * bac3 + 14000000 * bac4 + 20000000 * bac5 + (thuNhapTinhThue - 52000000) * bac6;
-        } else {
-            thueTNCN = 5000000 * (bac1 + bac2) + 8000000 * bac3 + 14000000 * bac4 + 20000000 * bac5 + 28000000 * bac6 + (thuNhapTinhThue - 80000000) * bac7;
-        }
-        alert("Với tổng thu nhập (chưa trừ bảo hiểm) " + tongThuNhap + "VNĐ và có " + nguoiPhuThuoc + " người phụ thuộc thì thuế TNCN phải đóng là: " + thueTNCN + "VNĐ.");
+    if (isNaN(tongThuNhap) || isNaN(nguoiPhuThuoc) || isNaN(duocMien)) {
+        alert("Phải nhập đủ các trường.");
     } else {
-        alert("Với tổng thu nhập (chưa trừ bảo hiểm) " + tongThuNhap + "VNĐ thì chưa đủ điều kiện để đóng thuế TNCN.")
+        if (thuNhapTinhThue >= 0) {
+            if (thuNhapTinhThue <= 5000000) {
+                thueTNCN = thuNhapTinhThue * bac1;
+            } else if (thuNhapTinhThue <= 10000000) {
+                thueTNCN = 5000000 * bac1 + (thuNhapTinhThue - 5000000) * bac2;
+            } else if (thuNhapTinhThue <= 18000000) {
+                thueTNCN = 5000000 * (bac1 + bac2) + (thuNhapTinhThue - 10000000) * bac3;
+            } else if (thuNhapTinhThue <= 32000000) {
+                thueTNCN = 5000000 * (bac1 + bac2) + 8000000 * bac3 + (thuNhapTinhThue - 18000000) * bac4;
+            } else if (thuNhapTinhThue <= 52000000) {
+                thueTNCN = 5000000 * (bac1 + bac2) + 8000000 * bac3 + 14000000 * bac4 + (thuNhapTinhThue - 32000000) * bac5;
+            } else if (thuNhapTinhThue <= 80000000) {
+                thueTNCN = 5000000 * (bac1 + bac2) + 8000000 * bac3 + 14000000 * bac4 + 20000000 * bac5 + (thuNhapTinhThue - 52000000) * bac6;
+            } else {
+                thueTNCN = 5000000 * (bac1 + bac2) + 8000000 * bac3 + 14000000 * bac4 + 20000000 * bac5 + 28000000 * bac6 + (thuNhapTinhThue - 80000000) * bac7;
+            }
+            alert("Với tổng thu nhập (chưa trừ bảo hiểm) " + tongThuNhap + "VNĐ và có " + nguoiPhuThuoc + " người phụ thuộc thì thuế TNCN phải đóng là: " + thueTNCN + "VNĐ.");
+        } else {
+            alert("Với tổng thu nhập (chưa trừ bảo hiểm) " + tongThuNhap + "VNĐ thì chưa đủ điều kiện để đóng thuế TNCN.")
+        }
     }
 </script>
 </body>
