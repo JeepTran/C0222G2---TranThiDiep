@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Giải phương trình bậc 1</title>
+</head>
+<body>
+<!--phương trình ax + b = 0-->
+<script>
+    let a = parseFloat(prompt("Phương trình ax + b = 0 có a là:"));
+    let b = parseFloat(prompt("Phương trình ax + b = 0 có b là:"));
+    let x;
+    if (a === 0) {
+        if (b === 0) {
+            alert("Phương trình " + a + "x + " + b + " = 0 có vô số nghiệm.");
+        } else {
+            alert("Phương trình " + a + "x + " + b + " = 0 vô nghiệm.")
+        }
+    } else
+    {
+        let x = -b / a;
+        alert("Phương trình " + a + "x + " + b + " = 0 có nghiệm là: " + x);
+    }
+</script>
+</body>
+</html>

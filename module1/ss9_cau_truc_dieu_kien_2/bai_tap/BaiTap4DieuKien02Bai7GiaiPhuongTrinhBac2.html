@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Giải Phương Trình Bậc 2</title>
+</head>
+<body>
+<!--Phương trình bậc 2: ax2+bx+c=0 (a≠0)-->
+<script>
+    let a=parseFloat(prompt("Phương trình ax^2 + bx + c = 0 có a là:"));
+    let b=parseFloat(prompt("Phương trình ax^2 + bx + c = 0 có b là:"));
+    let c=parseFloat(prompt("Phương trình ax^2 + bx + c = 0 có c là:"));
+    let delta=b*b-4*a*c;
+    if(a!=0){
+        if (delta<0){
+            alert("Phương trình "+a+"x^2 + "+b+"x +"+c+" = 0 vô nghiệm.");
+        } else if(delta===0){
+            let x = -b/(2*a);
+            alert("Phương trình "+a+"x^2 + "+b+"x +"+c+" = 0 có nghiệm kép: x1 = x2 = "+x+".");
+        } else{
+            let x1 = (-b+Math.sqrt(delta))/(2*a);
+            let x2 = (-b-Math.sqrt(delta))/(2*a);
+            alert("Phương trình "+a+"x^2 + "+b+"x +"+c+" = 0 có 2 nghiệm: x1 = "+x1+ " và x2 = "+x2+".");
+        }
+    }else{
+        if(b===0){
+            if(c===0){
+                alert("Phương trình "+a+"x^2 + "+b+"x +"+c+" = 0 có vô số nghiệm.");
+            } else{
+                alert("Phương trình "+a+"x^2 + "+b+"x +"+c+" = 0 vô nghiệm.");
+            }
+        } else{
+            x = -c/b;
+            alert("Phương trình "+a+"x^2 + "+b+"x +"+c+" = 0 có nghiệm là: "+x);
+        }
+    }
+</script>
+</body>
+</html>
