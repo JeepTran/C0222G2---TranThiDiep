@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Úng Dụng Máy Tính</title>
+</head>
+<body>
+<h2>Caculator</h2>
+<input type="text" id="a">
+<input type="text" id="b"><br>
+<button type="button" onclick="add()">Addition (+)</button>
+<button type="button" onclick="sub()">Subtraction (-)</button>
+<button type="button" onclick="mul()">Multiplication (*)</button>
+<button type="button" onclick="div()">Division (/)</button>
+<br>
+Result: <i id="result"></i>
+
+<script>
+    let a = document.getElementById("a");
+    let b = document.getElementById("b");
+    let result = null;
+    function add() {
+        result = parseFloat(a.value) + parseFloat(b.value);
+        document.getElementById("result").innerText = result;
+    }
+
+    function sub() {
+        result = parseFloat(a.value) - parseFloat(b.value);
+        document.getElementById("result").innerText = result;
+    }
+
+    function mul() {
+        result = parseFloat(a.value) * parseFloat(b.value);
+        document.getElementById("result").innerText = result;
+    }
+
+    function div() {
+        result = parseFloat(a.value) / parseFloat(b.value);
+        document.getElementById("result").innerText = result;
+    }
+</script>
+</body>
+</html>

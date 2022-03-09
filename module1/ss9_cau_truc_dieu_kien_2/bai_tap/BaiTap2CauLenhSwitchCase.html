@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Câu Lệnh Switch-Case</title>
+</head>
+<body>
+<input type="number" id="month">
+<button type="button" onclick="caculate()">Tính số ngày</button>
+<p id="result">Tháng ... có ... ngày</p>
+<script>
+    function caculate() {
+        let month = parseInt(document.getElementById("month").value);
+        if(month>=1 && month<=12){
+            switch (month) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    document.getElementById("result").innerText = "Tháng " + month + " có 31 ngày.";
+                    break;
+                case 2:
+                    document.getElementById("result").innerText = "Tháng " + month + " có 28 hoặc 29 ngày.";
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    document.getElementById("result").innerText = "Tháng " + month + " có 30 ngày.";
+                    break;
+            };
+        } else
+        {
+            document.getElementById("result").innerText = "Nhập chưa đúng. Không có tháng " + month + ".";
+        }
+    }
+</script>
+</body>
+</html>

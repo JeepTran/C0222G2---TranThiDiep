@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Điều Kiện - Xếp Loại Học Lực</title>
+</head>
+<body>
+<script>
+    let kiemTra=parseFloat(prompt("Điểm Kiểm tra: "));
+    let giuaKy=parseFloat(prompt("Điểm Thi giữa kỳ: "));
+    let cuoiKy=parseFloat(prompt("Điểm Thi cuối kỳ: "));
+    let diemTB= (kiemTra + giuaKy*2 + cuoiKy*3)/6;
+    let hocLuc;
+    if (diemTB>=8.0){
+        hocLuc="Học sinh giỏi";
+    } else if (diemTB>=6.5){
+        hocLuc="Học sinh khá";
+    } else if (diemTB>=5.0){
+        hocLuc="Học sinh trung bình";
+    } else {
+        hocLuc="Học sinh yếu";
+    }
+alert(hocLuc);
+</script>
+</body>
+</html>

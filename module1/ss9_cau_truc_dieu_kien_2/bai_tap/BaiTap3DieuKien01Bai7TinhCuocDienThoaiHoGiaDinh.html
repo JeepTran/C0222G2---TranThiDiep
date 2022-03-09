@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Điều Kiện - Tính cước điện thoại hộ gia đình</title>
+</head>
+<body>
+<!--Phí thuê bao bắt buộc là 25 nghìn.-->
+<!--600 đồng cho mỗi gọi của 50 phút đầu tiên.-->
+<!--400 đồng cho mỗi phút gọi của 150 phút tiếp theo.-->
+<!--200 đồng cho bất kỳ mỗi phút nào sau 200 phút đầu tiên.-->
+<script>
+    const batBuoc=25000;
+    let soPhut= parseInt(prompt("Số phút gọi: "));
+    let tongTien;
+    if (soPhut<=50){
+        tongTien = batBuoc + soPhut*600;
+    } else if (soPhut<=150){
+        tongTien= batBuoc + 50*600 + (soPhut-50)*400;
+    } else {
+        tongTien = batBuoc + 50*600 + 150*400 + (soPhut-200)*200;
+    }
+    alert("Tổng cước điện thoại là: " + tongTien);
+</script>
+</body>
+</html>
