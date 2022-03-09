@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Tính Giá Điện</title>
+</head>
+<body>
+<!--        	Sản lượng(kWh)	Giá điện (đồng/kWh)-->
+<!--Bậc thang 1: 0 - 50     	1678-->
+<!--Bậc thang 2: 51 - 100	    1734-->
+<!--Bậc thang 3: 101 - 200	    2014-->
+<!--Bậc thang 4: 201 - 300	    2536-->
+<!--Bậc thang 5: 301 - 400  	2834-->
+<!--Bậc thang 6: Trên 400	    2927-->
+<script>
+    let dienNang = parseInt(prompt("Tổng điện năng tiêu thụ (kWh): "));
+    const bac1 = 1678;
+    const bac2 = 1734;
+    const bac3 = 2014;
+    const bac4 = 2536;
+    const bac5 = 2834;
+    const bac6 = 2927;
+    let tongTien;
+    if (dienNang >= 0) {
+        if (dienNang <= 50) {
+            tongTien = dienNang * bac1 * 108 / 100;
+        } else if (dienNang <= 100) {
+            tongTien = (50 * bac1 + (dienNang - 50) * bac2) * 108 / 100;
+        } else if (dienNang <= 200) {
+            tongTien = (50 * (bac1 + bac2) + (dienNang - 100) * bac3) * 108 / 100;
+        } else if (dienNang <= 300) {
+            tongTien = (50 * (bac1 + bac2) + 100 * bac3 + (dienNang - 200) * bac4) * 108 / 100;
+        } else if (dienNang <= 400) {
+            tongTien = (50 * (bac1 + bac2) + 100 * (bac3 + bac4) + (dienNang - 300) * bac5) * 108 / 100;
+        } else {
+            tongTien = (50 * (bac1 + bac2) + 100 * (bac3 + bac4 + bac5) + (dienNang - 400) * bac6) * 108 / 100;
+        }
+        alert("Tiền điện tính cho " + dienNang + "kWh là: " + tongTien + ".")
+    } else {
+       alert("Nhập sai.")
+    }
+
+</script>
+</body>
+</html>
