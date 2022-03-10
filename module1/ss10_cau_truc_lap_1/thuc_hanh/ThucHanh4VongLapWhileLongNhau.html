@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực Hành] Vòng Lặp While Lồng Nhau</title>
+</head>
+<body>
+<script>
+    let table;
+    table = "<table width='400' border='1' align='center' cellpadding='2'>"
+    let row = 1;
+    let col = 1;
+    while (row <= 10) {
+        table = table + "<tr>";
+        while (col <= 10) {
+            table = table + "<td>" + row * col + "</td>";
+            col++;
+        }
+        table = table + "</tr>";
+        col = 1;
+        row++;
+    }
+    table = table + "</table>";
+    document.write(table);
+</script>
+</body>
+</html>

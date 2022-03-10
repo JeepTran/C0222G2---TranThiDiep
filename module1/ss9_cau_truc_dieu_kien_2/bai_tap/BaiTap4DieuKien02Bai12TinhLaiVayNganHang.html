@@ -5,6 +5,21 @@
     <title>[Bài Tập] Tính Lãi Vay Ngân Hàng</title>
 </head>
 <body>
-<!--Chưa hoàn thành-->
+<script>
+    // phaiTra = tienGoc * (1 + laiSuat / 100)^soThang
+
+    let soTien = parseInt(prompt("Số tiền vay ban đầu: "));
+    let laiSuat = parseInt(prompt("Lãi suất vay (%/tháng): "));
+    let soThang = parseInt(prompt("Số tháng vay: "));
+    let tienLai = 0;
+    let tongLai = 0;
+    let i;
+    for (i = 1; i <= soThang; i++) {
+        tienLai = laiSuat / 100 * soTien;
+        tongLai += tienLai;
+        soTien = soTien + tienLai;
+    }
+    alert("Tổng tiền lãi: " + tongLai + "tổng tiền: " + soTien);
+</script>
 </body>
 </html>

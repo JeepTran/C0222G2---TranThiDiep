@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực Hành] Vòng Lặp For Lồng Nhau</title>
+</head>
+<body>
+<script>
+
+    let table;
+    table = "<table border='1' width='400' align='center' cellpadding='2'>";
+    for (let row = 1; row <= 10; row++) {
+        table = table + "<tr>";
+        for (let col = 1; col <= 10; col++) {
+            table = table + "<td>" + row * col + "</td>";
+        }
+        table = table + "</tr>";
+    }
+    table = table + "</table>"
+    document.write(table);
+</script>
+</body>
+</html>

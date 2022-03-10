@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực Hành] Sự Kiện Chuột</title>
+    <style>
+        div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            width: 50px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <div><img id="ball"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/1000px-Soccerball.svg.png"
+              alt="ball" align="left" width="200px"/>
+    </div>
+    <div>
+        <p>Click the button to move the ball to the right.</p>
+        <button type="button" onclick="moveRight()">Click</button>
+    </div>
+</form>
+<script>
+    let imgObj = null;
+
+    function init() {
+        imgObj = document.getElementById("ball");
+        imgObj.style.position = "relative";
+        imgObj.style.left = "0px";
+    }
+
+    function moveRight() {
+        imgObj.style.left = parseInt(imgObj.style.left) + 20 + "px";
+    }
+    window.onload=init;
+</script>
+</body>
+</html>
