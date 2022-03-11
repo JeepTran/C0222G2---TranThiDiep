@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Tính tổng 30 số chia hết cho 7 đầu tiên</title>
+</head>
+<body>
+<script>
+    let num = 0;
+    let sum = 0;
+    let count;
+    for (count = 0; count < 30;) {
+
+        if (num % 7 === 0) {
+            sum += num;
+            count++;
+        }
+        num++;
+    }
+    alert("Tổng 30 số tự nhiên đầu tiên chia hết cho 7 là: " + sum)
+
+
+</script>
+</body>
+</html>

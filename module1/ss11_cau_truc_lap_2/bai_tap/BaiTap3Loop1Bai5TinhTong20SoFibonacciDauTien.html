@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Tính tổng 20 số Fibonacci đầu tiên</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let c = 0;
+    let sum = 0;
+    for (let count = 0; count < 20; count++) {
+        sum += a;
+        c = a + b;
+        a = b;
+        b = c;
+    }
+    alert(sum);
+</script>
+</body>
+</html>

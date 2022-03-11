@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+    let countJ = 0;
+    let i = 2;
+
+    let countI = 0;
+    while(countI < 20) {
+
+        for (let j = 1; j <= i; j++) {
+            if (i % j === 0) {
+                countJ++;
+            }
+        }
+        if (countJ === 2) {
+            document.write(i);
+            document.write("<br>");
+            countI++;
+        }
+        countJ = 0;
+        i++;
+    }
+
+</script>
+</body>
+</html>

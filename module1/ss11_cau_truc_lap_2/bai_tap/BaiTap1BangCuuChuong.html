@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Bảng cửu chương</title>
+</head>
+<body>
+<script>
+
+    let table;
+    table = "<table align='center' border='1px' width='100%' cellpadding='2' cellspacing='2'>";
+    for (let row = 1; row <= 9; row++) {
+        table = table + "<tr>";
+        for (let col = 2; col <= 9; col++) {
+            table = table + "<td>" + col + "x" + row + "=" + col * row + "</td>";
+        }
+        table = table + "</tr>";
+    }
+    table = table + "</table>"
+document.write(table);
+
+</script>
+</body>
+</html>

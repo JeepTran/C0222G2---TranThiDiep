@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Loop - Điều chỉnh nhiệt độ</title>
+</head>
+<body>
+<
+<script>
+    let t = parseFloat(prompt("Nhiệt độ hiện tại: "));
+    while (isNaN(t)) {
+        t = prompt("Không phải nhiệt độ. Nhập lại: ")
+    }
+    while (!isNaN(t)) {
+        while (t < 20 || t > 100) {
+            if (t < 20) {
+                t = prompt("Tăng nhiệt độ lên!");
+            }
+            if (t > 100) {
+                t = prompt("Giảm nhiệt độ xuống!")
+            }
+        }
+        alert("Ok!")
+        break;
+    }
+
+</script>
+</body>
+</html>

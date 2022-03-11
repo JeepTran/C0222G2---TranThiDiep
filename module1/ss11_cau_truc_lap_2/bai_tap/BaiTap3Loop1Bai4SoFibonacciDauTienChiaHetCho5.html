@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Tìm số Fibonacci đầu tiên chia hết cho 5</title>
+</head>
+<body>
+<script>
+    let m = 0;
+    let n = 1;
+    let o;
+
+    for ( ; ; ) {
+        o = m + n;
+        m = n;
+        n = o;
+        if (o % 5 === 0) {
+            alert(o + " là số Fibonacci đầu tiên chia hết cho 5.");
+            break;
+        }
+    }
+</script>
+</body>
+</html>
