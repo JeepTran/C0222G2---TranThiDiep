@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] In Tam Giác Vuông 1</title>
+</head>
+<body>
+<script>
+    // Vẽ tam giác 1
+
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+
+    // Vẽ tam giác 2
+
+    for (let a = 5; a >= 1; a--) {
+        for (let b = 1; b <= a; b++) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+
+    // Vẽ tam giác 3
+
+    for (let m = 5; m >= 1; m--) {
+        for (let n = 1; n < m; n++) {
+            document.write("&nbsp&nbsp");
+        }
+        for (let o = 5; o >= m; o--) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+    document.write("<br>");
+
+
+    // Vẽ tam giác 4
+
+    for (let x = 1; x <=5 ; x++) {
+        for (let y = 1; y < x; y++) {
+            document.write("&nbsp&nbsp");
+        }
+        for (let z = 5; z >= x; z--) {
+            document.write("*");
+        }
+        document.write("<br>");
+    }
+</script>
+</body>
+</html>

@@ -9,24 +9,23 @@
 
 <script>
     function play() {
-        var a = parseInt(prompt("Muốn đoán trong khoảng nào? Từ: "));
-        var b = parseInt(prompt("Đến: "));
-        var c;
+        let a = parseInt(prompt("Muốn đoán trong khoảng nào? Từ: "));
+        let b = parseInt(prompt("Đến: "));
+        let c;
         c = Math.floor(Math.random() * (b - a + 1) + a);
-        var d = parseInt(prompt("Đoán số nào trong khoảng trên?: "));
-
-        if (c === d) {
-            alert("Chúc mừng bạn đã đoán đúng!");
-        } else {
-            let count=0;
-            while (count<=5) {
-                if (d > c) {
-                    d = prompt("Cao hơn rồi, đoán lại: ");
-                    count++;
-                } else if (d < c) {
-                    d = prompt("Thấp quá, đoán lại: ");
-                    count++;
-                }
+       alert(c);
+        let d = parseInt(prompt("Đoán số nào trong khoảng trên?: "));
+        let count = 0;
+        while (count < 3) {
+            if (d > c) {
+                d = prompt("Cao hơn rồi, đoán lại: ");
+                count++;
+            } else if (d < c) {
+                d = prompt("Thấp quá, đoán lại: ");
+                count++;
+            } else {
+                alert("Chúc mừng bạn đã đoán đúng!");
+                break;
             }
         }
     }

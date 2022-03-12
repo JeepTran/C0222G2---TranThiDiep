@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Tính Lãi Ngân Hàng</title>
+</head>
+<body>
+<script>
+    let money = parseInt(prompt("Nhập số tiền vay ban đầu: "));
+    let interestRate = parseFloat(prompt("Nhập lãi suất vay hàng tháng (%): "));
+    let month = parseFloat(prompt("Nhập số tháng vay: "));
+    let interest = null;
+    let totalInterest=null;
+    for (let i = 1; i <= month; i++) {
+        interest = interestRate / 100 * money;
+        money += interest;
+        totalInterest+=interest;
+    }
+    document.write("Tổng số tiền lãi là: " + Math.round(totalInterest) + "VNĐ và tổng tiền phải trả là: " + Math.round(money) + "VNĐ.");
+</script>
+</body>
+</html>
