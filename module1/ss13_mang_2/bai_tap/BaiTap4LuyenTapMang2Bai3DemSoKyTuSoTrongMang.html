@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Mảng - Đếm số ký tự số trong mảng</title>
+</head>
+<body>
+<script>
+    let a = new Array(5);
+    let countNumber = null;
+    for (let i = 0; i < a.length; i++) {
+        a[i] = prompt("Nhập bất kỳ chuỗi ký tự nào: ");
+        if (!isNaN(a[i])) {
+            countNumber++;
+        }
+    }
+    document.write("Trong dãy các ký tự được nhập vào [" + a.join(", ") + "] có " + countNumber + " ký tự số.");
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Mảng - Kiểm tra phần tử</title>
+</head>
+<body>
+<script>
+    let number = [];
+    for (let i = 0; i < 10; i++) {
+        number.push(parseInt(prompt("Enter an integer to create array: ")));
+    }
+    let v = parseInt(prompt("Enter an integer to check: "));
+    if (number.indexOf(v) !== -1) {
+        document.write(v + " is in the array [" + number.join(", ") + "].")
+    } else {
+        document.write(v + " is not in the array [" + number.join(", ") + "].")
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Mảng - Giá trị lớn nhất và tính trung bình</title>
+</head>
+<body>
+<script>
+    let number = [];
+    let quantityOfNumber = (prompt("Enter the quantity of needed number: "));
+    let max = 0;
+    let sum = null;
+    let average;
+    for (let i = 0; i < quantityOfNumber; i++) {
+        number.push(parseInt(prompt("Enter an Integer: ")));
+        if (number[i] > max) {
+            max = number[i];
+        }
+        sum += number[i];
+    }
+    average = sum / quantityOfNumber;
+    document.write("Các số được nhập vào (" + number.join(", ") + ") có số lớn nhất max = " + max + " và trung bình average = " + average);
+</script>
+</body>
+</html>

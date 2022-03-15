@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Mảng - Thay thế dấu "-" bằng dấu "_"</title>
+</head>
+<body>
+<script>
+    let array = [0, "-", -2, "2", "3", "-"];
+    for (let i = 0; i < array.length; i++) {
+        array.splice(array.indexOf("-"), 1, ("_"));
+    }
+    document.write(array.join(", "));
+</script>
+</body>
+</html>

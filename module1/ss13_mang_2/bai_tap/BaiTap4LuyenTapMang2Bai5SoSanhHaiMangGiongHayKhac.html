@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Kiểm tra 2 mảng giống hay khác</title>
+</head>
+<body>
+<script>
+    let a = Array();
+    let b = Array();
+    let lengthA = parseInt(prompt("Length of the array a that you want:"));
+    for (let i = 0; i < lengthA; i++) {
+        a[i] = prompt("Enter anything to create array a: ");
+    }
+    let lengthB = parseInt(prompt("Length of the array b that you want:"));
+    for (let j = 0; j < lengthB; j++) {
+        b[j] = prompt("Enter anything to create array b: ");
+    }
+
+    let flag = false;
+    if (a.length === b.length) {
+        for (let k = 0; k < a.length; k++) {
+            if (a[k] === b[k]) {
+                flag = true;
+            } else {
+                flag = false;
+                break;
+            }
+        }
+    }
+    if (flag) {
+        document.write("Array a = [" + a.join(", ") + "]" + "<br>");
+        document.write("Array b = [" + b.join(", ") + "]" + "<br>");
+        document.write("Array a and b are the same.");
+    } else {
+        document.write("Array a = [" + a.join(", ") + "]" + "<br>");
+        document.write("Array b = [" + b.join(", ") + "]" + "<br>");
+        document.write("Array a and b are different.");
+    }
+</script>
+</body>
+</html>

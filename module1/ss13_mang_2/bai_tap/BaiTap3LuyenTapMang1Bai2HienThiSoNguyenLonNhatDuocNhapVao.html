@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Mảng - Hiển thị số nguyên lớn nhất được nhập vào</title>
+</head>
+<body>
+<script>
+    let number = [];
+    let max = 0;
+    let index;
+    for (let i = 0; i < 10; i++) {
+        number.push(parseInt(prompt("Enter an Integer: ")));
+        if (number[i] > max) {
+            max = number[i];
+        }
+    }
+    index = number.indexOf(max);
+    document.write("Trong 10 số được nhập vào (" + number.join(", ") + ") phần tử có giá trị lớn nhất max = " + max + " tại vị trí index = " + index)
+</script>
+</body>
+</html>

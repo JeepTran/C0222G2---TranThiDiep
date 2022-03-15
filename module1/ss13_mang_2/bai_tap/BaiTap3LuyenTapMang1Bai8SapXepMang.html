@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Mảng - Sắp xếp</title>
+</head>
+<body>
+<script>
+    let number = [];
+    let sortedNumber = [];
+    for (let i = 0; i < 10; i++) {
+        number.push(parseInt(prompt("Enter an integer to create array: ")));
+    }
+    document.write("The array is first created: [" + number.join(", ") + "]" + "<br>");
+    sortedNumber = number.sort(function (a, b) {
+        return a - b;
+    })
+    document.write("After being sorted, the array becomes : [" + sortedNumber.join(", ") + "]");
+
+</script>
+</body>
+</html>

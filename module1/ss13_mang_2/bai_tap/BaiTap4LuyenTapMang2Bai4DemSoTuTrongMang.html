@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Mảng - Đếm số từ</title>
+</head>
+<body>
+<script>
+    let array = Array(5);
+    let count = null;
+    for (let i = 0; i < array.length; i++) {
+        array[i] = prompt("Enter anything to create an array: ");
+        if (isNaN(array[i]) && array[i] !== "") {
+            count++;
+        }
+    }
+    document.write("In the array [" + array.join(", ") + "] there are " + count + " strings (not number).");
+
+</script>
+</body>
+</html>

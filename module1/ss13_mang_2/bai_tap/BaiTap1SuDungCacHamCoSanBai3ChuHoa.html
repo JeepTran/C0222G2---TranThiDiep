@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Mảng - Chuyển chữ thường sang chữ hoa</title>
+</head>
+<body>
+<script>
+    let myString = prompt("Nhập chuỗi ký tự: ");
+    const upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const lower = "abcdefghijklmnopqrstuvwxyz";
+    let myArr = [];
+    for (let i = 0; i < myString.length; i++) {
+        if (upper.indexOf(myString[i]) !== -1) {
+            myArr.push(myString[i].toLowerCase());
+        } else if (lower.indexOf(myString[i]) !== -1) {
+            myArr.push(myString[i].toUpperCase());
+        } else myArr.push(myString[i]);
+    }
+    document.write(myArr.join(""));
+</script>
+</body>
+</html>

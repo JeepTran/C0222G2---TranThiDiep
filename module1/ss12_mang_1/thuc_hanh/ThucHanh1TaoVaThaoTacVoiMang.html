@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực Hành] Tạo và Thao tác với mảng</title>
+</head>
+<body>
+<label for ="element"><h3> Sample Screen: </h3></label>
+<input type="text" id="element">
+<button value="add" onclick="addElementToArray()">Add</button>
+<button value="display" onclick="displayArray()">Display</button>
+<div id="result"></div>
+<script>
+    let x=0;
+    let array=Array();
+    function addElementToArray(){
+        array[x]=document.getElementById("element").value;
+        alert("Element: "+array[x]+ " added at index "+x);
+        x++;
+        document.getElementById("element").value="";
+    }
+    function displayArray(){
+        let e = "<hr/>";
+        for (let i=0; i<array.length;i++){
+            e+= "Element "+i+" = "+array[i]+"<br>";
+        }
+        document.getElementById("result").innerHTML=e;
+    }
+</script>
+</body>
+</html>

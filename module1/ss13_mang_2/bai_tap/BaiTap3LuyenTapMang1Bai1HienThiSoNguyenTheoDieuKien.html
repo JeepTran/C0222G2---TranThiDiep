@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Mảng - Hiển Thị Số Nguyên</title>
+</head>
+<body>
+<script>
+    let soNguyen = [];
+    for (let i = 0; i < 10; i++) {
+        soNguyen.push(parseInt(prompt("Nhập 1 số nguyên: ")));
+    }
+    let result = [];
+    for (let k = 0; k < soNguyen.length; k++) {
+        if (soNguyen[k] >= 10) {
+            result.push(soNguyen[k]);
+        }
+    }
+    document.write("Trong 10 số được nhập vào (" + soNguyen.join(", ") + ") có các số lớn hơn hoặc bằng 10 là: " + result.join(", "))
+</script>
+</body>
+</html>

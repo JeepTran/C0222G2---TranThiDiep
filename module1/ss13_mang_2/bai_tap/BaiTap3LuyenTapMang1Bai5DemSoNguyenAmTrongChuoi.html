@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tậ] Mảng - Đếm số nguyên âm trong một chuỗi</title>
+</head>
+<body>
+<script>
+    let number = [];
+    let count = null;
+    for (let i = 0; i < 10; i++) {
+        number.push(prompt("Nhập chữ, số nguyên âm hoặc số nguyên dương: "))
+        if (number[i] % 1 === 0 && number[i] < 0) {
+            count += 1;
+        }
+    }
+    document.write("Trong chuỗi được nhập vào (" + number.join(", ") + ") có " + count + " số nguyên âm.")
+
+</script>
+</body>
+</html>

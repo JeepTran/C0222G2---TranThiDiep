@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Mảng - Chèn dấu "-" vào giữa 2 số chẵn</title>
+</head>
+<body>
+<script>
+    //Bài 2:
+
+    let number = prompt("Enter a multi-digit number: ");
+    let arr = [];
+    for (let i = 0; i < number.length; i++) {
+        arr.push(number.charAt(i));
+        if (number.charAt(i) % 2 === 0
+            && number.charAt(i + 1) % 2 === 0
+            && number.charAt(i + 1) !== "") {
+            arr.push("-");
+        }
+    }
+    document.write(arr.join(""));
+</script>
+</body>
+</html>

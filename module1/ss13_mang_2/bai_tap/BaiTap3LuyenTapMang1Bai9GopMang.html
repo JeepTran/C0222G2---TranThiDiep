@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Gộp Mảng</title>
+</head>
+<body>
+<script>
+    let a = Array(10);
+    let b = Array(10);
+    let c = [];
+    for (let i = 0; i < a.length; i++) {
+        a[i] = parseInt(prompt("Enter an integer to creat array a: "));
+    }
+    for (let j = 0; j < b.length; j++) {
+        b[j] = parseInt(prompt("Enter an integer to creat array b: "));
+    }
+    c = a.concat(b);
+    document.write("Array c is now created: [" + c.join(", ") + "].")
+</script>
+</body>
+</html>
