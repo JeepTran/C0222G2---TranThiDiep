@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = [];
+    for (let i = 0; i < 6; i++) {
+        number.push(parseInt(prompt("Enter an integer to create array: ")));
+    }
+    let numberOrigin = number.map(myFunction);
+    let v = parseInt(prompt("Enter an integer to check: "));
+    let count = null;
+
+    for (let m = 0; m < number.length; m++) {
+        if (number[m] === v) {
+            count++;
+            for (let n = m; n < number.length - 1; n++) {
+                number[n] = number[n + 1];
+            }
+            number[number.length - 1] = 0;
+            m--;
+        }
+    }
+    if (count > 0) {
+        document.write(v + " is in the array [" + numberOrigin.join(", ") + "].");
+        document.write("<br>" + "After remove " + v + " and add 0 to the end, the array becomes [" + number.join(", ") + "].")
+    } else {
+        document.write(v + " is not in the array [" + numberOrigin.join(", ") + "].")
+    }
+
+    function myFunction(num) {
+        return num;
+    }
+</script>
+
+</body>
+</html>
