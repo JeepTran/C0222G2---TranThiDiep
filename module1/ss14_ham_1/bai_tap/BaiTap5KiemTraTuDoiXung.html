@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Kiểm tra từ đối xứng</title>
+</head>
+<body>
+<script>
+    let word = prompt("Enter the word to check: ");
+    let array = word.split("");
+    console.log(array);
+    alert(check(array));
+
+    function check(arr) {
+        if (arr.length < 2) {
+            return true;
+        } else {
+            if (arr[0] === arr[arr.length - 1]) {
+                arr.pop();
+                arr.shift();
+                console.log(arr);
+                return check(arr);
+            } else {
+                return false;
+            }
+
+        }
+    }
+
+</script>
+</body>
+</html>
