@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Hàm kiểm tra số nguyên dương</title>
+</head>
+<body>
+<script>
+    function checkPositiveInteger(num) {
+        if (num > 0 && num % 1 === 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    let a = parseFloat(prompt("Enter an Integer: "));
+    alert(checkPositiveInteger(a));
+</script>
+</body>
+</html>

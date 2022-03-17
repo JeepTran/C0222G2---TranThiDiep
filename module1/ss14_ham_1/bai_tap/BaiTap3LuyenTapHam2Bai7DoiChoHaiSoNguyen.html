@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Hàm đổi chỗ hai số nguyên</title>
+</head>
+<body>
+<script>
+    function reverseNumber(first, second) {
+        let alt = first;
+        first = second;
+        second = alt;
+        return first + ", " + second;
+    }
+
+    let a = parseInt(prompt("Enter the first number: "));
+    let b = parseInt(prompt("Enter the second number: "));
+    alert("Result: " + reverseNumber(a, b));
+</script>
+</body>
+</html>

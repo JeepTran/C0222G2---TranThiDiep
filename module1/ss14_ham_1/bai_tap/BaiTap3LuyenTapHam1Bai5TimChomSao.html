@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Hàm - Tìm chòm sao</title>
+</head>
+<body>
+<script>
+    function findStarGroup(star) {
+        stars = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        groups = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        if (stars.indexOf(star) !== -1) {
+            return "Star " + star + " belongs to group: " + groups[stars.indexOf(star)];
+        } else {
+            return "Can not find the group for: " + star
+        }
+    }
+
+    let star = prompt("Enter the star to check: ")
+    result = findStarGroup(star);
+    alert(result);
+</script>
+</body>
+</html>

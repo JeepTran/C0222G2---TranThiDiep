@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkEqualFrequency(arr) {
+        let countFrequency = [];
+        while (arr.length > 0) {
+            let num = arr[0];
+            let count = 0;
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] === num) {
+                    count++;
+                    arr.splice(i, 1);
+                    i--;
+                }
+            }
+            countFrequency.push(count);
+        }
+        if (countFrequency.length === 1) {
+            return true;
+        }
+        let first = countFrequency[0];
+        for (let i = 1; i < countFrequency.length; i++) {
+            if (countFrequency[i] !== first) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+    }
+
+    let newArray = [1, 2, 3, 2, 3, 3, 1, 2];
+    let result = checkEqualFrequency(newArray);
+    console.log(result);
+
+</script>
+</body>
+</html>

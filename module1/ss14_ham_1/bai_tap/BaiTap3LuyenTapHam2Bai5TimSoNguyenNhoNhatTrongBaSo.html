@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Hàm - Trả về số nguyên nhỏ nhất</title>
+</head>
+<body>
+<script>
+    function findMin(a, b, c) {
+        let min = a;
+        if (b < min) {
+            min = b;
+            if (c < min) {
+                min = c;
+            }
+        } else {
+            if (c < min) {
+                min = c;
+            }
+        }
+        return min;
+    }
+
+    let first = parseInt(prompt("First number: "));
+    let second = parseInt(prompt("Second number: "));
+    let third = parseInt(prompt("Third number: "));
+    alert(findMin(first, second, third));
+</script>
+</body>
+</html>

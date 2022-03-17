@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] Hàm tính chu vi và diện tích hình tròn</title>
+</head>
+<body>
+<script>
+    const PI = 3.1415;
+
+    function dienTich(banKinh) {
+        let result = PI * banKinh * banKinh;
+        return result;
+    }
+
+    function chuVi(banKinh) {
+        let result = PI * banKinh * 2;
+        return result;
+    }
+
+    let r = parseFloat(prompt("Hình tròn có bán kính: "));
+    alert("Hình tròn bán kính " + r + " có diện tích là: " + dienTich(r) + " và chu vi là: " + chuVi(r));
+</script>
+</body>
+</html>

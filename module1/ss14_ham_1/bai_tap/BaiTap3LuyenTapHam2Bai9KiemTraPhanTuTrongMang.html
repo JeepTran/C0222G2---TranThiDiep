@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Hàm kiểm tra phần tử trong mảng</title>
+</head>
+<body>
+<script>
+    function checkElementOfArray(arr, character) {
+        let count = null;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === character) {
+                count++;
+            }
+        }
+        if (count > 0) {
+            return count;
+        } else {
+            return -1;
+        }
+    }
+
+    let arr1 = ["s", "d", "f", "h", "d", "c", "h", "d",];
+    let char1 = "a";
+    let char2 = "d";
+    console.log(checkElementOfArray(arr1, char1));
+    console.log(checkElementOfArray(arr1, char2));
+</script>
+</body>
+</html>
