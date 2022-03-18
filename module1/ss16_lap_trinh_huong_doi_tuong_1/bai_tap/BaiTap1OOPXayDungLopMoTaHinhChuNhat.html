@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] OOP - Mô Tả Hình Chữ Nhật</title>
+</head>
+<body>
+<script>
+    class Retangle {
+        constructor(chieuDai, chieuRong) {
+            this.chieuDai = chieuDai;
+            this.chieuRong = chieuRong;
+        }
+
+        setChieuDai(chieuDaiMoi) {
+            this.chieuDai = chieuDaiMoi;
+        }
+
+        setChieuRong(chieuRongMoi) {
+            this.chieuRong = chieuRongMoi;
+        }
+
+        dienTich() {
+            return this.chieuDai * this.chieuRong;
+        }
+
+        chuVi() {
+            return (this.chieuDai + this.chieuRong) * 2;
+        }
+    }
+
+    let hinhChuNhat = new Retangle(10, 5);
+    document.write("Hình chữ nhật có chiều dài " + hinhChuNhat.chieuDai + " và chiều rộng " + hinhChuNhat.chieuRong + "<br>");
+    document.write("Diện tích: " + hinhChuNhat.dienTich() + "<br>");
+    document.write("Chu vi: " + hinhChuNhat.chuVi() + "<br>" + "<br>");
+
+    hinhChuNhat.setChieuDai(200);
+    hinhChuNhat.setChieuRong(50);
+    document.write("Hình chữ nhật có chiều dài " + hinhChuNhat.chieuDai + " và chiều rộng " + hinhChuNhat.chieuRong + "<br>");
+    document.write("Diện tích: " + hinhChuNhat.dienTich() + "<br>");
+    document.write("Chu vi: " + hinhChuNhat.chuVi() + "<br>" + "<br>");
+</script>
+</body>
+</html>

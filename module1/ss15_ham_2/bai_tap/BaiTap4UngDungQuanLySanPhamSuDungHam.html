@@ -53,11 +53,13 @@
     function displayProduct(product) {
         let table = "<table id = 'display'>";
         table += "<tr>"
+            + "<td style='padding:10px'></td>"
             + "<td align='left'>" + "<b>" + "Product Name" + "</b>" + "</td>"
             + "<td align='right' colspan='2' style = 'color: #a52a2a'> " + "<b>" + listProduct.length + " products" + "</b>" + "</td>"
             + "</tr >";
         for (let i = 0; i < listProduct.length; i++) {
             table += "<tr id=i>";
+            table += "<td>" + (i+1) + "</td>";
             table += "<td>" + listProduct[i] + "</td>";
             table += "<td>" + "<button onclick='editProduct(" + i + ")'>Edit</button>" + "</td>";
             table += "<td>" + "<button onclick='deleteProduct(" + i + ")' id='delProduct'>Delete</button>" + "</td>";
@@ -71,12 +73,21 @@
         if (check === true) {
 
             newProduct = document.getElementById("newProduct").value;
-            listProduct.push(newProduct);
+            if (newProduct !== "") {
+                listProduct.push(newProduct);
+            } else {
+                alert("You need to input before adding!")
+            }
+
             displayProduct(listProduct);
             document.getElementById("newProduct").value = "";
         } else {
             newProduct = document.getElementById("newProduct").value;
-            listProduct[indexEdit] = newProduct;
+            if (newProduct !== "") {
+                listProduct[indexEdit] = newProduct;
+            } else {
+                alert("The product name should not be empty!");
+            }
             check = true;
             document.getElementById("newProduct").value = "";
 
@@ -94,8 +105,13 @@
 
 
     function deleteProduct(index) {
-        listProduct.splice(index, 1);
-        displayProduct();
+        let conf = confirm("Are you sure to delete product " + listProduct[index] + "?");
+        if (conf) {
+            listProduct.splice(index, 1);
+            displayProduct(listProduct);
+        } else {
+            alert("This product is not deleted!")
+        }
     }
 </script>
 

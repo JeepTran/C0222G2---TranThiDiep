@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] OOP Xây dựng lớp Date</title>
+</head>
+<body>
+<script>
+    class Date {
+        constructor(day, month, year) {
+            if (!(isNaN(day) || day < 1 || day % 1 !== 0 || day > 31
+                || isNaN(month) || month < 1 || month % 1 !== 0 || month > 12
+                || isNaN(year) || year < 1900 || year % 1 !== 0 || year > 9999)) {
+                this.day = day;
+                this.month = month;
+                this.year = year;
+            } else {
+                return alert("Không phải định dạng ngày tháng năm!");
+            }
+        }
+
+        getDay() {
+            return this.day;
+        }
+
+        getMonth() {
+            return this.month;
+        }
+
+        getYear() {
+            return this.year;
+        }
+
+        setDay(newDay) {
+            this.day = newDay;
+        }
+
+        setMonth(newMonth) {
+            this.month = newMonth;
+        }
+
+        setYear(newYear) {
+            this.year = newYear;
+        }
+
+        setDate(newDay, newMonth, newYear) {
+            this.day = newDay;
+            this.month = newMonth;
+            this.year = newYear;
+        }
+
+        toDateString() {
+            return this.day + "/" + this.month + "/" + this.year;
+        }
+    }
+
+    let date = new Date(12, 3, 1913);
+    console.log(date);
+    console.log(date.getDay());
+    console.log(date.getMonth());
+    console.log(date.getYear());
+    console.log(date.toDateString());
+
+    date.setDay(10);
+    date.setMonth(5);
+    date.setYear(3000);
+    console.log(date.getDay());
+    console.log(date.getMonth());
+    console.log(date.getYear());
+    console.log(date.toDateString());
+
+    date.setDate(11, 22, 5100);
+    console.log(date.getDay());
+    console.log(date.getMonth());
+    console.log(date.getYear());
+    console.log(date.toDateString());
+
+
+</script>
+</body>
+</html>
