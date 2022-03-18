@@ -47,7 +47,6 @@
     let check = true;
     let indexEdit;
     let listProduct = ["Sony Xperia", "Samsung Galaxy", "Nokia 6", "Xiaomi Redmi Note 4", "Apple iPhone 6S", "Xiaomi Mi 5s Plus", "Apple iPhone 8 Plus", "Fujitsu F-04E", "Oppo A71"];
-    // let listProduct = ["Sony Xperia", "Samsung Galaxy", "Nokia 6"];
 
     displayProduct(listProduct);
 
@@ -71,7 +70,6 @@
     function addNewProduct() {
         if (check === true) {
 
-
             newProduct = document.getElementById("newProduct").value;
             listProduct.push(newProduct);
             displayProduct(listProduct);
@@ -87,7 +85,6 @@
     }
 
     function editProduct(index) {
-        // listProduct[index] = "<input type='text' value = " + listProduct[index] + ">"
         document.getElementById("newProduct").value = listProduct[index];
         check = false;
         indexEdit = index;
