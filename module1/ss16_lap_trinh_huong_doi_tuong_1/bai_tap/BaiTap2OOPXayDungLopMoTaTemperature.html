@@ -7,10 +7,45 @@
 <body>
 <script>
     class Temperature {
-        constructor(Celsius) {
-            this.
+        constructor(celsiusDegree) {
+            if (!isNaN(celsiusDegree) && celsiusDegree >= -273) {
+                this.celsius = celsiusDegree;
+            } else {
+                return alert("Not Celsius degree value!")
+            }
+        }
+
+        getCelsius() {
+            return this.celsius;
+        }
+
+        setCelsius(newDegree) {
+            if (!isNaN(newDegree) && newDegree >= -273) {
+                this.celsius = newDegree;
+            } else {
+                return alert(newDegree+" is not Celsius degree value!")
+            }
+        }
+
+        convertToF() {
+            return this.celsius * 9 / 5 + 32;
+        }
+
+        convertToK() {
+            return this.celsius + 273.15;
         }
     }
+
+    let c = new Temperature(25);
+    let f = c.convertToF();
+    let k = c.convertToK();
+    document.write(c.getCelsius() + " C degree = " + f + " F degree" + "<br>");
+    document.write(c.getCelsius() + " C degree = " + k + " K degree" + "<br>");
+
+    c.setCelsius(-8);
+    document.write(c.getCelsius()+"<br>");
+    document.write(c.getCelsius() + " C degree = " + c.convertToF() + " F degree" + "<br>");
+    document.write(c.getCelsius() + " C degree = " + c.convertToK() + " K degree" + "<br>");
 </script>
 </body>
 </html>
