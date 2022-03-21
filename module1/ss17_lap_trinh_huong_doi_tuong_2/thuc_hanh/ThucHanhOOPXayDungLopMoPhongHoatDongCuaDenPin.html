@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Thực hành] OOP - Mô phỏng hoạt động của đèn pin</title>
+</head>
+<body>
+<script>
+    class Battery {
+        constructor(energy) {
+            this.energy = energy;
+        }
+
+        setEnergy(energy) {
+            this.energy = energy;
+        }
+
+        getEnergy() {
+            return this.energy;
+        }
+
+        decreaseEnergy() {
+            if (this.energy > 0) {
+                this.energy--;
+            }
+        }
+    }
+
+    class Lamp {
+        constructor(battery) {
+            this.battery = battery;
+            this.status = false;
+        }
+
+        setBattery(battery) {
+            this.battery = battery;
+        }
+
+        getBattery() {
+            return this.battery;
+        }
+
+        light() {
+            if (this.battery > 10) {
+                this.status = true;
+                console.log("Đèn đang bật.")
+            } else {
+                this.status = false;
+                console.log("Đèn đang tắt.")
+            }
+        }
+
+        turnOn() {
+            this.status = true;
+            if (this.battery>10){
+                console.log("Đèn đang bật.")
+            } else {console.log("Đèn đang tắt.")}
+        }
+
+        turnOff() {
+            this.status = false;
+            console.log("Đèn đang tắt.")
+        }
+    }
+
+    let pin1 = new Battery(20);
+    let den1 = new Lamp(pin1.getEnergy());
+    den1.turnOn();
+    den1.turnOff();
+
+    den1.setBattery(1);
+    console.log(den1.getBattery());
+    den1.light();
+
+    den1.setBattery(11);
+    den1.light();
+
+    den1.turnOff();
+
+    den1.turnOn();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] OOP - Mô tả điện thoại</title>
+</head>
+<body>
+<script>
+
+    class Mobile {
+        constructor() {
+            this.status = true;
+            this.battery = 8;
+            this.typingMemory = "";
+            this.inboxMemory = [];
+            this.sentMemory = [];
+        }
+
+        getBattery() {
+            if (this.battery > 0) {
+                return this.battery;
+            } else {
+                return "Điện thoại hết pin."
+            }
+
+        }
+
+        charge() {
+            this.battery = 100;
+        }
+
+        checkStatus() {
+            if (this.battery > 0 && this.status) {
+                console.log("Điên thoại đang bật.")
+            } else {
+                console.log("Điện thoại đang tắt.")
+            }
+        }
+
+        PowerOnOff() {
+            this.status = !this.status;
+        }
+
+
+        typingMessage(message) {
+            this.typingMemory = message;
+            this.battery--;
+        }
+
+        receiveMessage(message) {
+            this.inboxMemory = message;
+            this.battery--;
+        }
+
+        sendMessage(mobile, message) {
+            this.typingMessage(message);
+            this.sentMemory.push(this.typingMemory);
+            mobile.receiveMessage(this.typingMemory);
+            this.typingMemory = "";
+            this.battery--;
+        }
+
+        displayReceivedMessage() {
+            console.log(this.inboxMemory);
+            this.battery--;
+        }
+
+        displaySentMessage() {
+            console.log(this.sentMemory);
+            this.battery--;
+        }
+
+    }
+
+    let nokia = new Mobile();
+    let iphone = new Mobile();
+    let sony = new Mobile();
+    nokia.sendMessage(iphone, "Hello, iphone!");
+    iphone.displayReceivedMessage();
+    sony.sendMessage(iphone, "How are you, iphone?");
+    iphone.displayReceivedMessage();
+    iphone.sendMessage(nokia, "Hello, nokia!");
+    iphone.sendMessage(sony, "Hello, sony!");
+    nokia.displayReceivedMessage();
+    sony.displayReceivedMessage();
+    iphone.displaySentMessage();
+    nokia.displaySentMessage();
+    sony.displaySentMessage();
+    console.log(iphone.getBattery());
+    console.log(nokia.getBattery());
+    console.log(sony.getBattery());
+    sony.charge();
+    console.log(sony.getBattery());
+    console.log(iphone.checkStatus());
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] OOP - Game đơn giản, di chuyển đối tượng</title>
+</head>
+<body>
+<div id="game"></div>
+<script>
+
+
+        function Hero(image, top, left, size){
+            this.image = image;
+            this.top = top;
+            this.left = left;
+            this.size = size;
+
+            this.getHeroElement = function(){
+                return '<img width="'+ this.size + '"' +
+                    ' height="'+ this.size + '"' +
+                    ' src="' + this.image +'"' +
+                    ' style="top: '+this.top+'px; left:'+this.left+'px;position:absolute;" />';
+            }
+
+            this.moveRight = function(){
+                this.left += 20;
+                console.log('ok: ' + this.left);
+            }
+            this.moveDown = function(){
+                this.top += 20;
+                console.log('ok: ' + this.top);
+            }
+
+        }
+
+        var hero = new Hero('https://upload.wikimedia.org/wikipedia/vi/2/2f/Jerry_Mouse.png', 20, 30, 200);
+
+        function start(){
+            if(hero.left < window.innerWidth - hero.size) {
+                hero.moveRight();
+            }
+                if(hero.top < window.innerHeight - hero.size){
+                hero.moveDown();
+            }
+            document.getElementById('game').innerHTML = hero.getHeroElement();
+            setTimeout(start, 500)
+        }
+
+        start();
+
+    // class Hero {
+    //     constructor(image, top, left, size) {
+    //         this.image = image;
+    //         this.top = top;
+    //         this.left = left;
+    //         this.size = size;
+    //     }
+    //
+    //     getHeroImage() {
+    //         return "<img width= '" + this.size + "' height='" + this.size + "' src='" + this.image + "' style='top:" + this.top + " px; left:" + this.left + " px;position:absolute;'/>";
+    //     }
+    //
+    //     moveRight() {
+    //         this.left += 30;
+    //         console.log('ok: ' + this.left);
+    //     }
+    //
+    // }
+    //
+    // let hero = new Hero('https://cdn.pixabay.com/photo/2020/07/21/16/10/pokemon-5426712__480.png', 20, 30, 200);
+    //
+    // start();
+    //
+    // function start() {
+    //     if (hero.left < window.innerWidth - hero.size) {
+    //         hero.moveRight();
+    //     }
+    //     document.getElementById('game').innerHTML = hero.getHeroImage();
+    //     setTimeout(start(), 500);
+    // }
+
+</script>
+</body>
+</html>

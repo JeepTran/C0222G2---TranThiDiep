@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] OOP - Tương tác giữa 2 đối tượng: Bóng đèn và công tắc</title>
+</head>
+<body>
+<script>
+    class Lamp {
+        constructor() {
+            this.status = false;
+        }
+
+        turnOn() {
+            this.status = true;
+            alert("Bóng đèn đang bật.");
+        }
+
+        turnOff() {
+            this.status = false;
+            alert("Bóng đèn đang tắt.");
+        }
+    }
+
+    class Switch {
+        constructor() {
+            this.status = false;
+        }
+
+        connectToLamp(lamp) {
+            this.lamp = lamp;
+        }
+
+        switchOn(lamp) {
+            this.lamp.turnOn();
+        }
+
+        switchOff() {
+            this.lamp.turnOff();
+        }
+    }
+
+    let bongDen1 = new Lamp();
+    let congTac1 = new Switch();
+    congTac1.connectToLamp(bongDen1);
+
+    // Bật tắt công tắc 10 lần:
+    for (let i = 0; i < 10; i++) {
+        congTac1.switchOn();
+        congTac1.switchOff();
+    }
+</script>
+</body>
+</html>
