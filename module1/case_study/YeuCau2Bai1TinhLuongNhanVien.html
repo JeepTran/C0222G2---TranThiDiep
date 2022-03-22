@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Case Study] YC2B1 Tính lương nhân viên</title>
+</head>
+<body>
+<script>
+    let income = parseInt(prompt("Nhập lương: "));
+    let incomeTax;
+    let netIncome;
+    if (income >= 15000000) {
+        incomeTax = 20 / 100 * income;
+    } else if (income >= 7000000) {
+        incomeTax = 10 / 100 * income;
+    } else {
+        incomeTax = 5 / 100 * income;
+    }
+    netIncome = income - incomeTax;
+    document.write("Lương: " + income + "<br>")
+    document.write("Thuế thu nhập: " + incomeTax + "<br>")
+    document.write("Lương ròng: " + netIncome + "<br>")
+
+</script>
+</body>
+</html>

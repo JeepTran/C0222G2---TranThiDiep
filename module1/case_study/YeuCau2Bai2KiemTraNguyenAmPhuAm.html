@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Case Study] YC2B2 Kiểm tra ký tự nguyên âm - phụ âm</title>
+</head>
+<body>
+<script>
+    let letter = prompt("Enter only 1 letter to check: ");
+    let flag = false;
+    switch (letter) {
+        case 'u':
+            flag = true;
+            break;
+        case 'e':
+            flag = true;
+            break;
+        case 'o':
+            flag = true;
+            break;
+        case 'a':
+            flag = true;
+            break;
+        case 'i':
+            flag = true;
+            break;
+        case 'U':
+            flag = true;
+            break;
+        case 'E':
+            flag = true;
+            break;
+        case 'O':
+            flag = true;
+            break;
+        case 'A':
+            flag = true;
+            break;
+        case 'I':
+            flag = true;
+            break;
+        default:
+            flag;
+    }
+    if (flag) {
+        document.write(letter + " là nguyên âm.");
+    } else {
+        document.write(letter + " không phải là nguyên âm.");
+    }
+</script>
+</body>
+</html>

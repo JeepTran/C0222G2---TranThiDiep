@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+</head>
+<body>
+<canvas id="my canvas" width="500px" height="300px"></canvas>
+<script>
+    let c = document.getElementById("my canvas");
+    let ctx = c.getContext("2d");
+
+    // Vẽ HCN: fillStyle ="color" gán CSS, fillRect (x,y,width,height)
+    ctx.fillStyle = "green";
+    ctx.fillRect(0,0,150,75);
+
+    // Vẽ đoạn thẳng: moveTo(x,y) điểm bắt đầu, lineTo(x,y) điểm kết thúc
+    ctx.moveTo(0,75);
+    ctx.lineTo(150,150);
+    ctx.stroke();
+
+    // Vẽ đường tròn: arc(x,y,r,start,stop) tâm tại tọa độ x,y, bán kính r, bắt đầu từ (0), kết thúc (2*Math.PI --> 1 vòng tròn)
+    ctx.beginPath();
+    ctx.arc(400, 80, 70, 0, 2 * Math.PI);
+    ctx.stroke();
+
+    // Viết chữ:
+    ctx.font="50px Verdana";
+    ctx.strokeText("Hello", 170,75);
+
+
+
+</script>
+
+
+</body>
+</html>

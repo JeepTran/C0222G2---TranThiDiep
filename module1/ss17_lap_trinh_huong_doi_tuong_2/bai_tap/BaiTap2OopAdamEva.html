@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài Tập] OOP - Mô phỏng câu chuyện Adam và Eva</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor() {
+            this.weight = 10;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        decrease() {
+            if (this.weight > 0) {
+                this.weight--;
+            }
+        }
+
+        isEmpty() {
+            if ( this.weight === 0){
+                console.log("Táo đã hết.");
+                return true;
+            } else{
+                return false;
+            }
+        }
+    }
+
+    class Human {
+        constructor(name, gender, weight) {
+            this.name = name;
+            this.gender = gender;
+            this.weight = weight;
+        }
+
+        getName() {
+            return this.name;
+        }
+
+        setName(name) {
+            this.name = name;
+        }
+
+        getWeight() {
+            return this.weight;
+        }
+
+        setWeight(weight) {
+            this.weight = weight;
+        }
+
+        isMale() {
+            return this.gender === "male";
+        }
+
+        setGender(gender) {
+            this.gender = gender;
+        }
+
+        say(string) {
+            console.log(this.name +": "+string);
+        }
+
+
+        checkApple(apple) {
+            return !apple.isEmpty();
+        }
+
+        eat(apple) {
+            if (this.checkApple(apple)) {
+                apple.decrease();
+                this.weight++;
+            }
+        }
+    }
+
+
+    let redApple = new Apple();
+    let adam = new Human("Adam", "male", 30);
+    let eva = new Human("Eva", "female", 20);
+    console.log(adam.isMale());
+    console.log(eva.isMale());
+    adam.say("Hi Eva, I have an apple. Would you like to eat?");
+    eva.say("Thanks Adam. That's great! Let's eat together.");
+    console.log("At first, the red apple's weight is: " + redApple.getWeight());
+
+    eva.eat(redApple);
+    adam.eat(redApple);
+    eva.eat(redApple);
+    adam.eat(redApple);
+    eva.eat(redApple);
+    adam.eat(redApple);
+    adam.eat(redApple);
+    adam.eat(redApple);
+    adam.eat(redApple);
+    adam.eat(redApple);
+    eva.eat(redApple);
+
+    adam.eat(redApple);
+    console.log("Now, the apple's weight is: " + redApple.getWeight() + ". And the weight of Adam and Eva is: " + adam.getWeight() + ", " + eva.getWeight())
+
+
+</script>
+</body>
+</html>

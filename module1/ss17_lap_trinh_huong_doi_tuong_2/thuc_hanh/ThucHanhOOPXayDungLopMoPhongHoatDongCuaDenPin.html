@@ -40,45 +40,37 @@
             return this.battery;
         }
 
+        checkEnergyAvailable() {
+            return this.battery.getEnergy() > 0;
+        }
+
         light() {
-            if (this.battery > 10) {
-                this.status = true;
-                console.log("Đèn đang bật.")
+            if (this.status && this.checkEnergyAvailable()) {
+                alert("Lighting");
             } else {
-                this.status = false;
-                console.log("Đèn đang tắt.")
+                alert("Not lighting");
+
             }
         }
 
         turnOn() {
             this.status = true;
-            if (this.battery>10){
-                console.log("Đèn đang bật.")
-            } else {console.log("Đèn đang tắt.")}
         }
 
         turnOff() {
             this.status = false;
-            console.log("Đèn đang tắt.")
         }
     }
 
-    let pin1 = new Battery(20);
-    let den1 = new Lamp(pin1.getEnergy());
-    den1.turnOn();
-    den1.turnOff();
-
-    den1.setBattery(1);
-    console.log(den1.getBattery());
-    den1.light();
-
-    den1.setBattery(11);
-    den1.light();
-
-    den1.turnOff();
-
-    den1.turnOn();
-
+    let pin = new Battery(20)
+    let den = new Lamp(pin);
+    den.turnOn();
+    den.light()
+    pin.setEnergy(0)
+    den.setBattery(pin)
+    den.light()
+    // den.setBattery(new Battery(30))
+    // den.turnOn()
 
 </script>
 </body>
