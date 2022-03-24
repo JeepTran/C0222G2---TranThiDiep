@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Case Study] Menu thức uống</title>
+</head>
+<body>
+<script>
+    let number = [1, 2, 3, 4, 5, 6]
+    let menu = ['Cafe', 'Cam vắt', 'Nước ép cà rốt', 'Nước ép cà chua', 'Nước lọc', 'Nước dừa'];
+    let price = [15000, 30000, 25000, 25000, 10000, 25000];
+    let chosenDrink = "";
+    let cost;
+    let totalCost = null;
+    do {
+        let flag = true;
+        while (flag) {
+            let order = parseInt(prompt("Chọn STT thức uống: \n 1. Cafe, \n 2. Cam vắt, \n 3. Nước ép cà rốt, \n 4. Nước ép cà chua, \n 5. Nước lọc, \n 6. Nước dừa, \n 7. Thoát gọi món"));
+            console.log(order);
+            if (order !== 7) {
+                for (let i = 0; i < number.length; i++) {
+                    if (order === number[i]) {
+                        alert(menu[i] + " có giá: " + price[i]);
+                        let quantity = parseInt(prompt("Nhập số lượng: "));
+                        while (isNaN(quantity)) {
+                            quantity = parseInt(prompt("Nhập số lượng: "));
+                        }
+                        chosenDrink += quantity + " " + menu[i] + ", ";
+                        cost = price[i] * quantity;
+                        totalCost += cost;
+                    }
+                }
+            }
+            if (order === 7) {
+                alert("Bạn đã chọn: " + chosenDrink + " Tổng tiền: " + totalCost);
+                flag = false;
+            }
+        }
+
+    } while (order > 0 && order < 8)
+
+
+</script>
+</body>
+</html>

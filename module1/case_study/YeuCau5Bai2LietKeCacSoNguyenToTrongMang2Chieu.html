@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Case Study] Hàm liệt kê các số nguyên tố trong mảng 2 chiều</title>
+</head>
+<body>
+<script>
+    function listPrimes(arr) {
+        let listPrimes = [];
+
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr[i].length; j++) {
+                if (arr[i][j] > 1 && arr[i][j] % 1 === 0) {
+                    let count = 0;
+                    for (let k = 2; k < arr[i][j]; k++) {
+                        if (arr[i][j] % k === 0) {
+                            count++;
+                        }
+                    }
+                    if (count === 0) {
+                        listPrimes.push(arr[i][j]);
+                    }
+                }
+            }
+        }
+        console.log(listPrimes);
+    }
+
+    let array1 = [[1,3.5, 2, 5], [6, 7, 0, 9], [11, 13, 0, 7, 6]];
+    listPrimes(array1);
+
+</script>
+</body>
+</html>

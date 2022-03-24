@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Case Study] Tìm mảng chỉ chứa phần tử xuất hiện ở mảng 2 so với mảng 1</title>
+</head>
+<body>
+<script>
+    let a = [7, 2, 5, 3, 5, 3, 1, 2];
+    let b = [7, 2, 5, 4, 6, 3, 5, 3, 8, 9, 0];
+    let c = b.map(value => {
+        return value
+    });
+    for (let i = 0; i < c.length; i++) {
+        if (a.indexOf(c[i]) !== -1) {
+            c.splice(i, 1);
+            i--;
+        }
+    }
+    console.log(c);
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YC4B3 Tìm số lượng kí tự chung của 2 xâu</title>
+</head>
+<body>
+<script>
+    let s1="hello";
+    let arr1=s1.split("");
+    let s2 = "hello world";
+    let arr2=s2.split("");
+    let count=0;
+    for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+            if (arr1[i] === arr2[j]) {
+                count++;
+                arr1.splice(i, 1);
+                arr2.splice(j, 1);
+                i--;
+                break;
+            }
+        }
+    }
+    console.log(count);
+</script>
+</body>
+</html>

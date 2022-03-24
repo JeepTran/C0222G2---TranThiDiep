@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Case Study] Tìm chỉ số của phân số lớn nhất</title>
+</head>
+<body>
+<script>
+    let numerators = [5, 2, 5, 2, 7, 4];
+    let denominators = [6, 3, 4, 4, 2, 8];
+    let maxFraction = numerators[0] / denominators[0];
+    let numerOfMax;
+    let denomOfMax;
+    let indexOfMax;
+    for (let i = 1; i < numerators.length; i++) {
+        if (numerators[i] / denominators[i] > maxFraction) {
+            maxFraction = numerators[i] / denominators[i];
+            numerOfMax = numerators[i];
+            denomOfMax = denominators[i];
+            indexOfMax = i;
+        }
+    }
+    console.log("Max fraction is: " + numerOfMax + "/" + denomOfMax);
+    console.log("The index of the max fraction is: " + indexOfMax)
+</script>
+</body>
+</html>

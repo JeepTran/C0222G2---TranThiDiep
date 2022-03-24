@@ -2,9 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>[Case Study] Mảng 2 là prefix sum của mảng 1</title>
 </head>
 <body>
+<script>
+    let a = [1, 2, 3, 5, 4, 2, 7, 5, 1];
+    let b = [];
+    let prefixSum = null;
+    for (let i = 0; i < a.length; i++) {
+        prefixSum += a[i];
+        b[i] = prefixSum;
+    }
+    console.log(b);
 
+</script>
 </body>
 </html>
