@@ -4,38 +4,67 @@
     <meta charset="UTF-8">
     <title>[Case Study] OOP - Vietlot</title>
     <style>
+        body{
+            background-color: cadetblue;
+        }
         input {
             width: 40px;
             height: 40px;
             border-radius: 100px;
-            border: 1px black solid;
+            border: 1px darkcyan solid;
             text-align: center;
+            background-color: darkcyan;
+            font-weight: bold;
+            color: white;
+        }
+
+        .display {
+            width : 60%;
+            background-color: lightcyan;
+            border-radius: 20px;
+            align-content: center;
+            display: inline-block;
+            position: relative;
+            text-align: center;
+            left: 20%;
+            top: 25%;
+        }
+        button{
+            width: 80px;
+            height: 30px;
+            background-color: darkcyan;
+            border-radius: 20px;
+            border: 1px cadetblue solid;
+            font-size: medium;
+            color: white;
         }
     </style>
 </head>
 <body>
-<h3>Vietlott Codegym</h3>
-<div>
-    <input type="button" id="firstNum">
-    <input type="button" id="secondNum">
-    <input type="button" id="thirdNum">
-    <input type="button" id="fourthNum">
-    <input type="button" id="fifthNum">
-    <input type="button" id="sixthNum">
+<div class="display">
+    <h2 style="color: chocolate">VIETLOTT CODEGYM</h2>
+    <div>
+        <input type="button" id="firstNum">
+        <input type="button" id="secondNum">
+        <input type="button" id="thirdNum">
+        <input type="button" id="fourthNum">
+        <input type="button" id="fifthNum">
+        <input type="button" id="sixthNum">
+    </div>
+    <br>
+    <div>
+        <input type="button" id="firstResult">
+        <input type="button" id="secondResult">
+        <input type="button" id="thirdResult">
+        <input type="button" id="fourthResult">
+        <input type="button" id="fifthResult">
+        <input type="button" id="sixthResult">
+    </div>
+    <br>
+    <button onclick="buyTicket()">Start</button>
+    <button onclick="displayResult()">Result</button>
+    <h4 id="announceResult" style="color: chocolate"></h4>
 </div>
-<br>
-<div>
-    <input type="button" id="firstResult">
-    <input type="button" id="secondResult">
-    <input type="button" id="thirdResult">
-    <input type="button" id="fourthResult">
-    <input type="button" id="fifthResult">
-    <input type="button" id="sixthResult">
-</div>
-<br>
-<button onclick="buyTicket()">Start</button>
-<button onclick="displayResult()">Result</button>
-<h4 id="announceResult" style="color: red"></h4>
 
 <script>
     class Vietlott {
@@ -201,12 +230,12 @@
             if (buyer.getThird() === system.getThird() &&
                 buyer.getSecond() === system.getSecond()) {
                 if (buyer.getFirst() === system.getFirst()) {
-                    document.getElementById("announceResult").innerHTML = "Congratulations! You won the first prize: 10 billion VND!"
+                    document.getElementById("announceResult").innerHTML = "Congratulations!\n You won the first prize: 10 billion VND!"
                 } else {
-                    document.getElementById("announceResult").innerHTML = "Congratulations! You won the second prize: 100 million VND!"
+                    document.getElementById("announceResult").innerHTML = "Congratulations!\n You won the second prize: 100 million VND!"
                 }
             } else {
-                document.getElementById("announceResult").innerHTML = "Congratulations! You won the third prize: 10 million VND!"
+                document.getElementById("announceResult").innerHTML = "Congratulations!\n You won the third prize: 10 million VND!"
             }
         } else {
             document.getElementById("announceResult").innerHTML = "Thank you. Better luck next time!"
