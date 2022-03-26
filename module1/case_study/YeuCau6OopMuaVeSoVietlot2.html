@@ -6,7 +6,8 @@
     <style>
         input {
             width: 40px;
-            border-radius: 3px;
+            height: 40px;
+            border-radius: 100px;
             border: 1px black solid;
             text-align: center;
         }
@@ -15,21 +16,21 @@
 <body>
 <h3>Vietlott Codegym</h3>
 <div>
-    <input type="text" id="firstNum">
-    <input type="text" id="secondNum">
-    <input type="text" id="thirdNum">
-    <input type="text" id="fourthNum">
-    <input type="text" id="fifthNum">
-    <input type="text" id="sixthNum">
+    <input type="button" id="firstNum">
+    <input type="button" id="secondNum">
+    <input type="button" id="thirdNum">
+    <input type="button" id="fourthNum">
+    <input type="button" id="fifthNum">
+    <input type="button" id="sixthNum">
 </div>
 <br>
 <div>
-    <input type="text" id="firstResult">
-    <input type="text" id="secondResult">
-    <input type="text" id="thirdResult">
-    <input type="text" id="fourthResult">
-    <input type="text" id="fifthResult">
-    <input type="text" id="sixthResult">
+    <input type="button" id="firstResult">
+    <input type="button" id="secondResult">
+    <input type="button" id="thirdResult">
+    <input type="button" id="fourthResult">
+    <input type="button" id="fifthResult">
+    <input type="button" id="sixthResult">
 </div>
 <br>
 <button onclick="buyTicket()">Start</button>
@@ -102,83 +103,95 @@
 
     // let system = new Vietlott('01', '02', '01', '02', '02', '01');
 
+    let count = 0;
+    let flag = false;
+
     function buyTicket() {
-        document.getElementById("firstNum").value = "";
-        document.getElementById("secondNum").value = "";
-        document.getElementById("thirdNum").value = "";
-        document.getElementById("fourthNum").value = "";
-        document.getElementById("fifthNum").value = "";
-        document.getElementById("sixthNum").value = "";
-        document.getElementById("firstResult").value = "";
-        document.getElementById("secondResult").value = "";
-        document.getElementById("thirdResult").value = "";
-        document.getElementById("fourthResult").value = "";
-        document.getElementById("fifthResult").value = "";
-        document.getElementById("sixthResult").value = "";
-        document.getElementById("announceResult").innerHTML = "";
+        count++;
+        if (count <= 4) {
+            document.getElementById("firstNum").value = "";
+            document.getElementById("secondNum").value = "";
+            document.getElementById("thirdNum").value = "";
+            document.getElementById("fourthNum").value = "";
+            document.getElementById("fifthNum").value = "";
+            document.getElementById("sixthNum").value = "";
+            document.getElementById("firstResult").value = "";
+            document.getElementById("secondResult").value = "";
+            document.getElementById("thirdResult").value = "";
+            document.getElementById("fourthResult").value = "";
+            document.getElementById("fifthResult").value = "";
+            document.getElementById("sixthResult").value = "";
+            document.getElementById("announceResult").innerHTML = "";
 
-        let buyerChoice;
-        do {
-            buyerChoice = parseInt(prompt("You have 2 options: \n 1. You choose. \n 2. Random."));
-        } while (buyerChoice < 1 || buyerChoice > 2)
+            let buyerChoice;
+            do {
+                buyerChoice = parseInt(prompt("You have 2 options: \n 1. You choose. \n 2. Random."));
+            } while (buyerChoice !== 1 && buyerChoice !== 2)
 
-        let number = new Array(6)
-        if (buyerChoice === 1) {
-            for (let i = 0; i < number.length; i++) {
-                let enter;
-                do {
-                    enter = prompt(i + 1 + ". Enter 2-digit number (from 01 to 99):");
+            let number = new Array(6)
+            if (buyerChoice === 1) {
+                for (let i = 0; i < number.length; i++) {
+                    let enter;
+                    do {
+                        enter = prompt(i + 1 + ". Enter 2-digit number (from 01 to 99):");
+                    }
+                    while (enter < 0 || enter > 99 || enter % 1 !== 0 || enter === "" || isNaN(enter) || enter.length !== 2)
+                    number[i] = enter;
                 }
-                while (enter < 0 || enter > 99 || enter % 1 !== 0 || enter === "" || isNaN(enter) || enter.length !== 2)
-                number[i] = enter;
-            }
-        } else if (buyerChoice === 2) {
-            for (let j = 0; j < number.length; j++) {
-                let num = Math.floor(Math.random() * 100);
-                if (num < 10) {
-                    number[j] = "0" + num;
-                } else {
-                    number[j] = num;
+            } else if (buyerChoice === 2) {
+                for (let j = 0; j < number.length; j++) {
+                    let num = Math.floor(Math.random() * 100);
+                    if (num < 10) {
+                        number[j] = "0" + num;
+                    } else {
+                        number[j] = num;
+                    }
                 }
             }
+            buyer.setFirst(number[0]);
+            buyer.setSecond(number[1]);
+            buyer.setThird(number[2]);
+            buyer.setFourth(number[3]);
+            buyer.setFifth(number[4]);
+            buyer.setSixth(number[5]);
+            document.getElementById("firstNum").value = buyer.getFirst();
+            document.getElementById("secondNum").value = buyer.getSecond();
+            document.getElementById("thirdNum").value = buyer.getThird();
+            document.getElementById("fourthNum").value = buyer.getFourth();
+            document.getElementById("fifthNum").value = buyer.getFifth();
+            document.getElementById("sixthNum").value = buyer.getSixth();
+            flag = true;
+        } else {
+            alert("You only have 4 chances to buy ticket! See you next time.");
         }
-        buyer.setFirst(number[0]);
-        buyer.setSecond(number[1]);
-        buyer.setThird(number[2]);
-        buyer.setFourth(number[3]);
-        buyer.setFifth(number[4]);
-        buyer.setSixth(number[5]);
-        document.getElementById("firstNum").value = buyer.getFirst();
-        document.getElementById("secondNum").value = buyer.getSecond();
-        document.getElementById("thirdNum").value = buyer.getThird();
-        document.getElementById("fourthNum").value = buyer.getFourth();
-        document.getElementById("fifthNum").value = buyer.getFifth();
-        document.getElementById("sixthNum").value = buyer.getSixth();
     }
 
     function displayResult() {
-        let result = new Array(6);
-        for (let k = 0; k < result.length; k++) {
-            let number = Math.floor(Math.random() * 100);
-            if (number < 10) {
-                result[k] = "0" + number;
-            } else {
-                result[k] = number;
+        if (flag) {
+            let result = new Array(6);
+            for (let k = 0; k < result.length; k++) {
+                let number = Math.floor(Math.random() * 100);
+                if (number < 10) {
+                    result[k] = "0" + number;
+                } else {
+                    result[k] = number;
+                }
             }
+            system.setFirst(result[0]);
+            system.setSecond(result[1]);
+            system.setThird(result[2]);
+            system.setFourth(result[3]);
+            system.setFifth(result[4]);
+            system.setSixth(result[5]);
+            document.getElementById("firstResult").value = system.getFirst();
+            document.getElementById("secondResult").value = system.getSecond();
+            document.getElementById("thirdResult").value = system.getThird();
+            document.getElementById("fourthResult").value = system.getFourth();
+            document.getElementById("fifthResult").value = system.getFifth();
+            document.getElementById("sixthResult").value = system.getSixth();
+            announceResult();
+            flag = false;
         }
-        system.setFirst(result[0]);
-        system.setSecond(result[1]);
-        system.setThird(result[2]);
-        system.setFourth(result[3]);
-        system.setFifth(result[4]);
-        system.setSixth(result[5]);
-        document.getElementById("firstResult").value = system.getFirst();
-        document.getElementById("secondResult").value = system.getSecond();
-        document.getElementById("thirdResult").value = system.getThird();
-        document.getElementById("fourthResult").value = system.getFourth();
-        document.getElementById("fifthResult").value = system.getFifth();
-        document.getElementById("sixthResult").value = system.getSixth();
-        announceResult();
     }
 
     function announceResult() {
