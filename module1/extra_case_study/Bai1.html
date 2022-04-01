@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 1</title>
+</head>
+<body>
+<script>
+    let n = parseInt(prompt("Enter the length of the array: "));
+    while (n>50){
+        n = parseInt(prompt("Enter the length of the array): "));
+    }
+    let arr = [];
+    for (let i = 0; i < n; i++) {
+        arr.push(parseInt(prompt("Enter an integer to the array: ")));
+    }
+    let sum = 0;
+    let count = 0;
+    for (let j = 0; j < n; j++) {
+        if (j % 3 === 0 && arr[j] % 5 === 0) {
+            sum += arr[j];
+            count++;
+        }
+    }
+
+    let avg = sum / count;
+
+    document.write("The array is: " + arr +"<br>");
+    document.write("The average as required is: " + avg);
+
+
+</script>
+</body>
+</html>

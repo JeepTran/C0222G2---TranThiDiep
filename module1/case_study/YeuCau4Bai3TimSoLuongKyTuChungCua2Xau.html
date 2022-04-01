@@ -6,23 +6,27 @@
 </head>
 <body>
 <script>
-    let s1="hello";
-    let arr1=s1.split("");
+    let s1 = "hello";
     let s2 = "hello world";
-    let arr2=s2.split("");
-    let count=0;
-    for (let i = 0; i < arr1.length; i++) {
-        for (let j = 0; j < arr2.length; j++) {
-            if (arr1[i] === arr2[j]) {
-                count++;
-                arr1.splice(i, 1);
-                arr2.splice(j, 1);
-                i--;
-                break;
+    commonCharacter(s1, s2);
+
+    function commonCharacter(string1, string2) {
+        let arr1 = string1.split("");
+        let arr2 = string2.split("");
+        let count = 0;
+        for (let i = 0; i < arr1.length; i++) {
+            for (let j = 0; j < arr2.length; j++) {
+                if (arr1[i] === arr2[j]) {
+                    count++;
+                    arr1.splice(i, 1);
+                    arr2.splice(j, 1);
+                    i--;
+                    break;
+                }
             }
         }
+        document.write("Số lượng ký tự chung của 2 chuỗi là: " + count);
     }
-    console.log(count);
 </script>
 </body>
 </html>

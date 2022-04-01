@@ -10,16 +10,16 @@
     let strings = ['không', 'một', 'hai', 'ba', 'bốn', 'năm', 'sáu', 'bảy', 'tám', 'chín'];
     let num = prompt("Enter a multi-digit integer: ");
     let numArr = num.split('');
-    console.log(numArr)
-    let string = "";
+    console.log(numArr);
+    let result = "";
     for (let i = 0; i < numArr.length; i++) {
         for (let j = 0; j < numbers.length; j++) {
             if (numbers[j] == numArr[i]) {
-                string = string + strings[j] + " ";
+                result += strings[j] + " ";
             }
         }
     }
-    console.log(string);
+    document.write(result);
 
 </script>
 </body>

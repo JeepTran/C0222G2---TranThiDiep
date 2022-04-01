@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let myArr = [1, 5, 6, 13, 9, 12, 8, 0, 5, 1];
+    findFibonacci(myArr);
+
+    function findFibonacci(arr) {
+        let newArray = [];
+        let max = arr[0];
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        let arrayFibonacci = [];
+        let num1 = 0;
+        let num2 = 1;
+        let num3 = 0;
+        arrayFibonacci.push(num1);
+        arrayFibonacci.push(num2);
+
+        do {
+            num3 = num1 + num2;
+            arrayFibonacci.push(num3);
+            num1 = num2;
+            num2 = num3;
+        } while (num3 < max)
+
+        for (let k = 0; k < arr.length; k++) {
+            if (arrayFibonacci.indexOf(arr[k]) !== -1) {
+                newArray.push(arr[k]);
+            }
+        }
+
+        document.write(newArray.sort(function (a, b) {
+            return a - b;
+        }));
+    }
+
+</script>
+</body>
+</html>

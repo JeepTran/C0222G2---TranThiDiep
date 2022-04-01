@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="93bfd0fc-25ba-4176-baec-fa4aa3a719b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/module1/extra_case_study/Bai1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/extra_case_study/Bai2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/extra_case_study/Bai3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/extra_case_study/Bai4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/extra_case_study/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/module1_exam/Cau1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/module1_exam/Cau2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/module1/module1_exam/Cau3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau1Bai3VeHinhTamGiacCanDac.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau1Bai3VeHinhTamGiacCanDac.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau1Bai3VeHinhTamGiacCanRong.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau1Bai3VeHinhTamGiacCanRong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau2Bai2KiemTraNguyenAmPhuAm.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau2Bai2KiemTraNguyenAmPhuAm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau3Bai3TimChiSoCuaPhanSoLonNhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau3Bai3TimChiSoCuaPhanSoLonNhat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau3Bai4HienThiSoBangChu.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau3Bai4HienThiSoBangChu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau3Bai5MenuThucUong.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau3Bai5MenuThucUong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau4Bai1HamChuanHoaXauKyTuVaTimTuDaiNhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau4Bai1HamChuanHoaXauKyTuVaTimTuDaiNhat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau4Bai2DemSoLuongKyTuKhacNhauTrong1Xau.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau4Bai2DemSoLuongKyTuKhacNhauTrong1Xau.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau4Bai3TimSoLuongKyTuChungCua2Xau.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau4Bai3TimSoLuongKyTuChungCua2Xau.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau5Bai1TinhTongCacSoChanTrongMaTranMang2Chieu.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau5Bai1TinhTongCacSoChanTrongMaTranMang2Chieu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/ss11_cau_truc_lap_2/bai_tap/BaiTap3Loop1Bai3HienThi20SoFibonacciDauTien.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/ss11_cau_truc_lap_2/bai_tap/BaiTap3Loop1Bai3HienThi20SoFibonacciDauTien.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="27BrWnRHDezjVAsNc9WothcPZe2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ss1_introduction_to_java/thuc_hanh" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\CodeGym 02.2022\C0222G2\C0222G2_TranThiDiep\src\ss1_introduction_to_java\thuc_hanh" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="93bfd0fc-25ba-4176-baec-fa4aa3a719b9" name="Changes" comment="" />
+      <created>1648804354599</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1648804354599</updated>
+      <workItem from="1648804355736" duration="922000" />
+      <workItem from="1648805322600" duration="148000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

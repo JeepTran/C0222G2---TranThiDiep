@@ -6,20 +6,22 @@
 </head>
 <body>
 <script>
-    let s = "ydhhfdddf";
-    let arr = s.split("");
-    for (let i = 0; i < arr.length; i++) {
-        for (let j = i + 1; j < arr.length; j++) {
-            if (arr[j] === arr[i]) {
-                arr.splice(j, 1);
-                j--;
+    let s = prompt("Input a string: ");
+    differentCharacter(s);
+
+    function differentCharacter(string) {
+        let arr = string.split("");
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[j] === arr[i]) {
+                    arr.splice(j, 1);
+                    j--;
+                }
             }
         }
+        document.write("Chuỗi nhập vào: " + string + "<br>");
+        document.write("Có " + arr.length + " ký tự khác nhau: " + arr.join(",") + "<br>");
     }
-    console.log("Chuỗi nhập vào: " + s);
-    console.log("Các ký tự khác nhau: " + arr.join(","));
-    console.log(arr.length);
-
 </script>
 </body>
 </html>

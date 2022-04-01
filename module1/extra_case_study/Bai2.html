@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai 2</title>
+</head>
+<body>
+<script>
+
+    let myString = prompt("Nhập vào một chuỗi để viết tắt: ");
+    vietTat(myString);
+
+    function vietTat(str) {
+        str = str.toUpperCase();
+        let arr = str.split(" ");
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === "") {
+                arr.splice(i, 1);
+                i--;
+            }
+        }
+        if (arr.length > 1) {
+            for (let i = 0; i < arr.length; i++) {
+                arr[i] = arr[i].substring(0, 1);
+            }
+            alert("Từ viết tắt của chuỗi nhập vào là: " + arr.join(""));
+        } else {
+            alert("Chuỗi chỉ có 1 từ nên không cần viết tắt.");
+        }
+    }
+
+
+</script>
+</body>
+</html>

@@ -6,37 +6,41 @@
 </head>
 <body>
 <script>
-    let str1 = "tRuong    TaN   HAI ";
-    let arr = str1.toLowerCase().split(" ");
+    let string = "tRuong    TaN   HAI ";
+    properString(string);
 
-    let longestWord = "";
+    function properString(str) {
+        let arr = str.toLowerCase().split(" ");
 
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === "") {
-            arr.splice(i, 1);
-            i--;
+        let longestWord = "";
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === "") {
+                arr.splice(i, 1);
+                i--;
+            }
+
+            arr[i] = arr[i][0].toUpperCase() + arr[i].substring(1, arr[i].length);
+
+            if (arr[i].length > longestWord.length) {
+                longestWord = arr[i];
+            }
         }
+        let str2 = arr.join(" ");
 
-        arr[i] = arr[i][0].toUpperCase() + arr[i].substring(1, arr[i].length);
+        // Viết hoa chữ cái đầu mỗi từ bằng mảng 2 chiều:
+        // let str2;
+        // for (let j = 0; j < arr.length; j++) {
+        // arr[j] = arr[j].split("");
+        // arr[j][0] = arr[j][0].toUpperCase();
+        // str2 += arr[j].join("") + " ";
+        // }
 
-        if (arr[i].length > longestWord.length) {
-            longestWord = arr[i];
-        }
+
+        document.write("Xâu trước khi xử lý: " + str + "<br>");
+        document.write("Xâu sau khi xử lý: " + str2 + "<br>");
+        document.write("Từ dài nhất trong xâu: " + longestWord);
     }
-    let str2 = arr.join(" ");
-
-    // Viết hoa chữ cái đầu mỗi từ bằng mảng 2 chiều:
-    // let str2;
-    // for (let j = 0; j < arr.length; j++) {
-    // arr[j] = arr[j].split("");
-    // arr[j][0] = arr[j][0].toUpperCase();
-    // str2 += arr[j].join("") + " ";
-    // }
-
-
-    console.log("Xâu trước khi xử lý: " + str1);
-    console.log("Xâu sau khi xử lý: " + str2);
-    console.log("Từ dài nhất trong xâu: " + longestWord);
 
 </script>
 </body>
