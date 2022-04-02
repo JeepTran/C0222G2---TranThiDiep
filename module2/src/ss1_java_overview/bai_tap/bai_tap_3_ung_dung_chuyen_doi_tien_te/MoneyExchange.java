@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class MoneyExchange {
     public static void main(String[] args) {
-        double usd, vnd = 23000;
+        double usd;
+        double vnd = 23000;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter money in USD: ");
         usd = scanner.nextDouble();
