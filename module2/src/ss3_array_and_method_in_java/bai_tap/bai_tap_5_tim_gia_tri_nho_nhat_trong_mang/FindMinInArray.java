@@ -1,0 +1,2 @@
+package ss3_array_and_method_in_java.bai_tap.bai_tap_5_tim_gia_tri_nho_nhat_trong_mang;public class FindMinInArray {
+}
