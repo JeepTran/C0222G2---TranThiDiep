@@ -1,4 +1,4 @@
-package ss1_java_overview.bai_tap.bai_tap_1_hien_thi_loi_chao;
+package ss1_introduction_to_java.bai_tap.bai_tap_1_hien_thi_loi_chao;
 
 import java.util.Scanner;
 

@@ -1,6 +1,4 @@
-package ss1_java_overview.thuc_hanh.thuc_hanh_2_khai_bao_va_su_dung_bien;
-
-import java.sql.SQLOutput;
+package ss1_introduction_to_java.thuc_hanh.thuc_hanh_2_khai_bao_va_su_dung_bien;
 
 public class MyVariable {
     public static void main(String[] args) {

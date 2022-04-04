@@ -1,4 +1,4 @@
-package ss1_java_overview.thuc_hanh.thuc_hanh_5_tinh_so_ngay_trong_thang;
+package ss1_introduction_to_java.thuc_hanh.thuc_hanh_5_tinh_so_ngay_trong_thang;
 
 import java.util.Scanner;
 

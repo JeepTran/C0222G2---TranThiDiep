@@ -1,4 +1,4 @@
-package ss1_java_overview.thuc_hanh.thuc_hanh_6_kiem_tra_nam_nhuan;
+package ss1_introduction_to_java.thuc_hanh.thuc_hanh_6_kiem_tra_nam_nhuan;
 
 import java.util.Scanner;
 

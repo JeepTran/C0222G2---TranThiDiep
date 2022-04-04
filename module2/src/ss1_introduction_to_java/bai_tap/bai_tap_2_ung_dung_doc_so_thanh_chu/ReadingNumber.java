@@ -1,4 +1,4 @@
-package ss1_java_overview.bai_tap.bai_tap_2_ung_dung_doc_so_thanh_chu;
+package ss1_introduction_to_java.bai_tap.bai_tap_2_ung_dung_doc_so_thanh_chu;
 
 import java.util.Scanner;
 

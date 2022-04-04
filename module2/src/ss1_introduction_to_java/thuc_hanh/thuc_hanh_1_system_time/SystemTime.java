@@ -1,4 +1,4 @@
-package ss1_java_overview.thuc_hanh.thuc_hanh_1_system_time;
+package ss1_introduction_to_java.thuc_hanh.thuc_hanh_1_system_time;
 
 import java.util.Date;
 
