@@ -5,25 +5,29 @@ import java.util.Scanner;
 
 public class DeleteElementFromArray {
     public static void main(String[] args) {
-        int[] array = {1, 2, 3, 4, 5, 3, 6, 7, 8, 9};
+        int[] array = {1, 2, 4, 1, 1, 5, 6, 0, 8, 1, 0};
         System.out.println("The origin array: " + Arrays.toString(array));
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the number to delete: ");
         int number = Integer.parseInt(scanner.nextLine());
-        boolean flag = false;
+        boolean isExist = false;
 
         for (int i = 0; i < array.length; i++) {
             if (number == array[i]) {
-                flag = true;
+                isExist = true;
                 for (int j = i; j < array.length - 1; j++) {
                     array[j] = array[j + 1];
                 }
                 array[array.length - 1] = 0;
-                System.out.println("Now the array becomes:\t" + Arrays.toString(array));
+                if (number != 0) {
+                    i--;
+                }
             }
         }
-        if (flag = false) {
-            System.out.println(number + " does not exist in the array");
+        if (isExist) {
+            System.out.println("Now the array becomes:\t" + Arrays.toString(array));
+        } else {
+            System.out.println(number + " does not exist in the array.");
         }
     }
 }
