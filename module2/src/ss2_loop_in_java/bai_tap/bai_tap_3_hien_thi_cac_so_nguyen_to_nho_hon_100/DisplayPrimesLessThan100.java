@@ -1,0 +1,2 @@
+package ss2_loop_in_java.bai_tap.bai_tap_3_hien_thi_cac_so_nguyen_to_nho_hon_100;public class DisplayPrimesLessThan100 {
+}
