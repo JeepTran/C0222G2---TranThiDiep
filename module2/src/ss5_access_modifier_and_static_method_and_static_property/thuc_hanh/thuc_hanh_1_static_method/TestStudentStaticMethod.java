@@ -1,0 +1,2 @@
+package ss5_access_modifier_and_static_method_and_static_property.thuc_hanh.thuc_hanh_1_static_method;public class TestStudentStaticMethod {
+}
