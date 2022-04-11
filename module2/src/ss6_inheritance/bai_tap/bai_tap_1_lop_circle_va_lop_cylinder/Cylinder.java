@@ -1,7 +1,7 @@
 package ss6_inheritance.bai_tap.bai_tap_1_lop_circle_va_lop_cylinder;
 
 public class Cylinder extends Circle {
-    public double height;
+    private double height;
 
     public Cylinder() {
     }
@@ -18,8 +18,8 @@ public class Cylinder extends Circle {
     @Override
     public String toString() {
         return "Cylinder{" +
-                "radius=" + radius +
-                ", color='" + color + '\'' +
+                "radius=" + super.getRadius() +
+                ", color='" + super.getColor() + '\'' +
                 ", height=" + height +
                 '}';
     }

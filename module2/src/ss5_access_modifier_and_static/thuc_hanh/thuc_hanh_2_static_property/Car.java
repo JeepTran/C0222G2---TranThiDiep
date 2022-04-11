@@ -1,4 +1,4 @@
-package ss5_access_modifier_and_static_method_and_static_property.thuc_hanh.thuc_hanh_2_static_property;
+package ss5_access_modifier_and_static.thuc_hanh.thuc_hanh_2_static_property;
 
 public class Car {
     private String name;

@@ -3,8 +3,8 @@ package ss6_inheritance.bai_tap.bai_tap_2_lop_2d_va_lop_3d;
 import java.util.Arrays;
 
 public class Point2D {
-    protected float x = 0.0f;
-    protected float y = 0.0f;
+    private float x = 0.0f;
+    private float y = 0.0f;
 
     public Point2D() {
     }

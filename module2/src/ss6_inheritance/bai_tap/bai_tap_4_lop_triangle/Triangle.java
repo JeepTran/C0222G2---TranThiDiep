@@ -72,8 +72,8 @@ public class Triangle extends Shape {
                     "side1=" + side1 +
                     ", side2=" + side2 +
                     ", side3=" + side3 +
-                    ", color='" + color + '\'' +
-                    ", filled=" + filled +
+                    ", color='" + super.getColor() + '\'' +
+                    ", filled=" + super.isFilled() +
                     ", perimeter=" + getPerimeter() +
                     ", area=" + getArea() +
                     '}';

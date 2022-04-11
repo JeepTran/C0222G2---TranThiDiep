@@ -26,14 +26,14 @@ public class Point3D extends Point2D {
 
     public float[] getXYZ() {
         float[] arrayXYZ = new float[3];
-        arrayXYZ[0] = this.x;
-        arrayXYZ[1] = this.y;
+        arrayXYZ[0] = super.getX();
+        arrayXYZ[1] = super.getY();
         arrayXYZ[2] = this.z;
         return arrayXYZ;
     }
 
     @Override
     public String toString() {
-        return "Point3D: (x,y,z) = (" + x + ", " + y + ", " + z + ")";
+        return "Point3D: (x,y,z) = (" + super.getX() + ", " + super.getY() + ", " + z + ")";
     }
 }
