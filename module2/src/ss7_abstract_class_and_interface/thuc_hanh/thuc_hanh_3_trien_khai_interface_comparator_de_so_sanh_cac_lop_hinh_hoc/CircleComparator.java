@@ -1,0 +1,2 @@
+package ss7_abstract_class_and_interface.thuc_hanh.thuc_hanh_3_trien_khai_interface_comparator_de_so_sanh_cac_lop_hinh_hoc;public class CircleComparator {
+}
