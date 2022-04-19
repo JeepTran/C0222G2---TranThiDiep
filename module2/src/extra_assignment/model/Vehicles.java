@@ -1,4 +1,4 @@
-package extra_assignment;
+package extra_assignment.model;
 
 import java.util.Scanner;
 
@@ -18,41 +18,45 @@ public abstract class Vehicles {
         this.owner = owner;
     }
 
-    public static void showMenu() {
-        boolean flag = true;
-        Scanner scanner = new Scanner(System.in);
-        int choice;
-        do {
-            System.out.println("CHƯƠNG TRÌNH QUẢN LÝ PHƯƠNG TIỆN GIAO THÔNG");
-            System.out.println("Chọn chức năng:" +
-                    "\n1. Thêm mới phương tiện" +
-                    "\n2. Hiển thị phương tiện" +
-                    "\n3. Xóa phương tiện" +
-                    "\n4. Tìm kiếm theo biển kiểm soát" +
-                    "\n5. Thoát");
-            choice = Integer.parseInt(scanner.nextLine());
-       switch (choice){
-           case 1:
-               //add
-               break;
-           case 2:
-               //display
-               break;
-           case 3:
-               //delete
-               break;
-           case 4:
-               //search
-               break;
-           case 5:
-               System.exit(5);
-               flag = false;
-       }
-
-        } while (flag);
-
-
+    public String getNumberPlate() {
+        return numberPlate;
     }
 
+    public void setNumberPlate(String numberPlate) {
+        this.numberPlate = numberPlate;
+    }
 
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
+    public int getManufacturingYear() {
+        return manufacturingYear;
+    }
+
+    public void setManufacturingYear(int manufacturingYear) {
+        this.manufacturingYear = manufacturingYear;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicles{" +
+                "numberPlate='" + numberPlate + '\'' +
+                ", company='" + company + '\'' +
+                ", manufacturingYear=" + manufacturingYear +
+                ", owner='" + owner + '\'' +
+                '}';
+    }
 }

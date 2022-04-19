@@ -1,4 +1,4 @@
-package ss7_abstract_class_and_interface.thuc_hanh.thuc_hanh_1_lop_animal_va_interface_edible;
+package ss7_abstract_class_and_interface.thuc_hanh.thuc_hanh_1_lop_animal_va_interface_edible.animal;
 
 public abstract class Animal {
     public abstract String makeSound();

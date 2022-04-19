@@ -1,9 +1,9 @@
-package extra_assignment.view;
+package extra_assignment.controller;
 
 import java.util.Scanner;
 
-public class VehicleView {
-    public static void showMenu() {
+public class VehicleMainController {
+    public static void showMainMenu() {
         boolean flag = true;
         Scanner scanner = new Scanner(System.in);
         int choice;
@@ -15,9 +15,11 @@ public class VehicleView {
                     "\n3. Xóa phương tiện" +
                     "\n4. Tìm kiếm theo biển kiểm soát" +
                     "\n5. Thoát");
+            System.out.print("Enter your choice: ");
             choice = Integer.parseInt(scanner.nextLine());
             switch (choice){
                 case 1:
+                    showAddingMenu(scanner);
                     //add
                     break;
                 case 2:
@@ -32,10 +34,33 @@ public class VehicleView {
                 case 5:
                     System.exit(5);
                     flag = false;
+                    break;
             }
-
         } while (flag);
 
 
+    }
+
+    private static void showAddingMenu(Scanner scanner) {
+        System.out.println("Thêm mới phương tiện:" +
+                "\n1. Thêm xe tải" +
+                "\n2. Thêm ô tô" +
+                "\n3. Thêm xe máy");
+        System.out.print("Enter your adding-choice: ");
+        int addingChoice = Integer.parseInt(scanner.nextLine());
+        switch (addingChoice){
+            case 1:
+                //
+                break;
+            case 2:
+                //
+                break;
+            case 3:
+                //
+                break;
+            default:
+                System.out.println("Not an adding-choice!");
+                break;
+        }
     }
 }

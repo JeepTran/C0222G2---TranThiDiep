@@ -1,2 +1,7 @@
-package ss7_abstract_class_and_interface.thuc_hanh.thuc_hanh_1_lop_animal_va_interface_edible.Fruit;public class Fruit {
+package ss7_abstract_class_and_interface.thuc_hanh.thuc_hanh_1_lop_animal_va_interface_edible.Fruit;
+
+import ss7_abstract_class_and_interface.thuc_hanh.thuc_hanh_1_lop_animal_va_interface_edible.edible_animal.Edible;
+
+public abstract class Fruit implements Edible {
 }
+

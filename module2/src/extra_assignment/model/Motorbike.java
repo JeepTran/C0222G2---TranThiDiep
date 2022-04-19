@@ -1,13 +1,29 @@
-package extra_assignment;
+package extra_assignment.model;
 
 public class Motorbike extends Vehicles{
-    private double congSuat;
+    private double capacity;
 
     public Motorbike() {
     }
 
-    public Motorbike(String bienKS, String hangXe, int namSX, String chuXe, double congSuat) {
-        super(bienKS, hangXe, namSX, chuXe);
-        this.congSuat = congSuat;
+    public Motorbike(String numberPlate, String company, int manufacturingYear, String owner, double capacity) {
+        super(numberPlate, company, manufacturingYear, owner);
+        this.capacity = capacity;
+    }
+
+    public double getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(double capacity) {
+        this.capacity = capacity;
+    }
+
+    @Override
+    public String toString() {
+        return "Motorbike{" +
+                super.toString() +
+                "capacity=" + capacity +
+                '}';
     }
 }

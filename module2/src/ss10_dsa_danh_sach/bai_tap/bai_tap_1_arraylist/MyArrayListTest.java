@@ -48,7 +48,7 @@ public class MyArrayListTest {
         studentMyArrayList.add(d);
         studentMyArrayList.add(e);
 //        studentMyArrayList.add(f, 3);
-        //        studentMyArrayList.clear();
+//        studentMyArrayList.clear();
 
         for (int i = 0; i < studentMyArrayList.size(); i++) {
             Student student = (Student) studentMyArrayList.elements[i];

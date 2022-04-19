@@ -2,12 +2,12 @@ package ss10_dsa_danh_sach.thuc_hanh.thuc_hanh_1_trien_khai_lop_list_don_gian;
 
 import java.util.Arrays;
 
-public class MyList<E> {
+public class MyFirstList<E> {
     private int size = 0;
     private static final int DEFAULT_CAPACITY = 10;
     private Object elements[];
 
-    public MyList() {
+    public MyFirstList() {
         elements = new Object[DEFAULT_CAPACITY];
     }
 
