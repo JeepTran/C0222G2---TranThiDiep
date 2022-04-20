@@ -1,13 +1,12 @@
 package extra_assignment.service.service_implement;
 
-import extra_assignment.model.Car;
 import extra_assignment.model.Motorbike;
-import extra_assignment.service.MotorbikeService;
+import extra_assignment.service.IMotorbikeService;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class MotorbikeServiceImplement implements MotorbikeService {
+public class MotorbikeServiceImplement implements IMotorbikeService {
 
     static ArrayList<Motorbike> motorbikeList = new ArrayList<Motorbike>();
     Scanner scanner = new Scanner(System.in);

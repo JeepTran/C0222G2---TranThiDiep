@@ -1,4 +1,4 @@
-package ss12_java_collection_framwork_map_and_tree.thuc_hanh.thuc_hanh_1_luu_danh_sach_sinh_vien_theo_tuoi_su_dung_map;
+package ss12_java_collection_framework_map_and_tree.thuc_hanh.thuc_hanh_1_luu_danh_sach_sinh_vien_theo_tuoi_su_dung_map;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

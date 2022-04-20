@@ -1,13 +1,12 @@
 package extra_assignment.service.service_implement;
 
-import extra_assignment.model.Car;
 import extra_assignment.model.Truck;
-import extra_assignment.service.TruckService;
+import extra_assignment.service.ITruckService;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class TruckServiceImplement implements TruckService {
+public class TruckServiceImplement implements ITruckService {
     static ArrayList<Truck> truckList = new ArrayList<Truck>();
     Scanner scanner = new Scanner(System.in);
     @Override

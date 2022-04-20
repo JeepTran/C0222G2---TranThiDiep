@@ -1,8 +1,16 @@
 package extra_assignment.controller;
 
+import extra_assignment.service.IService;
+import extra_assignment.service.service_implement.CarServiceImplement;
+import extra_assignment.service.service_implement.MotorbikeServiceImplement;
+import extra_assignment.service.service_implement.TruckServiceImplement;
+
 import java.util.Scanner;
 
 public class VehicleMainController {
+    private static IService carService = new CarServiceImplement();
+    private static IService truckService = new TruckServiceImplement();
+    private static IService motorbikeService = new MotorbikeServiceImplement();
     public static void showMainMenu() {
         boolean flag = true;
         Scanner scanner = new Scanner(System.in);

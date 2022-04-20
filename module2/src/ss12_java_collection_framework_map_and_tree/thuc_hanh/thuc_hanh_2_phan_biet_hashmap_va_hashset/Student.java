@@ -1,6 +1,6 @@
-package ss12_java_collection_framwork_map_and_tree.thuc_hanh.thuc_hanh_2_phan_biet_hashmap_va_hashset;
+package ss12_java_collection_framework_map_and_tree.thuc_hanh.thuc_hanh_2_phan_biet_hashmap_va_hashset;
 
-import ss12_java_collection_framwork_map_and_tree.thuc_hanh.thuc_hanh_3_sap_xep_voi_comparable_va_comparator.IStudent;
+import ss12_java_collection_framework_map_and_tree.thuc_hanh.thuc_hanh_3_sap_xep_voi_comparable_va_comparator.IStudent;
 
 public class Student implements IStudent {
     private String name;
