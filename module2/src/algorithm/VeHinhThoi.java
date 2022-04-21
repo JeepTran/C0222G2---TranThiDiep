@@ -1,4 +1,4 @@
-package giai_thuat;
+package algorithm;
 
 public class VeHinhThoi {
     public static void main(String[] args) {

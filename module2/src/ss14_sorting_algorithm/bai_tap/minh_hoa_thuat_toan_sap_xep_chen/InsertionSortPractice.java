@@ -1,8 +1,8 @@
-package ss14_sorting_algorithm.thuc_hanh.minh_hoa_thuat_toan_sap_xep_noi_bot;
+package ss14_sorting_algorithm.bai_tap.minh_hoa_thuat_toan_sap_xep_chen;
 
 import java.util.Scanner;
 
-public class BubbleSortPractice {
+public class InsertionSortPractice {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter list size: ");
@@ -17,30 +17,24 @@ public class BubbleSortPractice {
             System.out.print(list[i] + "\t");
         }
         System.out.println();
-        bubbleSortByStep(list);
+        insertionSortByStep(list);
     }
 
-    public static void bubbleSortByStep(int[] array) {
-        boolean needNextPass = true;
-        for (int i = 1; i < array.length && needNextPass; i++) {
-            needNextPass = false;
-            for (int j = array.length - 1; j >= i; j--) {
+    public static void insertionSortByStep(int[] array) {
+        for (int i = 1; i < array.length; i++) {
+            for (int j = i; j > 0; j--) {
                 if (array[j] < array[j - 1]) {
                     int temp = array[j];
                     array[j] = array[j - 1];
                     array[j - 1] = temp;
-                    needNextPass = true;
                 }
-                System.out.print("The list after the " + i + " sort: \t");
-                for (int k = 0; k < array.length; k++) {
-                    System.out.print(array[k] + "\t");
+                System.out.print("The list after the " + i + "-" + j + " sort: \t");
+                for (int value : array) {
+                    System.out.print(value + "\t");
                 }
                 System.out.println();
             }
-            if (!needNextPass) {
-                System.out.println("The list may be completely sorted, no need more pass!");
-                break;
-            }
+
         }
     }
 }

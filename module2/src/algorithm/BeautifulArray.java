@@ -1,4 +1,4 @@
-package giai_thuat;
+package algorithm;
 
 public class BeautifulArray {
     boolean solution(int[] arr) {
