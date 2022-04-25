@@ -2,20 +2,20 @@ package case_study.furama_resort.models;
 
 public abstract class Facility {
     private String serviceName;
-    private Double usingArea;
-    private Integer rentingFee;
+    private Double usableArea;
+    private Integer rentalFee;
     private Integer maximumPax;
-    private String rentingType;
+    private String rentalType;
 
     public Facility() {
     }
 
     public Facility(String serviceName, Double usingArea, Integer rentingFee, Integer maximumPax, String rentingType) {
         this.serviceName = serviceName;
-        this.usingArea = usingArea;
-        this.rentingFee = rentingFee;
+        this.usableArea = usingArea;
+        this.rentalFee = rentingFee;
         this.maximumPax = maximumPax;
-        this.rentingType = rentingType;
+        this.rentalType = rentingType;
     }
 
     public String getServiceName() {
@@ -26,20 +26,20 @@ public abstract class Facility {
         this.serviceName = serviceName;
     }
 
-    public Double getUsingArea() {
-        return usingArea;
+    public Double getUsableArea() {
+        return usableArea;
     }
 
-    public void setUsingArea(Double usingArea) {
-        this.usingArea = usingArea;
+    public void setUsableArea(Double usableArea) {
+        this.usableArea = usableArea;
     }
 
-    public Integer getRentingFee() {
-        return rentingFee;
+    public Integer getRentalFee() {
+        return rentalFee;
     }
 
-    public void setRentingFee(Integer rentingFee) {
-        this.rentingFee = rentingFee;
+    public void setRentalFee(Integer rentalFee) {
+        this.rentalFee = rentalFee;
     }
 
     public Integer getMaximumPax() {
@@ -50,11 +50,11 @@ public abstract class Facility {
         this.maximumPax = maximumPax;
     }
 
-    public String getRentingType() {
-        return rentingType;
+    public String getRentalType() {
+        return rentalType;
     }
 
-    public void setRentingType(String rentingType) {
-        this.rentingType = rentingType;
+    public void setRentalType(String rentalType) {
+        this.rentalType = rentalType;
     }
 }

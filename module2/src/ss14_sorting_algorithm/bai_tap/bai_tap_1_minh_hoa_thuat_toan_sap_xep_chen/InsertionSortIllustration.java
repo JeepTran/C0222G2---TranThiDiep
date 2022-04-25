@@ -1,8 +1,8 @@
-package ss14_sorting_algorithm.bai_tap.minh_hoa_thuat_toan_sap_xep_chen;
+package ss14_sorting_algorithm.bai_tap.bai_tap_1_minh_hoa_thuat_toan_sap_xep_chen;
 
 import java.util.Scanner;
 
-public class InsertionSortPractice {
+public class InsertionSortIllustration {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter list size: ");
