@@ -4,6 +4,5 @@ public interface BookingService extends IService{
     @Override
     void display();
 
-    @Override
     void add();
 }

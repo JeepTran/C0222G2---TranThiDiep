@@ -10,12 +10,12 @@ public abstract class Facility {
     public Facility() {
     }
 
-    public Facility(String serviceName, Double usingArea, Integer rentingFee, Integer maximumPax, String rentingType) {
+    public Facility(String serviceName, Double usableArea, Integer rentalFee, Integer maximumPax, String rentalType) {
         this.serviceName = serviceName;
-        this.usableArea = usingArea;
-        this.rentalFee = rentingFee;
+        this.usableArea = usableArea;
+        this.rentalFee = rentalFee;
         this.maximumPax = maximumPax;
-        this.rentalType = rentingType;
+        this.rentalType = rentalType;
     }
 
     public String getServiceName() {
@@ -56,5 +56,14 @@ public abstract class Facility {
 
     public void setRentalType(String rentalType) {
         this.rentalType = rentalType;
+    }
+
+    @Override
+    public String toString() {
+        return  "service name='" + serviceName + '\'' +
+                ", usable area=" + usableArea +
+                ", rental fee=" + rentalFee +
+                ", maximum pax=" + maximumPax +
+                ", rental type='" + rentalType + '\'';
     }
 }

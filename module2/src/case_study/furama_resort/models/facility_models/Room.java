@@ -8,8 +8,8 @@ public class Room extends Facility {
     public Room() {
     }
 
-    public Room(String serviceName, Double usingArea, Integer rentingFee, Integer maximumPax, String rentingType, String includedFreeService) {
-        super(serviceName, usingArea, rentingFee, maximumPax, rentingType);
+    public Room(String serviceName, Double usableArea, Integer rentalFee, Integer maximumPax, String rentalType, String includedFreeService) {
+        super(serviceName, usableArea, rentalFee, maximumPax, rentalType);
         this.includedFreeService = includedFreeService;
     }
 
@@ -19,5 +19,12 @@ public class Room extends Facility {
 
     public void setIncludedFreeService(String includedFreeService) {
         this.includedFreeService = includedFreeService;
+    }
+
+    @Override
+    public String toString() {
+        return "Room {" +super.toString()+
+                "included free service='" + includedFreeService + '\'' +
+                '}';
     }
 }

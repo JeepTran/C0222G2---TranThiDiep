@@ -1,7 +1,6 @@
 package case_study.furama_resort.services.service_implement;
 
 import case_study.furama_resort.models.person_models.Customer;
-import case_study.furama_resort.models.person_models.Employee;
 import case_study.furama_resort.services.CustomerService;
 
 import java.util.LinkedList;
@@ -9,8 +8,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class CustomerServiceImpl implements CustomerService {
-    private static Scanner scanner = new Scanner(System.in);
-    private static List<Customer> customerList = new LinkedList<>();
+    Scanner scanner = new Scanner(System.in);
+    static List<Customer> customerList = new LinkedList<>();
 
     static {
         customerList.add(new Customer("Mai Thị K", "12/09/2000", "Girl", 29830, 936100000L, "k@gmail.com", 10, "Gold", "TP HCM"));
@@ -35,17 +34,23 @@ public class CustomerServiceImpl implements CustomerService {
     @Override
     public void edit() {
         System.out.print("Enter customer ID to edit: ");
-        Integer editCustomerId = Integer.parseInt(scanner.nextLine());
-        for (Customer customer:customerList) {
-            if (editCustomerId == customer.getCustomerId()){
+        int editCustomerId = Integer.parseInt(scanner.nextLine());
+        for (Customer customer : customerList) {
+            if (editCustomerId == customer.getCustomerId()) {
                 Customer editCustomer = customerInformation();
-
+                customer.setFullName(editCustomer.getFullName());
+                customer.setDateOfBirth(editCustomer.getDateOfBirth());
+                customer.setGender(editCustomer.getGender());
+                customer.setIdCardNumber(editCustomer.getIdCardNumber());
+                customer.setPhoneNumber(editCustomer.getPhoneNumber());
+                customer.setEmailAddress(editCustomer.getEmailAddress());
+                customer.setCustomerId(editCustomer.getCustomerId());
+                customer.setCustomerType(editCustomer.getCustomerType());
+                customer.setCustomerAddress(editCustomer.getCustomerAddress());
             }
         }
-
-
-
     }
+
     public Customer customerInformation() {
         String customerName;
         String dateOfBirth;
@@ -80,6 +85,6 @@ public class CustomerServiceImpl implements CustomerService {
             System.err.println(e.getMessage());
             return customerInformation();
         }
-        return new Customer(customerName, dateOfBirth, customerGender, customerIdCardNumber,customerPhoneNumber, customerMail, customerId, customerType, customerAddress);
+        return new Customer(customerName, dateOfBirth, customerGender, customerIdCardNumber, customerPhoneNumber, customerMail, customerId, customerType, customerAddress);
     }
 }

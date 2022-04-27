@@ -8,8 +8,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class EmployeeServiceImpl implements EmployeeService {
-    private static Scanner scanner = new Scanner(System.in);
-    private static List<Employee> employeeList = new ArrayList<>();
+     Scanner scanner = new Scanner(System.in);
+     static List<Employee> employeeList = new ArrayList<>();
 
     static {
         employeeList.add(new Employee("Nguyen Van A", "20/04/2000", "Boy", 12345, 905000000L, "a@gmail.com", 1, "University", "Waiter", 7000000));

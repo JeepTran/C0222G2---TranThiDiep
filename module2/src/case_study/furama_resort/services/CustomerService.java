@@ -4,7 +4,6 @@ public interface CustomerService extends IService {
     @Override
     void display();
 
-    @Override
     void add();
 
     void edit();

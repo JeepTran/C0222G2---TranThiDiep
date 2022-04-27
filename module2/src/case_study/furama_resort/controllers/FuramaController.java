@@ -1,7 +1,8 @@
 package case_study.furama_resort.controllers;
 
-import case_study.furama_resort.services.service_implement.CustomerServiceImpl;
-import case_study.furama_resort.services.service_implement.EmployeeServiceImpl;
+import case_study.furama_resort.services.FacilityHouseService;
+import case_study.furama_resort.services.FacilityRoomService;
+import case_study.furama_resort.services.service_implement.*;
 
 import java.util.Scanner;
 
@@ -9,6 +10,10 @@ public class FuramaController {
     static Scanner scanner = new Scanner(System.in);
     static EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
     static CustomerServiceImpl customerService = new CustomerServiceImpl();
+    static FacilityServiceImpl facilityService = new FacilityServiceImpl();
+    static FacilityVillaServiceImpl villaService = new FacilityVillaServiceImpl();
+    static FacilityRoomServiceImpl roomService = new FacilityRoomServiceImpl();
+    static FacilityHouseServiceImpl houseService = new FacilityHouseServiceImpl();
 
     public static void displayMainMenu() {
 
@@ -107,10 +112,38 @@ public class FuramaController {
             int customerManagementChoice = Integer.parseInt(scanner.nextLine());
             switch (customerManagementChoice) {
                 case 1:
+                    facilityService.display();
                     break;
                 case 2:
+                    displayAddNewFacilityMenu();
                     break;
                 case 3:
+                    break;
+                case 4:
+                    return;
+                default:
+                    System.out.println("Invalid choice. Try again!");
+            }
+        }
+    }
+
+    private static void displayAddNewFacilityMenu() {
+        while (true) {
+            System.out.println("Add new:\n" +
+                    "1. Villa\n" +
+                    "2. House\n" +
+                    "3. Room\n" +
+                    "4. Return facility menu");
+            int addNewFacilityChoice = Integer.parseInt(scanner.nextLine());
+            switch (addNewFacilityChoice) {
+                case 1:
+                    villaService.add();
+                    break;
+                case 2:
+                    houseService.add();
+                    break;
+                case 3:
+                    roomService.add();
                     break;
                 case 4:
                     return;
