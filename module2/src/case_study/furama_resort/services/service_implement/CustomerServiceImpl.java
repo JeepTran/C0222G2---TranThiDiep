@@ -2,7 +2,10 @@ package case_study.furama_resort.services.service_implement;
 
 import case_study.furama_resort.models.person_models.Customer;
 import case_study.furama_resort.services.CustomerService;
+import case_study.furama_resort.utils.AgeException;
+import case_study.furama_resort.utils.CheckRegex;
 
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
@@ -35,9 +38,12 @@ public class CustomerServiceImpl implements CustomerService {
     public void edit() {
         System.out.print("Enter customer ID to edit: ");
         int editCustomerId = Integer.parseInt(scanner.nextLine());
+        int count = 0;
         for (Customer customer : customerList) {
             if (editCustomerId == customer.getCustomerId()) {
+                count++;
                 Customer editCustomer = customerInformation();
+
                 customer.setFullName(editCustomer.getFullName());
                 customer.setDateOfBirth(editCustomer.getDateOfBirth());
                 customer.setGender(editCustomer.getGender());
@@ -47,13 +53,18 @@ public class CustomerServiceImpl implements CustomerService {
                 customer.setCustomerId(editCustomer.getCustomerId());
                 customer.setCustomerType(editCustomer.getCustomerType());
                 customer.setCustomerAddress(editCustomer.getCustomerAddress());
+                break;
             }
         }
+        if (count == 0) {
+            System.out.println("ID not found!");
+        }
+
     }
 
     public Customer customerInformation() {
         String customerName;
-        String dateOfBirth;
+        String dateOfBirth = null;
         String customerGender;
         int customerIdCardNumber;
         long customerPhoneNumber;
@@ -65,8 +76,20 @@ public class CustomerServiceImpl implements CustomerService {
         try {
             System.out.print("Enter customer full-name: ");
             customerName = scanner.nextLine();
-            System.out.print("Enter customer's date of birth: ");
-            dateOfBirth = scanner.nextLine();
+
+            boolean check = true;
+            while (check) {
+                try {
+                    System.out.print("Enter customer's date of birth: ");
+                    dateOfBirth = scanner.nextLine();
+                    CheckRegex.checkingAge(dateOfBirth, CheckRegex.BIRTHDAY_REGEX);
+                    check = false;
+                } catch (AgeException a) {
+                    System.out.println(a.getMessage());
+                } catch (Exception e) {
+                    System.out.println(e.getMessage());
+                }
+            }
             System.out.print("Enter customer gender: ");
             customerGender = scanner.nextLine();
             System.out.print("Enter customer's ID card number: ");
@@ -82,7 +105,7 @@ public class CustomerServiceImpl implements CustomerService {
             System.out.print("Enter customer's address: ");
             customerAddress = scanner.nextLine();
         } catch (Exception e) {
-            System.err.println(e.getMessage());
+            System.out.println(e.getMessage());
             return customerInformation();
         }
         return new Customer(customerName, dateOfBirth, customerGender, customerIdCardNumber, customerPhoneNumber, customerMail, customerId, customerType, customerAddress);

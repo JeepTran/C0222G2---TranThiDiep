@@ -1,21 +1,33 @@
 package case_study.furama_resort.models;
 
+import java.util.Objects;
+
 public abstract class Facility {
+    private String serviceId;
     private String serviceName;
-    private Double usableArea;
-    private Integer rentalFee;
-    private Integer maximumPax;
+    private String usableArea;
+    private String rentalFee;
+    private String maximumPax;
     private String rentalType;
 
     public Facility() {
     }
 
-    public Facility(String serviceName, Double usableArea, Integer rentalFee, Integer maximumPax, String rentalType) {
+    public Facility(String serviceId, String serviceName, String usableArea, String rentalFee, String maximumPax, String rentalType) {
+        this.serviceId = serviceId;
         this.serviceName = serviceName;
         this.usableArea = usableArea;
         this.rentalFee = rentalFee;
         this.maximumPax = maximumPax;
         this.rentalType = rentalType;
+    }
+
+    public String getServiceId() {
+        return serviceId;
+    }
+
+    public void setServiceId(String serviceId) {
+        this.serviceId = serviceId;
     }
 
     public String getServiceName() {
@@ -26,27 +38,27 @@ public abstract class Facility {
         this.serviceName = serviceName;
     }
 
-    public Double getUsableArea() {
+    public String getUsableArea() {
         return usableArea;
     }
 
-    public void setUsableArea(Double usableArea) {
+    public void setUsableArea(String usableArea) {
         this.usableArea = usableArea;
     }
 
-    public Integer getRentalFee() {
+    public String getRentalFee() {
         return rentalFee;
     }
 
-    public void setRentalFee(Integer rentalFee) {
+    public void setRentalFee(String rentalFee) {
         this.rentalFee = rentalFee;
     }
 
-    public Integer getMaximumPax() {
+    public String getMaximumPax() {
         return maximumPax;
     }
 
-    public void setMaximumPax(Integer maximumPax) {
+    public void setMaximumPax(String maximumPax) {
         this.maximumPax = maximumPax;
     }
 
@@ -59,11 +71,25 @@ public abstract class Facility {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Facility)) return false;
+        Facility facility = (Facility) o;
+        return Objects.equals(serviceId, facility.serviceId) && Objects.equals(serviceName, facility.serviceName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(serviceId, serviceName);
+    }
+
+    @Override
     public String toString() {
-        return  "service name='" + serviceName + '\'' +
-                ", usable area=" + usableArea +
-                ", rental fee=" + rentalFee +
-                ", maximum pax=" + maximumPax +
-                ", rental type='" + rentalType + '\'';
+        return "serviceId='" + serviceId + '\'' +
+                ", serviceName='" + serviceName + '\'' +
+                ", usableArea='" + usableArea + '\'' +
+                ", rentalFee='" + rentalFee + '\'' +
+                ", maximumPax='" + maximumPax + '\'' +
+                ", rentalType='" + rentalType + '\'';
     }
 }

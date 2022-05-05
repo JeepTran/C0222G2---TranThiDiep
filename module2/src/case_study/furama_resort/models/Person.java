@@ -1,7 +1,5 @@
 package case_study.furama_resort.models;
 
-import java.util.Date;
-
 public abstract class Person {
     private String fullName;
     private String dateOfBirth;
@@ -72,11 +70,11 @@ public abstract class Person {
 
     @Override
     public String toString() {
-        return  fullName +
+        return fullName +
                 ", DOB: " + dateOfBirth +
                 ", gender: " + gender +
                 ", ID card: " + idCardNumber +
                 ", phone: " + phoneNumber +
-                ", email: " + emailAddress ;
+                ", email: " + emailAddress;
     }
 }

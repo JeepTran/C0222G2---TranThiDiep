@@ -1,8 +1,7 @@
 package case_study.furama_resort.models.person_models;
 
 import case_study.furama_resort.models.Person;
-
-import java.util.Date;
+import demo.Customer;
 
 public class Employee extends Person {
     private Integer employeeId;
