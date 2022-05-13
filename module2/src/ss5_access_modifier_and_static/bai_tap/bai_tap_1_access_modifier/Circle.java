@@ -1,5 +1,7 @@
 package ss5_access_modifier_and_static.bai_tap.bai_tap_1_access_modifier;
 
+import java.util.Objects;
+
 public class Circle {
     private double radius = 1.0;
     private String color = "red";
@@ -42,9 +44,18 @@ public class Circle {
 //        return this.radius * this.radius * Math.PI;
 //    }
 
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "radius=" + radius +
+                ", color='" + color + '\'' +
+                '}';
+    }
+
     public static void main(String[] args) {
-        Circle circle = new Circle(5.0);
-        System.out.println("Circle radius = " + circle.getRadius());
+        Circle circle = new Circle();
+        System.out.println(circle.toString());
         System.out.println("Circle area = " + circle.getArea());
     }
 }

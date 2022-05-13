@@ -1,7 +1,6 @@
 package case_study.furama_resort.models.person_models;
 
 import case_study.furama_resort.models.Person;
-import demo.Customer;
 
 public class Employee extends Person {
     private Integer employeeId;
@@ -54,8 +53,15 @@ public class Employee extends Person {
 
     @Override
     public String toString() {
-        return "Employee: " + super.toString() +
-                ", employee ID: " + employeeId +
+        return this.getEmployeeId() + ";" + this.getFullName() + ";" + this.getDateOfBirth() + ";" +
+                this.getGender() + ";" + this.getIdCardNumber() + ";" + this.getPhoneNumber() + ";" +
+                this.getEmailAddress() + ";" + this.getEmployeeLevel() + ";" + this.getEmployeePosition() + ";" + this.getEmployeeSalary();
+    }
+
+    public String getInfo() {
+        return "Employee: " +
+                "employee ID: " + employeeId +
+                "," + super.toString() +
                 ", level: " + employeeLevel +
                 ", position: " + employeePosition +
                 ", salary: " + employeeSalary;

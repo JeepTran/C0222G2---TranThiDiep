@@ -9,9 +9,9 @@ public class FuramaController {
     static EmployeeServiceImpl employeeService = new EmployeeServiceImpl();
     static CustomerServiceImpl customerService = new CustomerServiceImpl();
     static FacilityServiceImpl facilityService = new FacilityServiceImpl();
-    static FacilityVillaServiceImpl villaService = new FacilityVillaServiceImpl();
-    static FacilityRoomServiceImpl roomService = new FacilityRoomServiceImpl();
-    static FacilityHouseServiceImpl houseService = new FacilityHouseServiceImpl();
+//    static FacilityVillaServiceImpl villaService = new FacilityVillaServiceImpl();
+//    static FacilityRoomServiceImpl roomService = new FacilityRoomServiceImpl();
+//    static FacilityHouseServiceImpl houseService = new FacilityHouseServiceImpl();
 
     public static void displayMainMenu() {
 
@@ -137,13 +137,13 @@ public class FuramaController {
             int addNewFacilityChoice = Integer.parseInt(scanner.nextLine());
             switch (addNewFacilityChoice) {
                 case 1:
-                    villaService.add();
+//                    villaService.add();
                     break;
                 case 2:
-                    houseService.add();
+//                    houseService.add();
                     break;
                 case 3:
-                    roomService.add();
+//                    roomService.add();
                     break;
                 case 4:
                     return;

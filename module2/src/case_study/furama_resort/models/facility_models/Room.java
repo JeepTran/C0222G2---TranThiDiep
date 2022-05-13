@@ -8,7 +8,8 @@ public class Room extends Facility {
     public Room() {
     }
 
-    public Room(String serviceId, String serviceName, String usableArea, String rentalFee, String maximumPax, String rentalType, String includedFreeService) {
+    public Room(String serviceId, String serviceName, String usableArea, String rentalFee,
+                String maximumPax, String rentalType, String includedFreeService) {
         super(serviceId, serviceName, usableArea, rentalFee, maximumPax, rentalType);
         this.includedFreeService = includedFreeService;
     }
@@ -23,7 +24,14 @@ public class Room extends Facility {
 
     @Override
     public String toString() {
-        return "Room {" +super.toString()+
+        final String DELIMITER = ";";
+        return this.getServiceId() + DELIMITER + this.getServiceName() + DELIMITER + this.getUsableArea() + DELIMITER +
+                this.getRentalFee() + DELIMITER + this.getMaximumPax() + DELIMITER + this.getRentalType() + DELIMITER +
+                this.getIncludedFreeService();
+    }
+
+    public String getInfo() {
+        return "Room {" + super.toString() +
                 ", included free service='" + includedFreeService + '\'' +
                 '}';
     }

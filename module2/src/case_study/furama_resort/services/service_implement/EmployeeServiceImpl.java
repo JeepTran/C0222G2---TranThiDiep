@@ -13,22 +13,45 @@ import java.util.Scanner;
 public class EmployeeServiceImpl implements EmployeeService {
     Scanner scanner = new Scanner(System.in);
     static List<Employee> employeeList = new ArrayList<>();
-
-    static {
-        employeeList.add(new Employee("Nguyen Van A", "20/04/2000", "Boy", 12345, 905000000L, "a@gmail.com", 1, "University", "Waiter", 7000000));
-        employeeList.add(new Employee("Huynh Van B", "20/05/2002", "Boy", 12346, 905000002L, "b@gmail.com", 8, "College", "Receptionist", 8000000));
-        employeeList.add(new Employee("Nguyen Thi C", "12/04/1991", "Girl", 12347, 905000003L, "c@gmail.com", 3, "University", "Director", 50000000));
-        employeeList.add(new Employee("Mai Thuy D", "02/04/1995", "Girl", 12348, 905000004L, "d@gmail.com", 4, "University", "Manager", 20000000));
-        employeeList.add(new Employee("Ta Van E", "10/11/1989", "Boy", 12349, 905000005L, "e@gmail.com", 6, "Technical School", "Officer", 7000000));
-        ReadAndWrite.writeToCsvFile(ReadAndWrite.EMPLOYEE_PATH, employeeList, false);
-    }
+    static ReadAndWrite readAndWrite = new ReadAndWrite();
+    List<String> employeeStr = new ArrayList<>();
+//    static {
+//        employeeList.add(new Employee("Nguyen Van A", "20/04/2000", "Boy", 12345, 905000000L, "a@gmail.com", 1, "University", "Waiter", 7000000));
+//        employeeList.add(new Employee("Huynh Van B", "20/05/2002", "Boy", 12346, 905000002L, "b@gmail.com", 8, "College", "Receptionist", 8000000));
+//        employeeList.add(new Employee("Nguyen Thi C", "12/04/1991", "Girl", 12347, 905000003L, "c@gmail.com", 3, "University", "Director", 50000000));
+//        employeeList.add(new Employee("Mai Thuy D", "02/04/1995", "Girl", 12348, 905000004L, "d@gmail.com", 4, "University", "Manager", 20000000));
+//        employeeList.add(new Employee("Ta Van E", "10/11/1989", "Boy", 12349, 905000005L, "e@gmail.com", 6, "Technical School", "Officer", 7000000));
+//        readAndWrite.writeToCsvFile(ReadAndWrite.EMPLOYEE_PATH, employeeList, false);
+//    }
 
 
     @Override
     public void display() {
-        List<Object> list = ReadAndWrite.readCsvFileToList(ReadAndWrite.EMPLOYEE_PATH);
-        for (Object employee : list) {
-            System.out.println(employee.toString());
+        employeeList.clear();
+        employeeStr = readAndWrite.readCsvFileToList(ReadAndWrite.EMPLOYEE_PATH);
+        for (String item : employeeStr) {
+            // Cắt record
+            String[] info = item.split(";");
+
+            // đưa từng phần tử vào cho 1 employee
+            Employee employee = new Employee();
+            employee.setEmployeeId(Integer.parseInt(info[0]));
+            employee.setFullName(info[1]);
+            employee.setDateOfBirth(info[2]);
+            employee.setGender(info[3]);
+            employee.setIdCardNumber(Integer.parseInt(info[4]));
+            employee.setPhoneNumber(Long.parseLong(info[5]));
+            employee.setEmailAddress(info[6]);
+            employee.setEmployeeLevel(info[7]);
+            employee.setEmployeePosition(info[8]);
+            employee.setEmployeeSalary(Integer.parseInt(info[9]));
+
+            // add vào mảng employeeList
+            employeeList.add(employee);
+        }
+
+        for(Employee employee : employeeList) {
+            System.out.println(employee.getInfo());
         }
     }
 
@@ -36,7 +59,8 @@ public class EmployeeServiceImpl implements EmployeeService {
     public void add() {
         try {
             employeeList.add(employeeInformation());
-            ReadAndWrite.writeToCsvFile(ReadAndWrite.EMPLOYEE_PATH, employeeList, false);
+            System.out.println("Add new employee successfully!");
+            readAndWrite.writeToCsvFile(ReadAndWrite.EMPLOYEE_PATH, employeeList, false);
         } catch (AgeException e) {
             e.printStackTrace();
         }
@@ -58,7 +82,6 @@ public class EmployeeServiceImpl implements EmployeeService {
                     e.printStackTrace();
                 }
 
-
                 employee.setEmployeeId(editEmployee.getEmployeeId());
                 employee.setFullName(editEmployee.getFullName());
                 employee.setDateOfBirth(editEmployee.getDateOfBirth());
@@ -75,8 +98,7 @@ public class EmployeeServiceImpl implements EmployeeService {
         if (count == 0) {
             System.out.println("ID not found!");
         }
-
-        ReadAndWrite.writeToCsvFile(ReadAndWrite.EMPLOYEE_PATH, employeeList, false);
+        readAndWrite.writeToCsvFile(ReadAndWrite.EMPLOYEE_PATH, employeeList, false);
     }
 
     public Employee employeeInformation() throws AgeException {

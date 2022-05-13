@@ -2,26 +2,51 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93bfd0fc-25ba-4176-baec-fa4aa3a719b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module1/extra_case_study/Bai1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/extra_case_study/Bai2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/extra_case_study/Bai3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/extra_case_study/Bai4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/extra_case_study/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/module1_exam/Cau1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/module1_exam/Cau2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module1/module1_exam/Cau3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau1Bai3VeHinhTamGiacCanDac.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau1Bai3VeHinhTamGiacCanDac.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau1Bai3VeHinhTamGiacCanRong.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau1Bai3VeHinhTamGiacCanRong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau2Bai2KiemTraNguyenAmPhuAm.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau2Bai2KiemTraNguyenAmPhuAm.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau3Bai3TimChiSoCuaPhanSoLonNhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau3Bai3TimChiSoCuaPhanSoLonNhat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau3Bai4HienThiSoBangChu.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau3Bai4HienThiSoBangChu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau3Bai5MenuThucUong.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau3Bai5MenuThucUong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau4Bai1HamChuanHoaXauKyTuVaTimTuDaiNhat.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau4Bai1HamChuanHoaXauKyTuVaTimTuDaiNhat.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau4Bai2DemSoLuongKyTuKhacNhauTrong1Xau.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau4Bai2DemSoLuongKyTuKhacNhauTrong1Xau.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau4Bai3TimSoLuongKyTuChungCua2Xau.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau4Bai3TimSoLuongKyTuChungCua2Xau.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/case_study/YeuCau5Bai1TinhTongCacSoChanTrongMaTranMang2Chieu.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/case_study/YeuCau5Bai1TinhTongCacSoChanTrongMaTranMang2Chieu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module1/ss11_cau_truc_lap_2/bai_tap/BaiTap3Loop1Bai3HienThi20SoFibonacciDauTien.html" beforeDir="false" afterPath="$PROJECT_DIR$/module1/ss11_cau_truc_lap_2/bai_tap/BaiTap3Loop1Bai3HienThi20SoFibonacciDauTien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module1/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module2/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/controllers/FuramaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/controllers/FuramaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/Facility.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/Facility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/Person.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/Person.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/facility_models/House.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/facility_models/House.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/facility_models/Room.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/facility_models/Room.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/facility_models/Villa.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/facility_models/Villa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/person_models/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/person_models/Customer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/person_models/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/models/person_models/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/services/FacilityService.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/services/FacilityService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/services/IService.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/services/IService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/services/service_implement/CustomerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/services/service_implement/CustomerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/services/service_implement/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/services/service_implement/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/case_study/furama_resort/services/service_implement/FacilitySeriviceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/out/production/module2/ss16_io_text_file/bai_tap/bai_tap_2_doc_file_csv/ReadFileCsv.class" beforeDir="false" afterPath="$PROJECT_DIR$/module2/out/production/module2/ss16_io_text_file/bai_tap/bai_tap_2_doc_file_csv/ReadFileCsv.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/models/Facility.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/models/Facility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/models/facility_models/House.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/models/facility_models/House.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/models/facility_models/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/models/facility_models/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/models/facility_models/Villa.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/models/facility_models/Villa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/models/person_models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/models/person_models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/models/person_models/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/models/person_models/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/services/service_implement/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/services/service_implement/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/services/service_implement/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/services/service_implement/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/services/service_implement/FacilityHouseServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/services/service_implement/FacilityHouseServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/services/service_implement/FacilityRoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/services/service_implement/FacilityRoomServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/services/service_implement/FacilityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/services/service_implement/FacilityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/services/service_implement/FacilityVillaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/services/service_implement/FacilityVillaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/utils/ReadAndWrite.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/utils/ReadAndWrite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/utils/data/customer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/utils/data/customer.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/utils/data/employee.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/utils/data/employee.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/utils/data/house.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/utils/data/house.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/utils/data/room.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/utils/data/room.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/case_study/furama_resort/utils/data/villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/case_study/furama_resort/utils/data/villa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/demo/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/demo/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/demo/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/demo/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/demo/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/demo/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/demo/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/demo/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/ss16_io_text_file/bai_tap/bai_tap_2_doc_file_csv/Countries.csv" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/ss16_io_text_file/bai_tap/bai_tap_2_doc_file_csv/Countries.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/ss16_io_text_file/bai_tap/bai_tap_2_doc_file_csv/Countries.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/ss16_io_text_file/bai_tap/bai_tap_2_doc_file_csv/Countries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/ss16_io_text_file/bai_tap/bai_tap_2_doc_file_csv/ReadFileCsv.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/ss16_io_text_file/bai_tap/bai_tap_2_doc_file_csv/ReadFileCsv.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/ss18_string_and_regex/bai_tap/bai_tap_2_validate_so_dien_thoai/PhoneNumberValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/ss18_string_and_regex/bai_tap/bai_tap_2_validate_so_dien_thoai/PhoneNumberValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/ss18_string_and_regex/thuc_hanh/thuc_hanh_1_validate_email/EmailExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/ss18_string_and_regex/thuc_hanh/thuc_hanh_1_validate_email/EmailExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module2/src/ss18_string_and_regex/thuc_hanh/thuc_hanh_1_validate_email/ValidateEmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/module2/src/ss18_string_and_regex/thuc_hanh/thuc_hanh_1_validate_email/ValidateEmailTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +72,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/ss1_introduction_to_java/thuc_hanh" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -64,6 +89,7 @@
       <updated>1648804354599</updated>
       <workItem from="1648804355736" duration="922000" />
       <workItem from="1648805322600" duration="148000" />
+      <workItem from="1651988987571" duration="145000" />
     </task>
     <servers />
   </component>

@@ -23,17 +23,25 @@ public class House extends Facility {
         this.roomStandard = roomStandard;
     }
 
-    public String  getNumOfFloors() {
+    public String getNumOfFloors() {
         return numOfFloors;
     }
 
-    public void setNumOfFloors(String  numOfFloors) {
+    public void setNumOfFloors(String numOfFloors) {
         this.numOfFloors = numOfFloors;
     }
 
     @Override
     public String toString() {
-        return "House {" + super.toString()+
+        final String DELIMITER = ";";
+        return this.getServiceId() + DELIMITER + this.getServiceName() + DELIMITER + this.getUsableArea() + DELIMITER +
+                this.getRentalFee() + DELIMITER + this.getMaximumPax() + DELIMITER + this.getRentalType() + DELIMITER +
+                this.getRoomStandard() + DELIMITER + this.getNumOfFloors();
+
+    }
+
+    public String getInfo() {
+        return "House {" + super.toString() +
                 ", room standard='" + roomStandard + '\'' +
                 ", number of floors=" + numOfFloors +
                 '}';

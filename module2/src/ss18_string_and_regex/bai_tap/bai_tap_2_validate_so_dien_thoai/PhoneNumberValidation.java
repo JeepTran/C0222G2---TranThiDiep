@@ -10,7 +10,7 @@ public class PhoneNumberValidation {
     //Không chứa các ký tự đặc biệt
     //Ví dụ số điện thoại hợp lệ: (84)-(0978489648)
     //Ví dụ tên lớp không hợp lệ: (a8)-(22222222)
-    
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a phone number to check: ");

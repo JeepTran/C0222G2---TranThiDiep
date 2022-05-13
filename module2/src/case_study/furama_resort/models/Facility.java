@@ -75,12 +75,12 @@ public abstract class Facility {
         if (this == o) return true;
         if (!(o instanceof Facility)) return false;
         Facility facility = (Facility) o;
-        return Objects.equals(serviceId, facility.serviceId) && Objects.equals(serviceName, facility.serviceName);
+        return Objects.equals(serviceId, facility.serviceId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(serviceId, serviceName);
+        return Objects.hash(serviceId);
     }
 
     @Override
