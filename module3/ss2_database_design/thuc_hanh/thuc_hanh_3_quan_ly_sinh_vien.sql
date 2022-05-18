@@ -19,7 +19,7 @@ class_id int not null,
 foreign key (class_id) references class (class_id)
 );
 
-create table subjects (
+create table `subject` (
 sub_id int not null auto_increment primary key,
 sub_name varchar(30) not null,
 credit tinyint not null default 1,
@@ -30,7 +30,7 @@ sub_status bit(1) default 1
 create table mark (
 mark_id int not null auto_increment primary key,
 sub_id int not null,
-foreign key (sub_id) references subjects (sub_id),  
+foreign key (sub_id) references `subject` (sub_id),  
 student_id int not null ,
 foreign key (student_id) references student (student_id),
 unique (sub_id, student_id),

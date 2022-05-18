@@ -29,7 +29,7 @@ insert into employee values
 (10,'Nguyễn Công Đạo','1994-01-08','755434343',8000000,'0988767111','nguyencongdao12@gmail.com','6 Hoà Khánh, Đồng Nai',2,3,2);
 
 insert into customer_type values
-(1, 'Dyamond'),
+(1, 'Diamond'),
 (2, 'Platinium'),
 (3, 'Gold'),
 (4, 'Silver'),

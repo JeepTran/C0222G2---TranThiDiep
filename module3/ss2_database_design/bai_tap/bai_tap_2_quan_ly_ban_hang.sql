@@ -22,20 +22,18 @@ product_name varchar (45),
 price double
 );
 
-create table product_order (
-order_id int,
-product_id int,
-foreign key (order_id) references `order`(order_id),
-foreign key (product_id) references product (product_id),
-primary key (order_id, product_id)
-);
+-- create table product_order (
+-- order_id int,
+-- product_id int,
+-- foreign key (order_id) references `order`(order_id),
+-- foreign key (product_id) references product (product_id),
+-- primary key (order_id, product_id)
+-- );
 
 create table order_detail(
 order_id int,
 product_id int,
-foreign key (order_id, product_id) references product_order (order_id, product_id),
+foreign key (order_id) references `order` (order_id),
+foreign key (product_id) references product (product_id),
 order_quantity int
 );
-
-
-
