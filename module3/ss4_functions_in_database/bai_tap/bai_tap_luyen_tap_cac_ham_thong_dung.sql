@@ -10,7 +10,7 @@ join `subject` on mark.sub_id = `subject`.sub_id
 where mark >= all (select mark from mark);
 
 -- Hiển thị các thông tin sinh viên và điểm trung bình của mỗi sinh viên, xếp hạng theo thứ tự điểm giảm dần
-select student.*, avg(mark) from student
+select student.*, avg(mark) as avg_mark from student
 join mark on mark.student_id = student.student_id
 group by student_id
-order by mark desc;
+order by avg_mark, student_name desc;

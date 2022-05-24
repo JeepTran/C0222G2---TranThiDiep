@@ -1,0 +1,54 @@
+#header {
+    background-color: #f4f4f4;
+    height: 100px;
+    width: 100%;
+    position: sticky;
+
+}
+
+#logo {
+    display: inline-block;
+    float: left;
+    width: 25%;
+}
+
+#logo-img {
+    width: 170px;
+}
+
+.kind-of-story {
+
+    display: inline-block;
+    /*padding: 25px 0px ;*/
+    width: 12.5%;
+    margin: 0px;
+    text-align: center;
+    font-size: 80%;
+    font-weight: bold;
+    height:100%;
+    line-height: 20px;
+}
+.kind-of-story-text{
+    position: center;
+    height: 40px;
+    margin: 0px;
+    padding: 30px 0px;
+}
+.story-cover{
+    height: 300px;
+}
+.story-col{
+    float: left;
+    display: inline-block;
+    position: relative;
+    width: 50%;
+
+}
+
+#body {
+    clear: both;
+
+    width: 100%;
+    /*display: flex;*/
+    /*wra*/
+}

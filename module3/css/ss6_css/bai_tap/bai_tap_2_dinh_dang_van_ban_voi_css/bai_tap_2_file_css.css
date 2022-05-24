@@ -1,0 +1,29 @@
+h1{
+    margin: 5px 0px;
+    padding-bottom: 0px;
+
+}
+hr{
+    margin: 5px 0px;
+}
+#wikipedia{
+    margin: 5px 0px 20px;
+    font-style: italic;
+
+}
+
+.indent-para{
+    text-indent: 30px;
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+    color: blue;
+ }
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+/*a:visited {*/
+/*    color: deepskyblue;*/
+/*}*/
