@@ -157,6 +157,8 @@
     border: none;
     text-align: center;
     margin: 5px 0;
+    background-color: #e0dede;
+    padding: 5px 0;
 }
 #head-link span{
     font-weight: bold;
