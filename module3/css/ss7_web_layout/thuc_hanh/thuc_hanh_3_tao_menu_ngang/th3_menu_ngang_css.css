@@ -1,0 +1,35 @@
+#menu{
+    background-color: #c0f7fa;
+    width: 100%;
+    height: 30px;
+}
+#menu ul, #menu li {
+    padding: 0;
+    margin: 0;
+}
+#menu li {
+    list-style: none;
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 70px;
+    height:20px;
+    padding: 5px;
+}
+#menu ul ul li {
+    width: 100px;
+    text-align: left;
+    padding-left: 10px;
+}
+#menu li:hover{
+    background-color: cadetblue;
+}
+#menu ul ul{
+    position: absolute;
+    visibility: hidden;
+}
+#menu ul li:hover ul{
+    background-color: #c0f7fa;
+    visibility: visible;
+    top: 30px;
+}
