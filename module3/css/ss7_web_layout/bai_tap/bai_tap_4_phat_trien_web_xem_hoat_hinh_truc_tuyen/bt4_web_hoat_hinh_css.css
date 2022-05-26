@@ -2,10 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid black;
-}
-div{
-    height: 20px;
+    border: none;
 }
 .col-1 {
     width: 8.33%;
@@ -81,7 +78,57 @@ div{
     .col-sm-12 {width: 100%;}
 
     .display{
-        display: flow;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .col-xs-1 {
+        width: 8.33%;
+    }
+
+    .col-xs-2 {
+        width: 16.66%;
+    }
+
+    .col-xs-3 {
+        width: 25%;
+    }
+
+    .col-xs-4 {
+        width: 33.33%;
+    }
+
+    .col-xs-5 {
+        width: 41.66%;
+    }
+
+    .col-xs-6 {
+        width: 50%;
+    }
+
+    .col-xs-7 {
+        width: 58.33%;
+    }
+
+    .col-xs-8 {
+        width: 66.66%;
+    }
+
+    .col-xs-9 {
+        width: 75%;
+    }
+
+    .col-xs-10 {
+        width: 83.33%;
+    }
+
+    .col-xs-11 {
+        width: 91.66%;
+    }
+
+    .col-xs-12 {
+        width: 100%;
     }
 }
 
@@ -91,4 +138,45 @@ div{
 
 .row{
     display: block;
+}
+.main{
+    height: auto;
+}
+
+
+#hoat-hinh{
+    background-color: crimson;
+    border: crimson;
+    border-radius: 3px;
+    height: 10px;
+    color: white;
+}
+
+#head-link{
+    font-size: 80%;
+    border: none;
+    text-align: center;
+    margin: 5px 0;
+}
+#head-link span{
+    font-weight: bold;
+    margin: 5px;
+}
+.video-menu{
+    width:90%;
+    margin: 5px 0px;
+}
+.video-title{
+    font-size: 80%;
+    font-weight: bold;
+}
+#video-description{
+    font-size: 80%;
+    width: 95%;
+    text-align: justify;
+    margin: 10px 0px;
+}
+.seen-quantity{
+    font-size: 70%;
+    color: dimgrey;
 }
