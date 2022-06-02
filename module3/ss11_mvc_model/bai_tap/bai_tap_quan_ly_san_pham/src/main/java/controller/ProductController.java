@@ -122,7 +122,7 @@ public class ProductController extends HttpServlet {
                 response.sendRedirect("/controller");
                 break;
             case "search":
-                String searchName = request.getParameter("name");
+                String searchName = request.getParameter("search");
                 List<Product> searchList = productService.search(searchName);
                 if (searchList == null) {
                     request.getRequestDispatcher("error-404.jsp");

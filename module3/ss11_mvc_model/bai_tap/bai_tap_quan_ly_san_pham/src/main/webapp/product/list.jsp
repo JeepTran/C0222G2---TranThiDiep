@@ -42,7 +42,7 @@
     <a href="/controller?action=create">Create New Product</a>
     <br>
     <div style="display: inline">
-        <form action="search" method="post">
+        <form action="controller?action=search" method="post">
             <input type="text" name="search" placeholder="Search product by name">
             <input type="submit" value="Search" style="width: auto">
         </form>

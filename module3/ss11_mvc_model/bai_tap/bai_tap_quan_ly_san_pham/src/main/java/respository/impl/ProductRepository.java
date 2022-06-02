@@ -28,8 +28,8 @@ public class ProductRepository implements IProductRepository {
 
     @Override
     public void update(int id, Product product) {
-        for (Product temp:products){
-            if (temp.getId()==id){
+        for (Product temp : products) {
+            if (temp.getId() == id) {
                 temp.setId(product.getId());
                 temp.setName(product.getName());
                 temp.setPrice(product.getPrice());
@@ -47,7 +47,7 @@ public class ProductRepository implements IProductRepository {
 //            }
 //        }
         for (int i = 0; i < products.size(); i++) {
-            if(products.get(i).getId() == id){
+            if (products.get(i).getId() == id) {
                 products.remove(i);
             }
         }
@@ -64,10 +64,10 @@ public class ProductRepository implements IProductRepository {
     }
 
     @Override
-    public List <Product> search(String name) {
+    public List<Product> search(String name) {
         List<Product> searchList = new ArrayList<>();
-        for (Product temp:products) {
-            if(temp.getName().contains(name)){
+        for (Product temp : products) {
+            if (temp.getName().contains(name)) {
                 searchList.add(temp);
             }
         }
