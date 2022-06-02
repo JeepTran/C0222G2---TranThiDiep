@@ -15,6 +15,11 @@
 <div>
     <h1>User Management</h1>
     <h2><a href="/users?action=create">Add new user</a></h2>
+    <form action="/users" method="get">
+        <input type="hidden" name="action" value="search">
+        <input type="text" name="search" placeholder="Search by country">
+        <input type="submit" value="Search">
+    </form>
     <div>
         <table border="1">
             <tr>

@@ -36,7 +36,7 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public User searchByCountry(String country) {
+    public List<User> searchByCountry(String country) {
         return iUserRepository.searchByCountry(country);
     }
 }

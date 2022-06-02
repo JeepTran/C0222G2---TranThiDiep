@@ -16,6 +16,6 @@ public interface IUserService {
 
     void updateUser(User user) throws SQLException;
 
-    User searchByCountry(String country);
+    List<User> searchByCountry(String country);
 
 }

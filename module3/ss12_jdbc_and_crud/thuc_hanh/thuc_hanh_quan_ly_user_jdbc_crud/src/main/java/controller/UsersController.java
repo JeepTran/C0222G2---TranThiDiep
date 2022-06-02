@@ -24,7 +24,7 @@ public class UsersController extends HttpServlet {
 
         switch (action) {
             case "create":
-                displayCreateForm(request,response);
+                displayCreateForm(request, response);
                 break;
             case "update":
                 displayUpdateForm(request, response);
@@ -32,12 +32,14 @@ public class UsersController extends HttpServlet {
             case "delete":
                 displayDeleteForm(request, response);
                 break;
+            case "search":
+                displaySearchForm(request, response);
+                break;
             default:
                 listAllUser(request, response);
                 break;
         }
     }
-
 
 
     @Override
@@ -67,7 +69,6 @@ public class UsersController extends HttpServlet {
     }
 
 
-
     private void displayCreateForm(HttpServletRequest request, HttpServletResponse response) {
         try {
             request.getRequestDispatcher("users/create.jsp").forward(request, response);
@@ -89,7 +90,7 @@ public class UsersController extends HttpServlet {
         }
     }
 
-    private void displayDeleteForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+    private void displayDeleteForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int deleteId = Integer.parseInt(request.getParameter("id"));
         User user = iUserService.selectUser(deleteId);
         if (user == null) {
@@ -98,6 +99,13 @@ public class UsersController extends HttpServlet {
             request.setAttribute("user", user);
             request.getRequestDispatcher("users/delete.jsp").forward(request, response);
         }
+    }
+
+    private void displaySearchForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        String searchCountry = request.getParameter("search");
+        List<User> searchList = iUserService.searchByCountry(searchCountry);
+        request.setAttribute("users", searchList);
+        request.getRequestDispatcher("users/list.jsp").forward(request, response);
     }
 
     private void deleteUserInfo(HttpServletRequest request) {
