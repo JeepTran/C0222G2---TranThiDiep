@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.module_2;
 
 public class BeautifulArray {
     boolean solution(int[] arr) {

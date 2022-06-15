@@ -3,7 +3,7 @@ package algorithm.module_3;
 import java.lang.reflect.Array;
 import java.util.Arrays;
 
-public class te {
+public class TakeOutRepeatedCharacters {
 
     public static void main(String[] args) {
         String arg1 = "abcbc";

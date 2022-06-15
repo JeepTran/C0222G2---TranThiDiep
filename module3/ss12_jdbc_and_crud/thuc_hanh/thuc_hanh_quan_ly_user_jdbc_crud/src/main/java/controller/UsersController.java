@@ -81,7 +81,7 @@ public class UsersController extends HttpServlet {
 
     private void displayUpdateForm(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         int updateId = Integer.parseInt(request.getParameter("id"));
-        User user = iUserService.selectUser(updateId);
+        User user = iUserService.selectUserByIdProcedure(updateId);
         if (user == null) {
             request.getRequestDispatcher("error-404.jsp");
         } else {
@@ -137,11 +137,7 @@ public class UsersController extends HttpServlet {
         String email = request.getParameter("email");
         String country = request.getParameter("country");
         User user = new User(id, name, email, country);
-        try {
-            iUserService.insertUser(user);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        iUserService.insertUserProcedure(user);
     }
 
     private void listAllUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

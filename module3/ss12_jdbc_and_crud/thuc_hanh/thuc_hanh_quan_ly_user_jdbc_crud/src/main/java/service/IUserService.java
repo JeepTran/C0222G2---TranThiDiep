@@ -18,4 +18,8 @@ public interface IUserService {
 
     List<User> searchByCountry(String country);
 
+    void insertUserProcedure(User user);
+
+    User selectUserByIdProcedure(int id);
+
 }

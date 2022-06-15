@@ -32,7 +32,7 @@
             </tr>
             <tr>
                 <td><input type="submit" value="Delete"></td>
-                <td><button type="button"><a href="/users">Back to User Management</a></button></td>
+                <td><button type="button"><a href="/users" style="text-decoration: none">No</a></button></td>
             </tr>
         </table>
 

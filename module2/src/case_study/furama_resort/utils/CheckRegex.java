@@ -37,4 +37,13 @@ public class CheckRegex {
 
         return birthdayInput;
     }
+
+    public static void main(String[] args) {
+        String pattern = "yyyy-MM-dd";
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(pattern);
+        LocalDate birthday = LocalDate.parse("2021-01-01", formatter);
+        LocalDate now = LocalDate.now();
+        int age = Period.between(birthday, now).getYears();
+        System.out.println(age);
+    }
 }

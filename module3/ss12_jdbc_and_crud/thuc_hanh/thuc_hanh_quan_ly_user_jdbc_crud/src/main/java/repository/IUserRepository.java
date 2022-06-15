@@ -17,4 +17,8 @@ public interface IUserRepository {
     void updateUser(User user) throws SQLException;
 
     List<User> searchByCountry(String country);
+
+    void insertUserProcedure(User user);
+
+    User selectUserByIdProcedure(int id);
 }

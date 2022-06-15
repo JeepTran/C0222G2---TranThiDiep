@@ -104,7 +104,7 @@ public class UserRepository implements IUserRepository {
         List<User> searchList = new ArrayList<>();
         try (Connection connection = baseRepository.getConnectionJavaToDB()) {
             PreparedStatement preparedStatement = connection.prepareStatement("select * from users where country like ?");
-            preparedStatement.setString(1, "%"+searchCountry+"%");
+            preparedStatement.setString(1, "%" + searchCountry + "%");
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
                 int id = resultSet.getInt("id");
@@ -117,6 +117,39 @@ public class UserRepository implements IUserRepository {
             e.printStackTrace();
         }
         return searchList;
+    }
+
+
+    @Override
+    public void insertUserProcedure(User user) {
+        try (Connection connection = baseRepository.getConnectionJavaToDB()) {
+            CallableStatement callableStatement = connection.prepareCall("call insert_user(?,?,?)");
+            callableStatement.setString(1, user.getName());
+            callableStatement.setString(2, user.getEmail());
+            callableStatement.setString(3, user.getCountry());
+            callableStatement.executeUpdate();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    public User selectUserByIdProcedure(int id) {
+        User user = null;
+        try (Connection connection = baseRepository.getConnectionJavaToDB()) {
+            CallableStatement callableStatement = connection.prepareCall("call get_user_by_id(?)");
+            callableStatement.setInt(1, id);
+            ResultSet resultSet = callableStatement.executeQuery();
+            while (resultSet.next()) {
+                String name = resultSet.getString("name");
+                String email = resultSet.getString("email");
+                String country = resultSet.getString("country");
+                user = new User(id, name, email, country);
+            }
+        } catch (SQLException throwables) {
+            throwables.printStackTrace();
+        }
+        return user;
     }
 
 }

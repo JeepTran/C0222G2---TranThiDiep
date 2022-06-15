@@ -39,4 +39,14 @@ public class UserServiceImpl implements IUserService {
     public List<User> searchByCountry(String country) {
         return iUserRepository.searchByCountry(country);
     }
+
+    @Override
+    public void insertUserProcedure(User user) {
+        iUserRepository.insertUserProcedure(user);
+    }
+
+    @Override
+    public User selectUserByIdProcedure(int id) {
+        return iUserRepository.selectUserByIdProcedure(id);
+    }
 }

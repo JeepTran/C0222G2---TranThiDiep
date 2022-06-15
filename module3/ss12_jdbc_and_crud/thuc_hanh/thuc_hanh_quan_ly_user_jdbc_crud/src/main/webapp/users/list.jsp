@@ -13,13 +13,17 @@
 </head>
 <body>
 <div>
-    <h1>User Management</h1>
-    <h2><a href="/users?action=create">Add new user</a></h2>
+    <h2>User Management</h2>
+    <div style="margin: 3px; display: inline-block">
+    <h4><a href="/users">List All</a></h4>
+    <h4><a href="/users?action=create">Add New User</a></h4>
+    </div>
     <form action="/users" method="get">
         <input type="hidden" name="action" value="search">
-        <input type="text" name="search" placeholder="Search by country">
+        <input type="text" name="search" placeholder="Search by country" value="${search}">
         <input type="submit" value="Search">
     </form>
+
     <div>
         <table border="1">
             <tr>

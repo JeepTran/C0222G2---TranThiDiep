@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c2ce7256-004f-4f4a-ae11-cdd928298301" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../module3_tranthidiep_wbe/src/main/java/repository/IEmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/out/production/module2/algorithm/BeautifulArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/out/production/module2/algorithm/Character.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/out/production/module2/algorithm/VeHinhThoi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/out/production/module2/exam_module_2/utils/data/authorizedMobile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/out/production/module2/exam_module_2/utils/data/authorizedMobile.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/out/production/module2/exam_module_2/utils/data/foreignMobile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/out/production/module2/exam_module_2/utils/data/foreignMobile.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/src/algorithm/module_2/BeautifulArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/algorithm/module_2/BeautifulArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/src/algorithm/module_2/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/algorithm/module_2/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/src/algorithm/module_2/VeHinhThoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/algorithm/module_2/VeHinhThoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/src/algorithm/module_3/TakeOutPrimesFrom2DArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/algorithm/module_3/TakeOutPrimesFrom2DArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/src/algorithm/module_3/TakeOutRepeatedCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/src/algorithm/module_3/TakeOutRepeatedCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/sql_users/user_management.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/sql_users/user_management.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/controller/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/controller/UsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/repository/IUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/repository/IUserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/repository/impl/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/repository/impl/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/libs/thuc_hanh_quan_ly_user_jdbc_crud-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/libs/thuc_hanh_quan_ly_user_jdbc_crud-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/repository/impl/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/repository/impl/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/webapp/users/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/webapp/users/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/webapp/users/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/webapp/users/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/webapp/users/search.jsp" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2A6ftmAr7LOYiJWjftD5ObnrcMD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../module3_tranthidiep_wbe" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\CodeGym 02.2022\C0222G2\C0222G2_TranThiDiep\module3\casestudy_jsp_servlet\furama_jsp_servlet\src\main\webapp" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="config" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c2ce7256-004f-4f4a-ae11-cdd928298301" name="Changes" comment="" />
+      <created>1654335175494</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1654335175494</updated>
+      <workItem from="1654335178376" duration="4035000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

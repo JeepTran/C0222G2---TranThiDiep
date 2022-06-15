@@ -1,0 +1,74 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<head>
+    <link rel="stylesheet" href="../../bootstrap-5/normalize.css">
+    <title>Library</title>
+    <link rel="stylesheet" href="../../bootstrap413/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../datatables/css/dataTables.bootstrap4.min.css">
+    <style>
+        <%@include file="/css/style.css" %>
+    </style>
+    <link rel="stylesheet" href="../../bootstrap-5/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light bg-danger">
+    <div class="container-fluid">
+        <a class="navbar-brand fw-bolder" href="/library">ABC LIBRARY</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" aria-current="page" href="/book">Books List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-bold" href="/borrow">Borrowed Books</a>
+                </li>
+                <%--                <li class="nav-item dropdown">--%>
+                <%--                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">--%>
+                <%--                        Dropdown--%>
+                <%--                    </a>--%>
+                <%--                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">--%>
+                <%--                        <li><a class="dropdown-item" href="#">Action</a></li>--%>
+                <%--                        <li><a class="dropdown-item" href="#">Another action</a></li>--%>
+                <%--                        <li><hr class="dropdown-divider"></li>--%>
+                <%--                        <li><a class="dropdown-item" href="#">Something else here</a></li>--%>
+                <%--                    </ul>--%>
+                <%--                </li>--%>
+                <%--                <li class="nav-item">--%>
+                <%--                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>--%>
+                <%--                </li>--%>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="container-fluid text-center mb-4"><h3>Welcome to ABC Library</h3></div>
+    <div class="container d-flex justify-content-center"><img src="image/book1.jpg" class="img-fluid row w-75 col-auto"
+                                                              alt="books"></div>
+</div>
+
+</body>
+<script src="../../bootstrap-5/bootstrap.bundle.min.js"></script>
+<script src="../../jquery/jquery-3.5.1.min.js"></script>
+<script src="../../datatables/js/jquery.dataTables.min.js"></script>
+<script src="../../datatables/js/dataTables.bootstrap4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#tableCustomer').dataTable({
+            "dom": 'lrtip',
+            "lengthChange": false,
+            "pageLength": 7
+        });
+    });
+</script>
+
+</html>

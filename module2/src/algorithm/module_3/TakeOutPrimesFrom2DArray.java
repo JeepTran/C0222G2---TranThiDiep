@@ -1,9 +1,11 @@
+package algorithm.module_3;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
-public class te25 {
+public class TakeOutPrimesFrom2DArray {
     public static void main(String[] args) {
         int[][] arg1 = {{1, 2, 8, 43}, {9, 4, 53, 7}, {11, 6, 4, 0}, {1, 2, 6, 51}};
 

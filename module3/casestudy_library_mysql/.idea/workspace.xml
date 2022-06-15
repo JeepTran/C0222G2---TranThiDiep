@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a879fc25-c4f5-4701-99ad-3345540fa6ef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/furama_jsp_servlet/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/java/controller/FuramaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/java/repository/IContractRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/java/repository/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/java/repository/IEmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/java/repository/IServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/java/repository/impl/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/java/repository/impl/EmployeeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/java/service/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/java/service/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/webapp/furama/delete.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/webapp/furama/edit.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/webapp/furama/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/webapp/furama/list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/config/CharsetFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/controller/ContractController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/controller/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/controller/HomeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/controller/ServiceController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/contract/Contract.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/contract/ContractDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/customer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/customer/CustomerType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/employee/Division.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/employee/EducationDegree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/employee/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/employee/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/employee/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/employee/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/employee/UserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/service/AttachService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/service/RentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/model/service/ServiceType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/base_repository/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/contract/IContractDetailRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/contract/IContractRepostitory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/contract/impl/ContractDetailRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/contract/impl/ContractRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/customer/ICustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/customer/ICustomerTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/customer/impl/CustomerRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/customer/impl/CustomerTypeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/IDivisionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/IEducationDegreeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/IEmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/IPositionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/IRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/IUserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/IUserRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/impl/DivisionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/impl/EducationDegreeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/impl/EmployeeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/impl/PositionRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/impl/RoleRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/impl/UserRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/employee/impl/UserRoleRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/service/IAttachServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/service/IRentTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/service/IServiceRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/service/IServiceTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/service/impl/AttachServiceRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/service/impl/RentTypeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/service/impl/ServiceRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/repository/service/impl/ServiceTypeRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/contract/IContractDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/contract/IContractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/contract/impl/ContractDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/contract/impl/ContractServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/customer/ICustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/customer/ICustomerTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/customer/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/customer/impl/CustomerTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/IDivisionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/IEducationDegreeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/IEmployeeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/IPositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/IUserRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/IUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/impl/DivisionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/impl/EducationDegreeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/impl/PositionServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/impl/UserRoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/employee/impl/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/service/IAttachServiceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/service/IRentTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/service/IServiceService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/service/IServiceTypeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/service/impl/AttachServiceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/service/impl/RentTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/service/impl/ServiceServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/java/service/service/impl/ServiceTypeServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap-5/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap-5/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap-5/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/bootstrap413/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/css/dataTables.bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/css/dataTables.foundation.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/css/dataTables.foundation.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/css/dataTables.jqueryui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/css/dataTables.semanticui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/css/dataTables.semanticui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/css/jquery.dataTables.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/css/jquery.dataTables.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/images/sort_asc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/images/sort_asc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/images/sort_both.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/images/sort_desc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/images/sort_desc_disabled.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/js/dataTables.bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/js/dataTables.foundation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/js/dataTables.foundation.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/js/dataTables.jqueryui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/js/dataTables.semanticui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/js/dataTables.semanticui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/js/jquery.dataTables.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/datatables/js/jquery.dataTables.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/error404.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/furama/customer/createCustomer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/furama/customer/listCustomer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/furama/customer/updateCustomer.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/furama/employee/createEmployee.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/furama/employee/listEmployee.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/furama/employee/updateEmployee.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/furama/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/furama/service/createService.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/furama/service/listService.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet_furama/src/main/webapp/jquery/jquery-3.5.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/config/CharsetFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/controller/BorrowController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/controller/LibraryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/model/BookStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/model/BorrowCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/model/Class.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/model/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/reponsitory/BaseRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/reponsitory/book/IBookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/reponsitory/book/impl/BookRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/reponsitory/borrow_card/IBorrowCardRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/reponsitory/borrow_card/impl/BorrowCardRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/reponsitory/student/IStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/reponsitory/student/impl/StudentRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/service/book/IBookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/service/book/impl/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/service/borrow_card/IBookCardService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/service/borrow_card/impl/BookCardServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/service/student/IStudentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/java/service/student/impl/StudentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-grid.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-grid.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-grid.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-grid.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-grid.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-grid.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-reboot.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-reboot.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-reboot.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-reboot.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-reboot.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-utilities.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-utilities.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-utilities.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-utilities.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-utilities.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap.rtl.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap.rtl.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap.rtl.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/css/bootstrap.rtl.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/js/bootstrap.bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/js/bootstrap.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/js/bootstrap.bundle.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/js/bootstrap.bundle.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/js/bootstrap.esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/js/bootstrap.esm.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/js/bootstrap.esm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/js/bootstrap.esm.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/js/bootstrap.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/js/bootstrap.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/bootstrap-5/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/library/borrow.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/library/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/library/listBook.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet/src/main/webapp/library/listBorrow.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/algorithm/BeautifulArray.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/algorithm/Character.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/algorithm/VeHinhThoi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/exam_module_2/utils/data/authorizedMobile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/out/production/module2/exam_module_2/utils/data/authorizedMobile.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/out/production/module2/exam_module_2/utils/data/foreignMobile.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/out/production/module2/exam_module_2/utils/data/foreignMobile.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/algorithm/module_2/BeautifulArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/algorithm/module_2/BeautifulArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/algorithm/module_2/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/algorithm/module_2/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/algorithm/module_2/VeHinhThoi.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/algorithm/module_2/VeHinhThoi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/algorithm/module_3/TakeOutPrimesFrom2DArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/algorithm/module_3/TakeOutPrimesFrom2DArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/algorithm/module_3/TakeOutRepeatedCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/algorithm/module_3/TakeOutRepeatedCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module2/src/case_study/furama_resort/utils/CheckRegex.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module2/src/case_study/furama_resort/utils/CheckRegex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/sql_users/user_management.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/sql_users/user_management.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/controller/UsersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/controller/UsersController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/repository/IUserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/repository/IUserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/repository/impl/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/repository/impl/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/service/IUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/service/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/classes/java/main/service/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/libs/thuc_hanh_quan_ly_user_jdbc_crud-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/libs/thuc_hanh_quan_ly_user_jdbc_crud-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/controller/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/controller/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/repository/IUserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/repository/IUserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/repository/impl/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/repository/impl/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/java/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/webapp/users/delete.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/webapp/users/delete.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/webapp/users/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/webapp/users/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss12_jdbc_and_crud/thuc_hanh/thuc_hanh_quan_ly_user_jdbc_crud/src/main/webapp/users/search.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../casestudy_jsp_servlet/module3_tranthidiep_wbe/src/main/webapp/furama/create.jsp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2ASZT5fAInNA8mwJ4pUXonfVFPv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../casestudy_thu_vien_muon_sach_jsp_servlet" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a879fc25-c4f5-4701-99ad-3345540fa6ef" name="Changes" comment="" />
+      <created>1655004951705</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1655004951705</updated>
+      <workItem from="1655004953029" duration="26000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

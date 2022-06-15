@@ -1,4 +1,4 @@
-package algorithm;
+package algorithm.module_2;
 
 public class VeHinhThoi {
     public static void main(String[] args) {
