@@ -11,7 +11,6 @@
 <html>
 <head>
     <title>Simple Dictionary</title>
-    <link rel="stylesheet" href="../../bootstrap413/css/bootstrap.min.css">
 </head>
 <body>
 <form action="translate">
@@ -20,12 +19,11 @@
         <input type="text" name="english" placeholder="Enter some familiar animals" value="${english}">
     </div>
     <div style="margin-top: 10px">
-    <button>Translate</button>
+    <button style="border-radius: 5px; border: 1px dashed black">Translate</button>
     </div>
 </form>
 <div>
     Vietnamese: <strong style="color: blue">${vietnamese}</strong>
 </div>
 </body>
-<script src="../../bootstrap413/js/bootstrap.bundle.min.js"></script>
 </html>
