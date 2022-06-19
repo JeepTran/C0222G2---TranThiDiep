@@ -2,47 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="59572f93-1607-4207-916e-2f0d7612ef26" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/src/main/java/com/jeep/controller/MailboxController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/src/main/java/com/jeep/model/Mailbox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/src/main/webapp/WEB-INF/views/settings.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/src/main/webapp/WEB-INF/views/updated.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/src/main/java/com/employee/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/src/main/java/com/employee/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/src/main/webapp/WEB-INF/views/info.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeep/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeep/model/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeep/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeep/repository/IUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeep/repository/impl/UserRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeep/service/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeep/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/home.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/welcome.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/casestudy_thu_vien_muon_sach_jsp_servlet/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/casestudy_thu_vien_muon_sach_jsp_servlet/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_2_upload_ten_bai_hat/src/main/java/com/jeep/model/Song.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_2_upload_ten_bai_hat/src/main/java/com/jeep/repository/ISongRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_2_upload_ten_bai_hat/src/main/java/com/jeep/repository/impl/SongRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_2_upload_ten_bai_hat/src/main/java/com/jeep/service/ISongService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_2_upload_ten_bai_hat/src/main/java/com/jeep/service/impl/SongServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../ss1_spring_overview/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_spring_overview/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_tap/bai_tap_1_cau_hinh_hom_thu_dien_tu/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../thuc_hanh_1_employee_management/.idea/gradle.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +68,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../module3/casestudy_thu_vien_muon_sach_jsp_servlet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../thuc_hanh_1_employee_management" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -190,6 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655441725911</updated>
       <workItem from="1655441728922" duration="5834000" />
+      <workItem from="1655651674036" duration="30000" />
     </task>
     <servers />
   </component>
@@ -205,10 +176,10 @@
       <screen x="0" y="0" width="1280" height="760" />
     </state>
     <state x="766" y="96" key="#com.intellij.ide.util.MemberChooser/0.0.1280.760@0.0.1280.760" timestamp="1655448601156" />
-    <state x="741" y="135" key="FileChooserDialogImpl" timestamp="1655458031279">
+    <state x="741" y="135" key="FileChooserDialogImpl" timestamp="1655651682337">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
-    <state x="741" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1655458031279" />
+    <state x="741" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1655651682337" />
     <state width="395" height="192" key="GridCell.Tab.0.bottom" timestamp="1655458032750">
       <screen x="0" y="0" width="1280" height="760" />
     </state>
