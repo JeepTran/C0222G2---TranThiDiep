@@ -24,13 +24,13 @@ public class BlogServiceImpl implements IBlogService {
     }
 
     @Override
-    public void delete(Blog blog) {
-        this.blogRepository.delete(blog);
+    public void delete(int id) {
+        this.blogRepository.delete(id);
     }
 
     @Override
     public Blog findById(int id) {
-        return this.blogRepository.findById(id).orElse(null);
+        return this.blogRepository.findById(id);
     }
 
 }

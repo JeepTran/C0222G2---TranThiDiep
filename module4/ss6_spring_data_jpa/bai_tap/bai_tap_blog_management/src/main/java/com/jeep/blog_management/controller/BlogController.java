@@ -60,7 +60,7 @@ public class BlogController {
 
     @PostMapping("/delete")
     public String delete(@ModelAttribute Blog blog, RedirectAttributes redirectAttributes) {
-        this.blogService.delete(blog);
+        this.blogService.delete(blog.getId());
         redirectAttributes.addFlashAttribute("success", "Delete blog successfully!");
         return "redirect:/blog";
     }

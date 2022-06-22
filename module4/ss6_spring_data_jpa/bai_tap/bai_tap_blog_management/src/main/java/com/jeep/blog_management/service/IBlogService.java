@@ -9,7 +9,7 @@ public interface IBlogService {
 
     void save(Blog blog);
 
-    void delete(Blog blog);
+    void delete(int id);
 
     Blog findById(int id);
 }
