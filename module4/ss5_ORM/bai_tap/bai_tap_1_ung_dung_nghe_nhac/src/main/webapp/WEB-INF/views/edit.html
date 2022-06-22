@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Settings</title>
+</head>
+<body>
+<h2>Edit Song</h2>
+<form action="/songs/edit" method="post" th:object="${song}">
+    <input type="hidden" th:field="*{id}"/>
+    <table>
+        <tr>
+            <td><strong>Song name: </strong></td>
+            <td>
+                <input th:field="*{songName}"/>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Singer: </strong></td>
+            <td><input th:field="*{singer}"/></td>
+        </tr>
+        <tr>
+            <td><strong>Music Kind: </strong></td>
+            <td>
+                <select th:field="*{musicType}">
+                    <option value="Pop">Pop</option>
+                    <option value="Country">Country</option>
+                    <option value="Rock">Rock</option>
+                    <option value="R&B">R&B</option>
+                    <option value="Dance">Dance</option>
+                    <option value="Jazz">Jazz</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Song URL: </strong></td>
+            <td>
+                <input type="text" th:field="*{songUrl}"/>
+
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Edit</button>
+                <a href="/songs/list" style="border: 1px solid black; padding: 2px;border-radius: 3px">Cancel</a>
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
