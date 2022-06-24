@@ -85,57 +85,5 @@ public class BlogController {
         model.addAttribute("blog", blog);
         return "view";
     }
-
-
-    //    Category
-    @GetMapping("/category")
-    public String listCategory(Model model, @PageableDefault(value = 3) Pageable pageable, @RequestParam Optional<String> searchName) {
-        String keyword = searchName.orElse("");
-        model.addAttribute("keyword",keyword);
-        Page<Category> categoryList = this.categoryService.findAllCategoryByKeyword("%"+keyword+"%",pageable);
-        model.addAttribute("categoryList", categoryList);
-        return "list-category";
-    }
-
-    @GetMapping("/category/create")
-    public String displayCreateCategoryForm(Model model) {
-        model.addAttribute("category", new Category());
-        return "create-category";
-    }
-
-    @PostMapping("/category/create")
-    public String createCategory(@ModelAttribute Category category, RedirectAttributes redirectAttributes) {
-        categoryService.save(category);
-        redirectAttributes.addFlashAttribute("success", "Add new category successfully!");
-        return "redirect:/blog/category";
-    }
-
-    @GetMapping("/category/{id}/edit")
-    public String displayEditCategoryForm(@PathVariable int id, Model model) {
-        Category category = this.categoryService.findById(id);
-        model.addAttribute("category", category);
-        return "edit-category";
-    }
-
-    @PostMapping("/category/edit")
-    public String editCategory(@ModelAttribute Category category, RedirectAttributes redirectAttributes) {
-        this.categoryService.save(category);
-        redirectAttributes.addFlashAttribute("success", "Update category successfully!");
-        return "redirect:/blog/category";
-    }
-
-    @GetMapping("/category/{id}/delete")
-    public String displayDeleteCategoryForm(@PathVariable int id, Model model) {
-        Category category = this.categoryService.findById(id);
-        model.addAttribute("category", category);
-        return "delete-category";
-    }
-
-    @PostMapping("/category/delete")
-    public String deleteCategory(@ModelAttribute Category category, RedirectAttributes redirectAttributes) {
-        this.categoryService.delete(category.getCategoryId());
-        redirectAttributes.addFlashAttribute("success", "Delete category successfully!");
-        return "redirect:/blog/category";
-    }
 }
 

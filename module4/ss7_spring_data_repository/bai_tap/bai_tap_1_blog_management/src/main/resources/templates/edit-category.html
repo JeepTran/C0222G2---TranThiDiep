@@ -9,7 +9,7 @@
 
 <div class="m-auto w-50"><h3>Update Blog</h3></div>
 
-<form th:action="@{/blog/category/edit}" method="post" th:object="${category}" class="w-50 m-auto">
+<form th:action="@{/category/edit}" method="post" th:object="${category}" class="w-50 m-auto">
     <input type="hidden" th:field="*{categoryId}">
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Category Name</label>
