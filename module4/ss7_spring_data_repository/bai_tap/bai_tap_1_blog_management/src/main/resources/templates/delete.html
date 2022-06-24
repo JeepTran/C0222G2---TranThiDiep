@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav th:replace="/layout::navbar"></nav>
+<div class="m-auto w-50"><h3>Do you want to delete blog "<span style="color: maroon" th:text="${blog.title}"></span>"?</h3>
+</div>
+
+<form th:action="@{/blog/delete}" method="post" th:object="${blog}" class="w-50 m-auto">
+    <input type="hidden" th:field="*{id}">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Title</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+               th:field="*{title}" readonly>
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Content</label>
+        <textarea class="form-control" id="exampleInputPassword1" th:field="*{content}" readonly></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword2" class="form-label">Summary</label>
+        <input type="text" class="form-control" id="exampleInputPassword2" th:field="*{summary}" readonly>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword3" class="form-label">Creating Date</label>
+        <input type="date" class="form-control" id="exampleInputPassword3" th:field="*{creatingDate}" readonly>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Delete</button>
+</form>
+<footer th:replace="/layout::footer"></footer>
+
+</body>
+<script th:replace="layout::bootstrapBundle"></script>
+</html>

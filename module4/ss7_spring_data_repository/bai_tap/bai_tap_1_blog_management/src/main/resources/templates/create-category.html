@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav th:replace="/layout::navbar"></nav>
+<div class="m-auto w-50"><h3>New Blog</h3></div>
+
+<form th:action="@{/blog/category/create}" method="post" th:object="${category}" class="w-50 m-auto">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Category Name</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+               th:field="*{categoryName}">
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+<footer th:replace="/layout::footer"></footer>
+</body>
+<script th:replace="layout::bootstrapBundle"></script>
+</html>

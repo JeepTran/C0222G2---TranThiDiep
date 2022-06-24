@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="/layout::head">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav th:replace="/layout::navbar"></nav>
+<div class="m-auto w-50"><h3>New Blog</h3></div>
+
+<form th:action="@{/blog/create}" method="post" th:object="${blog}" class="w-50 m-auto">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Title</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+               th:field="*{title}">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Content</label>
+        <textarea class="form-control" id="exampleInputPassword1" th:field="*{content}"></textarea>
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword2" class="form-label">Summary</label>
+        <input type="text" class="form-control" id="exampleInputPassword2" th:field="*{summary}">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword3" class="form-label">Creating Date</label>
+        <input type="date" class="form-control" id="exampleInputPassword3" th:field="*{creatingDate}">
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword4" class="form-label">Category</label>
+        <select class="form-control" id="exampleInputPassword4" th:field="*{category}">
+            <option th:each="category : ${categoryList}"
+                    th:value="${category.categoryId}"
+                    th:text="${category.categoryName}"></option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+<footer th:replace="/layout::footer"></footer>
+</body>
+<script th:replace="layout::bootstrapBundle"></script>
+</html>
