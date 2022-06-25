@@ -6,42 +6,22 @@
 </head>
 <body>
 <h2>New Song</h2>
-<form action="create" method="post" th:object="${song}">
+<a href="music/list">Back to Song List</a>
+<form action="create" method="post" th:object="${songDto}">
     <table>
         <tr>
             <td><strong>Song name: </strong></td>
             <td>
-                <input th:field="*{songName}"/>
+                <input th:field="*{name}"/>
             </td>
         </tr>
         <tr>
             <td><strong>Singer: </strong></td>
-            <td><input th:field="*{singer}"/></td>
+            <td><input th:field="*{artist}"/></td>
         </tr>
         <tr>
-            <td><strong>Music Kind: </strong></td>
-            <td>
-                <select th:field="*{musicType}"/>
-                <option value="Pop">Pop</option>
-                <option value="Country">Country</option>
-                <option value="Rock">Rock</option>
-                <option value="R&B">R&B</option>
-                <option value="Dance">Dance</option>
-                <option value="Jazz">Jazz</option>
-            </td>
-        </tr>
-        <tr>
-            <td><strong>Song URL: </strong></td>
-            <td>
-                <select th:field="*{songUrl}">
-                    <option value="https://tainhac123.com/listen/perfect-ed-sheeran.O5ZdaGqNhRSh.html">Perfect</option>
-                    <option value="https://tainhac123.com/listen/hai-muoi-hai-22-hua-kim-tuyen-ft-amee.kvyyApgfnHC3.html">Hai muoi hai (22)</option>
-                    <option value="https://tainhac123.com/listen/vi-me-anh-bat-chia-tay-miu-le-ft-karik-ft-chau-dang-khoa.gYMcjxHNy3sl.html">Vi Me Anh Bat Chia Tay</option>
-                    <option value="https://tainhac123.com/listen/de-vuong-dinh-dung-ft-acv.w8lmuII1Yn2G.html">De Vuong</option>
-                    <option value="https://tainhac123.com/listen/at-my-worst-get-scared.35exdLbX7vf9.html">At My Worst</option>
-                    <option value="https://tainhac123.com/listen/beautiful-in-white-shane-filan.6wxzvEkMn8.html">Beautiful In White</option>
-                </select>
-            </td>
+            <td><strong>Music Type: </strong></td>
+            <td><input th:field="*{musicType}"/></td>
         </tr>
         <tr>
             <td></td>
