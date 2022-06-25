@@ -8,11 +8,11 @@
           crossorigin="anonymous">
 </head>
 <body>
-<div class="ms-5">
+<div class="w-50 ms-5">
     <div class="mb-5">
         <h4 class="display-4"> Register Form</h4>
     </div>
-    <div class="w-75" style="background-color: #c9e7ec; border-radius: 10px">
+    <div  style="background-color: #c9e7ec; border-radius: 10px">
         <form class="row g-3" th:action="@{/form/create}" method="post" th:object="${userDto}">
             <div class="col-md-4">
                 <label for="validationServer01" class="form-label">First name</label>
@@ -28,12 +28,12 @@
             </div>
             <div class="col-md-4">
                 <label for="validationServerUsername" class="form-label">Date of birth</label>
-                <div class="input-group has-validation">
+
                     <input type="date" class="form-control" id="validationServerUsername"
-                           aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" th:field="*{dob}">
+                           aria-describedby="validationServerUsernameFeedback" th:field="*{dob}">
                     <div class="text-danger"  th:errors="*{dob}">
                     </div>
-                </div>
+
             </div>
             <div class="col-md-6">
                 <label for="validationServer03" class="form-label">Phone Number</label>

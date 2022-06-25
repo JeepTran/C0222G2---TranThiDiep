@@ -45,7 +45,7 @@ public class FormController {
         User user = new User();
         BeanUtils.copyProperties(userDto, user);
         this.userService.save(user);
-        redirectAttributes.addFlashAttribute("success", "Add new user successfully");
+        redirectAttributes.addFlashAttribute("success", "Add new user successfully!");
         return "redirect:/form/list";
     }
 
