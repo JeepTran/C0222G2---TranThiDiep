@@ -5,19 +5,21 @@ import org.springframework.validation.Errors;
 import org.springframework.validation.Validator;
 
 import javax.validation.constraints.*;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.format.DateTimeFormatter;
 
 public class UserDto implements Validator {
     private Integer id;
 
     @NotEmpty(message = "This field should not be empty.")
     @NotBlank(message = "This field should not be blank.")
-    @Size(min = 5, max = 45, message ="This field should contain 5-45 characters.")
+    @Size(min = 5, max = 45, message = "This field should contain 5-45 characters.")
     private String firstName;
 
     @NotEmpty(message = "This field should not be empty.")
     @NotBlank(message = "This field should not be blank.")
-    @Size(min = 5, max = 45, message ="This field should contain 5-45 characters.")
+    @Size(min = 5, max = 45, message = "This field should contain 5-45 characters.")
     private String lastName;
 
     @Pattern(regexp = "((09)|(08)|(07)|(05)|(03))[0-9]{8}", message = "Invalid phone number format (10 digits & started by 03/05/07/08/09 ")
@@ -97,9 +99,16 @@ public class UserDto implements Validator {
     @Override
     public void validate(Object target, Errors errors) {
         UserDto userDto = (UserDto) target;
-        int yearBirthday = Integer.parseInt(userDto.dob.substring(0, 4));
-        int curYear = LocalDateTime.now().getYear();
-        if (curYear - yearBirthday < 18) {
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        LocalDate birthday = LocalDate.parse(userDto.dob, formatter);
+        LocalDate now = LocalDate.now();
+        int age = Period.between(birthday, now).getYears();
+
+//        int yearBirthday = Integer.parseInt(this.dob.substring(0,4));
+//        int curYear = LocalDate.now().getYear();
+//        int age = curYear-yearBirthday;
+        if (age < 18) {
             errors.rejectValue("dob", "create.not18", "Not enough 18 years old!.");
         }
     }

@@ -38,7 +38,7 @@ public class FormController {
     @PostMapping("/create")
     public String create(@ModelAttribute @Valid UserDto userDto,
                          BindingResult bindingResult, RedirectAttributes redirectAttributes) {
-        new UserDto().validate(userDto, bindingResult);
+        new UserDto().validate(userDto,bindingResult);
         if (bindingResult.hasErrors()) {
             return "form";
         }
