@@ -47,6 +47,6 @@ public class SongController {
         BeanUtils.copyProperties(songDto,song);
         this.songService.save(song);
         redirectAttributes.addFlashAttribute("success","Add new song successfully!");
-        return "redirect:/list";
+        return "redirect:/music/list";
     }
 }

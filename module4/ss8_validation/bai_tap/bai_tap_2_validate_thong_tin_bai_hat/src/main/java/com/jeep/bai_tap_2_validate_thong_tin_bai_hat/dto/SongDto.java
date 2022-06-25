@@ -8,22 +8,21 @@ import javax.validation.constraints.Size;
 public class SongDto {
     private Integer id;
 
-    @NotEmpty
-    @NotBlank
-    @Size(min = 1, max = 800)
-    @Pattern(regexp = "[A-Za-z0-9]+")
+    @NotBlank(message = "Song name should not be empty or blank!")
+    @Size(min = 1, max = 800, message = "Maximum 800 characters.")
+    @Pattern(regexp = "[A-Za-z0-9 ]+", message = "Do not contain special characters.")
     private String name;
 
-    @NotEmpty
-    @NotBlank
-    @Size(min = 1, max = 300)
-    @Pattern(regexp = "[A-Za-z0-9]+")
+//    @NotEmpty(message = "Enter artist!")
+    @NotBlank(message = "Artist should not be empty or blank!")
+    @Size(min = 1, max = 300, message = "Maximum 300 characters.")
+    @Pattern(regexp = "[A-Za-z0-9 ]+", message = "Do not contain special characters.")
     private String artist;
 
-    @NotEmpty
-    @NotBlank
-    @Size(min = 1, max = 1000)
-    @Pattern(regexp = "[A-Za-z0-9,]+")
+//    @NotEmpty(message = "Enter music type!")
+    @NotBlank(message = "Music type should not be empty or blank!")
+    @Size(min = 1, max = 1000, message = "Maximum 1000 characters.")
+    @Pattern(regexp = "[A-Za-z0-9, ]+",message = "Do not contain special characters (except for comma).")
     private String musicType;
 
 

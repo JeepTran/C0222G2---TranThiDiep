@@ -10,7 +10,7 @@
     <a href="/music/create">New Song</a>
 </div>
 <div th:if="${success}">
-    <div th:text="${success}"></div>
+    <h4 style="color: green" th:text="${success}"></h4>
 </div>
 <table border="1">
     <tr>
@@ -18,7 +18,6 @@
         <th>Song Name</th>
         <th>Artist</th>
         <th>Music Type</th>
-        <th>Edit</th>
 
     </tr>
     <tr th:each="song,stat:${songList}">
@@ -26,7 +25,6 @@
         <td th:text="${song.name}"></td>
         <td th:text="${song.artist}"></td>
         <td th:text="${song.musicType}"></td>
-        <td><a th:href="@{/songs/{id}/edit(id=${song.getId()})}">Edit</a></td>
     </tr>
     </div>
 </table>
