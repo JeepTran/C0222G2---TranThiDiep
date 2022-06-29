@@ -1,19 +1,18 @@
 package com.jeep.bai_tap_1_blog_management.controller;
 
 import com.jeep.bai_tap_1_blog_management.model.Blog;
-import com.jeep.bai_tap_1_blog_management.model.Category;
 import com.jeep.bai_tap_1_blog_management.service.IBlogService;
 import com.jeep.bai_tap_1_blog_management.service.ICategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-import java.util.List;
 import java.util.Optional;
 
 @Controller
@@ -26,13 +25,16 @@ public class BlogController {
     private ICategoryService categoryService;
 
     @GetMapping("")
-    public String list(Model model, @PageableDefault(value = 3) Pageable pageable,
-                       @RequestParam Optional<String> searchName) {
+    public String list(Model model, @PageableDefault(size = 3, page = 0) Pageable pageable,  //blog?page=0&size=5  //blog?page=1&size=5
+                       @RequestParam Optional<String> searchName, @RequestParam("sort") Optional<String> sort) {
 
+        String sortValue = sort.orElse("");
         String keyword = searchName.orElse("");
         model.addAttribute("keyword", keyword);
         Page<Blog> blogList = this.blogService.findAllBlogByKeyword("%" + keyword + "%", pageable);
         model.addAttribute("blogList", blogList);
+        System.out.println(pageable.getSort());
+        model.addAttribute("sortItem", sortValue);
         return "list-blog";
     }
 

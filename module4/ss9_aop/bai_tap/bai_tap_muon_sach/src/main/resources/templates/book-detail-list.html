@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+          crossorigin="anonymous">
+</head>
+<body>
+
+<div class="card bg-dark text-white">
+    <img class="card-img" src="../static/image/book2.jpg" height="562" width="1000"/>
+    <div class="card-img-overlay">
+        <h3 class="card-title">Book List</h3>
+
+        <div>
+            <table class=" table table-hover" style="background-color: #d3fdf6; border-radius: 10px">
+                <tr>
+                    <th>#</th>
+                    <th>Detail ID</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th>Status</th>
+                    <th>Borrow</th>
+                    <th>Return</th>
+                    <th>Delete</th>
+                </tr>
+                <tr th:each="bookDetail,loop:${bookDetailList}">
+                    <td th:text="${loop.count}"></td>
+                    <td th:text="${bookDetail.detailId}"></td>
+                    <td th:if="${bookDetail.status}" th:></td>
+                    <td th:text="${bookDetail.book.author}"></td>
+                    <td th:utext="${bookDetail.status==1}?'used':'available'" ></td>
+                    <td><a th:href="@{/books/{id}/borrow(id=${bookDetail.getDetailId()})}">Borrow</a></td>
+                    <td><a th:href="@{/books/{id}/return(id=${bookDetail.getDetailId()})}">Return</a></td>
+                    <td><a th:href="@{/books/{id}/delete(id=${bookDetail.getDetailId()})}">Delete</a></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</html>

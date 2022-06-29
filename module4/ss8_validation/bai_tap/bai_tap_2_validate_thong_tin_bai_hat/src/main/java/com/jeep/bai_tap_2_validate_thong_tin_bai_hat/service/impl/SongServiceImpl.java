@@ -22,4 +22,9 @@ public class SongServiceImpl implements ISongService {
     public Song save(Song song) {
         return songRepository.save(song);
     }
+
+    @Override
+    public Song findById(int id) {
+        return songRepository.findById(id);
+    }
 }

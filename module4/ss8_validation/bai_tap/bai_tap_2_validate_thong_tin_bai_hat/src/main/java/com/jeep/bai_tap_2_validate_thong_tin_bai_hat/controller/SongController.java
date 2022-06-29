@@ -9,10 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
@@ -26,9 +23,8 @@ public class SongController {
     private ISongService songService;
 
     @GetMapping("/list")
-    public ModelAndView displaySongList(ModelAndView modelAndView){
-        modelAndView = new ModelAndView("list-song","songList",songService.findAll());
-        return modelAndView;
+    public ModelAndView displaySongList(){
+        return new ModelAndView("list-song","songList",songService.findAll());
     }
     @GetMapping("/create")
     public String displayCreateForm(Model model){
@@ -37,11 +33,30 @@ public class SongController {
     }
 
     @PostMapping("/create")
-    public String createNewSong(@ModelAttribute @Valid SongDto songDto,
+    public String createNewSong(@Valid @ModelAttribute SongDto songDto,
                                 BindingResult bindingResult, RedirectAttributes redirectAttributes){
 
         if(bindingResult.hasErrors()){
             return "create-song";
+        }
+        Song song = new Song();
+        BeanUtils.copyProperties(songDto,song);
+        this.songService.save(song);
+        redirectAttributes.addFlashAttribute("success","Edit song successfully!");
+        return "redirect:/music/list";
+    }
+    @GetMapping("/{id}/edit")
+    public String displayEditForm(@PathVariable int id, Model model){
+        model.addAttribute("songDto", songService.findById(id));
+        return "edit-song";
+    }
+
+    @PostMapping("/edit")
+    public String editSong(@ModelAttribute @Valid SongDto songDto,
+                                BindingResult bindingResult, RedirectAttributes redirectAttributes){
+
+        if(bindingResult.hasErrors()){
+            return "edit-song";
         }
         Song song = new Song();
         BeanUtils.copyProperties(songDto,song);

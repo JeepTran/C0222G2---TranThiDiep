@@ -11,6 +11,7 @@
 <div th:if="${success}">
     <div class="success" th:text="${success}"></div>
 </div>
+<a th:href="@{/blog(sort='title,asc')}">Sort by title</a>
 
 <table class="table table-success table-striped">
     <thead >
@@ -41,12 +42,12 @@
 <div class="row">
     <div class="col-12">
     <a th:if="${blogList.hasPrevious()}"
-       th:href="@{/blog(page=${blogList.number - 1})}">Previous</a>
+       th:href="@{/blog(page=${blogList.number - 1} , sort=${sortItem})}">Previous</a>
     <span th:text="${blogList.number+1}"></span>
     /
     <span th:text="${blogList.totalPages}"></span>
     <a th:if="${blogList.hasNext()}"
-       th:href="@{/blog(page=${blogList.number + 1})}">Next</a>
+       th:href="@{/blog(page=${blogList.number + 1} , sort=${sortItem})}">Next</a>
     </div>
 </div>
 
