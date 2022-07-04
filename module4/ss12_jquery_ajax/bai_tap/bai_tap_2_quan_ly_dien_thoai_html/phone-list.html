@@ -2,120 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("#btnSubmit").click(function () {
-                let producer = $("#producer").val();
-                let model = $("#model").val();
-                let price = $("#price").val();
-                let newSmartphone = {
-                    producer: producer,
-                    model: model,
-                    price: price
-                };
-                //Gọi Ajax
-                $.ajax({
-                    headers: {
-                        'Accept': 'application/json',
-                        'Content-Type': 'application/json'
-                    },
-                    type: "POST",
-                    data: JSON.stringify((newSmartphone)),
-                    // Tên API
-                    url: "http://localhost:8080/smartphones",
-                    // Xử lý khi thành công
-                    success: function (data) {
-                        successHandler();
-                    }
-                });
-
-                // Chặn sự kiện mặc định của thẻ
-                event.preventDefault();
-            })
-        })
-
-        function getSmartphone(smartphone) {
-            return `<tr>
-                <td>${smartphone.producer}</td>
-                <td>${smartphone.model}</td>
-                <td>${smartphone.price}</td>
-                <td><a class="deleteSmartphone" th:href="${smartphone.id}">Delete</a></td>
-                </tr>`
-
-        };
-
-        function successHandler() {
-            $.ajax({
-                type: "GET",
-                url: "http://localhost:8080/smartphones",
-                success: function (data) {
-                    let content = '   <tr>\n' +
-                        '    <td>Producer</td>\n' +
-                        '    <td>Model</td>\n' +
-                        '    <td>Price</td>\n' +
-                        '    <td>Delete</td>\n' +
-                        '    </tr>' ;
-
-                    for (let i = 0; i < data.length; i++) {
-                        content += getSmartphone(data[i]);
-                    }
-                    console.log(data);
-                    $("#smartphoneList").html(content);
-                }
-            })
-        };
-
-        $(document).ready(function () {
-            $('.deleteSmartphone').click(function (event) {
-                let a = $(this);
-                let smartphoneId = a.attr("href");
-                $.ajax({
-                    type: "DELETE",
-                    url: "http://localhost:8080/smartphones/${smartphoneId}",
-                    success: function (data) {
-                        a.parent().parent().remove();
-                    }
-                });
-                event.preventDefault();
-            });
-        })
-    </script>
+    <title>Phone List</title>
 </head>
 <body>
-<table>
+<table border="1">
+    <thead>
     <tr>
-        <td>Producer:</td>
-        <td><input type="text" id="producer" placeholder="producer"></td>
+        <td>#</td>
+        <td>Producer</td>
+        <td>Model</td>
+        <td>Price</td>
+        <td>Edit</td>
+        <td>Delete</td>
     </tr>
-    <tr>
-        <td>Model:</td>
-        <td><input type="text" id="model" placeholder="model"></td>
-    </tr>
-    <tr>
-        <td>Price:</td>
-        <td><input type="text" id="price" placeholder="price"></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td><input type="button" value="Add" id="btnSubmit"></td>
-    </tr>
-</table>
+    </thead>
 
-<h2>Smartphone List</h2>
-<table id="smartphoneList">
-<!--   <thead>-->
-<!--   <tr>-->
-<!--        <td>Producer</td>-->
-<!--        <td>Model</td>-->
-<!--        <td>Price</td>-->
-<!--        <td>Delete</td>-->
-<!--    </tr>-->
-<!--   </thead>-->
-<!--    <tbody id="bodyPhoneList">-->
-<!--       -->
-<!--    </tbody>-->
+    <tbody id="bodyPhoneList">
+
+    </tbody>
+
 </table>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    function getPhoneList() {
+        $.ajax({
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            type: "GET",
+            url: "http://localhost:8080/smartphones",
+            success: function (smartphoneList) {
+                let bodyPhoneListHTML = "";
+
+                for (let i = 0; i < smartphoneList.length; i++) {
+                    bodyPhoneListHTML += `<tr>
+                        <td>${i}</td>
+                        <td>${smartphoneList[i].producer}</td>
+                        <td>${smartphoneList[i].model}</td>
+                        <td>${smartphoneList[i].price}</td>
+                        <td><a href="#">Edit</a></td>
+                        <td><a href="#">Delete</a></td>
+                    </tr>`;
+                }
+                $("#bodyPhoneList").html(bodyPhoneListHTML);
+            },
+            error: function (resultError) {
+                console.log('Có lỗi xảy ra!');
+            }
+        });
+    }
+    getPhoneList();
+
+</script>
 </body>
 </html>

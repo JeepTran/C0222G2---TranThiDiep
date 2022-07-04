@@ -12,6 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/smartphones")
+@CrossOrigin
 public class SmartphoneController {
     @Autowired
     public ISmartphoneService smartphoneService;
@@ -19,13 +20,6 @@ public class SmartphoneController {
     @PostMapping
     public ResponseEntity<Smartphone> createSmartphone(@RequestBody Smartphone smartphone) {
         return new ResponseEntity<>(smartphoneService.save(smartphone), HttpStatus.OK);
-    }
-
-    @GetMapping("/list")
-    public ModelAndView getAllSmartphones() {
-        ModelAndView modelAndView = new ModelAndView("phone-list");
-        modelAndView.addObject("smartphoneList", smartphoneService.findAll());
-        return modelAndView;
     }
 
     @GetMapping

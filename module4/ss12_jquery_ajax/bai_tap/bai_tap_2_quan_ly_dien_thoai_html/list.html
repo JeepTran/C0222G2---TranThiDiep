@@ -1,25 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>-->
+<!--    <script>-->
+<!--        $(document).ready(function () {-->
+<!--            $("#btnSubmit").click(function () {-->
+<!--                let producer = $("#producer").val();-->
+<!--                let model = $("#model").val();-->
+<!--                let price = $("#price").val();-->
+<!--                let newSmartphone = {-->
+<!--                    producer: producer,-->
+<!--                    model: model,-->
+<!--                    price: price-->
+<!--                };-->
+<!--                //Gọi Ajax-->
+<!--                $.ajax({-->
+<!--                    headers: {-->
+<!--                        'Accept': 'application/json',-->
+<!--                        'Content-Type': 'application/json'-->
+<!--                    },-->
+<!--                    type: "POST",-->
+<!--                    data: JSON.stringify((newSmartphone)),-->
+<!--                    // Tên API-->
+<!--                    url: "http://localhost:8080/smartphones",-->
+<!--                    // Xử lý khi thành công-->
+<!--                    success: function (data) {-->
+<!--                        successHandler();-->
+<!--                    }-->
+<!--                });-->
 
-<table id="phoneList">
+<!--                // Chặn sự kiện mặc định của thẻ-->
+<!--                event.preventDefault();-->
+<!--            })-->
+<!--        })-->
 
-</table>
+<!--        function getSmartphone(smartphone) {-->
+<!--            return `<tr>-->
+<!--                <td>${smartphone.producer}</td>-->
+<!--                <td>${smartphone.model}</td>-->
+<!--                <td>${smartphone.price}</td>-->
+<!--                <td><a class="deleteSmartphone" th:href="${smartphone.id}">Delete</a></td>-->
+<!--                </tr>`-->
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-  function getPhoneList(){
-      
-  }
+<!--        };-->
 
+<!--        function successHandler() {-->
+<!--            $.ajax({-->
+<!--                type: "GET",-->
+<!--                url: "http://localhost:8080/smartphones",-->
+<!--                success: function (data) {-->
+<!--                    let content = '   <tr>\n' +-->
+<!--                        '    <td>Producer</td>\n' +-->
+<!--                        '    <td>Model</td>\n' +-->
+<!--                        '    <td>Price</td>\n' +-->
+<!--                        '    <td>Delete</td>\n' +-->
+<!--                        '    </tr>' ;-->
 
+<!--                    for (let i = 0; i < data.length; i++) {-->
+<!--                        content += getSmartphone(data[i]);-->
+<!--                    }-->
+<!--                    console.log(data);-->
+<!--                    $("#smartphoneList").html(content);-->
+<!--                }-->
+<!--            })-->
+<!--        };-->
 
-</script>
+<!--        $(document).ready(function () {-->
+<!--            $('.deleteSmartphone').click(function (event) {-->
+<!--                let a = $(this);-->
+<!--                let smartphoneId = a.attr("href");-->
+<!--                $.ajax({-->
+<!--                    type: "DELETE",-->
+<!--                    url: "http://localhost:8080/smartphones/${smartphoneId}",-->
+<!--                    success: function (data) {-->
+<!--                        a.parent().parent().remove();-->
+<!--                    }-->
+<!--                });-->
+<!--                event.preventDefault();-->
+<!--            });-->
+<!--        })-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<table>-->
+<!--    <tr>-->
+<!--        <td>Producer:</td>-->
+<!--        <td><input type="text" id="producer" placeholder="producer"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Model:</td>-->
+<!--        <td><input type="text" id="model" placeholder="model"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td>Price:</td>-->
+<!--        <td><input type="text" id="price" placeholder="price"></td>-->
+<!--    </tr>-->
+<!--    <tr>-->
+<!--        <td></td>-->
+<!--        <td><input type="button" value="Add" id="btnSubmit"></td>-->
+<!--    </tr>-->
+<!--</table>-->
 
-
-</body>
-</html>
+<!--<h2>Smartphone List</h2>-->
+<!--<table id="smartphoneList">-->
+<!--&lt;!&ndash;   <thead>&ndash;&gt;-->
+<!--&lt;!&ndash;   <tr>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>Producer</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>Model</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>Price</td>&ndash;&gt;-->
+<!--&lt;!&ndash;        <td>Delete</td>&ndash;&gt;-->
+<!--&lt;!&ndash;    </tr>&ndash;&gt;-->
+<!--&lt;!&ndash;   </thead>&ndash;&gt;-->
+<!--&lt;!&ndash;    <tbody id="bodyPhoneList">&ndash;&gt;-->
+<!--&lt;!&ndash;       &ndash;&gt;-->
+<!--&lt;!&ndash;    </tbody>&ndash;&gt;-->
+<!--</table>-->
+<!--</body>-->
+<!--</html>-->
