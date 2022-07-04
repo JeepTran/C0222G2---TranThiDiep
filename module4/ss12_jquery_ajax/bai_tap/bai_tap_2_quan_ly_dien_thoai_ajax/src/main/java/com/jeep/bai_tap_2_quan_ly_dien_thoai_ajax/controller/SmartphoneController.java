@@ -1,7 +1,7 @@
-package com.jeep.thuc_hanh_2_quan_ly_dien_thoai.controller;
+package com.jeep.bai_tap_2_quan_ly_dien_thoai_ajax.controller;
 
-import com.jeep.thuc_hanh_2_quan_ly_dien_thoai.model.Smartphone;
-import com.jeep.thuc_hanh_2_quan_ly_dien_thoai.service.ISmartphoneService;
+import com.jeep.bai_tap_2_quan_ly_dien_thoai_ajax.model.Smartphone;
+import com.jeep.bai_tap_2_quan_ly_dien_thoai_ajax.service.ISmartphoneService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -34,13 +34,13 @@ public class SmartphoneController {
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Smartphone> deleteSmartphone(@PathVariable Long id){
+    public ResponseEntity<Smartphone> deleteSmartphone(@PathVariable Long id) {
         Optional<Smartphone> smartphoneOptional = smartphoneService.findById(id);
-        if(!smartphoneOptional.isPresent()){
+        if (!smartphoneOptional.isPresent()) {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
         smartphoneService.remove(id);
-        return new ResponseEntity<>(smartphoneOptional.get(),HttpStatus.OK);
+        return new ResponseEntity<>(smartphoneOptional.get(), HttpStatus.OK);
     }
 
 

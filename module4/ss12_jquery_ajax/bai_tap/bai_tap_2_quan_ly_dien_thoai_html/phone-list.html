@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -24,7 +24,7 @@
                     type: "POST",
                     data: JSON.stringify((newSmartphone)),
                     // Tên API
-                    url: "/smartphones",
+                    url: "http://localhost:8080/smartphones",
                     // Xử lý khi thành công
                     success: function (data) {
                         successHandler();
@@ -49,14 +49,15 @@
         function successHandler() {
             $.ajax({
                 type: "GET",
-                url: "/smartphones",
+                url: "http://localhost:8080/smartphones",
                 success: function (data) {
                     let content = '   <tr>\n' +
                         '    <td>Producer</td>\n' +
                         '    <td>Model</td>\n' +
                         '    <td>Price</td>\n' +
                         '    <td>Delete</td>\n' +
-                        '    </tr>'
+                        '    </tr>' ;
+
                     for (let i = 0; i < data.length; i++) {
                         content += getSmartphone(data[i]);
                     }
@@ -72,7 +73,7 @@
                 let smartphoneId = a.attr("href");
                 $.ajax({
                     type: "DELETE",
-                    url: `/smartphones/${smartphoneId}`,
+                    url: "http://localhost:8080/smartphones/${smartphoneId}",
                     success: function (data) {
                         a.parent().parent().remove();
                     }
@@ -104,20 +105,17 @@
 
 <h2>Smartphone List</h2>
 <table id="smartphoneList">
-    <tr>
-        <td>Producer</td>
-        <td>Model</td>
-        <td>Price</td>
-        <td>Delete</td>
-    </tr>
-    <th:block th:each="smartphone:${smartphoneList}">
-        <tr>
-            <td th:text="${smartphone.producer}"></td>
-            <td th:text="${smartphone.model}"></td>
-            <td th:text="${smartphone.price}"></td>
-            <td><a class="deleteSmartphone" th:href="${smartphone.getId()}">Delete</a></td>
-        </tr>
-    </th:block>
+<!--   <thead>-->
+<!--   <tr>-->
+<!--        <td>Producer</td>-->
+<!--        <td>Model</td>-->
+<!--        <td>Price</td>-->
+<!--        <td>Delete</td>-->
+<!--    </tr>-->
+<!--   </thead>-->
+<!--    <tbody id="bodyPhoneList">-->
+<!--       -->
+<!--    </tbody>-->
 </table>
 </body>
 </html>

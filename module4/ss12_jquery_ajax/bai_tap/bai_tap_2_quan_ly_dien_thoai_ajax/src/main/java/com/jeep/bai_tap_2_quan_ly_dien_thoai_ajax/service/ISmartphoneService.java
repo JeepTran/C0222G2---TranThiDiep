@@ -1,6 +1,6 @@
-package com.jeep.thuc_hanh_2_quan_ly_dien_thoai.service;
+package com.jeep.bai_tap_2_quan_ly_dien_thoai_ajax.service;
 
-import com.jeep.thuc_hanh_2_quan_ly_dien_thoai.model.Smartphone;
+import com.jeep.bai_tap_2_quan_ly_dien_thoai_ajax.model.Smartphone;
 
 import java.util.Optional;
 

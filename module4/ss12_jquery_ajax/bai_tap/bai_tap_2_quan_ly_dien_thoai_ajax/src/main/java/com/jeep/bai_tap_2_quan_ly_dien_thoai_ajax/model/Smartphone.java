@@ -1,4 +1,4 @@
-package com.jeep.thuc_hanh_2_quan_ly_dien_thoai.model;
+package com.jeep.bai_tap_2_quan_ly_dien_thoai_ajax.model;
 
 import javax.persistence.*;
 
