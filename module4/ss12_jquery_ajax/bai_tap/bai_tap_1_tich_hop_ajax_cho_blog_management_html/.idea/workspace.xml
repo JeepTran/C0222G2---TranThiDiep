@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13f9bbb7-6294-4124-8a9b-02cbbf5625c9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/blog-list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create-blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/controller/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/controller/CategoryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/repository/IBlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/repository/ICategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/service/IBlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/service/ICategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/create-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/create-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_1_dem_luot_view/src/main/java/com/jeep/thuc_hanh_1_dem_luot_view/controller/CounterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_1_dem_luot_view/src/main/java/com/jeep/thuc_hanh_1_dem_luot_view/controller/CounterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_1_dem_luot_view/src/main/java/com/jeep/thuc_hanh_1_dem_luot_view/model/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_1_dem_luot_view/src/main/java/com/jeep/thuc_hanh_1_dem_luot_view/model/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_1_dem_luot_view/src/main/resources/templates/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_1_dem_luot_view/src/main/resources/templates/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_2_luu_ten_nguoi_dung/src/main/java/com/jeep/thuc_hanh_2_luu_ten_nguoi_dung/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_2_luu_ten_nguoi_dung/src/main/java/com/jeep/thuc_hanh_2_luu_ten_nguoi_dung/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_2_luu_ten_nguoi_dung/src/main/java/com/jeep/thuc_hanh_2_luu_ten_nguoi_dung/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_2_luu_ten_nguoi_dung/src/main/java/com/jeep/thuc_hanh_2_luu_ten_nguoi_dung/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_2_luu_ten_nguoi_dung/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_2_luu_ten_nguoi_dung/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/create-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/create-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/error404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/error404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/model/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/repository/IBlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/repository/ICategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/repository/ICategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/IBlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/repository/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/repository/ICustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/service/IGeneralService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/service/IGeneralService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/TOC.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/css.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/extend.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/faq.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/html.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/js.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/misc.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/usage.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/humans.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/vendor/modernizr-3.11.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/site.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tile-wide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap_2_quan_ly_dien_thoai_html/phone-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_tap_2_quan_ly_dien_thoai_html/phone-create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../bai_tap_2_quan_ly_dien_thoai_html/phone-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../bai_tap_2_quan_ly_dien_thoai_html/phone-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_1_jquery_tao_hieu_ung/src/main/resources/templates/animation.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_1_jquery_tao_hieu_ung/src/main/resources/templates/animation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_1_jquery_tao_hieu_ung/src/main/resources/templates/hide-and-show.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_1_jquery_tao_hieu_ung/src/main/resources/templates/hide-and-show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/controller/SmartphoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/controller/SmartphoneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/model/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/model/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/repository/ISmartphoneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/repository/ISmartphoneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/service/ISmartphoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/service/ISmartphoneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/service/impl/SmartphoneServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/service/impl/SmartphoneServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/resources/templates/phone-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/resources/templates/phone-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss1_spring_overview/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss1_spring_overview/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss5_ORM/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss5_ORM/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss9_aop/bai_tap/bai_tap_muon_sach/src/main/java/com/jeep/bai_tap_muon_sach/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_aop/bai_tap/bai_tap_muon_sach/src/main/java/com/jeep/bai_tap_muon_sach/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../ss9_aop/thuc_hanh/thuc_hanh_1/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../ss9_aop/thuc_hanh/thuc_hanh_1/customer-management" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2BVgAi7M8EezCHvhgXw2Aa1gjWI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13f9bbb7-6294-4124-8a9b-02cbbf5625c9" name="Default Changelist" comment="" />
+      <created>1656996524100</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656996524100</updated>
+      <workItem from="1656996525264" duration="4421000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="741" y="135" key="FileChooserDialogImpl" timestamp="1657003408714">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="741" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1657003408714" />
+  </component>
+</project>
