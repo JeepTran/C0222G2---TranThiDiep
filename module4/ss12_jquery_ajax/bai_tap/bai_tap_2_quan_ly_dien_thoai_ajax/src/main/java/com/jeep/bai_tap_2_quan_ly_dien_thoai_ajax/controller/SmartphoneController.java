@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Optional;
 
@@ -17,7 +16,7 @@ public class SmartphoneController {
     @Autowired
     public ISmartphoneService smartphoneService;
 
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity<Smartphone> createSmartphone(@RequestBody Smartphone smartphone) {
         return new ResponseEntity<>(smartphoneService.save(smartphone), HttpStatus.OK);
     }
@@ -27,7 +26,21 @@ public class SmartphoneController {
         return new ResponseEntity<>(smartphoneService.findAll(), HttpStatus.OK);
     }
 
-    @DeleteMapping("/{id}")
+    @GetMapping("/{id}")
+    public ResponseEntity<Smartphone> findSmartphone(@PathVariable Long id) {
+        Optional<Smartphone> smartphoneEdit = smartphoneService.findById(id);
+        if (!smartphoneEdit.isPresent()) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        return new ResponseEntity<>(smartphoneEdit.get(),HttpStatus.OK);
+    }
+
+    @PostMapping("/edit")
+    public ResponseEntity<Smartphone> editSmartphone(@RequestBody Smartphone smartphone) {
+        return new ResponseEntity<>(smartphoneService.save(smartphone), HttpStatus.OK);
+    }
+
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<Smartphone> deleteSmartphone(@PathVariable Long id) {
         Optional<Smartphone> smartphoneOptional = smartphoneService.findById(id);
         if (!smartphoneOptional.isPresent()) {
