@@ -252,7 +252,7 @@ session .container .card {
 .card .row .form-group input,
 .card .row .form-group select {
     /*position: absolute;*/
-    width: 90%;
+    width: 250%;
     height: 100%;
     background: transparent;
     outline: none;
@@ -264,9 +264,6 @@ session .container .card {
     border-radius: 50px;
 }
 
-.select-items:hover {
-    background-color: #0ea2bd;
-}
 
 .card .row .form-group input:hover,
 .card .row .form-group select:hover,
@@ -279,9 +276,11 @@ session .container .card {
     line-height: 30px;
     color: #4c50ae;
     font-size: 15px;
+    font-weight: bold;
     margin: 0 0 0 10px;
     display: block;
     pointer-events: none;
+    text-align: left;
 }
 
 
@@ -333,20 +332,6 @@ session .container .card {
 
     .card .row input[type="submit"] {
         width: 100%;
-    }
-
-    .modal-create .modal-dialog {
-        position: center;
-        margin: 20px auto;
-        padding: 0;
-        width: 100%;
-    }
-
-    .modal-create .modal-dialog .modal-content {
-        width: 100%;
-        padding: 0px 0px;
-        margin: 0px;
-        background-color: white;
     }
 }
 

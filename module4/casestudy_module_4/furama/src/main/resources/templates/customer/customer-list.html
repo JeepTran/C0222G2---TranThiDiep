@@ -11,7 +11,7 @@
     <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
         <h3>Customer List</h3>
         <div class="d-inline-flex">
-            <button class="btn-create">New Customer</button>
+            <a th:href="@{/customer/create}"><button class="btn-create" >New Customer</button></a>
             <form action="" method="post">
                 <input class="input-search" type="text" placeholder="Search">
                 <button class="btn-create scrollto" href="#">Search</button>
@@ -44,7 +44,7 @@
                 <td>Item</td>
                 <td>Item</td>
                 <td>
-                    <button class="btn-edit">edit</button>
+                    <a th:href="@{/customer/edit}"><button class="btn-edit">edit</button></a>
                 </td>
                 <td>
                     <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button>
@@ -61,7 +61,7 @@
                 <td>Item</td>
                 <td>Item</td>
                 <td>
-                    <button class="btn-edit">edit</button>
+                    <a th:href="@{/customer/edit}"><button class="btn-edit">edit</button></a>
                 </td>
                 <td>
                     <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button>
@@ -85,7 +85,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn-modal-delete">Delete</button>
+                        <a th:href="@{#}"><button type="button" class="btn-modal-delete">Delete</button></a>
                     </div>
                 </div>
             </div>
