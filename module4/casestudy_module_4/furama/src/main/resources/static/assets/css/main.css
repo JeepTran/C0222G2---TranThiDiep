@@ -11,6 +11,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 :root {
   scroll-behavior: smooth;
 }
@@ -208,10 +209,13 @@ section {
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
+  background-color: #d5fbfd;
 }
 .header.sticked {
-  background: var(--color-white);
+  /*background: var(--color-white);*/
+  background-color:#c4f5fd;
   box-shadow: 0px 2px 20px rgba(var(--color-secondary-rgb), 0.1);
+
 }
 .header .logo img {
   max-height: 40px;
@@ -227,18 +231,34 @@ section {
   color: var(--color-primary);
   font-weight: 500;
 }
+.header .search {
+  font-size: 14px;
+  color: var(--color-white);
+  padding: 8px 23px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-family: var(--font-secondary);
+  height: 30px;
+  border: var(--color-primary) 1px solid ;
+}
+
 .header .btn-getstarted, .header .btn-getstarted:focus {
   font-size: 16px;
   color: var(--color-white);
   background: var(--color-primary);
-  padding: 8px 23px;
-  border-radius: 4px;
+  padding: 8px 20px;
+  border-radius: 10px;
   transition: 0.3s;
   font-family: var(--font-secondary);
+  height: 30px;
 }
 .header .btn-getstarted:hover, .header .btn-getstarted:focus:hover {
   color: var(--color-white);
   background: rgba(var(--color-primary-rgb), 0.85);
+}
+
+.header div a{
+  text-decoration: none;
 }
 @media (max-width: 1279px) {
   .header .btn-getstarted, .header .btn-getstarted:focus {
@@ -505,9 +525,10 @@ section {
   margin-bottom: 60px;
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
+
 @media (min-width: 992px) {
   .hero-animated .animated {
-    max-width: 45%;
+    max-width: 70%;
   }
 }
 @media (max-width: 991px) {
@@ -2634,21 +2655,24 @@ section {
 .footer {
   color: var(--color-white);
   font-size: 14px;
+  position: relative;
+  bottom: 0;
 }
 .footer .footer-content {
   background: var(--color-secondary);
-  padding: 60px 0 30px 0;
+  padding: 10px 0 10px 0;
 }
 .footer .footer-content .footer-info {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .footer .footer-content .footer-info h3 {
   font-size: 28px;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
   font-weight: 700;
   text-transform: uppercase;
+  color: rgba(159,155,180,0.56);
 }
 .footer .footer-content .footer-info h3 span {
   color: var(--color-primary);
@@ -2679,7 +2703,7 @@ section {
   left: 0;
 }
 .footer .footer-content .footer-links {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .footer .footer-content .footer-links ul {
   list-style: none;
@@ -2742,7 +2766,7 @@ section {
   background: rgba(var(--color-primary-rgb), 0.85);
 }
 .footer .footer-legal {
-  padding: 30px 0;
+  padding: 10px 0;
   background: var(--color-secondary-dark);
 }
 .footer .footer-legal .credits {

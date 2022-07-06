@@ -2,29 +2,33 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head th:insert="~{index::head}">
     <meta charset="UTF-8">
-    <title>Service List</title>
+    <title>Customer</title>
     <link rel="stylesheet" href="/assets/css/custom.css">
 </head>
 <body>
 <header th:replace="~{index::header}"></header>
 <session class="hero-animated d-flex align-items-center">
     <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
-
-        <table>
+        <h3>Customer List</h3>
+        <div class="d-inline-flex">
+            <button class="btn-create">New Customer</button>
+            <form action="" method="post">
+                <input class="input-search" type="text" placeholder="Search">
+                <button class="btn-create scrollto" href="#">Search</button>
+            </form>
+        </div>
+        <table style="width: 100%">
             <thead>
             <tr>
                 <th>No.</th>
-                <th>Service Name</th>
-                <th>Area</th>
-                <th>Cost</th>
-                <th>Max People</th>
-                <th>Rent Type</th>
-                <th>Service Type</th>
-                <th>Standard Room</th>
-                <th>Other Convenience</th>
-                <th>Pool Area</th>
-                <th>No. Of Floors</th>
-                <th>Free Service</th>
+                <th>Name</th>
+                <th>Customer Type</th>
+                <th>Date Of Birth</th>
+                <th>Gender</th>
+                <th>ID Card</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Address</th>
                 <th colspan="2">Action</th>
             </tr>
             </thead>
@@ -39,11 +43,12 @@
                 <td>Item</td>
                 <td>Item</td>
                 <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td><button class="btn-edit">edit</button></td>
-                <td><button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button></td>
+                <td>
+                    <button class="btn-edit">edit</button>
+                </td>
+                <td>
+                    <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button>
+                </td>
             </tr>
             <tr>
                 <td>Item</td>
@@ -55,11 +60,12 @@
                 <td>Item</td>
                 <td>Item</td>
                 <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td>Item</td>
-                <td><button class="btn-edit">edit</button></td>
-                <td><button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button></td>
+                <td>
+                    <button class="btn-edit">edit</button>
+                </td>
+                <td>
+                    <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button>
+                </td>
             </tr>
             </tbody>
         </table>
@@ -70,15 +76,16 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Delete Service</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Delete Customer</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Are you sure to delete the service with ID = <strong style="color: #bb2d3b">...</strong> ?
+                        Are you sure to delete customer with ID <strong style="color: #bb2d3b">...</strong>, name
+                        <strong style="color: #bb2d3b">...</strong>?
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Delete</button>
+                        <button type="button" class="btn-modal-delete">Delete</button>
                     </div>
                 </div>
             </div>
@@ -86,6 +93,6 @@
     </div>
 </session>
 <footer th:replace="~{index::footer}"></footer>
-<th:block th:replace="~{index::script}" ></th:block>
+<th:block th:replace="~{index::script}"></th:block>
 </body>
 </html>
