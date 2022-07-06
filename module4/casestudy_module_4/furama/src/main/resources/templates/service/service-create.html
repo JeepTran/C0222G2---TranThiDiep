@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:insert="~{index::head}">
+    <meta charset="UTF-8">
+    <title>New Service</title>
+    <link rel="stylesheet" href="/assets/css/custom.css">
+</head>
+<body>
+<header th:replace="~{index::header}"></header>
+<session class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
+
+        <div class="card w-100">
+            <h2>New Service</h2>
+            <form action="" method="post">
+            <div class="row">
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Service Name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Area</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Cost (VND)</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Max People</label>
+                            <input type="number">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Rent Type</label>
+                            <select>
+                                <option value="">--Select Rent Type--</option>
+                                <option value="">Year</option>
+                                <option value="">Month</option>
+                                <option value="">Day</option>
+                                <option value="">Hour</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Service Type</label>
+                            <select id="service-type" onchange="getInfo()">
+                                <option class="select-items" value="">--Select Service Type--</option>
+                                <option class="select-items" value="1">Villa</option>
+                                <option class="select-items" value="2">House</option>
+                                <option class="select-items" value="3">Room</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col" id="standard-room" style="display: none">
+                        <div class="form-group">
+                            <label>Standard Room</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="col" id="other-convenience" style="display: none">
+                        <div class="form-group">
+                            <label>Other Convenience</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col" id="pool-area" style="display: none">
+                        <div class="form-group">
+                            <label>Pool Area</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="col" id="number-of-floors" style="display: none">
+                        <div class="form-group">
+                            <label>Number of Floors</label>
+                            <input type="number">
+                        </div>
+                    </div>
+
+                    <div class="col" id="free-service" style="display: none">
+                        <div class="form-group">
+                            <label>Free Service</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <label> </label>
+                        <input type="submit" value="Submit">
+                    </div>
+
+            </div>
+            </form>
+        </div>
+
+
+    </div>
+</session>
+<footer th:replace="~{index::footer}"></footer>
+
+<th:block th:insert="~{index::script}"></th:block>
+</body>
+</html>
+<script>
+    function getInfo() {
+        let temp = $('#service-type').val();
+
+        if (temp === "") {
+            $('#standard-room').hide();
+            $('#other-convenience').hide();
+            $('#pool-area').hide();
+            $('#number-of-floors').hide();
+            $('#free-service').hide();
+        }
+        if (temp === "1") {
+            $('#standard-room').show();
+            $('#other-convenience').show();
+            $('#pool-area').show();
+            $('#number-of-floors').show();
+            $('#free-service').hide();
+        }
+        if (temp === "2") {
+            $('#standard-room').show();
+            $('#other-convenience').show();
+            $('#number-of-floors').show();
+            $('#pool-area').hide();
+            $('#free-service').hide();
+        }
+        if (temp === "3") {
+            $('#free-service').show();
+            $('#standard-room').hide();
+            $('#other-convenience').hide();
+            $('#number-of-floors').hide();
+            $('#pool-area').hide();
+        }
+    }
+</script>
