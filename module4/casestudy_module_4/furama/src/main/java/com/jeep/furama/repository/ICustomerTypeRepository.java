@@ -1,2 +1,8 @@
-package com.jeep.furama.repository;public interface CustomerTypeRepository {
+package com.jeep.furama.repository;
+
+import com.jeep.furama.model.customer.CustomerType;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface ICustomerTypeRepository extends JpaRepository<CustomerType,Integer> {
+
 }

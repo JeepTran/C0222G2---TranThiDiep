@@ -104,6 +104,14 @@ th last {
     color: #212529;
 }
 
+.btn-free-facility{
+    border-radius: 20px;
+    border: #4d648d 1px solid;
+    font-size: 13px;
+}
+.btn-free-facility:hover{
+    background-color: #c7dbf8;
+}
 .input-search {
     border-radius: 20px;
     border: #0ea2bd 1px solid;
@@ -177,7 +185,7 @@ th last {
 .modal-create .modal-dialog .modal-content .modal-body input,
 .modal-create .modal-dialog .modal-content .modal-body select {
     border-radius: 20px;
-    width: 100%;
+    width: 90%;
     height: 30px;
     border: #0ea2bd 1px solid;
     padding: 5px 10px;
@@ -206,6 +214,29 @@ th last {
 text-align: right;
 }
 
+.table-modal-create-container tr:hover{
+    background-color: transparent;
+}
+.table-modal-create tr:hover{
+    background-color: #E4F4F691;
+}
+
+@media screen and (max-width: 1200px) {
+    table{
+        width: 70%;
+    }
+    .modal-create .modal-dialog .modal-content {
+        width: 150%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    table{
+        width: 50%;
+    }
+    .modal-create .modal-dialog .modal-content {
+        width: 100%;
+    }
+}
 
 /*---------Form create & edit---------*/
 
@@ -247,12 +278,13 @@ session .container .card {
     width: 200px;
     height: 40px;
     color: #4c50ae;
+    margin-left: 10px
 }
 
 .card .row .form-group input,
 .card .row .form-group select {
     /*position: absolute;*/
-    width: 250%;
+    width: 200%;
     height: 100%;
     background: transparent;
     outline: none;
@@ -262,6 +294,7 @@ session .container .card {
     box-shadow: 3px 5px 0 #0ea2bd;
     color: #4c50ae;
     border-radius: 50px;
+    margin: 10px;
 }
 
 
@@ -317,7 +350,7 @@ session .container .card {
     background-color: #e2e3de;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
     .card .row {
         grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
     }
@@ -330,8 +363,37 @@ session .container .card {
         font-size: 34px;
     }
 
+    .card .row .col input,
+    .card .row .col select{
+        width: 200%;
+    }
+    .card .row .col label{
+        width: 200%;
+    }
+
     .card .row input[type="submit"] {
         width: 100%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .card .row {
+        grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card .row .col input,
+    .card .row .col select{
+        width: 150%;
+    }
+    .card .row input[type="submit"] {
+        width: 50%;
     }
 }
 
@@ -339,4 +401,27 @@ session .container .card {
     color: rgba(0, 0, 0, 0.3);
     font-weight: bolder;
     text-transform: uppercase;
+}
+
+.card-button-modal{
+    width: 250%;
+    height: 100%;
+    background: rgba(126,162,180,0.56);
+    outline: none;
+    font-size: 14px;
+    padding: 0px 10px;
+    border: 5px solid #0ea2bd;
+    box-shadow: 3px 5px 0 #0ea2bd;
+    color: #4c50ae;
+    border-radius: 50px;
+}
+
+
+/*-----------Text Align in Table------------*/
+
+table tr .text-left{
+    text-align: left;
+}
+table tr .text-right{
+    text-align: right;
 }

@@ -6,22 +6,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-@RequestMapping("/service")
-public class ServiceController {
+@RequestMapping("/facility")
+public class FacilityController {
 
     @GetMapping
-    public ModelAndView displayServiceList(){
-        ModelAndView modelAndView = new ModelAndView("service/service-list");
+    public ModelAndView displayFacilityList(){
+        ModelAndView modelAndView = new ModelAndView("facility/facility-list");
         return modelAndView;
     }
     @GetMapping("/create")
-    public ModelAndView displayCreateServiceForm(){
-        ModelAndView modelAndView = new ModelAndView("service/service-create");
+    public ModelAndView displayCreateFacilityForm(){
+        ModelAndView modelAndView = new ModelAndView("facility/facility-create");
         return modelAndView;
     }
     @GetMapping("/edit")
-    public ModelAndView displayEditServiceForm(){
-        ModelAndView modelAndView = new ModelAndView("service/service-edit");
+    public ModelAndView displayEditFacilityForm(){
+        ModelAndView modelAndView = new ModelAndView("facility/facility-edit");
         return modelAndView;
     }
 }

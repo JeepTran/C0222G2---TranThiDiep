@@ -2,16 +2,16 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head th:insert="~{index::head}">
     <meta charset="UTF-8">
-    <title>Service</title>
+    <title>Facility</title>
     <link rel="stylesheet" href="/assets/css/custom.css">
 </head>
 <body>
 <header th:replace="~{index::header}"></header>
 <session class="hero-animated d-flex align-items-center">
     <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
-        <h3>Service List</h3>
+        <h3>Facility List</h3>
         <div class="d-inline-flex">
-            <a th:href="@{/service/create}"><button class="btn-create">New Service</button></a>
+            <a th:href="@{/facility/create}"><button class="btn-create">New Facility</button></a>
         <form action="" method="post">
             <input class="input-search" type="text" placeholder="Search">
             <button class="btn-create scrollto" href="#">Search</button>
@@ -21,7 +21,7 @@
             <thead>
             <tr>
                 <th>No.</th>
-                <th>Service Name</th>
+                <th>Facility Name</th>
                 <th>Area</th>
                 <th>Cost</th>
                 <th>Max People</th>
@@ -31,7 +31,7 @@
                 <th>Other Convenience</th>
                 <th>Pool Area</th>
                 <th>No. Of Floors</th>
-                <th>Free Service</th>
+                <th>Free Facility</th>
                 <th colspan="2">Action</th>
             </tr>
             </thead>
@@ -50,7 +50,7 @@
                 <td>Item</td>
                 <td>Item</td>
                 <td>
-                    <a th:href="@{/service/edit}"><button class="btn-edit">edit</button></a>
+                    <a th:href="@{/facility/edit}"><button class="btn-edit">edit</button></a>
                 </td>
                 <td>
                     <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button>
@@ -70,7 +70,7 @@
                 <td>Item</td>
                 <td>Item</td>
                 <td>
-                    <a th:href="@{/service/edit}"><button class="btn-edit">edit</button></a>
+                    <a th:href="@{/facility/edit}"><button class="btn-edit">edit</button></a>
                 </td>
                 <td>
                     <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button>
@@ -90,7 +90,7 @@
                 <td>Item</td>
                 <td>Item</td>
                 <td>
-                    <a th:href="@{/service/edit}"><button class="btn-edit">edit</button></a>
+                    <a th:href="@{/facility/edit}"><button class="btn-edit">edit</button></a>
                 </td>
                 <td>
                     <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button>
@@ -110,7 +110,7 @@
                 <td>Item</td>
                 <td>Item</td>
                 <td>
-                    <a th:href="@{/service/edit}"><button class="btn-edit">edit</button></a>
+                    <a th:href="@{/facility/edit}"><button class="btn-edit">edit</button></a>
                 </td>
                 <td>
                     <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button>
@@ -125,11 +125,11 @@
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Delete Service</h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Delete Facility</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Are you sure to delete the service with ID = <strong style="color: #bb2d3b">...</strong> ?
+                        Are you sure to delete the facility with ID = <strong style="color: #bb2d3b">...</strong> ?
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

@@ -17,94 +17,129 @@
 
                     <div class="col">
                         <div class="form-group">
-                            <label>Facility Name</label>
-                            <input type="text">
+                            <label>Start Date</label>
+                            <input type="date">
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label>Area</label>
-                            <input type="text">
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="form-group">
-                            <label>Cost (VND)</label>
-                            <input type="text">
+                            <label>End Date</label>
+                            <input type="date">
                         </div>
                     </div>
 
                     <div class="col">
                         <div class="form-group">
-                            <label>Max People</label>
-                            <input type="number">
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-group">
-                            <label>Rent Type</label>
+                            <label>Customer</label>
                             <select>
-                                <option value="" disabled selected>--Select Rent Type--</option>
-                                <option value="">Year</option>
-                                <option value="">Month</option>
-                                <option value="">Day</option>
-                                <option value="">Hour</option>
+                                <option value="1">Khách hàng 1</option>
+                                <option value="2">Khách hàng 2</option>
+                                <option value="3">Khách hàng 3</option>
+                                <option value="4">Khách hàng 4</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label>Facility</label>
+                            <select>
+                                <option value="" disabled selected>--Select Employee--</option>
+                                <option value="1">Dịch vụ 1</option>
+                                <option value="2">Dịch vụ 2</option>
+                                <option value="3">Dịch vụ 3</option>
+                                <option value="4">Dịch vụ 4</option>
                             </select>
                         </div>
                     </div>
                     <div class="col">
                         <div class="form-group">
-                            <label>Facility Type</label>
-                            <select id="facility-type" onchange="getInfo()">
-                                <option class="select-items" value="" disabled selected>--Select Facility Type--</option>
-                                <option class="select-items" value="1">Villa</option>
-                                <option class="select-items" value="2">House</option>
-                                <option class="select-items" value="3">Room</option>
+                            <label>Employee</label>
+                            <select>
+                                <option value="" disabled selected>--Select Employee--</option>
+                                <option value="1">Nhân viên 1</option>
+                                <option value="2">Nhân viên 2</option>
+                                <option value="3">Nhân viên 3</option>
+                                <option value="4">Nhân viên 4</option>
                             </select>
                         </div>
                     </div>
-
-                    <div class="col" id="standard-room" style="display: none">
+                    <div class="col">
                         <div class="form-group">
-                            <label>Standard Room</label>
+                            <label>Deposit</label>
                             <input type="text">
                         </div>
                     </div>
 
-                    <div class="col" id="other-convenience" style="display: none">
+                    <div class="col">
                         <div class="form-group">
-                            <label>Other Convenience</label>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="col" id="pool-area" style="display: none">
-                        <div class="form-group">
-                            <label>Pool Area</label>
-                            <input type="text">
-                        </div>
-                    </div>
-                    <div class="col" id="number-of-floors" style="display: none">
-                        <div class="form-group">
-                            <label>Number of Floors</label>
-                            <input type="number">
+                            <label>Total</label>
+                            <input type="text" readonly>
                         </div>
                     </div>
 
-                    <div class="col" id="free-facility" style="display: none">
+                    <div class="col">
                         <div class="form-group">
                             <label>Free Facility</label>
-                            <input type="text">
+                            <p class="btn btn-free-facility card-button-modal" data-bs-toggle="modal"
+                               data-bs-target="#modalAddContractDetail">
+                                +
+                            </p>
                         </div>
                     </div>
-
                     <div class="col">
-                        <label> </label>
-                        <input type="submit" value="Submit">
+                        <div class="form-group" style="margin-left: 150px">
+                            <a class="btn btn-secondary" th:href="@{/contract}">Back</a>
+                        </div>
                     </div>
-
+                    <div class="col">
+                        <div class="form-group" style="margin-left: 150px ">
+                            <button type="submit" class="btn-modal-delete">Submit</button>
+                        </div>
+                    </div>
                 </div>
             </form>
+        </div>
+
+
+        <!--Modal Add Contract Detail-->
+
+        <div class="modal fade modal-create " id="modalAddContractDetail" tabindex="-1"
+             aria-labelledby="modalAddContractDetailLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>New Contract Detail</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+                            <table border="none">
+                                <tr>
+                                    <td><label>Free Facility</label></td>
+                                    <td>
+                                        <select>
+                                            <option value="1">Xe đạp</option>
+                                            <option value="2">Spa</option>
+                                            <option value="3">Buffet sáng</option>
+                                            <option value="4">Buffet tối</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label>Quantity</label></td>
+                                    <td><input type="number"></td>
+                                </tr>
+                                <td colspan="2">
+                                    <a class="btn btn-secondary" data-bs-dismiss="modal"
+                                       style="margin-right: 200px">Close</a>
+                                    <button type="submit" class="btn-modal-delete">Add</button>
+                                </td>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -115,37 +150,3 @@
 <th:block th:insert="~{index::script}"></th:block>
 </body>
 </html>
-<script>
-    function getInfo() {
-        let temp = $('#facility-type').val();
-
-        if (temp === "") {
-            $('#standard-room').hide();
-            $('#other-convenience').hide();
-            $('#pool-area').hide();
-            $('#number-of-floors').hide();
-            $('#free-facility').hide();
-        }
-        if (temp === "1") {
-            $('#standard-room').show();
-            $('#other-convenience').show();
-            $('#pool-area').show();
-            $('#number-of-floors').show();
-            $('#free-facility').hide();
-        }
-        if (temp === "2") {
-            $('#standard-room').show();
-            $('#other-convenience').show();
-            $('#number-of-floors').show();
-            $('#pool-area').hide();
-            $('#free-facility').hide();
-        }
-        if (temp === "3") {
-            $('#free-facility').show();
-            $('#standard-room').hide();
-            $('#other-convenience').hide();
-            $('#number-of-floors').hide();
-            $('#pool-area').hide();
-        }
-    }
-</script>
