@@ -1,4 +1,4 @@
-package com.jeep.furama.service;
+package com.jeep.furama.service.customer;
 
 import com.jeep.furama.model.customer.Customer;
 import com.jeep.furama.model.customer.CustomerType;

@@ -1,7 +1,7 @@
 package com.jeep.furama.controller;
 
 import com.jeep.furama.model.customer.Customer;
-import com.jeep.furama.service.ICustomerService;
+import com.jeep.furama.service.customer.ICustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -25,7 +25,12 @@ public class CustomerController {
         String keyword = search.orElse("");
         Page<Customer> customerPage = this.customerService.findAllCustomerByKeyword("%" + keyword + "%", pageable);
         ModelAndView modelAndView = new ModelAndView("customer/customer-list");
-        modelAndView.addObject("customerList", customerPage);
+
+        if (customerPage.hasContent()) {
+            modelAndView.addObject("customerList", customerPage);
+        } else {
+            modelAndView.addObject("msgNotFound", "Not found customer name containing <strong>" + keyword + "</strong>!");
+        }
         modelAndView.addObject("keyword", keyword);
         return modelAndView;
     }

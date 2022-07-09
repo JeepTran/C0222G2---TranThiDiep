@@ -1,10 +1,10 @@
-package com.jeep.furama.service.impl;
+package com.jeep.furama.service.customer.impl;
 
 import com.jeep.furama.model.customer.Customer;
 import com.jeep.furama.model.customer.CustomerType;
-import com.jeep.furama.repository.ICustomerRepository;
-import com.jeep.furama.repository.ICustomerTypeRepository;
-import com.jeep.furama.service.ICustomerService;
+import com.jeep.furama.repository.customer.ICustomerRepository;
+import com.jeep.furama.repository.customer.ICustomerTypeRepository;
+import com.jeep.furama.service.customer.ICustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

@@ -1,4 +1,4 @@
-package com.jeep.furama.repository;
+package com.jeep.furama.repository.customer;
 
 import com.jeep.furama.model.customer.Customer;
 import org.springframework.data.domain.Page;

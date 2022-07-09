@@ -24,7 +24,7 @@
                         <div class="form-group">
                             <label>Customer Type</label>
                             <select th:field="*{customerType}" >
-<!--                                <option th:value="-1" th:disabled="1" th:selected="1">&#45;&#45;Select Customer Type&#45;&#45;</option>-->
+                                <option selected hidden>--Select Customer Type--</option>
                                 <option th:each="customerType:${customerTypeList}"
                                         th:value="${customerType.customerTypeId}"
                                         th:text="${customerType.customerTypeName}"></option>
@@ -41,7 +41,7 @@
                         <div class="form-group">
                             <label>Gender</label>
                             <select th:field="*{gender}" >
-<!--                                <option th:value="-1" th:disabled="1" th:selected="1">&#45;&#45;Select Gender&#45;&#45;</option>-->
+                                <option selected hidden>--Select Gender--</option>
                                 <option th:value="0">Female</option>
                                 <option th:value="1">Male</option>
                                 <option th:value="2">Other</option>
@@ -74,11 +74,11 @@
                             <input type="text" th:field="*{customerAddress}" >
                         </div>
                     </div>
-                    <div class="col mt-5 mb-sm-0">
-                        <a class="btn btn-secondary" th:href="@{/customer}" th:text="Cancle"></a>
+                    <div class="col">
+                        <a class="btn btn-secondary" th:href="@{/customer}" th:text="Cancel"></a>
                     </div>
-                    <div class="col mt-5 mb-sm-0">
-                        <button class="btn-modal-delete" type="submit">Submit</button>
+                    <div class="col">
+                        <button class="btn btn-modal-delete" type="submit">Submit</button>
                     </div>
 
                 </div>

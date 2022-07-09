@@ -9,7 +9,7 @@ public class CustomerType {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int customerTypeId;
     private String customerTypeName;
-    @OneToMany(mappedBy = "customerType", //trỏ tới tên biến customer_type ở bảng Customer
+    @OneToMany(mappedBy = "customerType", //trỏ tới tên biến customerType ở @Entity Customer
             cascade = CascadeType.ALL)
     private List<Customer> customerList;
 

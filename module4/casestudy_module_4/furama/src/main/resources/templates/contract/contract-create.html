@@ -10,11 +10,10 @@
 <session class="hero-animated d-flex align-items-center">
     <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
 
-        <div class="card w-100">
+        <div class="card">
             <h2>New Facility</h2>
             <form action="" method="post">
-                <div class="row">
-
+                <div class="row m-auto">
                     <div class="col">
                         <div class="form-group">
                             <label>Start Date</label>
@@ -32,6 +31,7 @@
                         <div class="form-group">
                             <label>Customer</label>
                             <select>
+                                <option value="" hidden selected>--Select Customer--</option>
                                 <option value="1">Khách hàng 1</option>
                                 <option value="2">Khách hàng 2</option>
                                 <option value="3">Khách hàng 3</option>
@@ -44,7 +44,7 @@
                         <div class="form-group">
                             <label>Facility</label>
                             <select>
-                                <option value="" disabled selected>--Select Employee--</option>
+                                <option value="" hidden selected>--Select Employee--</option>
                                 <option value="1">Dịch vụ 1</option>
                                 <option value="2">Dịch vụ 2</option>
                                 <option value="3">Dịch vụ 3</option>
@@ -56,7 +56,7 @@
                         <div class="form-group">
                             <label>Employee</label>
                             <select>
-                                <option value="" disabled selected>--Select Employee--</option>
+                                <option value="" hidden selected>--Select Employee--</option>
                                 <option value="1">Nhân viên 1</option>
                                 <option value="2">Nhân viên 2</option>
                                 <option value="3">Nhân viên 3</option>
@@ -81,21 +81,19 @@
                     <div class="col">
                         <div class="form-group">
                             <label>Free Facility</label>
-                            <p class="btn btn-free-facility card-button-modal" data-bs-toggle="modal"
-                               data-bs-target="#modalAddContractDetail">
-                                +
-                            </p>
+                            <input type="button" value="+" data-bs-toggle="modal"
+                                   data-bs-target="#modalAddContractDetail">
+                            <!--                            <p class="btn btn-free-facility " data-bs-toggle="modal"-->
+                            <!--                               data-bs-target="#modalAddContractDetail">-->
+                            <!--                                +-->
+                            <!--                            </p>-->
                         </div>
                     </div>
                     <div class="col">
-                        <div class="form-group" style="margin-left: 150px">
-                            <a class="btn btn-secondary" th:href="@{/contract}">Back</a>
-                        </div>
+                        <a class="btn btn-secondary" th:href="@{/contract}">Back</a>
                     </div>
                     <div class="col">
-                        <div class="form-group" style="margin-left: 150px ">
-                            <button type="submit" class="btn-modal-delete">Submit</button>
-                        </div>
+                        <button type="submit" class="btn btn-modal-delete">Submit</button>
                     </div>
                 </div>
             </form>
