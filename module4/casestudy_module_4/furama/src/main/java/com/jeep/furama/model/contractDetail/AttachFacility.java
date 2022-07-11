@@ -1,9 +1,7 @@
 package com.jeep.furama.model.contractDetail;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class AttachFacility {
@@ -14,6 +12,8 @@ public class AttachFacility {
     private double attachFacilityCost;
     private String attachFacilityUnit;
     private String attachFacilityStatus;
+    @OneToMany(mappedBy = "attachFacility")
+    private List<ContractDetail> contractDetailList;
 
     public AttachFacility() {
     }
@@ -33,6 +33,25 @@ public class AttachFacility {
         this.attachFacilityCost = attachFacilityCost;
         this.attachFacilityUnit = attachFacilityUnit;
         this.attachFacilityStatus = attachFacilityStatus;
+    }
+
+    public AttachFacility(String attachFacilityName, double attachFacilityCost, String attachFacilityUnit,
+                          String attachFacilityStatus, List<ContractDetail> contractDetailList) {
+        this.attachFacilityName = attachFacilityName;
+        this.attachFacilityCost = attachFacilityCost;
+        this.attachFacilityUnit = attachFacilityUnit;
+        this.attachFacilityStatus = attachFacilityStatus;
+        this.contractDetailList = contractDetailList;
+    }
+
+    public AttachFacility(int attachFacilityId, String attachFacilityName, double attachFacilityCost,
+                          String attachFacilityUnit, String attachFacilityStatus, List<ContractDetail> contractDetailList) {
+        this.attachFacilityId = attachFacilityId;
+        this.attachFacilityName = attachFacilityName;
+        this.attachFacilityCost = attachFacilityCost;
+        this.attachFacilityUnit = attachFacilityUnit;
+        this.attachFacilityStatus = attachFacilityStatus;
+        this.contractDetailList = contractDetailList;
     }
 
     public int getAttachFacilityId() {
@@ -73,5 +92,13 @@ public class AttachFacility {
 
     public void setAttachFacilityStatus(String attachFacilityStatus) {
         this.attachFacilityStatus = attachFacilityStatus;
+    }
+
+    public List<ContractDetail> getContractDetailList() {
+        return contractDetailList;
+    }
+
+    public void setContractDetailList(List<ContractDetail> contractDetailList) {
+        this.contractDetailList = contractDetailList;
     }
 }

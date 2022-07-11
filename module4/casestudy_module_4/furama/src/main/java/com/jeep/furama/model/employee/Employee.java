@@ -1,6 +1,9 @@
 package com.jeep.furama.model.employee;
 
+import com.jeep.furama.model.contract.Contract;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Employee {
@@ -23,7 +26,9 @@ public class Employee {
     @ManyToOne
     @JoinColumn(name = "divisionId")
     private Division division;
-//    private User user;
+    //    private User user;
+    @OneToMany(mappedBy = "employee")
+    private List<Contract> contractList;
 
 
     public Employee() {
@@ -63,6 +68,24 @@ public class Employee {
         this.position = position;
         this.educationDegree = educationDegree;
         this.division = division;
+    }
+
+    public Employee(int employeeId, String employeeName, String employeeDOB,
+                    String employeeIdCard, double employeeSalary, String employeePhone,
+                    String employeeEmail, String employeeAddress, Position position,
+                    EducationDegree educationDegree, Division division, List<Contract> contractList) {
+        this.employeeId = employeeId;
+        this.employeeName = employeeName;
+        this.employeeDOB = employeeDOB;
+        this.employeeIdCard = employeeIdCard;
+        this.employeeSalary = employeeSalary;
+        this.employeePhone = employeePhone;
+        this.employeeEmail = employeeEmail;
+        this.employeeAddress = employeeAddress;
+        this.position = position;
+        this.educationDegree = educationDegree;
+        this.division = division;
+        this.contractList = contractList;
     }
 
     public int getEmployeeId() {
@@ -151,5 +174,13 @@ public class Employee {
 
     public void setDivision(Division division) {
         this.division = division;
+    }
+
+    public List<Contract> getContractList() {
+        return contractList;
+    }
+
+    public void setContractList(List<Contract> contractList) {
+        this.contractList = contractList;
     }
 }

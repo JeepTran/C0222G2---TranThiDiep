@@ -14,12 +14,21 @@
             <a th:href="@{/facility/create}">
                 <button class="btn-create">New Facility</button>
             </a>
-            <form th:action="@{/facility}" method="post">
-                <input class="input-search" type="text" placeholder="Search">
+            <form th:action="@{/facility}">
+                <input class="input-search" type="text" placeholder="Search" name="search" th:value="${keyword}">
                 <button class="btn-create scrollto">Search</button>
             </form>
         </div>
-        <table style="width: 100%">
+        <div style="margin-top: 20px" th:if="${msg}">
+            <small th:utext="${msg}" style="color: green;"></small>
+        </div>
+        <div style="margin-top: 20px" th:if="${msgDelete}">
+            <small th:utext="${msgDelete}" style="color: red;"></small>
+        </div>
+        <div style="margin-top: 40px">
+            <p style="font-style: italic" th:if="${msgNotFound}" th:utext="${msgNotFound}"></p>
+        </div>
+        <table style="width: 100%" th:if="${facilityList}">
             <thead>
             <tr>
                 <th>No.</th>
@@ -63,7 +72,7 @@
                 </td>
 
 
-                <!-- Modal -->
+                <!-- Modal Delete -->
                 <div class="modal fade" th:id="'exampleModal'+${facility.facilityId}" tabindex="-1"
                      aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
@@ -80,7 +89,9 @@
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn-modal-delete">Delete</button>
+                                <a th:href="@{/facility/delete/{id}(id=${facility.facilityId})}">
+                                    <button type="button" class="btn-modal-delete">Delete</button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -90,6 +101,22 @@
             </tbody>
         </table>
 
+        <!-- Page -->
+        <div class="row align-self-xl-end small" th:if="${facilityList}">
+            <div class="col-12">
+                <a th:if="${facilityList.hasPrevious()}"
+                   th:href="@{facility(page=${facilityList.number - 1}, search=${keyword})}">
+                    <i class="bi bi-caret-left-fill"></i>
+                </a>
+                <span th:text="${facilityList.number + 1}"></span>
+                /
+                <span th:text="${facilityList.totalPages}"></span>
+                <a th:if="${facilityList.hasNext()}"
+                   th:href="@{facility(page=${facilityList.number + 1}, search=${keyword})}">
+                    <i class="bi bi-caret-right-fill"></i>
+                </a>
+            </div>
+        </div>
 
     </div>
 </session>

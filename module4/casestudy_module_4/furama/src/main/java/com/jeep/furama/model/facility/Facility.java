@@ -1,6 +1,9 @@
 package com.jeep.furama.model.facility;
 
+import com.jeep.furama.model.contract.Contract;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Facility {
@@ -23,6 +26,8 @@ public class Facility {
     private int numberOfFloors;
     @Column(columnDefinition = "text")
     private String freeFacility;
+    @OneToMany(mappedBy = "facility")
+    private List<Contract> contractList;
 
     public Facility() {
     }
@@ -58,6 +63,25 @@ public class Facility {
         this.poolArea = poolArea;
         this.numberOfFloors = numberOfFloors;
         this.freeFacility = freeFacility;
+    }
+
+    public Facility(int facilityId, String facilityName, int area, double cost,
+                    int maxPeople, RentType rentType, FacilityType facilityType,
+                    String standardRoom, String otherConvenience, double poolArea,
+                    int numberOfFloors, String freeFacility, List<Contract> contractList) {
+        this.facilityId = facilityId;
+        this.facilityName = facilityName;
+        this.area = area;
+        this.cost = cost;
+        this.maxPeople = maxPeople;
+        this.rentType = rentType;
+        this.facilityType = facilityType;
+        this.standardRoom = standardRoom;
+        this.otherConvenience = otherConvenience;
+        this.poolArea = poolArea;
+        this.numberOfFloors = numberOfFloors;
+        this.freeFacility = freeFacility;
+        this.contractList = contractList;
     }
 
     public int getFacilityId() {
@@ -154,5 +178,13 @@ public class Facility {
 
     public void setFreeFacility(String freeFacility) {
         this.freeFacility = freeFacility;
+    }
+
+    public List<Contract> getContractList() {
+        return contractList;
+    }
+
+    public void setContractList(List<Contract> contractList) {
+        this.contractList = contractList;
     }
 }

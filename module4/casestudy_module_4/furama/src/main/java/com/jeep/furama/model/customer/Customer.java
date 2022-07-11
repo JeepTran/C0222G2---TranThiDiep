@@ -1,6 +1,9 @@
 package com.jeep.furama.model.customer;
 
+import com.jeep.furama.model.contract.Contract;
+
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Customer {
@@ -17,6 +20,8 @@ public class Customer {
     private String customerPhone;
     private String customerEmail;
     private String customerAddress;
+    @OneToMany(mappedBy = "customer")
+    private List<Contract> contractList;
 
     public Customer() {
     }
@@ -50,6 +55,23 @@ public class Customer {
         this.customerPhone = customerPhone;
         this.customerEmail = customerEmail;
         this.customerAddress = customerAddress;
+    }
+
+    public Customer(int customerId, CustomerType customerType,
+                    String customerName, String customerDob,
+                    int gender, String customerIdCard,
+                    String customerPhone, String customerEmail,
+                    String customerAddress, List<Contract> contractList) {
+        this.customerId = customerId;
+        this.customerType = customerType;
+        this.customerName = customerName;
+        this.customerDob = customerDob;
+        this.gender = gender;
+        this.customerIdCard = customerIdCard;
+        this.customerPhone = customerPhone;
+        this.customerEmail = customerEmail;
+        this.customerAddress = customerAddress;
+        this.contractList = contractList;
     }
 
     public int getCustomerId() {
@@ -122,5 +144,13 @@ public class Customer {
 
     public void setCustomerAddress(String customerAddress) {
         this.customerAddress = customerAddress;
+    }
+
+    public List<Contract> getContractList() {
+        return contractList;
+    }
+
+    public void setContractList(List<Contract> contractList) {
+        this.contractList = contractList;
     }
 }

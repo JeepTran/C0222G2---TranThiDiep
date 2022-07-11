@@ -58,56 +58,57 @@
                     <div class="col">
                         <div class="form-group">
                             <label>Facility Type</label>
-                            <select id="facility-type" onchange="getInfo()" th:field="*{facilityType}" >
+                            <select id="facility-type" th:field="*{facilityType}" >
                                 <optgroup title="--Select Facility Type--"></optgroup>
-                                <option th:each="temp:${facilityTypeList}"
-                                        th:if="${facility.facilityType.facilityTypeId == temp.facilityTypeId}"
-                                        th:value="${temp.facilityTypeId}" th:text="${temp.facilityTypeName}" selected>
+                                <option th:value="*{facilityType.facilityTypeId}" th:text="*{facilityType.facilityTypeName}" readonly>
                                 </option>
-                                <option th:each="temp:${facilityTypeList}"
-                                        th:if="${facility.facilityType.facilityTypeId != temp.facilityTypeId}"
-                                        th:value="${temp.facilityTypeId}" th:text="${temp.facilityTypeName}">
-                                </option>
+<!--                                <option th:each="temp:${facilityTypeList}"-->
+<!--                                        th:if="${facility.facilityType.facilityTypeId == temp.facilityTypeId}"-->
+<!--                                        th:value="${temp.facilityTypeId}" th:text="${temp.facilityTypeName}" readonly>-->
+<!--                                </option>-->
+<!--                                <option th:each="temp:${facilityTypeList}"-->
+<!--                                        th:if="${facility.facilityType.facilityTypeId != temp.facilityTypeId}"-->
+<!--                                        th:value="${temp.facilityTypeId}" th:text="${temp.facilityTypeName}">-->
+<!--                                </option>-->
                             </select>
                         </div>
                     </div>
-                    <div class="col" id="standard-room" style="display: none">
+                    <div class="col" id="standard-room" th:if="*{standardRoom!=''}">
                         <div class="form-group">
                             <label>Standard Room</label>
                             <input type="text" th:field="*{standardRoom}">
                         </div>
                     </div>
 
-                    <div class="col" id="other-convenience" style="display: none">
+                    <div class="col" id="other-convenience" th:if="*{otherConvenience!=''}">
                         <div class="form-group">
                             <label>Other Convenience</label>
                             <input type="text" th:field="*{otherConvenience}">
                         </div>
                     </div>
-                    <div class="col" id="pool-area" style="display: none">
+                    <div class="col" id="pool-area" th:if="*{poolArea!=0}">
                         <div class="form-group">
                             <label>Pool Area</label>
                             <input type="text" th:field="*{poolArea}">
                         </div>
                     </div>
-                    <div class="col" id="number-of-floors" style="display: none">
+                    <div class="col" id="number-of-floors" th:if="*{numberOfFloors!=0}">
                         <div class="form-group">
                             <label>Number of Floors</label>
                             <input type="number" th:field="*{numberOfFloors}">
                         </div>
                     </div>
-                    <div class="col" id="free-facility" style="display: none">
+                    <div class="col" id="free-facility" th:if="*{freeFacility!=''}">
                         <div class="form-group">
                             <label>Free Facility</label>
                             <input type="text" th:field="*{freeFacility}">
                         </div>
                     </div>
 
-                    <div class="col mt-5 mb-sm-0">
-                        <a class="btn btn-secondary" th:href="@{/facility}" th:text="Cancle"></a>
-                    </div>
-                    <div class="col mt-5 mb-sm-0">
-                        <button class="btn-modal-delete" type="submit">Submit</button>
+                    <div class="col">
+                        <a class="btn btn-secondary" th:href="@{/facility}" th:text="Cancel"></a>
+
+                        <button class="btn btn-modal-delete" type="submit">Submit</button>
                     </div>
 
                 </div>
@@ -123,36 +124,29 @@
 </body>
 </html>
 <script>
-    function getInfo() {
-        let temp = $('#facility-type').val();
-
-        if (temp === "") {
-            $('#standard-room').hide();
-            $('#other-convenience').hide();
-            $('#pool-area').hide();
-            $('#number-of-floors').hide();
-            $('#free-facility').hide();
-        }
-        if (temp === "1") {
-            $('#standard-room').show();
-            $('#other-convenience').show();
-            $('#pool-area').show();
-            $('#number-of-floors').show();
-            $('#free-facility').hide();
-        }
-        if (temp === "2") {
-            $('#standard-room').show();
-            $('#other-convenience').show();
-            $('#number-of-floors').show();
-            $('#pool-area').hide();
-            $('#free-facility').hide();
-        }
-        if (temp === "3") {
-            $('#free-facility').show();
-            $('#standard-room').hide();
-            $('#other-convenience').hide();
-            $('#number-of-floors').hide();
-            $('#pool-area').hide();
-        }
-    }
+    // function getInfo() {
+    //     let temp = $('#facility-type').val();
+    //
+    //     if (temp == "1") {
+    //         $('#standard-room').show();
+    //         $('#other-convenience').show();
+    //         $('#pool-area').show();
+    //         $('#number-of-floors').show();
+    //         $('#free-facility').hide();
+    //     }
+    //     if (temp == "2") {
+    //         $('#standard-room').show();
+    //         $('#other-convenience').show();
+    //         $('#number-of-floors').show();
+    //         $('#pool-area').hide();
+    //         $('#free-facility').hide();
+    //     }
+    //     if (temp == "3") {
+    //         $('#free-facility').show();
+    //         $('#standard-room').hide();
+    //         $('#other-convenience').hide();
+    //         $('#number-of-floors').hide();
+    //         $('#pool-area').hide();
+    //     }
+    // }
 </script>
