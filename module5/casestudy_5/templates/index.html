@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head">
+</head>
+<body>
+<header id="header"></header>
+
+<section id="hero-animated" class="hero-animated d-flex align-items-center">
+<!--    data-aos="zoom-out"-->
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
+        <img  data-aos="zoom-out" src="../static/assets/img/fhomepage.jpg" class="img-fluid animated">
+        <h2>Welcome to <span>Furama Resort</span></h2>
+        <p>A culinary resort on one of the six most luxurious beaches in the world</p>
+    </div>
+</section>
+
+<footer id="footer"></footer>
+<script id="script"></script>
+<script src="../static/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $("#head").load("head.html");
+        $("#header").load("header.html");
+        $("#footer").load("footer.html");
+
+        $("#script").load("script.html");
+    });
+</script>
+
+
+</body>
+</html>

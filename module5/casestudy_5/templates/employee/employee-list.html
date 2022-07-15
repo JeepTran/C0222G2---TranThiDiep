@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:insert="~{index::head}">
+    <meta charset="UTF-8">
+    <title>Employee</title>
+    <link rel="stylesheet" href="/static/assets/css/custom.css">
+</head>
+<body>
+<header th:replace="~{index::header}"></header>
+<session class="hero-animated d-flex align-items-center">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
+        <h3>Employee List</h3>
+        <div class="d-inline-flex">
+            <button class="btn-create" data-bs-toggle="modal" data-bs-target="#modalCreate">New Employee</button>
+            <form action="" method="post">
+                <input class="input-search" type="text" placeholder="Search">
+                <button class="btn-create scrollto" href="#">Search</button>
+            </form>
+        </div>
+
+
+        <table style="width: 100%">
+            <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Date Of Birth</th>
+                <th>ID Card</th>
+                <th>Salary</th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Position</th>
+                <th>Education Degree</th>
+                <th>Division</th>
+                <th>Username</th>
+                <th colspan="2">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>
+                    <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#modalUpdate">edit</button>
+                </td>
+                <td>
+                    <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>
+                    <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#modalUpdate">edit</button>
+                </td>
+                <td>
+                    <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>
+                    <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#modalUpdate">edit</button>
+                </td>
+                <td>
+                    <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>Item</td>
+                <td>
+                    <button class="btn-edit" data-bs-toggle="modal" data-bs-target="#modalUpdate">edit</button>
+                </td>
+                <td>
+                    <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal">delete</button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+
+        <!-- Modal Delete -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Delete Employee</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure to delete employee with ID <strong style="color: #bb2d3b">...</strong>, name
+                        <strong style="color: #bb2d3b">...</strong>?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn-modal-delete">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--        Modal Update-->
+        <div class="modal fade modal-create " id="modalUpdate" tabindex="-1" aria-labelledby="modalUpdateLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Update Employee</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+
+                            <table border="none" class="table-modal-create-container">
+                                <tr>
+                                    <td>
+                                        <table border="none" class="table-modal-create">
+                                            <tr>
+                                                <td class="w-25"><label>Employee Name</label></td>
+                                                <td class="w-75" ><input type="text" value="item"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>ID Card</label></td>
+                                                <td><input type="text" value="item"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Salary</label></td>
+                                                <td><input type="text" value="item"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Phone Number</label></td>
+                                                <td><input type="text"  value="item"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Email</label></td>
+                                                <td><input type="email" value="item"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Address</label></td>
+                                                <td><input type="text" value="item"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table class="table-modal-create">
+                                            <tr>
+                                                <td class="w-25"><label>Date Of Birth</label></td>
+                                                <td class="w-75"><input type="date"  value="item"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Position</label></td>
+                                                <td>
+                                                    <select>
+                                                        <option hidden selected>--Select Position--</option>
+                                                        <option value="">General Manager</option>
+                                                        <option value="">Manager</option>
+                                                        <option value="">Employee</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Education Degree</label></td>
+                                                <td>
+                                                    <select>
+                                                        <option hidden selected>--Select Education Degree--
+                                                        </option>
+                                                        <option value="">University</option>
+                                                        <option value="">College</option>
+                                                        <option value="">High School</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Division</label></td>
+                                                <td>
+                                                    <select>
+                                                        <option hidden selected>--Select Division--</option>
+                                                        <option value="">Marketing</option>
+                                                        <option value="">Restaurant</option>
+                                                        <option value="">Sale</option>
+                                                        <option value="">Finance</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Username</label></td>
+                                                <td><input type="text" value="item"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close
+                                                    </button>
+                                                    <button type="submit" value="Submit" class="btn-modal-delete">
+                                                        Submit
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+ <!--        Modal Create-->
+        <div class="modal fade modal-create " id="modalCreate" tabindex="-1" aria-labelledby="modalCreateLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>New Employee</h5>
+                    </div>
+                    <div class="modal-body">
+                        <form action="" method="post">
+
+                            <table border="none" class="table-modal-create-container">
+                                <tr>
+                                    <td>
+                                        <table border="none" class="table-modal-create">
+                                            <tr>
+                                                <td class="w-25"><label>Employee Name</label></td>
+                                                <td class="w-75"><input type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>ID Card</label></td>
+                                                <td><input type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Salary</label></td>
+                                                <td><input type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Phone Number</label></td>
+                                                <td><input type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Email</label></td>
+                                                <td><input type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Address</label></td>
+                                                <td><input type="text"></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table class="table-modal-create">
+                                            <tr>
+                                                <td class="w-25"><label>Date Of Birth</label></td>
+                                                <td class="w-75"><input type="date"></td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Position</label></td>
+                                                <td>
+                                                    <select>
+                                                        <option hidden selected>--Select Position--</option>
+                                                        <option value="">General Manager</option>
+                                                        <option value="">Manager</option>
+                                                        <option value="">Employee</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Education Degree</label></td>
+                                                <td>
+                                                    <select>
+                                                        <option hidden selected>--Select Education Degree--
+                                                        </option>
+                                                        <option value="">University</option>
+                                                        <option value="">College</option>
+                                                        <option value="">High School</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Division</label></td>
+                                                <td>
+                                                    <select>
+                                                        <option hidden selected>--Select Division--</option>
+                                                        <option value="">Marketing</option>
+                                                        <option value="">Restaurant</option>
+                                                        <option value="">Sale</option>
+                                                        <option value="">Finance</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><label>Username</label></td>
+                                                <td><input type="text"></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+
+                                                </td>
+                                                <td>
+                                                    <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close
+                                                    </button>
+                                                    <button type="submit" value="Submit" class="btn-modal-delete">
+                                                        Submit
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</session>
+<footer th:replace="~{index::footer}"></footer>
+<th:block th:replace="~{index::script}"></th:block>
+</body>
+</html>
