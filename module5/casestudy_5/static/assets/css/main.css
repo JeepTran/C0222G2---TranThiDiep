@@ -497,14 +497,19 @@ section {
 /*--------------------------------------------------------------
 # Animated Hero Section
 --------------------------------------------------------------*/
+
+body{
+  background: url("../img/BG2.jpg") center center  ;
+}
 .hero-animated {
   width: 100%;
   min-height: 50vh;
-  background: url("../img/hero-bg.png") center center;
+
   background-size: cover;
   position: relative;
   padding: 120px 0 60px;
 }
+
 .hero-animated h2 {
   margin: 0 0 10px 0;
   font-size: 48px;
@@ -1429,8 +1434,8 @@ section {
   transition: 0.6s;
 }
 .services .details {
-  padding: 50px 30px;
-  margin: -100px 30px 0 30px;
+  padding: 20px 20px;
+  margin: -30px 10px 0 10px;
   transition: all ease-in-out 0.3s;
   background: var(--color-white);
   position: relative;
@@ -1441,8 +1446,8 @@ section {
 }
 .services .details .icon {
   margin: 0;
-  width: 72px;
-  height: 72px;
+  /*width: 72px;*/
+  /*height: 72px;*/
   background: var(--color-primary);
   border-radius: 50px;
   display: flex;
@@ -1460,12 +1465,12 @@ section {
 .services .details h3 {
   color: var(--color-default);
   font-weight: 700;
-  margin: 10px 0 15px 0;
+  margin: 5px 0 10px 0;
   font-size: 22px;
   transition: ease-in-out 0.3s;
 }
 .services .details p {
-  line-height: 24px;
+  line-height: 20px;
   font-size: 14px;
   margin-bottom: 0;
 }
