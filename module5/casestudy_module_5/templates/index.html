@@ -5,10 +5,10 @@
 <body>
 <header id="header" class="header fixed-top" data-scrollto-offset="0"></header>
 
-<section id="hero-animated" class="hero-animated d-flex align-items-center">
-    <!--    data-aos="zoom-out"-->
+<section id="hero-animated" class="hero-animated d-flex align-items-center" data-aos="zoom-out">
+
     <div data-aos="zoom-out" class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
-        <img src="/static/assets/img/fhomepage.jpg" class="img-fluid animated">
+        <img src="../static/assets/img/fhomepage.jpg" class="img-fluid animated">
         <h2>Welcome to <span>Furama Resort</span></h2>
         <p>A culinary resort on one of the six most luxurious beaches in the world</p>
     </div>
@@ -31,7 +31,7 @@
 
         <div class="row gy-5">
 
-            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in-up" data-aos-delay="100">
                 <div class="service-item">
                     <div class="img">
                         <img src="../static/assets/img/fGarden-Deluxe-twin-bed.jpg" class="img-fluid" alt="">
@@ -46,7 +46,7 @@
                 </div>
             </div><!-- End Service Item -->
 
-            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in-up"  data-aos-delay="100" >
                 <div class="service-item">
                     <div class="img">
                         <img src="../static/assets/img/fOcean-Deluxe-double-bed.jpg" class="img-fluid" alt="">
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </div><!-- End Service Item -->
-            <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-xl-4 col-md-6" data-aos="zoom-in-up"  data-aos-delay="100">
                 <div class="service-item">
                     <div class="img">
                         <img src="../static/assets/img/fOcean-Suite-Feature.jpg" class="img-fluid" alt="">
@@ -74,25 +74,21 @@
                     </div>
                 </div>
             </div><!-- End Service Item -->
-
-
         </div>
-
     </div>
 </section><!-- End Services Section -->
 
 <footer id="footer" class="footer"></footer>
 <script id="script"></script>
-<script src="/static/jquery-3.6.0.min.js"></script>
+<script src="../static/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function () {
-        $("head").load("head.html");
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
-        $("#script").load("script.html");
+        $("head").load("../templates/head.html");
+        $("#header").load("../templates/header.html");
+        $("#footer").load("../templates/footer.html");
+        $("#script").load("../templates/script.html");
     });
 </script>
-
 
 </body>
 </html>
