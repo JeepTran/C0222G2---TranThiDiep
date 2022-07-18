@@ -12,6 +12,7 @@ table {
     0px 10px 20px rgba(0, 0, 0, 0.05),
     0px 20px 20px rgba(0, 0, 0, 0.05),
     0px 30px 20px rgba(0, 0, 0, 0.05);
+   background: #fff;
 }
 
 tr:hover {
@@ -40,6 +41,7 @@ th {
 th last {
     border-right: none;
 }
+
 .navbar ul li .btn-login {
     border-radius: 10px;
     border: #0ea2bd 2px solid;
@@ -104,14 +106,16 @@ th last {
     color: #212529;
 }
 
-.btn-free-facility{
+.btn-free-facility {
     border-radius: 20px;
     border: #4d648d 1px solid;
     font-size: 13px;
 }
-.btn-free-facility:hover{
+
+.btn-free-facility:hover {
     background-color: #c7dbf8;
 }
+
 .input-search {
     border-radius: 20px;
     border: #0ea2bd 1px solid;
@@ -211,28 +215,32 @@ th last {
 }
 
 .modal-create .modal-dialog .modal-content .modal-body form table tr td table tr td {
-text-align: right;
+    text-align: right;
 }
 
-.table-modal-create-container tr:hover{
+.table-modal-create-container tr:hover {
     background-color: transparent;
 }
-.table-modal-create tr:hover{
+
+.table-modal-create tr:hover {
     background-color: #E4F4F691;
 }
 
 @media screen and (max-width: 1200px) {
-    table{
+    table {
         width: 70%;
     }
+
     .modal-create .modal-dialog .modal-content {
         width: 150%;
     }
 }
+
 @media screen and (max-width: 1000px) {
-    table{
+    table {
         width: 50%;
     }
+
     .modal-create .modal-dialog .modal-content {
         width: 100%;
     }
@@ -271,8 +279,9 @@ section .container .card {
     height: 80px;
     transition: 0.5s;
 }
+
 .card .row .col .btn {
-margin-top: 20px;
+    margin-top: 20px;
 }
 
 .card .row .form-group {
@@ -284,7 +293,7 @@ margin-top: 20px;
 }
 
 .card .row .form-group input,
-.card .row .form-group select ,
+.card .row .form-group select,
 .card .row .form-group textarea {
     /*position: absolute;*/
     width: 150%;
@@ -325,7 +334,7 @@ margin-top: 20px;
 
 
 .card .row .form-group input:focus,
-.card .row .form-group select:focus ,
+.card .row .form-group select:focus,
 .card .row .form-group textarea:focus {
     border: 5px solid #e2e3de;
     transition: all 0.5s;
@@ -372,10 +381,11 @@ margin-top: 20px;
 
     .card .row .col input,
     .card .row .col select,
-    .card .row .col textarea{
+    .card .row .col textarea {
         width: 150%;
     }
-    .card .row .col label{
+
+    .card .row .col label {
         width: 150%;
     }
 
@@ -383,6 +393,7 @@ margin-top: 20px;
         width: 50%;
     }
 }
+
 @media screen and (max-width: 800px) {
     .card .row {
         grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
@@ -398,9 +409,10 @@ margin-top: 20px;
 
     .card .row .col input,
     .card .row .col select,
-    .card .row .col textarea{
+    .card .row .col textarea {
         width: 150%;
     }
+
     .card .row input[type="submit"] {
         width: 50%;
     }
@@ -412,10 +424,10 @@ margin-top: 20px;
     text-transform: uppercase;
 }
 
-.card-button-modal{
+.card-button-modal {
     width: 250%;
     height: 100%;
-    background: rgba(126,162,180,0.56);
+    background: rgba(126, 162, 180, 0.56);
     outline: none;
     font-size: 14px;
     padding: 0px 10px;
@@ -428,29 +440,40 @@ margin-top: 20px;
 
 /*-----------Text Align in Table------------*/
 
-table tr .text-left{
+table tr .text-left {
     text-align: left;
 }
-table tr .text-right{
+
+table tr .text-right {
     text-align: right;
 }
 
 /*--------Card Facility--------*/
-.card-title-facility{
+.card-title-facility {
     position: relative;
     top: 0;
 }
+
 .card-img-overlay h1 {
     font-size: 60px;
     font-weight: bold;
     padding-top: 100px;
 }
-.facilities{
+
+.facilities {
     padding: 70px 70px;
 }
-.card{
+
+.card {
     margin-top: 30px;
 }
-/*a .card-img-top{*/
-/*    height: 60%;*/
-/*}*/
+
+.facilities .card:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+
+}
+
+.facilities .card img:hover {
+    opacity: .6;
+    transform: scale3d(1, 1, 1);
+}
