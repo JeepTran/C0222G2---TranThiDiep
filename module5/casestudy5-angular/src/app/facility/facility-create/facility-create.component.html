@@ -1,0 +1,98 @@
+<section class="facility-container d-flex align-items-center">
+  <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
+
+    <div class="card w-100">
+      <h2>New Facility</h2>
+      <form action="" method="post">
+        <div class="row m-auto">
+          <div class="col">
+            <div class="form-group">
+              <label>Facility Name</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label>Area</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label>Cost (VND)</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label>Max People</label>
+              <input type="number">
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label>Rent Type</label>
+              <select>
+                <option value="" hidden selected>--Select Rent Type--</option>
+                <option>Year</option>
+                <option>Month</option>
+                <option>Day</option>
+                <option>Hour</option>
+              </select>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label>Facility Type</label>
+              <select id="facility-type" > <!-- onchange="getInfo()" -->
+                <option class="select-items" value="-1" hidden selected>--Select Facility Type--
+                </option>
+                <option value="1">Villa</option>
+                <option value="2">House</option>
+                <option value="3">Room</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="col" id="standard-room" >
+            <div class="form-group">
+              <label>Standard Room</label>
+              <input type="text">
+            </div>
+          </div>
+<!--          style="display: none"-->
+          <div class="col" id="other-convenience" >
+            <div class="form-group">
+              <label>Other Convenience</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="col" id="pool-area" >
+            <div class="form-group">
+              <label>Pool Area</label>
+              <input type="text">
+            </div>
+          </div>
+          <div class="col" id="number-of-floors" >
+            <div class="form-group">
+              <label>Number of Floors</label>
+              <input type="number">
+            </div>
+          </div>
+          <div class="col" id="free-facility" >
+            <div class="form-group">
+              <label>Free Facility</label>
+              <textarea> </textarea>
+            </div>
+          </div>
+
+          <div class="col">
+            <a class="btn btn-secondary" href="">Cancel</a>
+            <button class="btn btn-modal-delete" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</section>

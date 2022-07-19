@@ -1,0 +1,189 @@
+<section class="facility-container hero-animated d-flex align-items-center">
+  <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
+    <h3>Customer List</h3>
+    <div class="d-inline-flex">
+      <a href="">
+        <button class="btn-create">New Customer</button>
+      </a>
+      <form action="">
+        <input class="input-search" type="text" placeholder="Search" name="search">
+        <button class="btn-create scrollto">Search</button>
+      </form>
+    </div>
+    <!--        Announce-->
+    <!--            <div style="margin-top: 20px" th:if="${msg}">-->
+    <!--                <small th:utext="${msg}" style="color: green;"></small>-->
+    <!--            </div>-->
+    <!--            <div style="margin-top: 20px" th:if="${msgDelete}">-->
+    <!--                <small th:utext="${msgDelete}" style="color: red;"></small>-->
+    <!--            </div>-->
+    <!--            <div  style="margin-top: 50px">-->
+    <!--                <p style="font-style: italic" th:if="${msgNotFound}" th:utext="${msgNotFound}"></p>-->
+    <!--            </div>-->
+    <table style="width: 100%">
+      <thead>
+      <tr>
+        <th>No.</th>
+        <th>Name</th>
+        <th>Customer Type</th>
+        <th>Date Of Birth</th>
+        <th>Gender</th>
+        <th>ID Card</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Address</th>
+        <th colspan="2">Action</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td>
+          <a href="">
+            <button class="btn-edit">edit</button>
+          </a>
+        </td>
+        <td>
+          <button class="btn-delete" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">delete
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td>
+          <a href="">
+            <button class="btn-edit">edit</button>
+          </a>
+        </td>
+        <td>
+          <button class="btn-delete" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">delete
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td>
+          <a href="">
+            <button class="btn-edit">edit</button>
+          </a>
+        </td>
+        <td>
+          <button class="btn-delete" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">delete
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">aaaaaaaaaaaa </td>
+        <td>
+          <a href="">
+            <button class="btn-edit">edit</button>
+          </a>
+        </td>
+        <td>
+          <button class="btn-delete" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">delete
+          </button>
+        </td>
+      </tr>
+      <tr>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td>a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">a</td>
+        <td class="text-left">aaa</td>
+        <td>
+          <a href="">
+            <button class="btn-edit">edit</button>
+          </a>
+        </td>
+        <td>
+          <button class="btn-delete" data-bs-toggle="modal"
+                  data-bs-target="#exampleModal">delete
+          </button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <!--        Paging-->
+    <!--        <div class="row align-self-xl-end small" th:if="${customerList}">-->
+    <!--            <div class="col-12">-->
+    <!--                <a th:if="${customerList.hasPrevious()}"-->
+    <!--                   th:href="@{customer(page=${customerList.number - 1}, search=${keyword})}">-->
+    <!--                    <i class="bi bi-caret-left-fill"></i>-->
+    <!--                </a>-->
+    <!--                <span th:text="${customerList.number + 1}"></span>-->
+    <!--                /-->
+    <!--                <span th:text="${customerList.totalPages}"></span>-->
+    <!--                <a th:if="${customerList.hasNext()}"-->
+    <!--                   th:href="@{customer(page=${customerList.number + 1}, search=${keyword})}">-->
+    <!--                    <i class="bi bi-caret-right-fill"></i>-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+  </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1"
+     aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Delete Customer</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Are you sure to delete customer <strong style="color: #bb2d3b">XYZ</strong>
+        <br>(phone: <strong style="color: #bb2d3b">0912345678</strong>)?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <a href="">
+          <button type="button" class="btn-modal-delete">Delete</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

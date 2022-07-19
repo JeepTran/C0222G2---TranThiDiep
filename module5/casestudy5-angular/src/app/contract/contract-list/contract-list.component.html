@@ -1,0 +1,167 @@
+<section class="facility-container hero-animated d-flex align-items-center">
+  <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
+    <h3>Contract List</h3>
+    <div class="d-inline-flex">
+      <a href="">
+        <button class="btn-create">New Contract</button>
+      </a>
+      <form action="" method="post">
+        <input class="input-search" type="text" placeholder="Search">
+        <button class="btn-create scrollto" href="">Search</button>
+      </form>
+    </div>
+
+    <!--        <div style="margin-top: 20px" th:if="${msg}">-->
+    <!--            <small th:utext="${msg}" style="color: green;"></small>-->
+    <!--        </div>-->
+    <!--        <div style="margin-top: 20px" th:if="${msgDelete}">-->
+    <!--            <small th:utext="${msgDelete}" style="color: red;"></small>-->
+    <!--        </div>-->
+    <!--        <div style="margin-top: 50px">-->
+    <!--            <p style="font-style: italic" th:if="${msgNotFound}" th:utext="${msgNotFound}"></p>-->
+    <!--        </div>-->
+
+    <table style="width: 100%">
+      <thead>
+      <tr>
+        <th>No.</th>
+        <th>Facility</th>
+        <th>Customer</th>
+        <th>Employee</th>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Deposit</th>
+        <th>Total</th>
+        <th colspan="2">Attach Facility</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>a</td>
+        <td>a</td>
+        <td>a</td>
+        <td>a</td>
+        <td>a</td>
+        <td>a</td>
+        <td>a</td>
+        <td>Total</td>
+        <td>
+          <button class="btn btn-free-facility" data-bs-toggle="modal"
+                  data-bs-target="#modalAddContractDetail">
+            +
+          </button>
+        </td>
+        <td>
+          <button class="btn btn-free-facility" data-bs-toggle="modal"
+                  data-bs-target="#modalSelectedAttachFacility">
+            Selected Attach Facility List
+          </button>
+        </td>
+      </tr>
+      </tbody>
+
+    </table>
+
+
+
+
+    <!--                Modal Add Contract Detail-->
+
+    <div class="modal fade modal-create" id="modalAddContractDetail"
+         tabindex="-1"
+         aria-labelledby="modalAddContractDetailLabel"
+         aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable m-auto">
+        <div class="modal-content w-100 ">
+          <div class="modal-header">
+            <h5>New Contract Detail</h5>
+          </div>
+          <div class="modal-body">
+            <form action="" method="post">
+              <input type="text" value="" hidden>
+              <table border="none">
+                <tr>
+                  <td><label>Attach Facility</label></td>
+                  <td>
+                    <select>
+                      <option value="">--Select Attach Facility--</option>
+                      <option>Karaoke</option>
+                      <option>Massage</option>
+                      <option>Food</option>
+                      <option>Drink</option>
+                      <option>Electric Bus</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label>Quantity</label></td>
+                  <td><input type="number"></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <a class="btn btn-secondary" data-bs-dismiss="modal"
+                       style="margin-right: 200px">Close</a>
+                    <button type="submit" class="btn-modal-delete">Add</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal Show Selected Free Facility List-->
+
+    <div class="modal fade modal-create " id="modalSelectedAttachFacility"
+         tabindex="-1"
+         aria-labelledby="modalSelectedFreeFacilityLabel"
+         aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable m-auto">
+        <div class="modal-content w-100">
+          <div class="modal-header">
+            <h5>Selected Attach Facility List</h5>
+          </div>
+          <div class="modal-body">
+            <table border="none" style="width: 100%;">
+              <tr>
+                <th>Attach Facility</th>
+                <th>Quantity</th>
+              </tr>
+              <tr>
+                <td>Food</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Electric Bus</td>
+                <td>4</td>
+              </tr>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--        <div class="row align-self-xl-end small">-->
+    <!--            <div class="col-12">-->
+    <!--                <a th:if="${contractList.hasPrevious()}"-->
+    <!--                   th:href="@{contract(page=${contractList.number - 1})}">-->
+    <!--                    <i class="bi bi-caret-left-fill"></i>-->
+    <!--                </a>-->
+    <!--                <span th:text="${contractList.number + 1}"></span>-->
+    <!--                /-->
+    <!--                <span th:text="${contractList.totalPages}"></span>-->
+    <!--                <a th:if="${contractList.hasNext()}"-->
+    <!--                   th:href="@{contract(page=${contractList.number + 1})}">-->
+    <!--                    <i class="bi bi-caret-right-fill"></i>-->
+    <!--                </a>-->
+    <!--            </div>-->
+    <!--        </div>-->
+
+  </div>
+</section>
+
