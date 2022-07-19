@@ -1,0 +1,28 @@
+<p>bai-tap-calculator works!</p>
+
+<h2>Calculator</h2>
+<table>
+  <tr>
+    <th>First Number</th>
+    <th>Operator</th>
+    <th>Second Number</th>
+    <th colspan="2">Result</th>
+  </tr>
+  <tr>
+    <td><input type="number" [(ngModel)]="firstNum"></td>
+    <td>
+      <select [(ngModel)]="operator">
+        <option value="">--Select operator--</option>
+        <option value="add">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">*</option>
+        <option value="divide">/</option>
+      </select>
+    </td>
+    <td><input type="number" [(ngModel)]="secondNum"></td>
+    <td>
+      <button (click)="calculate(firstNum,secondNum,operator)">Result</button>
+    </td>
+    <td>{{result}}</td>
+  </tr>
+</table>
