@@ -1,7 +1,7 @@
 <section class="facility-container d-flex align-items-center">
   <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
 
-    <div class="card w-100">
+    <div class="card w-75">
       <h2>New Facility</h2>
       <form action="" method="post">
         <div class="row m-auto">
@@ -44,52 +44,30 @@
           <div class="col">
             <div class="form-group">
               <label>Facility Type</label>
-              <select id="facility-type" > <!-- onchange="getInfo()" -->
+              <select id="facility-type" (change)="changeFacility($event.currentTarget.value)">
                 <option class="select-items" value="-1" hidden selected>--Select Facility Type--
                 </option>
-                <option value="1">Villa</option>
-                <option value="2">House</option>
-                <option value="3">Room</option>
+                <option value="villa">Villa</option>
+                <option value="house">House</option>
+                <option value="room">Room</option>
               </select>
             </div>
           </div>
+        </div>
 
-          <div class="col" id="standard-room" >
-            <div class="form-group">
-              <label>Standard Room</label>
-              <input type="text">
-            </div>
-          </div>
-<!--          style="display: none"-->
-          <div class="col" id="other-convenience" >
-            <div class="form-group">
-              <label>Other Convenience</label>
-              <input type="text">
-            </div>
-          </div>
-          <div class="col" id="pool-area" >
-            <div class="form-group">
-              <label>Pool Area</label>
-              <input type="text">
-            </div>
-          </div>
-          <div class="col" id="number-of-floors" >
-            <div class="form-group">
-              <label>Number of Floors</label>
-              <input type="number">
-            </div>
-          </div>
-          <div class="col" id="free-facility" >
-            <div class="form-group">
-              <label>Free Facility</label>
-              <textarea> </textarea>
-            </div>
-          </div>
+        <div class="mt-3" *ngIf="selectedFacility =='villa'">
+          <app-villa-create></app-villa-create>
+        </div>
+        <div class="mt-3" *ngIf="selectedFacility =='house'">
+          <app-house-create></app-house-create>
+        </div>
+        <div class="mt-3" *ngIf="selectedFacility =='room'">
+          <app-room-create></app-room-create>
+        </div>
 
-          <div class="col">
-            <a class="btn btn-secondary" href="">Cancel</a>
-            <button class="btn btn-modal-delete" type="submit">Submit</button>
-          </div>
+        <div class="col mt-lg-4">
+          <a class=" btn btn-secondary" href="">Cancel</a>
+          <button class=" btn btn-success ms-5" type="submit">Submit</button>
         </div>
       </form>
     </div>

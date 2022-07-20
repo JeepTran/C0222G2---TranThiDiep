@@ -13,6 +13,12 @@ import { CustomerCreateComponent } from './customer/customer-create/customer-cre
 import { CustomerEditComponent } from './customer/customer-edit/customer-edit.component';
 import { ContractListComponent } from './contract/contract-list/contract-list.component';
 import { ContractCreateComponent } from './contract/contract-create/contract-create.component';
+import { VillaEditComponent } from './facility/facility-edit/villa-edit/villa-edit.component';
+import { HouseEditComponent } from './facility/facility-edit/house-edit/house-edit.component';
+import { RoomEditComponent } from './facility/facility-edit/room-edit/room-edit.component';
+import { VillaCreateComponent } from './facility/facility-create/villa-create/villa-create.component';
+import { HouseCreateComponent } from './facility/facility-create/house-create/house-create.component';
+import { RoomCreateComponent } from './facility/facility-create/room-create/room-create.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,13 @@ import { ContractCreateComponent } from './contract/contract-create/contract-cre
     CustomerCreateComponent,
     CustomerEditComponent,
     ContractListComponent,
-    ContractCreateComponent
+    ContractCreateComponent,
+    VillaEditComponent,
+    HouseEditComponent,
+    RoomEditComponent,
+    VillaCreateComponent,
+    HouseCreateComponent,
+    RoomCreateComponent
   ],
   imports: [
     BrowserModule,

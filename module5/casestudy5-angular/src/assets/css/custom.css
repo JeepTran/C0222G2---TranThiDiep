@@ -1,199 +1,199 @@
 * {
-    font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 table {
-    font-family: 'Poppins', sans-serif;
-    margin: 25px auto;
-    border-collapse: collapse;
-    border: 1px solid #eee;
-    border-bottom: 2px solid #00cccc;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10),
-    0px 10px 20px rgba(0, 0, 0, 0.05),
-    0px 20px 20px rgba(0, 0, 0, 0.05),
-    0px 30px 20px rgba(0, 0, 0, 0.05);
-    background: #fff;
+  font-family: 'Poppins', sans-serif;
+  margin: 25px auto;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #00cccc;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10),
+  0px 10px 20px rgba(0, 0, 0, 0.05),
+  0px 20px 20px rgba(0, 0, 0, 0.05),
+  0px 30px 20px rgba(0, 0, 0, 0.05);
+  background: #fff;
 }
 
 tr:hover {
-    background: #e9f3f3;
+  background: #e9f3f3;
 }
 
 td {
-    color: #555;
-    font-size: 13px;
+  color: #555;
+  font-size: 13px;
 }
 
 th, td {
-    color: #999;
-    border: 1px solid #eee;
-    padding: 10px 5px;
-    border-collapse: collapse;
+  color: #999;
+  border: 1px solid #eee;
+  padding: 10px 5px;
+  border-collapse: collapse;
 }
 
 th {
-    background: #0ea2bd;
-    color: #fff;
-    /*text-transform: uppercase;*/
-    font-size: 14px;
+  background: #0ea2bd;
+  color: #fff;
+  /*text-transform: uppercase;*/
+  font-size: 14px;
 }
 
 th last {
-    border-right: none;
+  border-right: none;
 }
 
 .navbar ul li .btn-login {
-    border-radius: 10px;
-    border: #0ea2bd 2px solid;
-    padding: 3px 10px;
-    height: 40px;
-    font-size: 14px;
-    color: white;
-    text-decoration: none;
-    background-color: #0ea2bd;
+  border-radius: 10px;
+  border: #0ea2bd 2px solid;
+  padding: 3px 10px;
+  height: 40px;
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  background-color: #0ea2bd;
 
 }
 
 .navbar ul li .btn-login:hover {
-    text-decoration: none;
-    color: #664d03;
+  text-decoration: none;
+  color: #664d03;
 }
 
 .btn-create {
-    border-radius: 20px;
-    border: #0ea2bd 2px solid;
-    font-size: 14px;
-    margin-right: 30px;
+  border-radius: 20px;
+  border: #0ea2bd 2px solid;
+  font-size: 14px;
+  margin-right: 30px;
 }
 
 .btn-create:hover {
-    background-color: #0ea2bd;
+  background-color: #0ea2bd;
 }
 
 .btn-edit {
-    border-radius: 20px;
-    border: #dec252 1px solid;
+  border-radius: 20px;
+  border: #dec252 1px solid;
 }
 
 .btn-edit:hover {
-    background-color: #f6e3a2;
+  background-color: #f6e3a2;
 }
 
 .btn-delete {
-    border-radius: 20px;
-    border: red 1px solid;
+  border-radius: 20px;
+  border: red 1px solid;
 }
 
 .btn-delete:hover {
-    background-color: #fd8c7d;
+  background-color: #fd8c7d;
 }
 
 .btn-submit {
-    border-radius: 20px;
-    background-color: #0ea2bd;
-    border: #0ea2bd 1px solid;
-    height: 40px;
-    width: 90px;
-    color: #ffffff;
+  border-radius: 20px;
+  background-color: #0ea2bd;
+  border: #0ea2bd 1px solid;
+  height: 40px;
+  width: 90px;
+  color: #ffffff;
 }
 
 .btn-close {
-    border-radius: 20px;
-    background-color: #0ea2bd;
-    border: #0ea2bd 1px solid;
-    height: 40px;
-    width: 90px;
-    color: #212529;
+  border-radius: 20px;
+  background-color: #0ea2bd;
+  border: #0ea2bd 1px solid;
+  height: 40px;
+  width: 90px;
+  color: #212529;
 }
 
 .btn-free-facility {
-    border-radius: 20px;
-    border: #4d648d 1px solid;
-    font-size: 13px;
+  border-radius: 20px;
+  border: #4d648d 1px solid;
+  font-size: 13px;
 }
 
 .btn-free-facility:hover {
-    background-color: #c7dbf8;
+  background-color: #c7dbf8;
 }
 
 .input-search {
-    border-radius: 20px;
-    border: #0ea2bd 1px solid;
-    height: 27px;
-    font-size: 14px;
-    padding: 10px;
+  border-radius: 20px;
+  border: #0ea2bd 1px solid;
+  height: 27px;
+  font-size: 14px;
+  padding: 10px;
 }
 
 .input-search:hover {
-    background-color: rgba(228, 244, 246, 0.57);
+  background-color: rgba(228, 244, 246, 0.57);
 }
 
 
 /*---------Modal Delete ---------*/
 
 .modal .modal-dialog .modal-content .modal-header {
-    background-color: #0ea2bd;
+  background-color: #0ea2bd;
 }
 
 .btn-modal-delete {
-    display: inline-block;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    background-color: #0ea2bd;
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  background-color: #0ea2bd;
 }
 
 
 /*---------Modal Create---------*/
 
 .modal-create .modal-dialog {
-    position: center;
-    margin: 150px 200px;
-    padding: 0;
-    width: 100%;
+  position: center;
+  margin: 150px 200px;
+  padding: 0;
+  width: 100%;
 }
 
 .modal-create .modal-dialog .modal-content {
-    width: 200%;
-    padding: 0px 0px;
-    margin: 0px;
-    background-color: white;
+  width: 200%;
+  padding: 0px 0px;
+  margin: 0px;
+  background-color: white;
 
 }
 
 .modal-create .modal-dialog .modal-content .modal-header {
-    height: 40%;
-    padding: 10px;
-    font-size: 18px;
+  height: 40%;
+  padding: 10px;
+  font-size: 18px;
 }
 
 .modal-create .modal-dialog .modal-content .modal-header h5 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: normal;
-    /*font-style: italic;*/
-    text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  /*font-style: italic;*/
+  text-transform: uppercase;
 }
 
 .modal-create .modal-dialog .modal-content .modal-body input,
 .modal-create .modal-dialog .modal-content .modal-body select {
-    border-radius: 20px;
-    width: 90%;
-    height: 30px;
-    border: #0ea2bd 1px solid;
-    padding: 5px 10px;
-    margin: 5px;
+  border-radius: 20px;
+  width: 90%;
+  height: 30px;
+  border: #0ea2bd 1px solid;
+  padding: 5px 10px;
+  margin: 5px;
 }
 
 .modal-create .modal-dialog .modal-content .modal-body form table,
@@ -202,284 +202,285 @@ th last {
 .modal-create .modal-dialog .modal-content .modal-body form table tr td table,
 .modal-create .modal-dialog .modal-content .modal-body form table tr td table tr,
 .modal-create .modal-dialog .modal-content .modal-body form table tr td table tr td {
-    border: none;
+  border: none;
 }
 
 .modal-create .modal-dialog .modal-content .modal-body form table,
 .modal-create .modal-dialog .modal-content .modal-body form table tr td table {
-    margin: 0;
-    width: 100%;
-    border: none white;
-    border-collapse: collapse;
-    box-shadow: none;
+  margin: 0;
+  width: 100%;
+  border: none white;
+  border-collapse: collapse;
+  box-shadow: none;
 }
 
 .modal-create .modal-dialog .modal-content .modal-body form table tr td table tr td {
-    text-align: right;
+  text-align: right;
 }
 
 .table-modal-create-container tr:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .table-modal-create tr:hover {
-    background-color: #E4F4F691;
+  background-color: #E4F4F691;
 }
 
 @media screen and (max-width: 1200px) {
-    table {
-        width: 70%;
-    }
+  table {
+    width: 70%;
+  }
 
-    .modal-create .modal-dialog .modal-content {
-        width: 150%;
-    }
+  .modal-create .modal-dialog .modal-content {
+    width: 150%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    table {
-        width: 50%;
-    }
+  table {
+    width: 50%;
+  }
 
-    .modal-create .modal-dialog .modal-content {
-        width: 100%;
-    }
+  .modal-create .modal-dialog .modal-content {
+    width: 100%;
+  }
 }
 
 /*---------Form create & edit---------*/
 
 section .container .card {
-    width: 75%;
-    padding: 20px 20px 40px 20px;
-    border: 2px solid #0ea2bd;
-    /*box-shadow: 10px 10px 0 #0ea2bd;*/
-    border-radius: 50px;
-    position: relative;
-    background-color: rgba(237, 238, 233, 0.04);
+  width: 75%;
+  padding: 20px 20px 40px 20px;
+  border: 2px solid #0ea2bd;
+  /*box-shadow: 10px 10px 0 #0ea2bd;*/
+  border-radius: 50px;
+  position: relative;
+  background-color: rgba(237, 238, 233, 0.04);
 }
 
 .card h2 {
-    color: #A686708E;
-    font-size: 30px;
-    text-transform: uppercase;
-    font-weight: bolder;
+  color: #A686708E;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
 .card .row {
-    position: relative;
-    display: grid;
-    grid: auto / auto auto;
-    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
-    grid-gap: 20px;
+  position: relative;
+  display: grid;
+  grid: auto / auto auto;
+  grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+  grid-gap: 20px;
 }
 
 .card .row .col {
-    position: relative;
-    width: 100%;
-    height: 80px;
-    transition: 0.5s;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  transition: 0.5s;
 }
 
 .card .row .col .btn {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .card .row .form-group {
-    position: relative;
-    width: 60%;
-    height: 40px;
-    color: #4c50ae;
-    margin-left: 10px
+  position: relative;
+  width: 60%;
+  height: 40px;
+  color: #4c50ae;
+  margin-left: 10px
 }
 
 .card .row .form-group input,
 .card .row .form-group select,
 .card .row .form-group textarea {
-    /*position: absolute;*/
-    width: 150%;
-    height: 100%;
-    background: transparent;
-    outline: none;
-    font-size: 14px;
-    padding: 5px 10px;
-    border: 2px solid #0ea2bd;
-    /*box-shadow: 3px 5px 0 #0ea2bd;*/
-    color: #4c50ae;
-    border-radius: 50px;
-    margin: 10px;
+  /*position: absolute;*/
+  width: 150%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 2px solid #0ea2bd;
+  /*box-shadow: 3px 5px 0 #0ea2bd;*/
+  color: #4c50ae;
+  border-radius: 50px;
+  margin: 10px;
 }
 
 .card .row .form-group textarea {
-    height: 150%;
+  height: 150%;
 }
 
 .card .row .form-group input:hover,
 .card .row .form-group select:hover,
 .card .row .form-group select option:hover,
 .card .row .form-group textarea:hover {
-    border: 5px solid #e2e3de;
-    transition: all 0.5s;
+  border: 5px solid #e2e3de;
+  transition: all 0.5s;
 }
 
 .card .row .form-group label {
-    line-height: 30px;
-    color: #4c50ae;
-    font-size: 15px;
-    font-weight: bold;
-    margin: 0 0 0 10px;
-    display: block;
-    pointer-events: none;
-    text-align: left;
+  line-height: 30px;
+  color: #4c50ae;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0 0 0 10px;
+  display: block;
+  pointer-events: none;
+  text-align: left;
 }
 
 
 .card .row .form-group input:focus,
 .card .row .form-group select:focus,
 .card .row .form-group textarea:focus {
-    border: 5px solid #e2e3de;
-    transition: all 0.5s;
+  border: 5px solid #e2e3de;
+  transition: all 0.5s;
 }
 
 .card .row input[type="submit"] {
-    position: relative;
-    border: 5px solid #0ea2bd;
-    /*box-shadow: 10px 10px 0 #0ea2bd;*/
-    padding: 10px;
-    height: 100%;
-    width: 50%;
-    cursor: pointer;
-    outline: none;
-    background: #0ea2bd;
-    /*text-transform: uppercase;*/
-    color: white;
-    line-height: 15px;
-    font-size: 15px;
-    font-weight: bolder;
-    border-radius: 45px;
-    transition: all 0.4s;
+  position: relative;
+  border: 5px solid #0ea2bd;
+  /*box-shadow: 10px 10px 0 #0ea2bd;*/
+  padding: 10px;
+  height: 100%;
+  width: 50%;
+  cursor: pointer;
+  outline: none;
+  background: #0ea2bd;
+  /*text-transform: uppercase;*/
+  color: white;
+  line-height: 15px;
+  font-size: 15px;
+  font-weight: bolder;
+  border-radius: 45px;
+  transition: all 0.4s;
 }
 
 .card .row input[type="submit"]:hover {
-    /*border: 5px solid rgba(255, 255, 255, 1);*/
-    color: #4c50ae;
-    transition: all 0.4s;
-    background-color: #e2e3de;
+  /*border: 5px solid rgba(255, 255, 255, 1);*/
+  color: #4c50ae;
+  transition: all 0.4s;
+  background-color: #e2e3de;
 }
 
 @media screen and (max-width: 1200px) {
-    .card .row {
-        grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
-    }
+  .card .row {
+    grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+  }
 
-    .card {
-        padding: 20px;
-    }
+  .card {
+    padding: 20px;
+  }
 
-    .card h2 {
-        font-size: 34px;
-    }
+  .card h2 {
+    font-size: 34px;
+  }
 
-    .card .row .col input,
-    .card .row .col select,
-    .card .row .col textarea {
-        width: 150%;
-    }
+  .card .row .col input,
+  .card .row .col select,
+  .card .row .col textarea {
+    width: 150%;
+  }
 
-    .card .row .col label {
-        width: 150%;
-    }
+  .card .row .col label {
+    width: 150%;
+  }
 
-    .card .row input[type="submit"] {
-        width: 50%;
-    }
+  .card .row input[type="submit"] {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .card .row {
-        grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
-    }
+  .card .row {
+    grid-template-columns: repeat(auto-fit, minmax(70%, 1fr));
+  }
 
-    .card {
-        padding: 10px;
-    }
+  .card {
+    padding: 10px;
+  }
 
-    .card h2 {
-        font-size: 20px;
-    }
+  .card h2 {
+    font-size: 20px;
+  }
 
-    .card .row .col input,
-    .card .row .col select,
-    .card .row .col textarea {
-        width: 150%;
-    }
+  .card .row .col input,
+  .card .row .col select,
+  .card .row .col textarea {
+    width: 150%;
+  }
 
-    .card .row input[type="submit"] {
-        width: 50%;
-    }
+  .card .row input[type="submit"] {
+    width: 50%;
+  }
 }
 
 .container h3 {
-    color: rgba(0, 0, 0, 0.3);
-    font-weight: bolder;
-    text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: bolder;
+  text-transform: uppercase;
 }
 
 .card-button-modal {
-    width: 250%;
-    height: 100%;
-    background: rgba(126, 162, 180, 0.56);
-    outline: none;
-    font-size: 14px;
-    padding: 0px 10px;
-    border: 5px solid #0ea2bd;
-    box-shadow: 3px 5px 0 #0ea2bd;
-    color: #4c50ae;
-    border-radius: 50px;
+  width: 250%;
+  height: 100%;
+  background: rgba(126, 162, 180, 0.56);
+  outline: none;
+  font-size: 14px;
+  padding: 0px 10px;
+  border: 5px solid #0ea2bd;
+  box-shadow: 3px 5px 0 #0ea2bd;
+  color: #4c50ae;
+  border-radius: 50px;
 }
 
 
 /*-----------Text Align in Table------------*/
 
 table tr .text-left {
-    text-align: left;
+  text-align: left;
 }
 
 table tr .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 /*--------Card Facility--------*/
 
-.facility-container{
+.facility-container {
   padding-top: 0px;
 }
+
 .card-title-facility {
-    position: relative;
-    top: 0;
+  position: relative;
+  top: 0;
   margin-top: 0px;
 }
 
 .card-img-overlay h1 {
-    font-size: 60px;
-    font-weight: bold;
-    padding-top: 150px;
+  font-size: 80px;
+  font-weight: bold;
+  padding-top: 130px;
 }
 
 .facilities {
-    padding: 70px ;
+  padding: 70px;
 }
 
 .card {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .facilities .card:hover {
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
 
 }
 
 .facilities .card img:hover {
-    opacity: .6;
-    transform: scale3d(1, 1, 1);
+  opacity: .6;
+  transform: scale3d(1, 1, 1);
 }
 
