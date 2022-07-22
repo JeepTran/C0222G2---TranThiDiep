@@ -1,0 +1,110 @@
+<form class="m-auto w-50" [formGroup]="userRegisterForm" (ngSubmit)="registerUser()">
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email"
+           formControlName="email">
+    <small style="color:red;"
+           *ngIf="userRegisterForm.controls.email.hasError('required')
+           && userRegisterForm.controls.email.touched">
+      Empty!
+    </small>
+    <small style="color:red;"
+           *ngIf="userRegisterForm.controls.email.hasError('email')
+           && userRegisterForm.controls.email.touched">
+      Not in email format!
+    </small>
+  </div>
+  <div formGroupName="matchPassword">
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" class="form-control" id="password"
+             formControlName="password" name="password">
+      <small style="color:red;"
+             *ngIf="userRegisterForm.controls.matchPassword.get('password').hasError('required')
+           && userRegisterForm.controls.matchPassword.get('password').touched">
+        Empty!
+      </small>
+      <small style="color:red;"
+             *ngIf="userRegisterForm.controls.matchPassword.get('password').hasError('minlength')
+           && userRegisterForm.controls.matchPassword.get('password').touched">
+        Min 6 characters!
+      </small>
+    </div>
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" class="form-control" id="confirmPassword"
+             formControlName="confirmPassword" name="confirmPassword">
+      <small style="color:red;"
+             *ngIf="userRegisterForm.controls.matchPassword.get('confirmPassword').hasError('required')
+           && userRegisterForm.controls.matchPassword.get('confirmPassword').touched">
+        Empty!
+      </small>
+      <small style="color:red;"
+             *ngIf="userRegisterForm.controls.matchPassword.get('confirmPassword').hasError('minlength')
+           && userRegisterForm.controls.matchPassword.get('confirmPassword').touched">
+        Min 6 characters!
+      </small>
+      <small style="color:red;"
+             *ngIf="userRegisterForm.controls.matchPassword.hasError('error')
+           && userRegisterForm.controls.matchPassword.touched">
+        Not match password!
+      </small>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="country">Country</label>
+    <select class="form-control" id="country"
+            formControlName="country" name="country">
+      <option *ngFor="let temp of countries" value='{{temp}}'>{{temp}}</option>
+    </select>
+    <small style="color:red;" *ngIf="userRegisterForm.controls.country.hasError('required')
+    && userRegisterForm.controls.country.touched">
+      Empty!
+    </small>
+  </div>
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input type="text" class="form-control" id="age"
+           formControlName="age" name="age">
+    <small style="color:red;" *ngIf="userRegisterForm.controls.age.hasError('required')
+    && userRegisterForm.controls.age.touched">
+      Empty!
+    </small>
+    <small style="color:red;" *ngIf="userRegisterForm.controls.age.hasError('min')
+    && userRegisterForm.controls.age.touched">
+      Not enough 18!
+    </small>
+  </div>
+  <div>
+    <label>Gender</label>
+    <div>
+      <input class="ms-3" type="radio" value="male"
+             formControlName="gender"> Male
+      <input class="ms-3" type="radio" value="female"
+             formControlName="gender"> Female
+      <input class="ms-3" type="radio" value="other"
+             formControlName="gender"> Other
+    </div>
+    <small style="color:red;" *ngIf="userRegisterForm.controls.gender.hasError('required')
+    && userRegisterForm.controls.gender.touched">
+      Not select yet!
+    </small>
+  </div>
+  <div class="form-group">
+    <label for="phone">Phone</label>
+    <input type="text" class="form-control" id="phone"
+           formControlName="phone">
+    <small style="color:red;" *ngIf="userRegisterForm.controls.phone.hasError('required')
+    && userRegisterForm.controls.phone.touched">
+      Empty!
+    </small>
+    <small style="color:red;" *ngIf="userRegisterForm.controls.phone.hasError('pattern')
+     && userRegisterForm.controls.phone.touched">
+      Not in phone number format!
+    </small>
+  </div>
+
+  <div>
+    <button class="btn btn-info mt-3" type="submit">Submit</button>
+  </div>
+</form>
