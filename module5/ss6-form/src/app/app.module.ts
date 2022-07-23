@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ThucHanhTodoComponent } from './thuc-hanh-todo/thuc-hanh-todo.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import { BaiTapFormDangKyComponent } from './bai-tap-form-dang-ky/bai-tap-form-dang-ky.component';
+import { BaiTapFormDangNhapComponent } from './bai-tap-form-dang-nhap/bai-tap-form-dang-nhap.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ThucHanhTodoComponent,
-    BaiTapFormDangKyComponent
+    BaiTapFormDangKyComponent,
+    BaiTapFormDangNhapComponent
   ],
     imports: [
         BrowserModule,

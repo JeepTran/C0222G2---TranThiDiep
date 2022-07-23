@@ -1,0 +1,31 @@
+<form class="m-auto w-50" [formGroup]="loginForm" (ngSubmit)="login()">
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" formControlName="email">
+    <small style="color:red;" *ngIf="loginForm.controls.email.hasError('required')
+     && loginForm.controls.email.touched">
+      Empty!
+    </small>
+    <small style="color:red;" *ngIf="loginForm.controls.email.hasError('email')
+     && loginForm.controls.email.touched">
+      Not in email format!
+    </small>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password" formControlName="password"
+    >
+    <small style="color:red;" *ngIf="loginForm.controls.password.hasError('required')
+&& loginForm.controls.password.touched">
+      Empty!
+    </small>
+    <small style="color:red;" *ngIf="loginForm.controls.password.hasError('minlength')
+&& loginForm.controls.password.touched">
+      Min 6 characters!
+    </small>
+  </div>
+
+  <div class="mt-3">
+    <button class="btn btn-outline-primary">Login</button>
+  </div>
+</form>
