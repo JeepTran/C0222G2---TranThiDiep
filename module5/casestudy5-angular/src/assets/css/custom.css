@@ -135,11 +135,10 @@ th last {
   background-color: #0ea2bd;
 }
 
-.btn-modal-delete {
+button.btn.btn-modal-delete {
   display: inline-block;
   font-weight: 400;
-  line-height: 1.5;
-  color: #212529;
+  font-size: 1rem;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
@@ -147,15 +146,18 @@ th last {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+  line-height: 1.5;
+  color: #212529;
   border: 1px solid transparent;
+  border-radius: 0.375rem;
   padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   background-color: #0ea2bd;
 }
 
-
+button.btn.btn-modal-delete:hover {
+  color: white;
+}
 /*---------Modal Create---------*/
 
 .modal-create .modal-dialog {

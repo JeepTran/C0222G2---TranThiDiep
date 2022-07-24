@@ -91,14 +91,15 @@
     <div class="modal fade modal-create " id="modalAddContractDetail" tabindex="-1"
          aria-labelledby="modalAddContractDetailLabel"
          aria-hidden="true">
-      <div class="modal-dialog modal-dialog-scrollable ">
-        <div class="modal-content">
+      <div class="modal-dialog modal-dialog-scrollable m-auto ">
+        <div class="modal-content w-100">
           <div class="modal-header">
             <h5>New Contract Detail</h5>
           </div>
           <div class="modal-body">
-            <!--                        <form>-->
-            <table border="none">
+<!--                                    <form>-->
+            <div>
+            <table style="border:none" class="w-100 shadow-none none">
               <tr>
                 <td><label>Attach Facility</label></td>
                 <td>
@@ -116,15 +117,15 @@
                 <td><label>Quantity</label></td>
                 <td><input type="number" id="quantityModal"></td>
               </tr>
-              <td colspan="2">
-                <a class="btn btn-secondary" data-bs-dismiss="modal"
-                   style="margin-right: 200px">Close</a>
-                <button type="button" id="submitContractDetail" data-bs-dismiss="modal"
-                        class="btn-modal-delete">Add
-                </button>
-              </td>
             </table>
-            <!--                        </form>-->
+<!--                                    </form>-->
+            </div>
+          </div>
+          <div class="modal-footer">
+            <a class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
+            <button type="button" id="submitContractDetail" data-bs-dismiss="modal"
+                    class="btn btn-modal-delete">Add
+            </button>
           </div>
         </div>
       </div>
