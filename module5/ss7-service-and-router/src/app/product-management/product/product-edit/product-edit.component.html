@@ -1,1 +1,26 @@
-<p>product-edit works!</p>
+<h1>Update Product</h1>
+<form [formGroup]="productFormEdit" (ngSubmit)="submitEdit($event.target.id)">
+  <table>
+    <tr>
+      <td>ID:</td>
+      <td><input type="number" formControlName="id" readonly></td>
+    </tr>
+    <tr>
+      <td>Name:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Price:</td>
+      <td><input type="number" formControlName="price"></td>
+    </tr>
+    <tr>
+      <td>Description:</td>
+      <td><input type="text" formControlName="description"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Submit</button></td>
+    </tr>
+  </table>
+</form>
+

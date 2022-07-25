@@ -106,13 +106,13 @@ th last {
   color: #212529;
 }
 
-.btn-free-facility {
+button.btn.btn-free-facility {
   border-radius: 20px;
   border: #4d648d 1px solid;
   font-size: 13px;
 }
 
-.btn-free-facility:hover {
+button.btn.btn-free-facility:hover {
   background-color: #c7dbf8;
 }
 

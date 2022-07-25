@@ -1,156 +1,75 @@
 <section class="facility-container hero-animated d-flex align-items-center">
-  <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
-    <h3>Customer List</h3>
-    <div class="d-inline-flex">
-      <a href="">
-        <button class="btn-create">New Customer</button>
-      </a>
-      <form action="">
-        <input class="input-search" type="text" placeholder="Search" name="search">
-        <button class="btn-create scrollto">Search</button>
-      </form>
+  <div class="container d-flex flex-column">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
+      <h3>Customer List</h3>
+      <div class="d-inline-flex">
+        <a href="">
+          <button class="btn-create">New Customer</button>
+        </a>
+        <form action="">
+          <input class="input-search" type="text" placeholder="Search" name="search">
+          <button class="btn-create scrollto">Search</button>
+        </form>
+      </div>
+      <!--        Announce-->
+      <!--            <div style="margin-top: 20px" th:if="${msg}">-->
+      <!--                <small th:utext="${msg}" style="color: green;"></small>-->
+      <!--            </div>-->
+      <!--            <div style="margin-top: 20px" th:if="${msgDelete}">-->
+      <!--                <small th:utext="${msgDelete}" style="color: red;"></small>-->
+      <!--            </div>-->
+      <!--            <div  style="margin-top: 50px">-->
+      <!--                <p style="font-style: italic" th:if="${msgNotFound}" th:utext="${msgNotFound}"></p>-->
+      <!--            </div>-->
+      <table style="width: 100%">
+        <thead>
+        <tr>
+          <th>No.</th>
+          <th>Name</th>
+          <th>Customer Type</th>
+          <th>Date Of Birth</th>
+          <th>Gender</th>
+          <th>ID Card</th>
+          <th>Phone</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th colspan="2">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let customer of customers; index as i">
+          <td>{{i + 1}}</td>
+          <td class="text-left">{{customer.name}}</td>
+          <td>{{customer.customerType.customerType}}</td>
+          <td class="text-left">{{customer.dob}}</td>
+          <td *ngIf="customer.gender===0">Female</td>
+          <td *ngIf="customer.gender===1">Male</td>
+          <td *ngIf="customer.gender===2">Other</td>
+          <td class="text-left">{{customer.idCard}}</td>
+          <td class="text-left">{{customer.phone}}</td>
+          <td class="text-left">{{customer.email}}</td>
+          <td class="text-left">{{customer.address}}</td>
+          <td>
+            <a href="">
+              <button class="btn-edit">edit</button>
+            </a>
+          </td>
+          <td>
+            <button class="btn-delete" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">delete
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
     </div>
-    <!--        Announce-->
-    <!--            <div style="margin-top: 20px" th:if="${msg}">-->
-    <!--                <small th:utext="${msg}" style="color: green;"></small>-->
-    <!--            </div>-->
-    <!--            <div style="margin-top: 20px" th:if="${msgDelete}">-->
-    <!--                <small th:utext="${msgDelete}" style="color: red;"></small>-->
-    <!--            </div>-->
-    <!--            <div  style="margin-top: 50px">-->
-    <!--                <p style="font-style: italic" th:if="${msgNotFound}" th:utext="${msgNotFound}"></p>-->
-    <!--            </div>-->
-    <table style="width: 100%">
-      <thead>
-      <tr>
-        <th>No.</th>
-        <th>Name</th>
-        <th>Customer Type</th>
-        <th>Date Of Birth</th>
-        <th>Gender</th>
-        <th>ID Card</th>
-        <th>Phone</th>
-        <th>Email</th>
-        <th>Address</th>
-        <th colspan="2">Action</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td>
-          <a href="">
-            <button class="btn-edit">edit</button>
-          </a>
-        </td>
-        <td>
-          <button class="btn-delete" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal">delete
-          </button>
-        </td>
-      </tr>
-      <tr>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td>
-          <a href="">
-            <button class="btn-edit">edit</button>
-          </a>
-        </td>
-        <td>
-          <button class="btn-delete" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal">delete
-          </button>
-        </td>
-      </tr>
-      <tr>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td>
-          <a href="">
-            <button class="btn-edit">edit</button>
-          </a>
-        </td>
-        <td>
-          <button class="btn-delete" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal">delete
-          </button>
-        </td>
-      </tr>
-      <tr>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">aaaaaaaaaaaa</td>
-        <td>
-          <a href="">
-            <button class="btn-edit">edit</button>
-          </a>
-        </td>
-        <td>
-          <button class="btn-delete" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal">delete
-          </button>
-        </td>
-      </tr>
-      <tr>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td>a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">a</td>
-        <td class="text-left">aaa</td>
-        <td>
-          <a href="">
-            <button class="btn-edit">edit</button>
-          </a>
-        </td>
-        <td>
-          <button class="btn-delete" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal">delete
-          </button>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-
-
     <!--Pagination-->
     <div class="d-flex justify-content-end">
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item ">
-            <a class="page-link bg-warning" href="#" aria-label="Previous">
+            <a class="page-link " href="#" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
@@ -158,7 +77,7 @@
           <li class="page-item"><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
           <li class="page-item ">
-            <a class="page-link bg-warning" href="#" aria-label="Next">
+            <a class="page-link " href="#" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
             </a>
           </li>
