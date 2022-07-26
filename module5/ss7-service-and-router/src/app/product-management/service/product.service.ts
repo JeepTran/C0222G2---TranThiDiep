@@ -57,8 +57,6 @@ export class ProductService {
   }
 
   deleteProduct(id: number) {
-    this.products = this.products.filter(item => {
-      return item.id !== id;
-    });
+    this.products.splice(this.products.findIndex(value => value.id === id), 1);
   }
 }
