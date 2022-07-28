@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {Product} from "../../model/product";
 import {ProductService} from "../../service/product.service";
-import {ActivatedRoute, ParamMap, Router} from "@angular/router";
+import {ActivatedRoute, ParamMap} from "@angular/router";
 import {FormControl, FormGroup} from "@angular/forms";
 
 @Component({
@@ -12,29 +12,37 @@ import {FormControl, FormGroup} from "@angular/forms";
 export class ProductEditComponent implements OnInit {
   product: Product;
   productFormEdit: FormGroup;
+  id: number;
 
   constructor(private productService: ProductService,
-              private activatedRoute: ActivatedRoute, private router: Router) {
+              private activatedRoute: ActivatedRoute) {
   }
 
   ngOnInit(): void {
-    this.activatedRoute.paramMap.subscribe((paramMap: ParamMap)=>{
-      const id = parseInt(paramMap.get('id'));
-      this.product = this.productService.getProductById(id);
-      this.productFormEdit = new FormGroup({
-        id: new FormControl(this.product.id),
-        name: new FormControl(this.product.name),
-        price: new FormControl(this.product.price),
-        description: new FormControl(this.product.description)
-      });
+    this.activatedRoute.paramMap.subscribe((paramMap: ParamMap) => {
+      this.id = +paramMap.get('id');
+      this.getProduct(this.id);
     });
-
   }
 
-  submitEdit(){
+  getProduct(id: number) {
+    return this.productService.getProductById(id).subscribe(
+      product => {
+        this.productFormEdit = new FormGroup({
+          name: new FormControl(product.name),
+          price: new FormControl(product.price),
+          description: new FormControl(product.description)
+        });
+      }
+    );
+  }
+
+  submitEdit() {
     const product = this.productFormEdit.value;
-    console.log(product);
-    this.productService.editProduct(product.id, product);
-    this.router.navigateByUrl("/product/list").then();
+    this.productService.editProduct(product.id, product).subscribe(()=>{
+      console.log("Edit successfully!");
+    },e=>{
+      console.log("Fail to edit!")
+    });
   }
 }

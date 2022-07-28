@@ -3,13 +3,17 @@
     <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
       <h3>Customer List</h3>
       <div class="d-inline-flex">
-        <a href="">
+        <a routerLink="/customer/create">
           <button class="btn-create">New Customer</button>
         </a>
-        <form action="">
-          <input class="input-search" type="text" placeholder="Search" name="search">
-          <button class="btn-create scrollto">Search</button>
+        <form [formGroup]="searchForm" *ngIf="searchForm" (ngSubmit)="search()">
+          <input class="input-search" type="text" placeholder="Search customer name"
+                 formControlName="searchName" name="searchName">
+          <input class="input-search" type="text" placeholder="Search ID card"
+                 formControlName="searchIdCard" name="searchIdCard">
+          <button class="btn-create scrollto" type="submit">Search</button>
         </form>
+
       </div>
       <!--        Announce-->
       <!--            <div style="margin-top: 20px" th:if="${msg}">-->
@@ -36,12 +40,12 @@
           <th colspan="2">Action</th>
         </tr>
         </thead>
-        <tbody>
-        <tr *ngFor="let customer of customers; index as i">
+        <tbody *ngIf="customers.length!==0; else noContent">
+        <tr *ngFor="let customer of customers | paginate: {itemsPerPage: 3, currentPage: p}; index as i">
           <td>{{i + 1}}</td>
           <td class="text-left">{{customer.name}}</td>
           <td>{{customer.customerType.customerType}}</td>
-          <td class="text-left">{{customer.dob}}</td>
+          <td class="text-left">{{customer.dob|date : "dd/MM/yyyy"}}</td>
           <td *ngIf="customer.gender===0">Female</td>
           <td *ngIf="customer.gender===1">Male</td>
           <td *ngIf="customer.gender===2">Other</td>
@@ -50,63 +54,74 @@
           <td class="text-left">{{customer.email}}</td>
           <td class="text-left">{{customer.address}}</td>
           <td>
-            <a href="">
+            <a [routerLink]="['/customer/edit',customer.id]">
               <button class="btn-edit">edit</button>
             </a>
           </td>
           <td>
-            <button class="btn-delete" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal">delete
+            <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    (click)="sendId(customer.id, customer.name, customer.phone)">delete
             </button>
           </td>
+
+
         </tr>
         </tbody>
-      </table>
 
+        <ng-template #noContent>
+          <small style="color: crimson">Data is unavailable.</small>
+        </ng-template>
+      </table>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1"
+           aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Delete Customer</h5>
+              <!--                  <button type="button" class="btn-close" data-bs-dismiss="modal"-->
+              <!--                          aria-label="Close"></button>-->
+            </div>
+            <div class="modal-body">
+              Are you sure to delete customer <strong style="color: #bb2d3b">{{name}}</strong><br>
+              (phone: <strong style="color: #bb2d3b">{{phone}}</strong>)?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <a (click)="deleteCustomer()">
+                <button type="button" class="btn btn-modal-delete" data-bs-dismiss="modal">Delete</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!--Pagination-->
     <div class="d-flex justify-content-end">
-      <nav aria-label="Page navigation example">
-        <ul class="pagination">
-          <li class="page-item ">
-            <a class="page-link " href="#" aria-label="Previous">
-              <span aria-hidden="true">&laquo;</span>
-            </a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item ">
-            <a class="page-link " href="#" aria-label="Next">
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <pagination-controls (pageChange)="p = $event"></pagination-controls>
     </div>
+
+
+    <!--    <div class="d-flex justify-content-end">-->
+    <!--      <nav aria-label="Page navigation example">-->
+    <!--        <ul class="pagination">-->
+    <!--          <li class="page-item ">-->
+    <!--            <a class="page-link " aria-label="Previous">-->
+    <!--              <span aria-hidden="true">&laquo;</span>-->
+    <!--            </a>-->
+    <!--          </li>-->
+    <!--          <li class="page-item"><a class="page-link">1</a></li>-->
+    <!--          <li class="page-item"><a class="page-link">2</a></li>-->
+    <!--          <li class="page-item"><a class="page-link">3</a></li>-->
+    <!--          <li class="page-item ">-->
+    <!--            <a class="page-link " aria-label="Next">-->
+    <!--              <span aria-hidden="true">&raquo;</span>-->
+    <!--            </a>-->
+    <!--          </li>-->
+    <!--        </ul>-->
+    <!--      </nav>-->
+    <!--    </div>-->
 
   </div>
 </section>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1"
-     aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Delete Customer</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        Are you sure to delete customer <strong style="color: #bb2d3b">XYZ</strong>
-        <br>(phone: <strong style="color: #bb2d3b">0912345678</strong>)?
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="">
-          <button type="button" class="btn btn-create">Delete</button>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+

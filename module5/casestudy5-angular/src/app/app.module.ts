@@ -19,6 +19,13 @@ import { RoomEditComponent } from './facility/facility-edit/room-edit/room-edit.
 import { VillaCreateComponent } from './facility/facility-create/villa-create/villa-create.component';
 import { HouseCreateComponent } from './facility/facility-create/house-create/house-create.component';
 import { RoomCreateComponent } from './facility/facility-create/room-create/room-create.component';
+import { HomeComponent } from './home/home.component';
+import { FacilityDeleteComponent } from './facility/facility-delete/facility-delete.component';
+import {HttpClientModule} from "@angular/common/http";
+import {ReactiveFormsModule} from "@angular/forms";
+import {NgxPaginationModule} from "ngx-pagination";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {ToastrModule} from "ngx-toastr";
 
 @NgModule({
   declarations: [
@@ -38,11 +45,20 @@ import { RoomCreateComponent } from './facility/facility-create/room-create/room
     RoomEditComponent,
     VillaCreateComponent,
     HouseCreateComponent,
-    RoomCreateComponent
+    RoomCreateComponent,
+    HomeComponent,
+    FacilityDeleteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    NgxPaginationModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot({
+      preventDuplicates: true
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

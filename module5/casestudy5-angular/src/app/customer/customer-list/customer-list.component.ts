@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Customer} from "../../model/customer";
-import {CustomerType} from "../../model/customer-type";
+import {CustomerService} from "../../service/customer.service";
+import {FormControl, FormGroup} from "@angular/forms";
+import {ToastrService} from "ngx-toastr";
 
 @Component({
   selector: 'app-customer-list',
@@ -9,63 +11,67 @@ import {CustomerType} from "../../model/customer-type";
 })
 export class CustomerListComponent implements OnInit {
   customers: Customer[] = [];
-  customerTypes: CustomerType[] = [];
+  id: number;
+  name: string;
+  phone: string;
+  p: number = 1;
+  searchForm: FormGroup;
 
-  constructor() {
-    this.customerTypes.push({
-      id: 1,
-      customerType: "Diamond"
-    }, {
-      id: 2,
-      customerType: "Platinum"
-    }, {
-      id: 3,
-      customerType: "Gold"
-    }, {
-      id: 4,
-      customerType: "Silver"
-    }, {
-      id: 5,
-      customerType: "Member"
-    },);
-
-    this.customers.push({
-      id: 1,
-      name: "Nguyễn Văn A",
-      dob: '1990-05-01',
-      gender: 1,
-      customerType: this.customerTypes[1],
-      idCard: "111111111",
-      phone: "0901000000",
-      email: "a@gmail.com",
-      address: "Đà Nẵng"
-    },
-      {
-      id: 2,
-      name: "Nguyễn Văn Ba",
-      dob: '1995-04-01',
-      gender: 2,
-      customerType: this.customerTypes[0],
-      idCard: "222222222",
-      phone: "0901000002",
-      email: "b@gmail.com",
-      address: "Hà Nội"
-    },
-      {
-      id: 3,
-      name: "Nguyễn Ca",
-      dob: '1997-12-01',
-      gender: 0,
-      customerType: this.customerTypes[3],
-      idCard: "333333333",
-      phone: "0901000003",
-      email: "c@gmail.com",
-      address: "Quảng Nam"
-    },
-      )
+  constructor(private customerService: CustomerService, private toastrService: ToastrService) {
+    this.getCustomerList();
   }
 
   ngOnInit(): void {
+    this.getCustomerList();
   }
 
+  getCustomerList() {
+    this.customerService.getAllCustomer().subscribe(data => {
+      this.customers = data;
+      this.getSearchForm();
+    }, error => {
+      console.log(error);
+    });
+  }
+
+  getSearchForm() {
+    // this.getCustomerList();
+    this.searchForm = new FormGroup({
+      searchName: new FormControl(""),
+      searchIdCard: new FormControl("")
+    })
+  }
+
+  deleteCustomer() {
+    this.customerService.deleteCustomer(this.id).subscribe(data => {
+      this.showToastr();
+      this.ngOnInit();
+    }, error => {
+      console.log(error);
+    })
+  }
+
+  sendId(id: number, name: string, phone: string) {
+    this.id = +id;
+    this.name = name;
+    this.phone = phone;
+  }
+
+  search() {
+    const name = this.searchForm.value.searchName;
+    const idCard = this.searchForm.value.searchIdCard;
+    this.customerService.searchCustomerByNameAndIdCard(name,idCard).subscribe(data => {
+        this.customers = data;
+      }, error => {
+        console.log(error);
+      }
+    );
+  }
+
+  showToastr() {
+    this.toastrService.warning("Delete customer successfully!", "Announce",{
+      timeOut:2000,
+      progressBar:true
+    });
+  }
 }

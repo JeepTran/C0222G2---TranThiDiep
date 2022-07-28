@@ -1,0 +1,21 @@
+<h2>New Category</h2>
+<form [formGroup]="categoryForm" (ngSubmit)="submit()">
+  <table>
+    <tr>
+      <td>Category ID</td>
+      <td>
+        <input type="text" formControlName="id" name="id">
+      </td>
+    </tr>
+    <tr>
+      <td>Category Name</td>
+      <td>
+        <input type="text" formControlName="name" name="name">
+      </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button>Submit</button></td>
+    </tr>
+  </table>
+</form>

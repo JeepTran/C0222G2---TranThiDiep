@@ -1,71 +1,70 @@
 <section class="facility-container hero-animated d-flex align-items-center">
   <div class="container d-flex flex-column">
     <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
-    <h3>Contract List</h3>
-    <div class="d-inline-flex">
-      <a href="">
-        <button class="btn-create">New Contract</button>
-      </a>
-      <form action="" method="post">
-        <input class="input-search" type="text" placeholder="Search">
-        <button class="btn-create scrollto" href="">Search</button>
-      </form>
+      <h3>Contract List</h3>
+      <div class="d-inline-flex">
+        <a routerLink="/contract/create">
+          <button class="btn-create">New Contract</button>
+        </a>
+        <form action="" method="post">
+          <input class="input-search" type="text" placeholder="Search">
+          <button class="btn-create scrollto">Search</button>
+        </form>
+      </div>
+
+      <!--        <div style="margin-top: 20px" th:if="${msg}">-->
+      <!--            <small th:utext="${msg}" style="color: green;"></small>-->
+      <!--        </div>-->
+      <!--        <div style="margin-top: 20px" th:if="${msgDelete}">-->
+      <!--            <small th:utext="${msgDelete}" style="color: red;"></small>-->
+      <!--        </div>-->
+      <!--        <div style="margin-top: 50px">-->
+      <!--            <p style="font-style: italic" th:if="${msgNotFound}" th:utext="${msgNotFound}"></p>-->
+      <!--        </div>-->
+
+      <table style="width: 100%">
+        <thead>
+        <tr>
+          <th>No.</th>
+          <th>Contract No.</th>
+          <!--        <th>Facility</th>-->
+          <!--        <th>Customer</th>-->
+          <!--        <th>Employee</th>-->
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Deposit</th>
+          <th>Total</th>
+          <th colspan="2">Attach Facility</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let contract of contracts; index as i">
+          <td>{{i + 1}}</td>
+          <td>{{contract.contractId}}</td>
+          <!--        <td></td>-->
+          <!--        <td></td>-->
+          <!--        <td></td>-->
+          <td>{{contract.startDate}}</td>
+          <td>{{contract.endDate}}</td>
+          <td>{{contract.deposit}}</td>
+          <td>{{contract.totalPayment}}</td>
+          <td>
+            <button class="btn btn-free-facility" data-bs-toggle="modal"
+                    data-bs-target="#modalAddContractDetail">
+              +
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-free-facility" data-bs-toggle="modal"
+                    data-bs-target="#modalSelectedAttachFacility">
+              Selected Attach Facility List
+            </button>
+          </td>
+        </tr>
+        </tbody>
+
+      </table>
     </div>
-
-    <!--        <div style="margin-top: 20px" th:if="${msg}">-->
-    <!--            <small th:utext="${msg}" style="color: green;"></small>-->
-    <!--        </div>-->
-    <!--        <div style="margin-top: 20px" th:if="${msgDelete}">-->
-    <!--            <small th:utext="${msgDelete}" style="color: red;"></small>-->
-    <!--        </div>-->
-    <!--        <div style="margin-top: 50px">-->
-    <!--            <p style="font-style: italic" th:if="${msgNotFound}" th:utext="${msgNotFound}"></p>-->
-    <!--        </div>-->
-
-    <table style="width: 100%">
-      <thead>
-      <tr>
-        <th>No.</th>
-        <th>Contract No.</th>
-<!--        <th>Facility</th>-->
-<!--        <th>Customer</th>-->
-<!--        <th>Employee</th>-->
-        <th>Start Date</th>
-        <th>End Date</th>
-        <th>Deposit</th>
-        <th>Total</th>
-        <th colspan="2">Attach Facility</th>
-      </tr>
-      </thead>
-      <tbody>
-      <tr *ngFor="let contract of contracts; index as i">
-        <td>{{i+1}}</td>
-        <td>{{contract.contractId}}</td>
-<!--        <td></td>-->
-<!--        <td></td>-->
-<!--        <td></td>-->
-        <td>{{contract.startDate}}</td>
-        <td>{{contract.endDate}}</td>
-        <td>{{contract.deposit}}</td>
-        <td>{{contract.totalPayment}}</td>
-        <td>
-          <button class="btn btn-free-facility" data-bs-toggle="modal"
-                  data-bs-target="#modalAddContractDetail">
-            +
-          </button>
-        </td>
-        <td>
-          <button class="btn btn-free-facility" data-bs-toggle="modal"
-                  data-bs-target="#modalSelectedAttachFacility">
-            Selected Attach Facility List
-          </button>
-        </td>
-      </tr>
-      </tbody>
-
-    </table>
-</div>
-
 
 
     <!--                Modal Add Contract Detail-->
@@ -151,7 +150,7 @@
       <nav aria-label="Page navigation example">
         <ul class="pagination">
           <li class="page-item ">
-            <a class="page-link " href="#" aria-label="Previous">
+            <a class="page-link " aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
@@ -159,7 +158,7 @@
           <li class="page-item"><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
           <li class="page-item ">
-            <a class="page-link " href="#" aria-label="Next">
+            <a class="page-link "  aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
             </a>
           </li>

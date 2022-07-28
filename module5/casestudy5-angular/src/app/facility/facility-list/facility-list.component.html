@@ -12,40 +12,26 @@
       <img src="/assets/img/fGarden-Deluxe-twin-bed.jpg" class="card-img-top"
            alt="Garden-Deluxe-twin-bed">
       <div class="card-body">
-        <a href=""><p class="card-text">{{facility.name}}</p></a>
+        <a ><p class="card-text">{{facility.name}}</p></a>
         <small>Room size: {{facility.area}} m2</small><br>
         <small>Price: {{facility.cost}} VND</small>
         <p>
-          <a href=""><i class="bi bi-pencil"></i></a>
-          <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          <a [routerLink]="['/facility/edit',facility.id]"><i class="bi bi-pencil"></i></a>
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="bi bi-trash"></i>
           </a>
+          <router-outlet></router-outlet>
         </p>
       </div>
     </div>
-<!--    <div class="card col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="50">-->
-<!--      <img src="/assets/img/fGarden-Deluxe-twin-bed.jpg" class="card-img-top"-->
-<!--           alt="Garden-Deluxe-twin-bed">-->
-<!--      <div class="card-body">-->
-<!--        <a href=""><p class="card-text">Garden Deluxe</p></a>-->
-<!--        <small>Room size: 43.7 m2</small><br>-->
-<!--        <small>Price: 1.000.000 VND</small>-->
-<!--        <p>-->
-<!--          <a href=""><i class="bi bi-pencil"></i></a>-->
-<!--          <a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">-->
-<!--            <i class="bi bi-trash"></i>-->
-<!--          </a>-->
-<!--        </p>-->
-<!--      </div>-->
-<!--    </div>-->
 
     <div class="card col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="50">
-      <a href="" style="width: 40%; margin: 30% ">
+      <a routerLink="/facility/create" style="width: 40%; margin: 30% ">
         <img src="/assets/img/fplus.png" class="card-img-top"
              alt="Add new facility">
       </a>
       <div class="card-body">
-        <a href=""><p class="card-text">Add Facility</p></a>
+        <a href="/facility/create"><p class="card-text">Add Facility</p></a>
       </div>
     </div>
 
@@ -69,8 +55,8 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <a href="">
-          <button type="button" class="btn-modal-delete">Delete</button>
+        <a>
+          <button type="button" class="btn btn-modal-delete">Delete</button>
         </a>
       </div>
     </div>
@@ -82,15 +68,15 @@
   <nav aria-label="Page navigation example">
     <ul class="pagination">
       <li class="page-item">
-        <a class="page-link" href="#" aria-label="Previous">
+        <a class="page-link"  aria-label="Previous">
           <span aria-hidden="true">&laquo;</span>
         </a>
       </li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" >1</a></li>
+      <li class="page-item"><a class="page-link" >2</a></li>
+      <li class="page-item"><a class="page-link" >3</a></li>
       <li class="page-item">
-        <a class="page-link" href="#" aria-label="Next">
+        <a class="page-link"  aria-label="Next">
           <span aria-hidden="true">&raquo;</span>
         </a>
       </li>

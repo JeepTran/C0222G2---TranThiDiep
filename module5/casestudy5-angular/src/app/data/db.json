@@ -1,0 +1,82 @@
+{
+  "customerType": [
+    {
+      "id": 1,
+      "customerType": "Diamond"
+    },
+    {
+      "id": 2,
+      "customerType": "Platinum"
+    },
+    {
+      "id": 3,
+      "customerType": "Gold"
+    },
+    {
+      "id": 4,
+      "customerType": "Silver"
+    },
+    {
+      "id": 5,
+      "customerType": "Member"
+    }
+  ],
+  "customers": [
+    {
+      "id": 4,
+      "name": "Lê Thị Đê",
+      "dob": "2000-12-01",
+      "gender": 0,
+      "customerType": {
+        "id": 3,
+        "customerType": "Gold"
+      },
+      "idCard": "333333334",
+      "phone": "0901000004",
+      "email": "d@gmail.com",
+      "address": "Sài Gòn"
+    },
+    {
+      "id": 9,
+      "name": "TT Diep",
+      "dob": "2022-07-13",
+      "gender": 0,
+      "customerType": {
+        "id": 2,
+        "customerType": "Platinum"
+      },
+      "idCard": "3322",
+      "phone": "0900000000",
+      "email": "abc@gmail.com",
+      "address": "Viet Nam"
+    },
+    {
+      "id": 14,
+      "name": "Ph",
+      "dob": "2000-07-14",
+      "gender": 1,
+      "customerType": {
+        "id": 5,
+        "customerType": "Member"
+      },
+      "idCard": "383883838",
+      "phone": "0900000002",
+      "email": "dsa@fg",
+      "address": "Đà Nẵng"
+    },
+    {
+      "id": 15,
+      "name": "Hong",
+      "dob": "2000-07-30",
+      "gender": 2,
+      "customerType": {
+        "id": 4,
+        "customerType": "Silver"
+      },
+      "idCard": "101010101010",
+      "phone": "0919999999",
+      "email": "5@gmail.com",
+      "address": "Hanoi VNam"
+    }
+  ]
+}

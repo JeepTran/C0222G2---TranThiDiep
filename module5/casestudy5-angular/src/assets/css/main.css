@@ -270,7 +270,7 @@ section {
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
-@media (min-width: 1280px) {
+@media (min-width: 601px) {
   .navbar {
     padding: 0;
     position: relative;
@@ -409,7 +409,7 @@ section {
 /*--------------------------------------------------------------
 # Mobile Navigation
 --------------------------------------------------------------*/
-@media (max-width: 1279px) {
+@media (max-width: 600px) {
   .navbar {
     position: fixed;
     top: 0;

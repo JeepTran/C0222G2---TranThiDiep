@@ -9,6 +9,10 @@ import {DictionaryPageComponent} from "./dictionary/dictionary-page/dictionary-p
 import {DictionaryDetailComponent} from "./dictionary/dictionary-detail/dictionary-detail.component";
 import {ProductEditComponent} from "./product-management/product/product-edit/product-edit.component";
 import {ProductDeleteComponent} from "./product-management/product/product-delete/product-delete.component";
+import {CategoryListComponent} from "./product-management/categories/category-list/category-list.component";
+import {CategoryCreateComponent} from "./product-management/categories/category-create/category-create.component";
+import {CategoryEditComponent} from "./product-management/categories/category-edit/category-edit.component";
+import {CategoryDeleteComponent} from "./product-management/categories/category-delete/category-delete.component";
 
 
 const routes: Routes = [
@@ -25,6 +29,13 @@ const routes: Routes = [
   {path:'product/create',component:ProductCreateComponent},
   {path:'product/edit/:id',component:ProductEditComponent},
   {path:'product/delete/:id',component:ProductDeleteComponent},
+
+  //category
+  {path:'category/list', component:CategoryListComponent},
+  {path:'category/create', component:CategoryCreateComponent},
+  {path:'category/edit/:id', component:CategoryEditComponent},
+  {path:'category/delete/:id', component:CategoryDeleteComponent},
+
 
   // dictionary management
   {path:'dictionary',component:DictionaryPageComponent,
