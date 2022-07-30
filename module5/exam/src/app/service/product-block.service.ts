@@ -9,8 +9,10 @@ import {Product} from '../model/product';
 })
 export class ProductBlockService {
   productBlocks: ProductBlock[] = [];
-  private URL_PRODUCTS = 'http://localhost:3000/products';
-  private URL_PRODUCT_BLOCKS = 'http://localhost:3000/productBlocks';
+  // private URL_PRODUCTS = 'http://localhost:3000/products';
+  // private URL_PRODUCT_BLOCKS = 'http://localhost:3000/productBlocks';
+  private URL_PRODUCTS = 'http://localhost:8080/productBlockApi/productList';
+  private URL_PRODUCT_BLOCKS = 'http://localhost:8080/productBlockApi/list';
 
   constructor(private httpClient: HttpClient) {
   }
