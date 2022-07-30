@@ -38,7 +38,7 @@
     },
     {
       "id": 9,
-      "name": "TT Diep",
+      "name": "T T Diep",
       "dob": "2022-07-13",
       "gender": 0,
       "customerType": {
@@ -49,20 +49,6 @@
       "phone": "0900000000",
       "email": "abc@gmail.com",
       "address": "Viet Nam"
-    },
-    {
-      "id": 14,
-      "name": "Ph",
-      "dob": "2000-07-14",
-      "gender": 1,
-      "customerType": {
-        "id": 5,
-        "customerType": "Member"
-      },
-      "idCard": "383883838",
-      "phone": "0900000002",
-      "email": "dsa@fg",
-      "address": "Đà Nẵng"
     },
     {
       "id": 15,

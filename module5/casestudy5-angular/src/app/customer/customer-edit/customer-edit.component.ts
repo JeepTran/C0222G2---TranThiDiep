@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {CustomerService} from "../../service/customer.service";
-import {FormControl, FormGroup} from "@angular/forms";
-import {ActivatedRoute, ParamMap, Router} from "@angular/router";
-import {CustomerType} from "../../model/customer-type";
+import {CustomerService} from '../../service/customer.service';
+import {FormControl, FormGroup, Validators} from '@angular/forms';
+import {ActivatedRoute, ParamMap, Router} from '@angular/router';
+import {CustomerType} from '../../model/customer-type';
 
 @Component({
   selector: 'app-customer-edit',
@@ -30,14 +30,15 @@ export class CustomerEditComponent implements OnInit {
       }, error => {
         console.log(error);
       }
-    )
+    );
   }
 
   getCustomer(id: number) {
     return this.customerService.getCustomerById(id).subscribe(customer => {
       this.customerForm = new FormGroup({
           id: new FormControl(customer.id),
-          name: new FormControl(customer.name),
+          name: new FormControl(customer.name, [Validators.required,
+            Validators.pattern(/^([A-Z][a-z]*( ))*([A-Z][a-z]*)$/)]),
           dob: new FormControl(customer.dob),
           gender: new FormControl(customer.gender),
           customerType: new FormControl(customer.customerType),
@@ -46,23 +47,25 @@ export class CustomerEditComponent implements OnInit {
           email: new FormControl(customer.email),
           address: new FormControl(customer.address)
         }
-      )
+      );
     }, error => {
       console.log(error);
-    })
+    });
   }
 
 
   submit() {
-    const customer = this.customerForm.value;
-    customer.gender = +customer.gender;
-    this.customerService.editCustomer(this.id, customer).subscribe(() => {
-      console.log("Edit successfully!");
-    }, e => {
-      console.log(e);
-    }, () => {
-      this.router.navigate(["/customer/list"]);
-    })
+    if (this.customerForm.valid) {
+      const customer = this.customerForm.value;
+      customer.gender = +customer.gender;
+      this.customerService.editCustomer(this.id, customer).subscribe(() => {
+        console.log('Edit successfully!');
+      }, e => {
+        console.log(e);
+      }, () => {
+        this.router.navigate(['/customer/list']);
+      });
+    }
   }
 
   compareCustomerType(type1: CustomerType, type2: CustomerType): boolean {

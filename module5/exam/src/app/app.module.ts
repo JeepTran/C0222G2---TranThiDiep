@@ -3,14 +3,34 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FooterComponent } from './common/footer/footer.component';
+import { HeaderComponent } from './common/header/header.component';
+import { HomeComponent } from './common/home/home.component';
+import { TestComponent } from './test/test.component';
+import { ProductBlockListComponent } from './block/product-block-list/product-block-list.component';
+import { ProductBlockCreateComponent } from './block/product-block-create/product-block-create.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {NgxPaginationModule} from 'ngx-pagination';
+import {HttpClientModule} from '@angular/common/http';
+import {ToastRef, ToastrModule, ToastrService} from 'ngx-toastr';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FooterComponent,
+    HeaderComponent,
+    HomeComponent,
+    TestComponent,
+    ProductBlockListComponent,
+    ProductBlockCreateComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    NgxPaginationModule,
+    HttpClientModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

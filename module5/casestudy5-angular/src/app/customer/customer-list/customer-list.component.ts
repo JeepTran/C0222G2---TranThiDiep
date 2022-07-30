@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {Customer} from "../../model/customer";
-import {CustomerService} from "../../service/customer.service";
-import {FormControl, FormGroup} from "@angular/forms";
-import {ToastrService} from "ngx-toastr";
+import {Customer} from '../../model/customer';
+import {CustomerService} from '../../service/customer.service';
+import {FormControl, FormGroup} from '@angular/forms';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-customer-list',
@@ -37,9 +37,9 @@ export class CustomerListComponent implements OnInit {
   getSearchForm() {
     // this.getCustomerList();
     this.searchForm = new FormGroup({
-      searchName: new FormControl(""),
-      searchIdCard: new FormControl("")
-    })
+      searchName: new FormControl(''),
+      searchIdCard: new FormControl('')
+    });
   }
 
   deleteCustomer() {
@@ -48,11 +48,11 @@ export class CustomerListComponent implements OnInit {
       this.ngOnInit();
     }, error => {
       console.log(error);
-    })
+    });
   }
 
   sendId(id: number, name: string, phone: string) {
-    this.id = +id;
+    this.id = id;
     this.name = name;
     this.phone = phone;
   }
@@ -60,7 +60,7 @@ export class CustomerListComponent implements OnInit {
   search() {
     const name = this.searchForm.value.searchName;
     const idCard = this.searchForm.value.searchIdCard;
-    this.customerService.searchCustomerByNameAndIdCard(name,idCard).subscribe(data => {
+    this.customerService.searchCustomerByNameAndIdCard(name, idCard).subscribe(data => {
         this.customers = data;
       }, error => {
         console.log(error);
@@ -69,9 +69,9 @@ export class CustomerListComponent implements OnInit {
   }
 
   showToastr() {
-    this.toastrService.warning("Delete customer successfully!", "Announce",{
-      timeOut:2000,
-      progressBar:true
+    this.toastrService.success('Successful!', 'Delete', {
+      timeOut: 2000,
+      progressBar: true
     });
   }
 }

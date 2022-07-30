@@ -1,0 +1,87 @@
+<section class="facility-container hero-animated d-flex align-items-center">
+  <div class="container d-flex flex-column">
+    <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
+      <h3>Product Block List</h3>
+      <div class="d-inline-flex">
+        <a routerLink="/importBlock">
+          <button class="btn-create">Import New Block</button>
+        </a>
+        <form [formGroup]="searchForm" *ngIf="searchForm" (ngSubmit)="search()">
+          <input class="input-search" type="text" placeholder="Search product name"
+                 formControlName="searchProductName" name="searchProductName">
+          <input type="text" onFocus="this.type = 'date'" onblur="(this.type='text')"
+                 class="input-search" placeholder='Search expire date'
+                 formControlName="searchExpireDate" name="searchExpireDate">
+          <button class="btn-create scrollto" type="submit">Search</button>
+        </form>
+      </div>
+
+      <table style="width: 100%">
+        <thead>
+        <tr>
+          <th>Block ID</th>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Unit</th>
+          <th>Quantity</th>
+          <th>Import Date</th>
+          <th>Manu. Date</th>
+          <th>Exp. Date</th>
+          <th>Action</th>
+        </tr>
+        </thead>
+        <tbody *ngIf="productBlocks.length!==0; else noContent">
+        <tr *ngFor="let block of productBlocks | paginate: {itemsPerPage: 3, currentPage: page}; index as i">
+          <td class="text-left">{{block.blockId}}</td>
+          <td class="text-left">{{block.product.name}}</td>
+          <td class="text-left">{{block.product.price |currency : "VND"}}</td>
+          <td class="text-left">{{block.product.unit}}</td>
+          <td class="text-left">{{block.quantity}}</td>
+          <td class="text-left">{{block.importDate |date:('dd/MM/yyyy')}}</td>
+          <td class="text-left">{{block.manufactureDate |date:('dd/MM/yyyy')}}</td>
+          <td class="text-left">{{block.expireDate |date:('dd/MM/yyyy')}}</td>
+          <td>
+            <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    (click)="sendId(block.id, block.product.name, block.importDate)">delete
+            </button>
+          </td>
+
+        </tr>
+        </tbody>
+
+        <ng-template #noContent>
+          <small style="color: crimson">Data is unavailable.</small>
+        </ng-template>
+      </table>
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1"
+           aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Delete Confirm</h5>
+            </div>
+            <div class="modal-body">
+              Are you sure to delete product block <strong style="color: #bb2d3b">{{productName}}</strong><br>
+              (importing date <strong style="color: #bb2d3b">{{importDate}}</strong>)?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <a (click)="deleteProductBlock()">
+                <button type="button" class="btn btn-modal-delete" data-bs-dismiss="modal">Delete</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Pagination-->
+    <div class="d-flex justify-content-end">
+      <pagination-controls (pageChange)="page = $event"></pagination-controls>
+    </div>
+
+
+  </div>
+</section>
+
+

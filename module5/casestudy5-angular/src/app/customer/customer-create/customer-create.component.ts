@@ -1,8 +1,8 @@
 import {Component, OnInit} from '@angular/core';
-import {AbstractControl, FormControl, FormGroup, Validators} from "@angular/forms";
-import {CustomerService} from "../../service/customer.service";
-import {CustomerType} from "../../model/customer-type";
-import {Router} from "@angular/router";
+import {AbstractControl, FormControl, FormGroup, Validators} from '@angular/forms';
+import {CustomerService} from '../../service/customer.service';
+import {CustomerType} from '../../model/customer-type';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-customer-create',
@@ -14,8 +14,8 @@ export class CustomerCreateComponent implements OnInit {
   customerForm: FormGroup = new FormGroup({
     id: new FormControl(),
     name: new FormControl('', [Validators.required,
-      Validators.pattern( /^([A-Z][a-z]*( ))*([A-Z][a-z]*)$/)]),
-    dob: new FormControl('',[Validators.required, this.ageValidate]),
+      Validators.pattern(/^([A-Z][a-z]*( ))*([A-Z][a-z]*)$/)]),
+    dob: new FormControl('', [Validators.required, this.ageValidate]),
     gender: new FormControl('', [Validators.required]),
     customerType: new FormControl('', [Validators.required]),
     idCard: new FormControl('', [Validators.required,
@@ -36,19 +36,19 @@ export class CustomerCreateComponent implements OnInit {
       this.customerTypes = data;
     }, error => {
       console.log(error);
-    })
-    console.log(this.customerTypes)
+    });
+    console.log(this.customerTypes);
   }
 
   submit() {
-    if(this.customerForm.valid) {
+    if (this.customerForm.valid) {
       const customer = this.customerForm.value;
       customer.gender = +this.customerForm.controls.gender.value;
       this.customerService.createCustomer(customer).subscribe(() => {
         this.customerForm.reset();
       }, e => {
         console.log(e);
-      }, () => this.router.navigateByUrl("/customer/list"))
+      }, () => this.router.navigateByUrl('/customer/list'))
     }
   }
 
@@ -56,7 +56,6 @@ export class CustomerCreateComponent implements OnInit {
     const now = new Date();
     const birthDay = new Date(dob.value);
     const age = now.getFullYear() - birthDay.getFullYear();
-    console.log(age)
     if (age < 18) {
       return {'ageError': true};
     }
