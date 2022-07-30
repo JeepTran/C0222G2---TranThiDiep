@@ -63,8 +63,6 @@ export class ProductBlockCreateComponent implements OnInit {
     const expDate = new Date(date.value.expireDate);
     if ((mfgDate.getTime() > importDate.getTime())
       || (importDate.getTime() > expDate.getTime())) {
-      console.log(importDate.getTime());
-      console.log(importDate.getTime() - mfgDate.getTime());
       return {'errorDate': true};
     }
   }

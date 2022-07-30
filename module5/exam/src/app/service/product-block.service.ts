@@ -12,7 +12,7 @@ export class ProductBlockService {
   // private URL_PRODUCTS = 'http://localhost:3000/products';
   // private URL_PRODUCT_BLOCKS = 'http://localhost:3000/productBlocks';
   private URL_PRODUCTS = 'http://localhost:8080/productBlockApi/productList';
-  private URL_PRODUCT_BLOCKS = 'http://localhost:8080/productBlockApi/list';
+  private URL_PRODUCT_BLOCKS = 'http://localhost:8080/productBlockApi/productBlockList';
 
   constructor(private httpClient: HttpClient) {
   }

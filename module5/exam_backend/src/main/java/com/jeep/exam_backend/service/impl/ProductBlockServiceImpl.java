@@ -26,4 +26,10 @@ public class ProductBlockServiceImpl implements IProductBlockService {
     public List<Product> getAllProduct() {
         return this.productRepository.findAll();
     }
+
+    @Override
+    public ProductBlock createProductBlock(ProductBlock productBlock) {
+        return this.productBlockRepository.save(productBlock);
+    }
+
 }

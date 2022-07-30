@@ -4,29 +4,39 @@ import com.jeep.exam_backend.model.Product;
 import com.jeep.exam_backend.model.ProductBlock;
 import com.jeep.exam_backend.service.IProductBlockService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:4200")
+
 @RestController
 @RequestMapping("productBlockApi")
+@CrossOrigin
+//        (origins = "http://localhost:4200")
 public class ProductBlockRestController {
 
     @Autowired
     private IProductBlockService productBlockService;
 
+
     @GetMapping("/productBlockList")
-    public List<ProductBlock> getProductBlockList() {
+    public ResponseEntity<List<ProductBlock>> getProductBlockList() {
         List<ProductBlock> productBlockList = this.productBlockService.getAllProductBlock();
-        return productBlockList;
+        return new ResponseEntity<>(productBlockList, HttpStatus.OK);
     }
+
+
     @GetMapping("/productList")
-    public List<Product> getProductList(){
+    public ResponseEntity<List<Product>> getProductList() {
         List<Product> productList = this.productBlockService.getAllProduct();
-        return productList;
+        return new ResponseEntity<>(productList, HttpStatus.OK);
+    }
+
+    @PostMapping("/createProductBlock")
+    public ResponseEntity<Void> createProductBlock(@RequestBody ProductBlock productBlock){
+        this.productBlockService.createProductBlock(productBlock);
+        return new ResponseEntity<>(HttpStatus.OK);
     }
 }

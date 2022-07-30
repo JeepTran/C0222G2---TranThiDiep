@@ -12,4 +12,6 @@ public interface IProductBlockService {
     List<ProductBlock> getAllProductBlock();
 
     List<Product> getAllProduct();
+
+    ProductBlock createProductBlock(ProductBlock productBlock);
 }
