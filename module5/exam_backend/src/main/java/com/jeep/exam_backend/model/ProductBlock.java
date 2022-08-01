@@ -1,7 +1,5 @@
 package com.jeep.exam_backend.model;
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-
 import javax.persistence.*;
 
 @Entity
@@ -11,7 +9,7 @@ public class ProductBlock {
     private int id;
     private String blockId;
     @ManyToOne
-    @JoinColumn(name = "product_id")
+    @JoinColumn(name = "product_id", referencedColumnName = "id")
     private Product product;
     private int quantity;
     private String importDate;

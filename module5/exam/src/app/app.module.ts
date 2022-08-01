@@ -13,6 +13,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {NgxPaginationModule} from 'ngx-pagination';
 import {HttpClientModule} from '@angular/common/http';
 import {ToastRef, ToastrModule, ToastrService} from 'ngx-toastr';
+import { ProductBlockEditComponent } from './block/product-block-edit/product-block-edit.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {ToastRef, ToastrModule, ToastrService} from 'ngx-toastr';
     HomeComponent,
     TestComponent,
     ProductBlockListComponent,
-    ProductBlockCreateComponent
+    ProductBlockCreateComponent,
+    ProductBlockEditComponent
   ],
   imports: [
     BrowserModule,

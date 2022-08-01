@@ -1,0 +1,113 @@
+<section class="facility-container hero-animated d-flex align-items-center">
+  <div class="container d-flex flex-column justify-content-center align-items-center text-center position-relative">
+    <div class="card w-100">
+      <h2>Update Product Block</h2>
+      <form [formGroup]="blockForm" (ngSubmit)="submit()">
+        <div class="row m-auto">
+          <div class="col">
+            <div class="form-group">
+              <label>Block ID</label>
+              <input type="text" formControlName="blockId" name="blockId">
+            </div>
+            <div class="position-absolute ms-2 mt-4 pt-3">
+              <small class="fst-italic" style="color: red; font-size: 11px"
+                     *ngIf="blockForm.controls.blockId.hasError('required')
+                         && blockForm.controls.blockId.touched">This field should not be empty!</small>
+              <small class="fst-italic" style="color: red; font-size: 11px"
+                     *ngIf="blockForm.controls.blockId.hasError('pattern')
+                         && blockForm.controls.blockId.touched">Product Block ID should be in format of LH-xxxx (x:
+                positive digit)!
+              </small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label>Product</label>
+              <select formControlName="product" name="product"
+                      [compareWith]="compareProduct" >
+                <option *ngFor="let item of products" [ngValue]=item>{{item.name}}</option>
+              </select>
+            </div>
+            <div class="position-absolute ms-2 mt-4 pt-3">
+              <small class="fst-italic" style="color: red; font-size: 11px"
+                     *ngIf="blockForm.controls.product.hasError('required')
+                         && blockForm.controls.product.touched">Select product!</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label>Quantity</label>
+              <input type="number" formControlName="quantity" name="quantity">
+            </div>
+            <div class="position-absolute ms-2 mt-4 pt-3">
+              <small class="fst-italic" style="color: red; font-size: 11px"
+                     *ngIf="blockForm.controls.quantity.hasError('required')
+                         && blockForm.controls.quantity.touched">This field should not be empty!</small>
+              <small class="fst-italic" style="color: red; font-size: 11px"
+                     *ngIf="blockForm.controls.quantity.hasError('pattern')
+                         && blockForm.controls.quantity.touched">Quantity should be a positive number!</small>
+              <small class="fst-italic" style="color: red; font-size: 11px"
+                     *ngIf="blockForm.controls.quantity.hasError('min')
+                         && blockForm.controls.quantity.touched">Quantity should be a positive number!</small>
+            </div>
+          </div>
+        </div>
+        <div formGroupName="date" class="row m-auto mt-3">
+          <div class="col">
+            <div class="form-group">
+              <label>Import Date</label>
+              <input type="date" formControlName="importDate" name="importDate">
+            </div>
+            <div class="position-absolute ms-2 mt-4 pt-3">
+              <!--              <div>-->
+              <small class="fst-italic" style="color: red; font-size: 11px"
+                     *ngIf="blockForm.controls.date.get('importDate').hasError('required')
+                         && blockForm.controls.date.get('importDate').touched">This field should not be empty!</small>
+              <small class="fst-italic" style="color: red; font-size: 11px"
+                     *ngIf="blockForm.controls.date.hasError('errorDate')
+                         && blockForm.controls.date.touched">
+                Timeline should be: MFG Date - Import Date - EXP Date!</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label>Manufacture Date</label>
+              <input type="date" formControlName="manufactureDate" name="manufactureDate">
+            </div>
+            <div class="position-absolute ms-2 mt-4 pt-3">
+              <small class="fst-italic" style="color: red; font-size: 11px"
+                     *ngIf="blockForm.controls.date.get('manufactureDate').hasError('required')
+                         && blockForm.controls.date.get('manufactureDate').touched">This field should not be
+                empty!</small>
+              <small class="fst-italic" style="color: red; font-size: 11px"
+                     *ngIf="blockForm.controls.date.hasError('errorDate')
+                         && blockForm.controls.date.touched">
+                Timeline should be: MFG Date - Import Date - EXP Date!</small>
+            </div>
+          </div>
+          <div class="col">
+            <div class="form-group">
+              <label>Expire Date</label>
+              <input type="date" formControlName="expireDate" name="expireDate">
+            </div>
+            <div class="position-absolute ms-2 mt-4 pt-3">
+              <small class="fst-italic" style="color: red; font-size: 12px"
+                     *ngIf="blockForm.controls.date.get('expireDate').hasError('required')
+                         && blockForm.controls.date.get('expireDate').touched">This field should not be empty!</small>
+              <small class="fst-italic" style="color: red; font-size: 11px"
+                     *ngIf="blockForm.controls.date.hasError('errorDate')
+                         && blockForm.controls.date.touched">
+                Timeline should be: MFG Date - Import Date - EXP Date!</small>
+            </div>
+          </div>
+          <div class="col"></div>
+          <div class="col"></div>
+          <div class="col">
+            <a class="btn btn-secondary me-2" routerLink="/block">Cancel</a>
+            <button class="btn btn-modal-delete" type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

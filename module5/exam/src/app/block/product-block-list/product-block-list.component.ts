@@ -3,6 +3,7 @@ import {ProductBlock} from '../../model/product-block';
 import {FormControl, FormGroup} from '@angular/forms';
 import {ProductBlockService} from '../../service/product-block.service';
 import {ToastrService} from 'ngx-toastr';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-product-block-list',
@@ -16,9 +17,11 @@ export class ProductBlockListComponent implements OnInit {
   blockId: number;
   productName: string;
   importDate: string;
+  productBlock: ProductBlock;
 
   constructor(private productBlockService: ProductBlockService,
-              private toastr: ToastrService) {
+              private toastr: ToastrService,
+              private router: Router) {
   }
 
   ngOnInit(): void {
@@ -66,7 +69,6 @@ export class ProductBlockListComponent implements OnInit {
   deleteProductBlock() {
     this.productBlockService.deleteProductBlock(this.blockId).subscribe(
       data => {
-        // alert('Delete successfully!');
         this.showToastr();
         this.ngOnInit();
       }, error => {

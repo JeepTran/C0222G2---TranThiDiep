@@ -2,10 +2,9 @@ package com.jeep.exam_backend.service;
 
 import com.jeep.exam_backend.model.Product;
 import com.jeep.exam_backend.model.ProductBlock;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface IProductBlockService {
 
@@ -14,4 +13,11 @@ public interface IProductBlockService {
     List<Product> getAllProduct();
 
     ProductBlock createProductBlock(ProductBlock productBlock);
+
+    Optional<ProductBlock> getProductBlockById(int id);
+
+    void deleteProductBlockById(int id);
+
+
+    ProductBlock editProductBlock(ProductBlock productBlock);
 }

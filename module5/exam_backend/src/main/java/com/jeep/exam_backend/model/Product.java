@@ -1,5 +1,6 @@
 package com.jeep.exam_backend.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.persistence.*;
@@ -9,39 +10,43 @@ import java.util.List;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int productId;
+    private int id;
     private String name;
     private String origin;
     private int price;
     private String unit;
-    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL)
+    @JsonBackReference
+    @OneToMany(mappedBy = "product")
     private List<ProductBlock> productBlockList;
 
     public Product() {
     }
 
-    public Product(String name, String origin, int price, String unit) {
+    public Product(String name, String origin, int price, String unit,
+                   List<ProductBlock> productBlockList) {
         this.name = name;
         this.origin = origin;
         this.price = price;
         this.unit = unit;
+        this.productBlockList = productBlockList;
     }
 
-    public Product(int productId, String name, String origin,
-                   int price, String unit) {
-        this.productId = productId;
+    public Product(int id, String name, String origin, int price,
+                   String unit, List<ProductBlock> productBlockList) {
+        this.id = id;
         this.name = name;
         this.origin = origin;
         this.price = price;
         this.unit = unit;
+        this.productBlockList = productBlockList;
     }
 
-    public int getProductId() {
-        return productId;
+    public int getId() {
+        return id;
     }
 
-    public void setProductId(int id) {
-        this.productId = id;
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -74,5 +79,13 @@ public class Product {
 
     public void setUnit(String unit) {
         this.unit = unit;
+    }
+
+    public List<ProductBlock> getProductBlockList() {
+        return productBlockList;
+    }
+
+    public void setProductBlockList(List<ProductBlock> productBlockList) {
+        this.productBlockList = productBlockList;
     }
 }

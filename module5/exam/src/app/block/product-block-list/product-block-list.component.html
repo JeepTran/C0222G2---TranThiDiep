@@ -27,7 +27,7 @@
           <th>Import Date</th>
           <th>Manu. Date</th>
           <th>Exp. Date</th>
-          <th>Action</th>
+          <th colspan="2">Action</th>
         </tr>
         </thead>
         <tbody *ngIf="productBlocks.length!==0; else noContent">
@@ -41,8 +41,14 @@
           <td class="text-left">{{block.manufactureDate |date:('dd/MM/yyyy')}}</td>
           <td class="text-left">{{block.expireDate |date:('dd/MM/yyyy')}}</td>
           <td>
+            <button class="btn-edit" [routerLink]="['/editBlock',block.id]">
+              <i class="bi bi-pencil"></i>
+            </button>
+          </td>
+          <td>
             <button class="btn-delete" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    (click)="sendId(block.id, block.product.name, block.importDate)">delete
+                    (click)="sendId(block.id, block.product.name, block.importDate)">
+              <i class="bi bi-trash3"></i>
             </button>
           </td>
 
@@ -63,7 +69,7 @@
             </div>
             <div class="modal-body">
               Are you sure to delete product block <strong style="color: #bb2d3b">{{productName}}</strong><br>
-              (importing date <strong style="color: #bb2d3b">{{importDate}}</strong>)?
+              (importing date <strong style="color: #bb2d3b">{{importDate |date:('dd/MM/yyyy')}}</strong>)?
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

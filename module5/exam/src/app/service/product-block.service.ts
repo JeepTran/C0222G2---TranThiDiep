@@ -11,8 +11,8 @@ export class ProductBlockService {
   productBlocks: ProductBlock[] = [];
   // private URL_PRODUCTS = 'http://localhost:3000/products';
   // private URL_PRODUCT_BLOCKS = 'http://localhost:3000/productBlocks';
-  private URL_PRODUCTS = 'http://localhost:8080/productBlockApi/productList';
-  private URL_PRODUCT_BLOCKS = 'http://localhost:8080/productBlockApi/productBlockList';
+  private URL_PRODUCTS = 'http://localhost:8080/store/productList';
+  private URL_PRODUCT_BLOCKS = 'http://localhost:8080/store/productBlockList';
 
   constructor(private httpClient: HttpClient) {
   }
@@ -42,5 +42,13 @@ export class ProductBlockService {
     name: string, expireDate: string): Observable<ProductBlock[]> {
     return this.httpClient.get<ProductBlock[]>(
       this.URL_PRODUCT_BLOCKS + '?product.name_like=' + name + '&expireDate_like=' + expireDate);
+  }
+
+  getProductBlockById(id: number): Observable<ProductBlock> {
+    return this.httpClient.get<ProductBlock>(this.URL_PRODUCT_BLOCKS + '/' + id);
+  }
+
+  editProductBlockById(id: number, productBlock: ProductBlock): Observable<ProductBlock> {
+    return this.httpClient.patch<ProductBlock>(this.URL_PRODUCT_BLOCKS + '/' + id, productBlock);
   }
 }
