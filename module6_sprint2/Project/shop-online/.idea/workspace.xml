@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="701a3da6-bd7c-42dd-b3d7-55d49f393e8f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../shop-online/src/app/detail/product-description/product-description.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../shop-online/src/app/detail/product-description/product-description.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../shop-online/src/app/detail/product-description/product-description.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../shop-online/src/app/detail/product-description/product-description.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../shop-online/src/app/detail/product-specification/product-specification.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../shop-online/src/app/detail/product-specification/product-specification.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../shop-online/src/app/detail/product-specification/product-specification.component.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../shop-online/src/app/detail/product-specification/product-specification.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module1/giai_thuat/GiaiThuatCheckEqualFrequency.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module1/giai_thuat/GiaiThuatCheckEqualFrequency.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/out/production/module2/algorithm/module_3/te.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module2/out/production/module2/case_study/furama_resort/utils/CheckRegex.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module2/out/production/module2/case_study/furama_resort/utils/CheckRegex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/casestudy_jsp_servlet/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/casestudy_jsp_servlet/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/css/variables-blue.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/css/variables-green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/css/variables-orange.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/css/variables-pink.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/css/variables-purple.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/css/variables-red.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/css/variables.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/about-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/about.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-author.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-inside-post.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-recent-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-recent-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-recent-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-recent-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/blog-recent-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/comments-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/comments-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/comments-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/comments-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/comments-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/blog/comments-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/clients/client-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/clients/client-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/clients/client-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/clients/client-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/clients/client-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/clients/client-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/clients/client-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/clients/client-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/cta.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/faq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/favicon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/features-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/features-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/features-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/features-4.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/features-5.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/features-6.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/hero-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/hero-carousel/hero-carousel-1.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/hero-carousel/hero-carousel-2.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/hero-carousel/hero-carousel-3.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/hero-fullscreen-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/onfocus-content-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/onfocus-video-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/portfolio/app-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/portfolio/app-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/portfolio/app-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/portfolio/books-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/portfolio/books-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/portfolio/books-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/portfolio/branding-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/portfolio/branding-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/portfolio/branding-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/portfolio/product-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/portfolio/product-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/portfolio/product-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/pricing-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/services-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/services-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/services-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/services-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/services-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/services-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/team/team-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/team/team-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/team/team-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/testimonials-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/testimonials/testimonials-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/testimonials/testimonials-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/testimonials/testimonials-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/testimonials/testimonials-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/img/testimonials/testimonials-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/aos/aos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/aos/aos.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap-icons/bootstrap-icons.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap-icons/bootstrap-icons.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap-icons/fonts/bootstrap-icons.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap-icons/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-grid.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-grid.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-reboot.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-utilities.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-utilities.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-utilities.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap-utilities.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap.rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap.rtl.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap.rtl.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/css/bootstrap.rtl.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/js/bootstrap.esm.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/js/bootstrap.esm.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/js/bootstrap.esm.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/js/bootstrap.esm.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/bootstrap/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/glightbox/css/glightbox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/glightbox/css/glightbox.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/glightbox/js/glightbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/glightbox/js/glightbox.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/isotope-layout/isotope.pkgd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/isotope-layout/isotope.pkgd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/php-email-form/validate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/swiper/swiper-bundle.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/assets/vendor/swiper/swiper-bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/blog-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/blog.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/changelog.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/forms/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/forms/contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/index-2.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/index-3.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/index-4.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/inner-page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy/HeroBiz/portfolio-details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/controller/ContractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/controller/ContractController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/controller/ContractRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/controller/ContractRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/model/contract/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/model/contract/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/repository/contract/IAttachFacilityRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/repository/contract/IAttachFacilityRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/repository/contract/IContractDetailRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/repository/contract/IContractDetailRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/repository/contract/IContractRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/repository/contract/IContractRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/repository/employee/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/repository/employee/IEmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/contract/IContractDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/contract/IContractDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/contract/IContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/contract/IContractService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/contract/impl/ContractDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/contract/impl/ContractDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/contract/impl/ContractServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/contract/impl/ContractServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/customer/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/customer/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/customer/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/customer/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/employee/IEmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/employee/IEmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/employee/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/employee/impl/EmployeeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/facility/IFacilityService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/facility/IFacilityService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/facility/impl/FacilityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/java/com/jeep/furama/service/facility/impl/FacilityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/resources/static/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/resources/static/assets/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/resources/templates/contract/contract-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/resources/templates/contract/contract-create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/resources/templates/contract/contract-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/resources/templates/contract/contract-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/resources/templates/customer/customer-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/casestudy_module_4/furama/src/main/resources/templates/customer/customer-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/controller/ContractController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/controller/ContractController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/controller/ContractRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/controller/ContractRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/model/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/model/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/model/Room.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/model/Room.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/repository/IContractRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/repository/IContractRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/repository/IRoomRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/repository/IRoomRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/service/IContractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/service/IContractService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/service/IRoomService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/service/IRoomService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/service/impl/ContractServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/service/impl/ContractServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/service/impl/RoomServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/java/com/jeep/exam/service/impl/RoomServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/resources/templates/create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/resources/templates/create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam/src/main/resources/templates/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/exam/src/main/resources/templates/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/java/com/jeep/bai_tap_hoan_thien_gio_hang/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/create-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/create-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/bai_tap/bai_tap_hoan_thien_gio_hang/src/main/resources/templates/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_1_dem_luot_view/src/main/java/com/jeep/thuc_hanh_1_dem_luot_view/controller/CounterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_1_dem_luot_view/src/main/java/com/jeep/thuc_hanh_1_dem_luot_view/controller/CounterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_1_dem_luot_view/src/main/java/com/jeep/thuc_hanh_1_dem_luot_view/model/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_1_dem_luot_view/src/main/java/com/jeep/thuc_hanh_1_dem_luot_view/model/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_1_dem_luot_view/src/main/resources/templates/view.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_1_dem_luot_view/src/main/resources/templates/view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_2_luu_ten_nguoi_dung/src/main/java/com/jeep/thuc_hanh_2_luu_ten_nguoi_dung/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_2_luu_ten_nguoi_dung/src/main/java/com/jeep/thuc_hanh_2_luu_ten_nguoi_dung/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_2_luu_ten_nguoi_dung/src/main/java/com/jeep/thuc_hanh_2_luu_ten_nguoi_dung/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_2_luu_ten_nguoi_dung/src/main/java/com/jeep/thuc_hanh_2_luu_ten_nguoi_dung/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_2_luu_ten_nguoi_dung/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_2_luu_ten_nguoi_dung/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/controller/ShoppingCartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/model/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/model/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/java/com/jeep/thuc_hanh_3_them_san_pham_vao_gio_hang/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/create-item.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/create-item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/error404.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/error404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/shop.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss10_spring_session_and_cookie/thuc_hanh/thuc_hanh_3_them_san_pham_vao_gio_hang/src/main/resources/templates/shop.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/model/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/repository/IBlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/repository/ICategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/repository/ICategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/IBlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/bai_tap/bai_tap_tich_hop_restful_blog/src/main/java/com/jeep/bai_tap_tich_hop_restful_blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/model/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/model/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/repository/ICustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/repository/ICustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/service/ICustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/service/ICustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/service/IGeneralService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/service/IGeneralService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/service/impl/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss11_web_service_and_restful/thuc_hanh/thuc_hanh_quan_ly_khach_hang_su_dung_restful/src/main/java/com/jeep/thuc_hanh_quan_ly_khach_hang_su_dung_restful/service/impl/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/blog-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/blog-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/blog_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/create-blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/create-blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/doc/TOC.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/doc/css.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/doc/extend.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/doc/faq.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/doc/html.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/doc/js.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/doc/misc.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/doc/usage.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/humans.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/img/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/js/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/js/vendor/modernizr-3.11.2.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/site.webmanifest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/tile-wide.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_blog_management_html/tile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/model/Blog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/model/Blog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/repository/IBlogRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/repository/IBlogRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/repository/ICategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/repository/ICategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/service/IBlogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/service/IBlogService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/service/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/service/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/service/impl/BlogServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/service/impl/BlogServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/java/com/jeep/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_1_tich_hop_ajax_cho_ung_dung_blog/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_2_quan_ly_dien_thoai_html/phone-create.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_2_quan_ly_dien_thoai_html/phone-create.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_2_quan_ly_dien_thoai_html/phone-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/bai_tap/bai_tap_2_quan_ly_dien_thoai_html/phone-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_1_jquery_tao_hieu_ung/src/main/resources/templates/animation.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_1_jquery_tao_hieu_ung/src/main/resources/templates/animation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_1_jquery_tao_hieu_ung/src/main/resources/templates/hide-and-show.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_1_jquery_tao_hieu_ung/src/main/resources/templates/hide-and-show.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/controller/HomeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/controller/HomeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/controller/SmartphoneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/controller/SmartphoneController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/model/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/model/Smartphone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/repository/ISmartphoneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/repository/ISmartphoneRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/service/ISmartphoneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/service/ISmartphoneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/service/impl/SmartphoneServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/java/com/jeep/thuc_hanh_2_quan_ly_dien_thoai/service/impl/SmartphoneServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/resources/templates/phone-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss12_jquery_ajax/thuc_hanh/thuc_hanh_2_quan_ly_dien_thoai/src/main/resources/templates/phone-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss1_spring_overview/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss1_spring_overview/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss5_ORM/thuc_hanh/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss5_ORM/thuc_hanh/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss9_aop/bai_tap/bai_tap_muon_sach/src/main/java/com/jeep/bai_tap_muon_sach/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss9_aop/bai_tap/bai_tap_muon_sach/src/main/java/com/jeep/bai_tap_muon_sach/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/ss9_aop/thuc_hanh/thuc_hanh_1/customer-management" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/ss9_aop/thuc_hanh/thuc_hanh_1/customer-management" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module5/casestudy5-angular/src/app/data/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module5/casestudy5-angular/src/app/data/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module5/exam/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module5/exam/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/Sprint 2/Project/bootstrap-shop-template/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/Sprint 2/Project/bootstrap-shop-template/mac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/demo/demo_spring/src/main/java/com/example/demo_spring/controller/DemoController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/controller/ProductRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/controller/ProductRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/dto/ProductDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/model/DiepCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/model/DiepCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/model/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/model/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/model/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/model/ProductOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/model/ProductOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/repository/ICategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/repository/ICategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/repository/IProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/repository/IProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/service/ICategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/service/ICategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/service/IProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/service/impl/CategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/service/impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-be/src/main/java/com/exam/exam6be/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/exam/exam6-fe/src/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/exam/exam6-fe/src/assets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/main/java/com/codegym/coffee_store_feedback/controller/FeedbackRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/main/java/com/codegym/coffee_store_feedback/controller/FeedbackRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/main/java/com/codegym/coffee_store_feedback/dto/FeedbackDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/main/java/com/codegym/coffee_store_feedback/dto/FeedbackDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/main/java/com/codegym/coffee_store_feedback/model/Feedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/main/java/com/codegym/coffee_store_feedback/model/Feedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/main/java/com/codegym/coffee_store_feedback/repository/feedback/IFeedbackRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/main/java/com/codegym/coffee_store_feedback/repository/feedback/IFeedbackRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/main/java/com/codegym/coffee_store_feedback/service/IFeedbackService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/main/java/com/codegym/coffee_store_feedback/service/IFeedbackService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/main/java/com/codegym/coffee_store_feedback/service/impl/FeedbackServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/main/java/com/codegym/coffee_store_feedback/service/impl/FeedbackServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/test/java/com/codegym/coffee_store_feedback/controller/FeedbackRestController_createFeedback.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module6/project/coding/coffee_store_feedback/src/test/java/com/codegym/coffee_store_feedback/controller/FeedbackRestController_createFeedback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/project/feedback_prototype/assets/custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/project/feedback_prototype/assets/img/bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/project/feedback_prototype/assets/jQuery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module6/project/feedback_prototype/templates/feedback.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../database_shop_online.mwb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bootstrap-shop-template.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/READ-ME.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap-shop-template.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/iPhone.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/carousel-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/carousel-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cat-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cat-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cat-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cat-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cat-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/cat-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/headphone_catelog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/headphone_headset_logitech G Pro Gaming.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ip11_64gb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ip12_128gb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ip13128gb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ip13promax-descript1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ip13promax-descript2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ip13promax-descript3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ip13promax128gb.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/laptop_mac_catelog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/laptop_macbook_pro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/mac_air_m2_2022_8core_GPU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/mac_pro_13_inch_m2_2022.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/mac_pro_14_inch_m1_pro_2021_14core_GPU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/mac_pro_16_inch_m1_pro_2021_16core_GPU.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/mobile_ip14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/mobile_ip_catelog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/offer-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/offer-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/payments.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/product-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/product-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/product-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/product-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/product-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/product-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/product-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/product-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/user.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vendor-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vendor-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vendor-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vendor-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vendor-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vendor-6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vendor-7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/vendor-8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/watch_catelog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/easing/easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/easing/easing.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/owlcarousel/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/owlcarousel/assets/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/owlcarousel/assets/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/owlcarousel/assets/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/owlcarousel/assets/owl.theme.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/owlcarousel/assets/owl.theme.default.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/owlcarousel/assets/owl.theme.green.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/owlcarousel/assets/owl.theme.green.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/owlcarousel/assets/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/owlcarousel/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/owlcarousel/owl.carousel.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mac.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail/contact.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail/contact.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mail/jqBootstrapValidation.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_button-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_custom-forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_jumbotron.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_media.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_popover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_root.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_spinners.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_toasts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_transitions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/bootstrap-grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/bootstrap-reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_background-variant.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_border-radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_box-shadow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_caret.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_deprecate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_grid-framework.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_hover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_lists.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_nav-divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_reset-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_resize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_table-row.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_text-emphasis.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_text-hide.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_text-truncate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/mixins/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_borders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_display.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_embed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_interactions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_overflow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_screenreaders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_shadows.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_sizing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_spacing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_stretched-link.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/utilities/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/bootstrap/scss/vendor/_rfs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/src/app/cart/cart.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/src/app/cart/cart.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/src/app/detail/detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/src/app/detail/detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/src/app/detail/detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/src/app/detail/detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/src/app/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/src/app/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/src/app/login/login.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/src/app/login/login.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/src/app/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/src/app/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../shop-online/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../shop-online/src/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2ECXEU2hnb6po9nKImWYo424SCJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../demo-jwt/angular7-jwt" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\CodeGym 02.2022\C0222G2\C0222G2_TranThiDiep\module6\Sprint 2\Project\bootstrap-shop-template" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="701a3da6-bd7c-42dd-b3d7-55d49f393e8f" name="Default Changelist" comment="" />
+      <created>1662100427627</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1662100427627</updated>
+      <workItem from="1662100429496" duration="12923000" />
+      <workItem from="1662181361102" duration="39000" />
+      <workItem from="1662191957344" duration="6025000" />
+      <workItem from="1662255611464" duration="1882000" />
+      <workItem from="1662345949951" duration="13510000" />
+      <workItem from="1662367538825" duration="379000" />
+      <workItem from="1662427256620" duration="1683000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="491" y="159" key="FileChooserDialogImpl" timestamp="1662436759648">
+      <screen x="0" y="0" width="1493" height="893" />
+    </state>
+    <state x="421" y="135" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1662181397477" />
+    <state x="491" y="159" key="FileChooserDialogImpl/0.0.1493.893@0.0.1493.893" timestamp="1662436759648" />
+  </component>
+</project>
