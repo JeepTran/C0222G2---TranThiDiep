@@ -1,5 +1,7 @@
 package com.jeep.shoponlineapi.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -10,13 +12,23 @@ public class Customer {
     private Integer id;
 
     private String name;
+
     private String phone;
+
     private String address;
+
     private String email;
+
+    @Column(columnDefinition = "bit(1) default 0")
     private Boolean isDeleted;
 
     @OneToMany(mappedBy = "customer")
+    @JsonBackReference
     private List<Cart> cartList;
+
+    @OneToOne
+    @JoinColumn(name = "user_id")
+    private AppUser appUser;
 
     public Customer() {
     }

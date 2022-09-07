@@ -1,5 +1,7 @@
 package com.jeep.shoponlineapi.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -10,8 +12,12 @@ public class Category {
     private Integer id;
 
     private String name;
+
+    @Column(columnDefinition = "bit(1) default 0")
     private Boolean isDeleted;
+
     @OneToMany(mappedBy = "category")
+    @JsonBackReference
     private List<Product> productList;
 
     public Category() {

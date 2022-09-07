@@ -1,7 +1,6 @@
 package com.jeep.shoponlineapi.model;
 
 import javax.persistence.*;
-import java.util.List;
 
 @Entity
 public class Coupon {
@@ -9,11 +8,15 @@ public class Coupon {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(unique = true, nullable = false)
     private String code;
+
     private Double discountPercentage;
+
+    @Column(columnDefinition = "bit(1) default 0")
     private Boolean isDeleted;
+
     @OneToOne(mappedBy = "coupon")
-    @JoinColumn(name = "bill_id", referencedColumnName = "id")
     private Bill bill;
 
     public Coupon() {

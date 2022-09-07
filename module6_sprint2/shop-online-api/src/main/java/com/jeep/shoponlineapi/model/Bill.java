@@ -1,5 +1,7 @@
 package com.jeep.shoponlineapi.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.List;
 
@@ -9,16 +11,23 @@ public class Bill {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(unique = true, nullable = false)
     private String code;
+
+    @Column(columnDefinition = "double default 20000")
     private Double shipFee;
+
     private String total;
+
+    @Column(columnDefinition = "bit(1) default 0")
     private Boolean isDeleted;
 
     @OneToOne
-    @JoinColumn(name = "bill_id", referencedColumnName = "id")
+    @JoinColumn(name = "coupon_id")
     private Coupon coupon;
 
     @OneToMany(mappedBy = "bill")
+    @JsonBackReference
     private List<Cart> cartList;
 
     public Bill() {

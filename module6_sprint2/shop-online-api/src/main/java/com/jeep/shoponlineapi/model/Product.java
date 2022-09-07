@@ -1,7 +1,10 @@
 package com.jeep.shoponlineapi.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class Product {
@@ -9,34 +12,50 @@ public class Product {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @Column(columnDefinition = "text")
     private String image;
+
     private String name;
+
     private Double originPrice;
+
     private String color;
+
     private String capacity;
+
     private String originCountry;
+
     private Date publishDate;
+
     private Double discountPercentage;
+
+    @Column(columnDefinition = "longtext")
     private String description;
+
+    @Column(columnDefinition = "longtext")
     private String techSpecification;
+
+    @Column(columnDefinition = "text")
     private String productSet;
     @ManyToOne
-    @JoinColumn(name = "product_id", referencedColumnName = "id")
+    @JoinColumn(name = "category_id", referencedColumnName = "id")
     private Category category;
+
+    @Column(columnDefinition = "bit(1) default 0")
     private Boolean isDeleted;
 
-    @ManyToOne
-    @JoinColumn(name = "product_id", referencedColumnName = "id")
-    private Cart cart;
+    @OneToMany(mappedBy = "product")
+    @JsonBackReference
+    private List<Cart> cartList;
 
     public Product() {
     }
 
-    public Product(String name, String image, Double originPrice, String color, String capacity,
-                   String originCountry, Date publishDate, Double discountPercentage, String description,
-                   String techSpecification, String productSet, Category category, Boolean isDeleted) {
-        this.name = name;
+    public Product(String image, String name, Double originPrice, String color, String capacity, String originCountry,
+                   Date publishDate, Double discountPercentage, String description, String techSpecification,
+                   String productSet, Category category, Boolean isDeleted, List<Cart> cartList) {
         this.image = image;
+        this.name = name;
         this.originPrice = originPrice;
         this.color = color;
         this.capacity = capacity;
@@ -48,14 +67,15 @@ public class Product {
         this.productSet = productSet;
         this.category = category;
         this.isDeleted = isDeleted;
+        this.cartList = cartList;
     }
 
-    public Product(Integer id, String name, String image, Double originPrice, String color, String capacity,
+    public Product(Integer id, String image, String name, Double originPrice, String color, String capacity,
                    String originCountry, Date publishDate, Double discountPercentage, String description,
-                   String techSpecification, String productSet, Category category, Boolean isDeleted) {
+                   String techSpecification, String productSet, Category category, Boolean isDeleted, List<Cart> cartList) {
         this.id = id;
-        this.name = name;
         this.image = image;
+        this.name = name;
         this.originPrice = originPrice;
         this.color = color;
         this.capacity = capacity;
@@ -67,6 +87,7 @@ public class Product {
         this.productSet = productSet;
         this.category = category;
         this.isDeleted = isDeleted;
+        this.cartList = cartList;
     }
 
     public Integer getId() {
@@ -77,20 +98,20 @@ public class Product {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getImage() {
         return image;
     }
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Double getOriginPrice() {
@@ -179,5 +200,13 @@ public class Product {
 
     public void setDeleted(Boolean deleted) {
         isDeleted = deleted;
+    }
+
+    public List<Cart> getCartList() {
+        return cartList;
+    }
+
+    public void setCartList(List<Cart> cartList) {
+        this.cartList = cartList;
     }
 }

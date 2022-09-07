@@ -12,31 +12,34 @@ public class Cart {
     private Integer quantity;
     private Boolean isDeleted;
 
-    @OneToMany(mappedBy = "cart")
-    private List<Product> productList;
     @ManyToOne
-    @JoinColumn(name = "cart_id", referencedColumnName = "id")
+    @JoinColumn(name = "product_id")
+    private Product product;
+
+    @ManyToOne
+    @JoinColumn(name = "customer_id", referencedColumnName = "id")
     private Customer customer;
 
     @ManyToOne
-    @JoinColumn(name = "cart_id", referencedColumnName = "id")
+    @JoinColumn(name = "bill_id", referencedColumnName = "id")
     private Bill bill;
 
     public Cart() {
     }
-    public Cart(Integer quantity, Boolean isDeleted, List<Product> productList, Customer customer, Bill bill) {
+
+    public Cart(Integer quantity, Boolean isDeleted, Product product, Customer customer, Bill bill) {
         this.quantity = quantity;
         this.isDeleted = isDeleted;
-        this.productList = productList;
+        this.product = product;
         this.customer = customer;
         this.bill = bill;
     }
-    public Cart(Integer id, Integer quantity, Boolean isDeleted, List<Product> productList,
-                Customer customer, Bill bill) {
+
+    public Cart(Integer id, Integer quantity, Boolean isDeleted, Product product, Customer customer, Bill bill) {
         this.id = id;
         this.quantity = quantity;
         this.isDeleted = isDeleted;
-        this.productList = productList;
+        this.product = product;
         this.customer = customer;
         this.bill = bill;
     }
@@ -65,12 +68,12 @@ public class Cart {
         isDeleted = deleted;
     }
 
-    public List<Product> getProductList() {
-        return productList;
+    public Product getProduct() {
+        return product;
     }
 
-    public void setProductList(List<Product> productList) {
-        this.productList = productList;
+    public void setProduct(Product product) {
+        this.product = product;
     }
 
     public Customer getCustomer() {

@@ -1,15 +1,15 @@
 <!--Login Form Start-->
 <div class="m-auto w-50 rounded-lg bg-primary p-4" style="border: 1px solid">
   <h4>Đăng nhập</h4>
-  <form class="w-50 m-auto ">
+  <form class="w-50 m-auto " [formGroup]="loginForm" (ngSubmit)="onLogin()">
     <div class="mb-3">
-      <label for="exampleInputEmail1" class="form-label">Email</label>
-      <input type="email" class="form-control border-light rounded" id="exampleInputEmail1" aria-describedby="emailHelp">
+      <label for="exampleInputEmail1" class="form-label" >Tên tài khoản</label>
+      <input formControlName="username" type="text" class="form-control border-light rounded" id="exampleInputEmail1" aria-describedby="emailHelp">
       <div id="emailHelp" class="form-text"></div>
     </div>
     <div class="mb-3">
-      <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>
-      <input type="password" class="form-control border-light rounded" id="exampleInputPassword1">
+      <label for="exampleInputPassword1" class="form-label"  >Mật khẩu</label>
+      <input formControlName="password" type="password" class="form-control border-light rounded" id="exampleInputPassword1">
     </div>
     <button type="submit" class="btn bg-light rounded mt-2">Đăng nhập</button>
     <a style="display: block; margin-top: 10px">Đăng ký tài khoản mới</a>
@@ -17,3 +17,23 @@
 
 </div>
 <!--Login Form End-->
+
+<!--&lt;!&ndash;Login Form Start&ndash;&gt;-->
+<!--<div class="m-auto w-50 rounded-lg bg-primary p-4" style="border: 1px solid">-->
+<!--  <h4>Đăng nhập</h4>-->
+<!--  <form class="w-50 m-auto ">-->
+<!--    <div class="mb-3">-->
+<!--      <label for="exampleInputEmail1" class="form-label">Email</label>-->
+<!--      <input type="email" class="form-control border-light rounded" id="exampleInputEmail1" aria-describedby="emailHelp">-->
+<!--      <div id="emailHelp" class="form-text"></div>-->
+<!--    </div>-->
+<!--    <div class="mb-3">-->
+<!--      <label for="exampleInputPassword1" class="form-label">Mật khẩu</label>-->
+<!--      <input type="password" class="form-control border-light rounded" id="exampleInputPassword1">-->
+<!--    </div>-->
+<!--    <button type="submit" class="btn bg-light rounded mt-2">Đăng nhập</button>-->
+<!--    <a style="display: block; margin-top: 10px">Đăng ký tài khoản mới</a>-->
+<!--  </form>-->
+
+<!--</div>-->
+<!--&lt;!&ndash;Login Form End&ndash;&gt;-->

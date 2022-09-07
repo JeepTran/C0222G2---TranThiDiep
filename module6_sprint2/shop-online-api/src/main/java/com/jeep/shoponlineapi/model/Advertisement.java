@@ -1,9 +1,6 @@
 package com.jeep.shoponlineapi.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
@@ -13,10 +10,17 @@ public class Advertisement {
     private Integer id;
 
     private String name;
+
+    @Column(columnDefinition = "text")
     private String image;
+
     private Date createDate;
+
     private Date startDate;
+
     private Date endDate;
+
+    @Column(columnDefinition = "bit(1) default 0")
     private Boolean isDeleted;
 
     public Advertisement() {

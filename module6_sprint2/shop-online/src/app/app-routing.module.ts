@@ -8,6 +8,7 @@ import {DetailComponent} from "./detail/detail.component";
 import {CartComponent} from "./cart/cart.component";
 import {ProductDescriptionComponent} from "./detail/product-description/product-description.component";
 import {ProductSpecificationComponent} from "./detail/product-specification/product-specification.component";
+import {LogoutComponent} from "./logout/logout.component";
 
 
 const routes: Routes = [
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path: 'cart', component: CartComponent},
   {path: 'description', component: ProductDescriptionComponent},
   {path: 'specification', component: ProductSpecificationComponent},
+  {path: 'logout', component: LogoutComponent},
 
 ];
 
