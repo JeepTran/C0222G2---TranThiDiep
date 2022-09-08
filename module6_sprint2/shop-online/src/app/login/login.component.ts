@@ -94,6 +94,7 @@ export class LoginComponent implements OnInit {
         this.cookieService.setCookie('stayLogged', 'true', 1);
       }
       this.loginService.onLogin(username, password).subscribe(value => {
+        console.log(value)
         this.authService.isLogin(value);
       }, error => {
         this.LoginFailCount++;
