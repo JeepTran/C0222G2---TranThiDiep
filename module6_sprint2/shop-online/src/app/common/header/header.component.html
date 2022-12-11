@@ -20,7 +20,7 @@
       <!--      </form>-->
     </div>
     <div class="col-lg-3 col-6 text-right">
-      <a routerLink="/login" class="btn bg-primary text-white m-1" *ngIf="token == ''">Đăng nhập</a>
+      <a [routerLink]="['/login']" class="btn bg-primary text-white m-1" *ngIf="token == ''">Đăng nhập</a>
       <a routerLink="" class="btn bg-primary text-white m-1" *ngIf="token != ''">Hello {{username}}</a>
       <a routerLink="" (click)="onLogout()" class="btn bg-primary text-white m-1" *ngIf="token != ''">Đăng xuất</a>
       <!--      <a routerLink="" class="btn bg-primary text-white m-1">Đăng ký</a>-->
